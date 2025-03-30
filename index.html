@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <title>徐烁的项目作品集</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --text: #34495e;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s;
+        }
+
+        .header {
+            background: var(--primary);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            height: 60px;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-content {
+            margin-top: 80px;
+            padding: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .cta-button {
+            padding: 12px 24px;
+            border-radius: 25px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switcher {
+            position: relative;
+            display: inline-block;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1rem;
+                margin-top: 70px;
+            }
+            
+            .card-grid {
+                gap: 1rem;
+            }
+            
+            .project-screenshot {
+                height: 150px;
+            }
+        }
+
+        [data-i18n] {
+            transition: opacity 0.3s, transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader">Loading...</div>
+
+    <header class="header">
+        <nav class="nav-container">
+            <h1 data-i18n="siteTitle">徐烁的项目作品集</h1>
+            <div class="lang-switcher">
+                <button class="lang-btn" id="langToggle">EN/中文</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="card-grid">
+            <!-- 导航网站项目 -->
+            <div class="project-card">
+                <img src="a1.png" 
+                     class="project-screenshot" 
+                     loading="lazy" 
+                     alt="导航网站截图"
+                     data-i18n="navScreenshotAlt">
+                <h3 data-i18n="navTitle">极简导航站</h3>
+                <p data-i18n="navDesc">聚合常用工具和资源的快速访问平台，包含智能搜索和个性化定制功能</p>
+                <div class="project-links">
+                    <a href="https://shuo156.github.io" 
+                       target="_blank" 
+                       class="cta-button"
+                       data-i18n="visitSite">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span data-i18n="visitSite">访问网站</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 恶搞网站项目 -->
+            <div class="project-card">
+                <img src="a2.png" 
+                     class="project-screenshot" 
+                     loading="lazy" 
+                     alt="恶搞网站截图"
+                     data-i18n="funnyScreenshotAlt">
+                <h3 data-i18n="funnyTitle">创意互动实验室</h3>
+                <p data-i18n="funnyDesc">融合趣味交互与前沿技术的实验性项目，展示Web技术的创意应用</p>
+                <div class="project-links">
+                    <a href="https://free-4.github.io" 
+                       target="_blank" 
+                       class="cta-button"
+                       data-i18n="visitSite">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span data-i18n="visitSite">访问网站</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-buttons" style="margin-top: 3rem;">
+            <a href="mailto:shuo15655736069@outlook.com" class="cta-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <span data-i18n="emailMe">发送邮件</span>
+            </a>
+            <a href="tel:15555945544" class="cta-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span data-i18n="callMe">立即拨打</span>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // 多语言配置
+        const i18n = {
+            en: {
+                siteTitle: "Shuo Xu's Portfolio",
+                navTitle: "Minimalist Navigation",
+                navDesc: "Quick-access platform aggregating common tools and resources with smart search and customization",
+                funnyTitle: "Creative Interactive Lab", 
+                funnyDesc: "Experimental project combining fun interactions with cutting-edge web technologies",
+                navScreenshotAlt: "Navigation Site Screenshot",
+                funnyScreenshotAlt: "Interactive Lab Screenshot",
+                visitSite: "Visit Site",
+                emailMe: "Email Me",
+                callMe: "Call Now"
+            },
+            zh: {
+                siteTitle: "徐烁的项目作品集",
+                navTitle: "极简导航站",
+                navDesc: "聚合常用工具和资源的快速访问平台，包含智能搜索和个性化定制功能",
+                funnyTitle: "创意互动实验室",
+                funnyDesc: "融合趣味交互与前沿技术的实验性项目，展示Web技术的创意应用",
+                navScreenshotAlt: "导航网站截图",
+                funnyScreenshotAlt: "互动实验室截图", 
+                visitSite: "访问网站",
+                emailMe: "发送邮件",
+                callMe: "立即拨打"
+            }
+        };
+
+        // 初始化加载
+        document.addEventListener('DOMContentLoaded', () => {
+            // 隐藏加载动画
+            document.getElementById('loader').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('loader').style.display = 'none';
+            }, 500);
+
+            // 初始化语言
+            updateContent('zh');
+        });
+
+        // 语言切换功能
+        let currentLang = 'zh';
+        document.getElementById('langToggle').addEventListener('click', () => {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            updateContent(currentLang);
+        });
+
+        function updateContent(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key]) {
+                    if (el.tagName === 'IMG') {
+                        el.alt = i18n[lang][key];
+                    } else {
+                        el.textContent = i18n[lang][key];
+                    }
+                }
+            });
+        }
+
+        // 图片懒加载
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (!img.src && img.dataset.src) {
+                        img.src = img.dataset.src;
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            img.dataset.src = img.src;
+            img.src = "";
+            observer.observe(img);
+        });
+    </script>
+</body>
+</html>
