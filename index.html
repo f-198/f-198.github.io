@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:locale:alternate" content="en_US">
-    <title>秋秋的项目作品集</title>
+    <title>秋秋的全栈作品集</title>
     <style>
         :root {
             --primary: #2c3e50;
             --accent: #e74c3c;
             --text: #34495e;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            --button-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         * {
@@ -27,8 +25,18 @@
             line-height: 1.6;
             color: var(--text);
             overflow-x: hidden;
-            background-color: #f5f7fa;
-            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        [data-i18n] {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .lang-change [data-i18n] {
+            opacity: 0;
+            transform: translateY(15px);
         }
 
         .loader {
@@ -42,9 +50,7 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            transition: opacity 0.5s ease;
-            font-size: 1.2rem;
-            color: var(--primary);
+            transition: opacity 0.5s;
         }
 
         .header {
@@ -55,7 +61,7 @@
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            height: 60px;
+            height: 70px;
         }
 
         .nav-container {
@@ -64,97 +70,45 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 1rem;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            color: white;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .lang-switcher {
-            position: relative;
-            display: inline-block;
-        }
-
-        .lang-btn {
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            backdrop-filter: blur(5px);
-            font-size: 0.95rem;
-        }
-
-        .lang-btn:hover {
-            background: rgba(255,255,255,0.3);
-            transform: scale(1.05);
-        }
-
-        .lang-btn::before {
-            content: "🌐";
-            font-size: 1.1em;
+            padding: 0 20px;
         }
 
         .main-content {
-            margin-top: 80px;
+            margin-top: 90px;
             padding: 2rem;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
-            opacity: 1;
-            transform: none;
         }
 
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
         .project-card {
             background: white;
-            border-radius: 16px;
-            padding: 1.5rem;
-            box-shadow: var(--card-shadow);
-            transition: var(--transition);
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
             position: relative;
             overflow: hidden;
+            transition: var(--transition);
         }
 
-        .project-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+        }
+
+        .screenshot-container {
             width: 100%;
-            height: 4px;
-            background: var(--accent);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .img-container {
-            width: 100%;
-            height: 200px;
+            height: 405px;
             border-radius: 8px;
             overflow: hidden;
-            position: relative;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
@@ -169,28 +123,16 @@
             transform: scale(1.03);
         }
 
-        h3 {
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            color: var(--text);
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-        }
-
         .project-links {
             display: flex;
             gap: 1rem;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .cta-button {
             padding: 12px 24px;
-            border-radius: 50px;
-            background: linear-gradient(135deg, var(--accent), #ff6b6b);
+            border-radius: 25px;
+            background: var(--accent);
             color: white;
             text-decoration: none;
             transition: var(--transition);
@@ -198,97 +140,75 @@
             align-items: center;
             gap: 8px;
             font-weight: 500;
-            border: none;
-            cursor: pointer;
-            box-shadow: var(--button-shadow);
-            font-size: 0.9rem;
         }
 
         .cta-button:hover {
+            background: #c0392b;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .lang-btn {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.2);
         }
 
         .contact-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin: 3rem 0 1rem;
-            flex-wrap: wrap;
+            margin: 3rem 0;
+            text-align: center;
         }
 
-        svg {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
-        }
-
-        [data-i18n] {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-        .lang-change [data-i18n] {
-            opacity: 0;
-            transform: translateY(10px);
+        .beian {
+            margin-top: 2rem;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #eee;
         }
 
         @media (max-width: 768px) {
             .main-content {
-                padding: 1rem;
-                margin-top: 70px;
+                padding: 1.5rem;
+                margin-top: 80px;
             }
             
             .card-grid {
-                gap: 1rem;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
             
-            .img-container {
-                height: 180px;
-            }
-            
-            .lang-btn {
-                padding: 6px 16px;
-                font-size: 0.9rem;
+            .screenshot-container {
+                height: 240px;
             }
             
             .project-card {
                 padding: 1.2rem;
             }
-            
-            h1 {
-                font-size: 1.3rem;
-            }
-            
-            .contact-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .cta-button {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .img-container {
-                height: 160px;
-            }
-            
-            h3 {
-                font-size: 1.2rem;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="loader" id="loader">Loading...</div>
+    <div class="loader" id="loader">
+        <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="20" stroke="#e74c3c" stroke-width="4" fill="none" stroke-dasharray="31.4 31.4">
+                <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+    </div>
 
     <header class="header">
         <nav class="nav-container">
-            <h1 data-i18n="siteTitle">秋秋的项目作品集</h1>
+            <h1 data-i18n="siteTitle">秋秋的全栈作品集</h1>
             <div class="lang-switcher">
                 <button class="lang-btn" id="langToggle">EN/中文</button>
             </div>
@@ -297,47 +217,64 @@
 
     <main class="main-content">
         <section class="card-grid">
-            <!-- 导航网站项目 -->
+            <!-- 导航网站 -->
             <div class="project-card">
-                <div class="img-container">
+                <div class="screenshot-container">
                     <img src="a1.png" 
                          class="project-screenshot" 
-                         alt="导航网站截图"
+                         alt="导航站截图"
                          data-i18n="navScreenshotAlt">
                 </div>
                 <h3 data-i18n="navTitle">极简导航站</h3>
-                <p data-i18n="navDesc">聚合常用工具和资源的快速访问平台，包含智能搜索和个性化定制功能</p>
+                <p data-i18n="navDesc">基于Vue3构建的现代化导航门户，集成智能搜索与个性化定制功能</p>
                 <div class="project-links">
                     <a href="https://shuo156.github.io" 
                        target="_blank" 
                        class="cta-button"
                        data-i18n="visitSite">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                         <span data-i18n="visitSite">访问网站</span>
                     </a>
                 </div>
             </div>
 
-            <!-- 恶搞网站项目 -->
+            <!-- IP分析平台 -->
             <div class="project-card">
-                <div class="img-container">
+                <div class="screenshot-container">
+                    <img src="ip.png" 
+                         class="project-screenshot" 
+                         alt="IP分析平台"
+                         data-i18n="ipScreenshotAlt">
+                </div>
+                <h3 data-i18n="ipTitle">IP数据分析平台</h3>
+                <p data-i18n="ipDesc">基于Node.js和Elasticsearch构建的实时数据分析系统</p>
+                <div class="project-links">
+                    <a href="https://base-5.github.io" 
+                       target="_blank" 
+                       class="cta-button"
+                       data-i18n="visitSite">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <span data-i18n="visitSite">访问网站</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 恶搞实验室 -->
+            <div class="project-card">
+                <div class="screenshot-container">
                     <img src="a2.png" 
                          class="project-screenshot" 
-                         alt="恶搞网站截图"
+                         alt="互动实验室"
                          data-i18n="funnyScreenshotAlt">
                 </div>
                 <h3 data-i18n="funnyTitle">创意互动实验室</h3>
-                <p data-i18n="funnyDesc">融合趣味交互与前沿技术的实验性项目，展示Web技术的创意应用</p>
+                <p data-i18n="funnyDesc">融合Three.js与Canvas API的交互式娱乐项目</p>
                 <div class="project-links">
                     <a href="https://free-4.github.io" 
                        target="_blank" 
                        class="cta-button"
                        data-i18n="visitSite">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.18 5 4.05 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
                         <span data-i18n="visitSite">访问网站</span>
                     </a>
                 </div>
@@ -354,6 +291,10 @@
                 <span data-i18n="callMe">立即拨打</span>
             </a>
         </div>
+
+        <div class="beian">
+            版本20250330| 秋秋个人提供技术支持
+        </div>
     </main>
 
     <script>
@@ -361,24 +302,30 @@
         const i18n = {
             en: {
                 siteTitle: "Qiu Qiu's Portfolio",
-                navTitle: "Minimalist Navigation",
-                navDesc: "Quick-access platform with smart search and customization",
-                funnyTitle: "Creative Interactive Lab", 
-                funnyDesc: "Showcase of creative web technology applications",
-                navScreenshotAlt: "Navigation Site Screenshot",
+                navTitle: "Navigation Portal",
+                navDesc: "Modern Vue3-based portal with smart search",
+                ipTitle: "IP Analytics Platform",
+                ipDesc: "Real-time data system with Node.js & Elasticsearch",
+                funnyTitle: "Interactive Lab",
+                funnyDesc: "Entertainment project with Three.js & Canvas API",
+                navScreenshotAlt: "Navigation Screenshot",
+                ipScreenshotAlt: "IP Analytics Screenshot",
                 funnyScreenshotAlt: "Interactive Lab Screenshot",
                 visitSite: "Visit Site",
-                emailMe: "Email Me",
+                emailMe: "Send Email",
                 callMe: "Call Now"
             },
             zh: {
-                siteTitle: "秋秋的项目作品集",
+                siteTitle: "秋秋的全栈作品集",
                 navTitle: "极简导航站",
-                navDesc: "聚合常用工具和资源的快速访问平台",
+                navDesc: "基于Vue3构建的现代化导航门户",
+                ipTitle: "IP数据分析平台",
+                ipDesc: "基于Node.js和Elasticsearch的实时数据分析系统",
                 funnyTitle: "创意互动实验室",
-                funnyDesc: "Web技术创意应用展示",
-                navScreenshotAlt: "导航网站截图",
-                funnyScreenshotAlt: "互动实验室截图", 
+                funnyDesc: "融合Three.js与Canvas API的交互式项目",
+                navScreenshotAlt: "导航站截图",
+                ipScreenshotAlt: "IP分析平台截图",
+                funnyScreenshotAlt: "互动实验室截图",
                 visitSite: "访问网站",
                 emailMe: "发送邮件",
                 callMe: "立即拨打"
@@ -388,38 +335,24 @@
         // 初始化加载
         document.addEventListener('DOMContentLoaded', () => {
             // 隐藏加载动画
-            const loader = document.getElementById('loader');
-            loader.style.opacity = '0';
             setTimeout(() => {
-                loader.style.display = 'none';
-            }, 500);
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 800);
 
             // 初始化语言
             updateContent('zh');
-            
-            // 确保图片加载
-            document.querySelectorAll('img').forEach(img => {
-                if (!img.complete) {
-                    img.onload = () => {
-                        img.style.opacity = '1';
-                    };
-                } else {
-                    img.style.opacity = '1';
-                }
-            });
         });
 
-        // 语言切换功能
+        // 语言切换
         let currentLang = 'zh';
-        const langToggle = document.getElementById('langToggle');
-        
-        langToggle.addEventListener('click', () => {
+        document.getElementById('langToggle').addEventListener('click', () => {
             document.body.classList.add('lang-change');
-            
             setTimeout(() => {
                 currentLang = currentLang === 'zh' ? 'en' : 'zh';
                 updateContent(currentLang);
-                
                 setTimeout(() => {
                     document.body.classList.remove('lang-change');
                 }, 50);
@@ -437,9 +370,6 @@
                     }
                 }
             });
-            
-            // 更新按钮文本
-            langToggle.textContent = lang === 'zh' ? 'EN/中文' : '中文/EN';
         }
     </script>
 </body>
