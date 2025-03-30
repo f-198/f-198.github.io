@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:locale:alternate" content="en_US">
-    <title>徐烁的项目作品集</title>
+    <title>秋秋的项目作品集</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -25,6 +25,18 @@
             line-height: 1.6;
             color: var(--text);
             overflow-x: hidden;
+        }
+
+        /* 新增过渡动画 */
+        [data-i18n] {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .lang-change [data-i18n] {
+            opacity: 0;
+            transform: translateY(10px);
         }
 
         .loader {
@@ -80,9 +92,9 @@
             border-radius: 12px;
             padding: 1.5rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: var(--transition);
             position: relative;
             overflow: hidden;
+            transition: var(--transition);
         }
 
         .project-card::before {
@@ -127,21 +139,6 @@
             gap: 8px;
         }
 
-        .lang-switcher {
-            position: relative;
-            display: inline-block;
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
         @media (max-width: 768px) {
             .main-content {
                 padding: 1rem;
@@ -156,10 +153,6 @@
                 height: 150px;
             }
         }
-
-        [data-i18n] {
-            transition: opacity 0.3s, transform 0.3s;
-        }
     </style>
 </head>
 <body>
@@ -167,7 +160,7 @@
 
     <header class="header">
         <nav class="nav-container">
-            <h1 data-i18n="siteTitle">徐烁的项目作品集</h1>
+            <h1 data-i18n="siteTitle">秋秋的项目作品集</h1>
             <div class="lang-switcher">
                 <button class="lang-btn" id="langToggle">EN/中文</button>
             </div>
@@ -180,7 +173,6 @@
             <div class="project-card">
                 <img src="a1.png" 
                      class="project-screenshot" 
-                     loading="lazy" 
                      alt="导航网站截图"
                      data-i18n="navScreenshotAlt">
                 <h3 data-i18n="navTitle">极简导航站</h3>
@@ -202,7 +194,6 @@
             <div class="project-card">
                 <img src="a2.png" 
                      class="project-screenshot" 
-                     loading="lazy" 
                      alt="恶搞网站截图"
                      data-i18n="funnyScreenshotAlt">
                 <h3 data-i18n="funnyTitle">创意互动实验室</h3>
@@ -234,14 +225,14 @@
     </main>
 
     <script>
-        // 多语言配置
+        // 多语言配置（已修改为秋秋）
         const i18n = {
             en: {
-                siteTitle: "Shuo Xu's Portfolio",
+                siteTitle: "Qiu Qiu's Portfolio",
                 navTitle: "Minimalist Navigation",
-                navDesc: "Quick-access platform aggregating common tools and resources with smart search and customization",
+                navDesc: "Quick-access platform with smart search and customization",
                 funnyTitle: "Creative Interactive Lab", 
-                funnyDesc: "Experimental project combining fun interactions with cutting-edge web technologies",
+                funnyDesc: "Showcase of creative web technology applications",
                 navScreenshotAlt: "Navigation Site Screenshot",
                 funnyScreenshotAlt: "Interactive Lab Screenshot",
                 visitSite: "Visit Site",
@@ -249,11 +240,11 @@
                 callMe: "Call Now"
             },
             zh: {
-                siteTitle: "徐烁的项目作品集",
+                siteTitle: "秋秋的项目作品集",
                 navTitle: "极简导航站",
-                navDesc: "聚合常用工具和资源的快速访问平台，包含智能搜索和个性化定制功能",
+                navDesc: "聚合常用工具和资源的快速访问平台",
                 funnyTitle: "创意互动实验室",
-                funnyDesc: "融合趣味交互与前沿技术的实验性项目，展示Web技术的创意应用",
+                funnyDesc: "Web技术创意应用展示",
                 navScreenshotAlt: "导航网站截图",
                 funnyScreenshotAlt: "互动实验室截图", 
                 visitSite: "访问网站",
@@ -274,11 +265,15 @@
             updateContent('zh');
         });
 
-        // 语言切换功能
+        // 增强版语言切换
         let currentLang = 'zh';
         document.getElementById('langToggle').addEventListener('click', () => {
-            currentLang = currentLang === 'zh' ? 'en' : 'zh';
-            updateContent(currentLang);
+            document.body.classList.add('lang-change');
+            setTimeout(() => {
+                currentLang = currentLang === 'zh' ? 'en' : 'zh';
+                updateContent(currentLang);
+                document.body.classList.remove('lang-change');
+            }, 300);
         });
 
         function updateContent(lang) {
@@ -293,25 +288,6 @@
                 }
             });
         }
-
-        // 图片懒加载
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    if (!img.src && img.dataset.src) {
-                        img.src = img.dataset.src;
-                    }
-                    observer.unobserve(img);
-                }
-            });
-        });
-
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-            img.dataset.src = img.src;
-            img.src = "";
-            observer.observe(img);
-        });
     </script>
 </body>
 </html>
