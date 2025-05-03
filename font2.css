@@ -1,0 +1,50 @@
+@font-face {
+	font-family:'SF Pro SC';
+	font-style:normal;
+	font-weight:300;
+	src:local('☺'), url("PingFangSC-Light.woff2") format("woff2"), url("PingFangSC-Light.woff") format("woff"), url("PingFangSC-Light.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family:'SF Pro SC 300';
+	src:url('PingFangSC-Light.eot');
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family:'SF Pro SC';
+	font-style:normal;
+	font-weight:500;
+	src:local('☺'), url("PingFangSC-Light.woff2") format("woff2"), url("PingFangSC-Light.woff") format("woff"), url("PingFangSC-Light.eot") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family:'SF Pro SC 500';
+	src:url('PingFangSC-Light.eot');
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family:'SF Pro SC';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺'), url("PingFangSC-Light.woff2") format("woff2"), url("PingFangSC-Light.woff") format("woff"), url("PingFangSC-Light.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family:'SF Pro SC 600';
+	src:url('PingFangSC-Light.eot');
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
+
+@font-face {
+	font-family:'SF Pro SC';
+	font-style:normal;
+	font-weight:400;
+	src:url('PingFangSC-Light.eot');
+	src:local('☺'), url("PingFangSC-Light.woff2") format("woff2"), url("PingFangSC-Light.woff") format("woff"), url("PingFangSC-Light.ttf") format("truetype");
+	/* (C) 2015 Apple Inc. All rights reserved. */
+}
