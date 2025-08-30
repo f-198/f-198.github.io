@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - 页面未找到</title>
+  <link rel="stylesheet" href="https://shuo156.github.io/css/blue.css">
+  <style>
+    /* 局部小补充，保证404在全屏居中 */
+    body{display:flex;align-items:center;justify-content:center;min-height:100vh}
+    .error-box{text-align:center;max-width:420px}
+    .error-code{
+      font-size:80px;font-weight:800;color:var(--primary-600);line-height:1
+    }
+    .error-msg{
+      font-size:20px;color:var(--text-strong);margin:20px 0 10px
+    }
+    .error-desc{
+      color:var(--muted);margin-bottom:24px
+    }
+  </style>
+</head>
+<body>
+  <div class="error-box">
+    <div class="card shadow">
+      <div class="error-code">404</div>
+      <div class="error-msg">页面未找到</div>
+      <div class="error-desc">抱歉，您访问的页面不存在或已被移除。</div>
+      <a href="/" class="btn btn-primary btn-block">返回首页</a>
+    </div>
+  </div>
+</body>
+</html>
