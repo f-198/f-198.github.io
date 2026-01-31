@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* CSS Document */
+body{font-family: "microsoft yahei", '宋体';}
+.content{width: 1220px;padding: 30px;}
+.pannel-title .sort{background:none; color:#666666; font-size:14px; font-family:微软雅黑,宋体; padding:0 50px;}
+.picList02 {
+    width: 1220px;
+    overflow: hidden;
+    padding-top:24px;}
+.picList02 ul {
+    width: 1220px; overflow:hidden;
+}
+.picList02 li {
+    float: left;
+    width: 270px;
+    margin: 0;
+    margin-bottom:20px;
+    padding-right:45px;
+    min-height:265px;
+}
+
+.zcjdjn_20230524 .picList02 li {
+    width: 370px;
+    padding-right: 55px;
+}
+
+.zcjdjn_20230524 .picList02 li:nth-child(3n) {
+    padding-right: 0;
+}
+
+.picList02 li.nopadding {
+    padding-right:0;
+}
+.picList02 li .aImg {
+    width: 270px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.zcjdjn_20230524 .picList02 li .aImg {
+    width: 270px;
+    width: 370px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.picList02 ul li.current{padding:0;}
+.picList02 li .aImg img{display: block;max-width: 100%;margin:0 auto;vertical-align: top;}
+
+.zcjdjn_20230524 .picList02 li .aImg img {
+    width: 370px;
+    height: 208px;
+}
+
+.picList02 li .subtitle {
+    padding-top:18px;
+    line-height: 24px;
+    overflow: hidden;}
+.picList02 li .subtitle.altHeight{height: 72px;}
+.picList02 li .subtitle a{font-size:18px; color:#6c6c6c;vertical-align: top;}
+
+.picList02 li .subtitle a *{
+    font-size: inherit!important;
+    font-family: inherit!important;}
+
+.picList02 li .subtitle a:hover{ color:#015293;}
+.picList02 li .dates {
+    color: #888888;
+    width: 280px;
+    height: 22px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;}
+.news_box{ margin: 0 auto;   *padding-bottom:40px;}
+.news_box .list{ border-bottom:1px solid #dddddd;}
+.news_box .list_1 ul {padding: 15px 0;}
+.news_box .list li{ line-height:36px; background:url(/govweb/xhtml/images/public/point.jpg) no-repeat left 17px; padding-left:12px;}
+.news_box .list a{ font-size:18px; background:none; padding-left:0px; }
+.news_box .list a:hover{ text-decoration:underline; color:#024886;}
+.news_box .list span.date{ font-size:18px;}
+.news_box .current{ border:0;}
+.list ul li h4 a {
+    font-size: 17px;
+    color: #000;
+    font-family: "微软雅黑","宋体";
+    font-weight: normal;
+}
+
+.news_box li.line {
+    border-bottom: 1px #dddddd solid;
+    margin-bottom: 15px;
+    padding:0 0 15px 12px;
+}

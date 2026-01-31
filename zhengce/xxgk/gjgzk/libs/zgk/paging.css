@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.pagger {
+  height: 30px;
+  text-align: center;
+  width: 730px;
+  font-family: "microsoft yahei";
+  font-size: 12px;
+  color: #303133;
+  display: block;
+  /* position: absolute;
+  bottom: 10px; */
+}
+.tableBox {
+  padding-bottom: 0px;
+}
+.pagger_out {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  height: 151px;
+}
+.pagger_box_out {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 62px;
+  background-color: #fff;
+}
+.pagger-box {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 60px;
+  margin-top: 60px; */
+}
+
+.pagger-box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  /* margin-left:108px \9\0; */
+  margin-bottom: 3px \9\0;
+}
+
+.pagger-box > div:first-of-type {
+  /* margin-bottom: 10px; */
+}
+
+.pagger button {
+  padding: 5px 6px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid #d2d2d2;
+  background-color: #ffffff;
+  margin-left: 4px;
+  height: 28px;
+}
+.pagger .first-page,
+.pagger .last-page {
+  margin-left: 3px;
+}
+.pagger .pageWrap {
+  /* display: flex; */
+  overflow: hidden;
+  margin-left: 3px;
+  float: left;
+}
+.pagger .pageWrap ul {
+  width: 999999999px;
+  /* width: fit-content;
+  display: flex; */
+}
+.pagger .pageWrap ul li {
+  box-sizing: border-box;
+  border: 1px solid #d2d2d2;
+  pagger-sizing: border-pagger;
+  cursor: pointer;
+  float: left;
+  width: fit-content;
+  min-width: 32px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  margin-left: 3px;
+}
+.pagger .pageWrap ul .sel-page {
+  background-color: #145ca0;
+  color: #fff;
+  margin-left: 3px;
+}
+.pre-page {
+  margin-left: 3px;
+}
+.pagger .jump-text {
+  width: 40px;
+  max-width: 48px;
+  pagger-sizing: border-pagger;
+  text-align: center;
+  float: left;
+  border: 1px solid #d2d2d2;
+  /* padding: 5px 10px; */
+  height: 28px;
+}
+.pagger .jump-button {
+  float: left;
+  border: none;
+}
+.pagger .total-pages,
+.pagger .total-count {
+  margin-left: 6px;
+  float: left;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .pagger .total-pages,
+  .pagger .total-count {
+    margin-left: 6px;
+    float: left;
+    font-size: 27px;
+    height: 55px;
+    line-height: 55px;
+  }
+  .pagger .pageWrap ul .sel-page {
+    background-color: #145ca0;
+    color: #fff;
+    margin-left: 15px;
+  }
+  .jump-text{
+    font-size: 27px;
+    
+  }
+  .pagger_out {
+   background-color: #fff;
+  }
+  .pagger_box_out {
+    width: 0;
+    height: 0;
+  }
+  .pagger-box {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 75px!important;
+    /* margin-top: 16px; */
+    white-space: nowrap;
+  }
+  .pagger button {
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    color: #145ca0;
+    font-family: "microsoft yahei";
+    /* font-size: 0.19rem; */
+    font-size: 27px;
+    padding: 0.01rem 0.09rem;
+    margin-right: 0;
+    margin-left: 17px;
+    padding: 8px 10px;
+    height: 55px;
+  }
+  .next-page{
+    margin-left: 15px!important;
+  }
+  .pagger a {
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    color: #0066be;
+    font-family: "microsoft yahei";
+    font-size: 0.19rem;
+    padding: 0.01rem 0.09rem;
+    margin-right: 0.02rem;
+  }
+  .page-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .ju_mp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pagger-box {
+    display: block;
+  }
+  .pagger .jump-text {
+    max-width: 122px;
+    border-color: #145ca0;
+    border-radius: 5px;
+    width: 122px;
+    height: 50px;
+    border-radius: 0;
+    /* padding: 0.05rem 0.15rem; */
+    padding: 2px 5px;
+    margin-right: 10px;
+  }
+  .pagger .pageWrap ul li {
+    width: 19px;
+    /* height: 22px; */
+    line-height: 20px;
+    min-width: 55px;
+    height: 55px;
+    font-size: 27px !important;
+    margin-left: 15px;
+  }
+  .pageWrap {
+    /* width: 423px !important; */
+  }
+  .pagger-box {
+    position: absolute;
+    /* bottom: -23px; */
+    left: -1px;
+  }
+  .confir {
+    padding: 9px 33px 9px !important;
+    margin-left: 30px !important;
+    height: 28px;
+    color: #fff !important;
+    border: 1px solid #d2d2d2 !important;
+    /* border-radius: 15px; */
+    background-color: #145ca0 !important;
+  }
+  .pagger-box > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+  }
+
+  .pagger-box > div:first-of-type {
+    margin-bottom: 29px;
+  }
+  .last-page,
+  .first-page {
+    display: none !important;
+  }
+  .aw button {
+    margin: 0 20px !important;
+  }
+}
+
+.top_title_pic {
+  /* margin: 57px auto 28px; */
+  margin: 54px auto 28px;
+  text-align: center;
+  color: #1a649b;
+  font-size: 35px;
+  caret-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: "hanyicusong";
+  cursor: default;
+}
+@media only screen and (max-width: 768px) {
+  .top_title_pic {
+    margin: 0 !important;
+  }
+}

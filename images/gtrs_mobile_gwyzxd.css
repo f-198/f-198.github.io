@@ -1,0 +1,131 @@
+.gwyzxdTitle{
+    height: auto;
+}
+.gwyzxdTitle img{
+    width: 100%;
+}
+.gwyzxd_tt{
+    margin: 36px 0 14px 0;
+}
+.gwyzxd_w943{
+    width: 92%;
+    margin: 0 auto;
+}
+.gwyzxd_l{
+    width: 100%;
+}
+.gwyzxd_tt a{
+    font-family: auto !important;
+    font-size: 39px;
+    color: #015293;
+    font-weight: bold;
+    line-height: 66px;
+}
+.m_gwyzxd_news .infolist li{
+    padding-left: 10px;
+    background: none;
+    line-height: 61px;
+}
+.gwyzxd_news .infolist{
+    padding: 0;
+}
+.firstList li a{
+    font-size: 31px !important;
+}
+.gwyzxd_gzjxs .infolist li{
+    background: none;
+    font-size: 28px;
+    margin-bottom: 18px;
+    line-height: 52px;
+    font-family: "microsoft yahei";
+    background: url(zjs_icon_dot.png) no-repeat 7px 36px;
+    background-size: 14px;
+    padding-left: 40px;
+}
+.infolist{
+    border: none;
+}
+.info_more{
+    text-align: center;
+    font-size: 28px;
+    height: 66px;
+    line-height: 66px;
+}
+.gwyzxd_hf li:first-child{
+    float: none;
+}
+.gwyzxd_hf li{
+    width: 100%;
+    float: none;
+    height: 120px;
+}
+.gwyzxd_hf li img{
+    width: 100%;
+    height: 120px;
+}
+.com_tit.line{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1.5px solid #bcbcbc;
+    line-height: 72px;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: "microsoft yahei";
+}
+.gwyzxd_gzjxs{
+    margin: 40px 0 70px;
+}
+.gwyzxd_gzjxs .infolist.dot{
+    margin-top: 26px;
+}
+.m_gwyzxd_l li a{
+    font-size: 28px;
+    color: #000;
+}
+.m_second li a{
+    font-size: 32px;
+    line-height: 60px;
+    color: #000;
+}
+.info_more a{
+    font-size: 32px;
+}
+.m_gwyzcwjk{
+    height: 125px;
+    line-height: 125px;
+    border: 1.5px solid #d1d1d1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 12px 0;
+}
+.m_gwyzcwjk a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.m_gwyzcwjk p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: #085284;
+    padding-left: 42px;
+    letter-spacing: 4px;
+}
+.infolist{
+    padding-bottom: 15px;
+}
+.m_gwyzcwjk img{
+    display: inline-block;
+    margin: 0;
+    width: 92px;
+    height: 92px;
+}
+.gwyzxd_gzjxs .m_gwyzxd_l li{
+    background: none !important;
+    padding-left: 0;
+}
+.m_gwyzxd_l li a{
+    font-size: 32px;
+}

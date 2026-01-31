@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* CSS Document */
+body,input,textarea,select,button {text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-moz-font-feature-settings: "liga","kern";}
+body{font-family: "microsoft yahei";font-weight: normal;line-height: 1.6;font-size: 32px;}
+.content{padding: 0;}
+.padd {padding: 32px 28px 0;}
+.pannel-title{height: auto;font-size: 32px;}
+.tit_s01{position: inherit;background: none;}
+.title-inner{height: auto;line-height: inherit;position: inherit;margin-bottom: 20px;}
+.tit_s01 span.tabg,.tit_s01 span.bg01, .tit_s01 span.bg02{display: inline;height: auto;line-height: inherit;font-size: inherit;color: #666;background: none;float: none;}
+.tit_s01 span.tabg{padding: 0;}
+.tit_s01 span.bg01,.tit_s01 span.bg02{width: auto;}
+.pannel-title .sort{padding: 0 100px;font-size: 28px;}
+.picList02{width: 100%;margin-bottom: 20px;padding-top: 0;overflow: inherit;}
+.picList02 ul{width: auto;overflow: inherit;}
+.picList02 li{width: auto;float: none;margin: 0;min-height: auto;padding-right: 0;}
+.picList02 li .aImg{width: auto;margin: 60px 0;overflow: inherit;}
+.picList02 li .pannel-image{margin-bottom: 20px;}
+.picList02 .aImg .pannel-image a>img {width: 100%;max-width: 98%;height: auto;display: block;margin: 10px auto;border: 2px solid #eee;padding: 4px;}
+.picList02 li .subtitle{padding: 0;line-height: inherit;}
+.picList02 li .subtitle.altHeight{height: auto;}
+.picList02 li .subtitle a{color: #000;font-size: inherit;}
+.picList02 li .dates{width: auto;height: auto;line-height: inherit;color: #666;font-size: inherit;}
+
+/* 政策解读集纳 */
+.zcjdjn_20230524 .picList02 li {
+    width: auto;
+    padding-right: 0;
+}
+.zcjdjn_20230524 .picList02 li .aImg {
+    width: auto;
+}
