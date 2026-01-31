@@ -1,0 +1,352 @@
+* {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  position: relative;
+  background: #fff;
+  font-family: "microsoft yahei";
+  font-weight: normal;
+  color: #333;
+  font-size: 32px;
+}
+
+.content {
+  width: 100%;
+}
+
+.padd {
+  padding: 32px 28px 0;
+  width: auto;
+}
+.mzyygwj {
+  padding-top: 12px;
+}
+
+.BreadcrumbNav {
+  font-size: 30px;
+  line-height: 60px;
+  height: auto;
+  padding: 10px 20px;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+}
+
+.BreadcrumbNav a {
+  font-weight: normal !important;
+  color: #000;
+  text-decoration-color: rgb(0, 0, 0);
+  -moz-text-decoration-color: rgb(0, 0, 0);
+  margin: 0 2.5px;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+
+.BreadcrumbNav a:first-child {
+  margin-left: 0;
+  color: #000f52;
+}
+
+.channel_tab {
+  position: relative;
+  margin: 0 auto;
+  border: none;
+  padding-bottom: 0px;
+  line-height: 1.6;
+  height: 142px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  background-color: transparent;
+}
+.channel_tab-scly {
+  border-bottom: 2px solid #CCC;
+  line-height: 70px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+
+.channel_tab span {
+  color: #000;
+  font-size: 36px;
+  padding-left: 20px;
+  padding-right: 0;
+  font-family: "Segoe UI",
+  "Lucida Grande",
+  Helvetica,
+  Arial,
+  "Microsoft YaHei",
+  FreeSans,
+  Arimo,
+  "Droid Sans",
+  "wenquanyi micro hei",
+  "Hiragino Sans GB",
+  "Hiragino Sans GB W3",
+  "FontAwesome",
+  sans-serif;
+}
+.channel_tab-scly span {
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 20px;
+  float: left;
+}
+.channel_tab-scly span a {
+  color: #000;
+}
+
+.channel_tab .noline {
+  font-size: 0;
+}
+
+.channel_tab a {
+  display: block;
+  font-size: 32px;
+  font-family: "microsoft yahei";
+  /* line-height: 60px; */
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  background: #024886;
+}
+
+.channel_tab .span1 {
+  display: block;
+  float: inherit;
+  margin: 0;
+  line-height: 72px;
+  height: 72px;
+  padding: 0 30px;
+  font-size: 24px;
+  color: #666;
+  clear: both;
+  border-top: 4px solid #024886;
+  text-align: right;
+}
+
+.channel_tab span.toutiao {
+  padding-right: 10px;
+}
+
+.channel_tab span.toutiao a {
+  font-size: 28px;
+  font-family: "Segoe UI",
+  "Lucida Grande",
+  Helvetica,
+  Arial,
+  "Microsoft YaHei",
+  FreeSans,
+  Arimo,
+  "Droid Sans",
+  "wenquanyi micro hei",
+  "Hiragino Sans GB",
+  "Hiragino Sans GB W3",
+  "FontAwesome",
+  sans-serif;
+  font-weight: 400;
+}
+
+.news_box {
+  padding: 0 0 32px 0;
+  border-top: 0;
+  border: none;
+}
+
+.news_box .list a {
+  font-size: 32px;
+  display: inline;
+  background: none;
+  padding-left: 0px;
+  color: #333;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: "Segoe UI",
+  "Lucida Grande",
+  Helvetica,
+  Arial,
+  "Microsoft YaHei",
+  FreeSans,
+  Arimo,
+  "Droid Sans",
+  "wenquanyi micro hei",
+  "Hiragino Sans GB",
+  "Hiragino Sans GB W3",
+  "FontAwesome",
+  sans-serif;
+}
+
+.news_box .list li {
+  line-height: 60px;
+  background: none;
+  list-style: disc;
+  font-size: 32px;
+  padding-left: 0;
+}
+.news_box .list li.list-li-scly {
+  background: url(trs_point.jpg) no-repeat 0 34px;
+  background-size: 6px;
+  list-style: none;
+  padding: 0 0 0 20px;
+}
+.news_box .list li.list-li-lmm {
+  background: url(trs_point.jpg) no-repeat 0 34px;
+  background-size: 6px;
+  list-style: none;
+  padding: 0 0 0 20px;
+}
+.news_box .list li::marker {
+  vertical-align: top;
+}
+
+.news_box .list li h4 {
+  padding: 10px 0;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: none;
+  position: inherit;
+}
+.news_box .list li h4.list-h4-scly {
+  border-bottom: 2px solid #ccc;
+}
+.news_box .list li h4.list-h4-lmm {
+  border-bottom: 2px solid #ccc;
+}
+
+.news_box .list span.date {
+  float: inherit;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: "Segoe UI";
+  line-height: 60px;
+  color: #888888;
+  display: inline;
+  position: inherit;
+  padding-right: 0;
+}
+.news_box .gwpage {
+  padding-left: 0;
+}
+.news_box .list span.date-scly {
+  float: right;
+}
+.news_box .list span.date-lmm {
+  float: right;
+}
+
+.news_box li.line {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.news_box a.zl_more {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #EDEDED;
+  border: 2px solid #ccc;
+  font-size: 32px;
+  border-radius: 4px;
+  clear: both;
+  color: #666;
+  margin: 32px 0 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.news_box .list_1 ul {
+  padding: 20px 0 32px 40px;
+  color: #888;
+}
+
+
+/* 网站地图 */
+.column{padding:0 20px;}
+.box{ margin-bottom:30px;border: 1px #dddddd solid;}
+.box h3{ font-size:22px; color:#005294; line-height:80px; height:80px; padding-left:25px; background:#dcdcdd;font-size:32px;}
+.box .container{ padding:30px 50px 43px 50px; margin:0 -50px; line-height:64px;    box-sizing: border-box;}
+.box .container a{ display:inline-block; margin:0 44px;font-size:28px;}
+.news_box .list_1 ul.paddtop {
+  padding-top: 0;
+  padding-left: 0;
+}
+.news_box .list_1 ul.paddtoplmm {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+/* 聚焦外贸稳规模优结构政策措施 */
+.jjwmwgmyjg .padd {
+  width: auto;
+  padding: 32px 28px 0;
+}
+.jjwmwgmyjg .channel_tab {
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  border-bottom: 4px solid #ccc;
+  overflow: hidden;
+}
+.jjwmwgmyjg .channel_tab .noline {
+  display: block;
+  padding: 0;
+}
+.jjwmwgmyjg .channel_tab a {
+  font-size: 36px;
+  font-family: "microsoft yahei";
+  /* font-weight: bold; */
+}
+.jjwmwgmyjg .channel_tab .span1 {
+  display: block;
+  float: inherit;
+  margin: 0;
+  line-height: 72px;
+  height: 72px;
+  padding: 0 30px;
+  font-size: 24px;
+  color: #666;
+  clear: both;
+  border-top: 4px solid #ccc;
+  text-align: right;
+}
+.jjwmwgmyjg .news_box {
+    padding: 0 0 32px 0;
+    border-top: 0;
+    border: none;
+}
+.jjwmwgmyjg .news_box .list li {
+  line-height: 60px;
+    background: none;
+    list-style: disc;
+    font-size: 32px;
+    padding-left: 0;
+}
+
+/* 聚焦外贸稳规模优结构政策措施——父级 */
+.jjwmwgmyjg_parent .tit_s01 {
+    background: none;
+    margin-bottom: 20px;
+}
+.jjwmwgmyjg_parent .tit_s01 span.bg01 {
+    background: none;
+    display: inline;
+    width: auto;
+}
+.jjwmwgmyjg_parent .tit_s01 span.tabg {
+    background: none;
+    color: #666;
+    font-size: 32px;
+    padding: 0;
+}
+.jjwmwgmyjg_parent .tit_s01 span.bg02 {
+  background: none;
+}
+.jjwmwgmyjg_parent .padd .info_more .public_chckmore {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+}
