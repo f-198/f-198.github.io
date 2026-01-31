@@ -1,0 +1,200 @@
+/* 公报高级搜索移动端 */
+.mobile_content{
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+    background: #fff;
+    font-family: "微软雅黑" !important;
+    height: auto;
+}
+.mobile_dqwz{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: auto;
+    overflow: hidden;
+}
+.mobile_dqwz table{
+    line-height: 60px;
+    flex: 1;
+}
+.mobile_dqwz td {
+    font-size: 18px;
+}
+.star{
+    color: #6f6f6f;
+    font-size: 20px;
+    margin-right: 10px;
+    display: flex;
+}
+.mobile_img1{
+    width: 13px;
+    height: 60px;
+    background: url(./trs_star.png) no-repeat 100% 22px;
+    margin-right: 10px;
+}
+.mobile_word{
+    height: 88px;
+    line-height: 88px;
+    color: #6f6f6f;
+    font-family: Microsoft YaHei;
+    float: left;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 24px;
+}
+.mobile_search{
+    width: 98%;
+    margin: 0;
+    padding: 0 1%;
+}
+.mobile_main{
+    margin-top: 2%;
+}
+.mobile_search{width: 98%;}
+.mobile_tips{
+    display: flex;
+    margin-bottom: 12px;
+}
+.mobile_tips label{
+    font-size: 28px;
+    width: 10%;
+    line-height: 52px;
+    margin-right: 1%;
+}
+.tiperror{color: rgb(255, 0, 0);font: normal 28px/52px "微软雅黑";display: none;line-height: 52px;}
+#fcode_error{
+    margin: 0 50px;
+    margin-bottom: 3%;
+    font-size: 28px;
+}
+.mobile_tips .mobile_input{
+    width: 80%;
+    position: relative;
+    background: #dfdfdf;
+}
+.history{
+    margin-bottom: 4%;
+    line-height: 20px;
+    margin-left: 1%;
+}
+.mobile_tips input{
+    border: 2px solid #B9B9B9;
+    width: 90%;
+    height: 52px;
+    line-height: 52px;
+    font: normal 28px/52px "微软雅黑";
+    padding-left: 1%;
+    vertical-align: baseline;
+}
+.mobile_input .close{
+    position: absolute;
+    right: 72px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #333;
+    cursor: default;
+}
+.mobile_yearissue label{margin-top: 20px;}
+.qiri{
+    display: flex;
+    width: 100%;
+}
+.qiri span{
+    font: normal 28px/52px "微软雅黑";
+    margin-top: 20px;
+}
+.mobile_tips select{height: 52px;line-height: 52px;font: normal 28px/52px "微软雅黑";}
+.mobile_tips select option{font-size: 14px;}
+.year-select,.issue-select{
+    margin: 20px 12px;
+    width: 35%;
+    height: 80%;
+    padding-left: 12px;
+    color: #828282;
+    border: 1px solid #B9B9B9;
+}
+.mobile_input .hao{
+    font-size: 28px;
+    line-height: 52px;
+}
+.history a{
+    color: #2780b3;
+    font-size: 32px;
+}
+.min select{
+    width: 220px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 12px;
+    color: #828282;
+    border: 1px solid #B9B9B9;
+}
+.bug{
+    width: 70%;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 12px;
+    color: #828282;
+    font-size: 28px;
+}
+.lanmu select{width: 76%;}
+.close{
+    display: none;
+}
+.wen{
+    position: relative;
+    width: 76%;
+    display: flex;
+}
+.mobile_tips .wen input {
+    background: #fff url(./datePicker.gif) no-repeat right ;
+}
+#contenttype{
+    width: 95%;
+    height: 40px;
+    font: normal 23px/52px "微软雅黑";
+    padding-left: 1%;
+    color: #828282;
+}
+.mobile_tips .title{
+    width: 82%;
+}
+#fuzzyBtn{
+    width: 14%;
+    height: 40px;
+}
+.mobile_tips .sourdio{
+    width: 16%;
+    font-size: 27px;
+}
+#preciseBtn{
+    width: 14%;
+    height: 40px;
+}
+.btn_zc{
+    margin: 0 0 4%;
+}
+.btn_zc input{
+    width: 36%;
+    height: 80px;
+    line-height: 40px;
+    margin: 0 2%;
+    background: #015293;
+    font-size: 32px;
+    color: #fff;
+    border: none;
+    border-right: 1px solid #6a99bf;
+    border-radius: 7%;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+}
+.cwrq{
+    position: relative;
+}
+
+
+
+
