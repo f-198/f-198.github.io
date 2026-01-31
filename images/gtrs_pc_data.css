@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+.clearfix{*zoom:1}
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:""}.clearfix:after{clear:both}
+.top_baner {
+    width: 100%;
+    height: 140px;
+    background: url(20230413jingjishujuzt_banner.jpg) center 0 no-repeat;
+}
+
+.top_baner h1 {
+    color: #015293;
+    font-weight: normal;
+    font-family: "";
+    line-height: 140px;
+}
+
+.content {
+    width: 1220px;
+    height: auto;
+    margin: 0px auto;
+    padding: 54px 30px 74px;
+    background-color: #fff;
+}
+
+
+.new_economic_highlights {
+    margin: 0 auto 34px;
+}
+
+.new_economic_highlights_left{
+    float: left;
+    width: 792px;
+}
+.item_title {
+    font-size: 24px;
+    height: 26px;
+    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    margin-bottom: 30px;
+	font-weight: inherit;
+    
+}
+.data_flash_title{
+    margin-bottom: 44px;
+}
+
+.item_title a {
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    /* font-family: "govwf_fzzhunysk_ys_285840259","微软雅黑","宋体"; */
+}
+.pchide_important {
+    display: none !important;
+}
+.data_flash_title a,.data_interpretation_title a,.illustrated_economy_title a {
+    width: 104px;
+}
+.illustrated_economy_title{
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.new_economic_highlights_right {
+    float: right;
+    width: 400px;
+}
+
+.economicHighlights_h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 42px;
+    font-family: "microsoft yahei";
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.economicHighlights_h2 a {
+    color: #3e3e3e;
+}
+
+.economicHighlights_p {
+    text-indent: 32px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "microsoft yahei";
+    margin-bottom: 16px;
+}
+
+.economicHighlights_p a {
+    color: #015293;
+}
+.economicHighlights_list {
+    padding-top: 8px;
+}
+.new_economic_highlights_right .economicHighlights_title {
+    margin-bottom: 30px;
+}
+.economicHighlights_list li {
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    padding-left: 22px;
+    background: url(small_square.png) 0 20px no-repeat;
+    line-height: 48px;
+    height: 48px;
+    overflow: hidden;
+    padding-bottom: 22px;
+}
+
+.economicHighlights_list li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.data_query_download {
+    position: relative;
+    width: 400px;
+}
+
+.data_query_download .new_economic_highlights_right_border{
+	display: block;
+	border: 9px solid #f3faff;
+	width: 380px;
+	height: 355px;
+}
+.data_query_download a img{
+	border: 1px solid #d1e9ff;
+}
+.data_query_download p {
+    font-size: 16px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.data_query_download p a {
+    color: #333;
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+}
+
+
+
+
+.data_flash_content {
+    width: 1220px;
+    height: 448px;
+    margin: 0 auto 70px;
+    background: #f7f7f7;
+    position: relative;
+}
+
+.dys_nav_father {
+    position: absolute;
+    top: 54px;
+    width: 644px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 0 0 34px;
+}
+
+.dys_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dys_nav li {
+    vertical-align: middle;
+    height: 46px;
+    line-height: 46px;
+    overflow: hidden;
+    width: 644px;
+    margin-bottom: 22px;
+}
+.dys_nav li.dys_active em{
+    font-weight: bold;
+}
+.dys_nav li em ,.dys_nav li a {
+    float: left;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    line-height: 46px;
+    color: #333;
+    /* font-weight: bold; */
+    font-style: normal;
+}
+
+
+.dys_nav li.dys_active {
+    border-bottom: 1px solid #015293;
+}
+
+.dys_nav li.dys_active a,
+.dys_nav li.dys_active em {
+    color: #015293;
+}
+
+.dys_top,.dys_bottom {
+    position: absolute;
+    left: 262px;
+    display: block;
+    width: 30px;
+    height: 16px;
+    background: url(arrows.png) 0 0 no-repeat;
+}
+.dys_top{
+    top: 18px;
+}
+.dys_bottom {
+    background-position:0 -34px; 
+    bottom: 38px;
+}
+
+.dys_top a,
+.dys_bottom a {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+}
+
+.dys_nav_content {
+    width: 408px;
+    height: 238px;
+    padding: 40px 42px;
+    background: #fff;
+    position: absolute;
+    top: 54px;
+    right: 50px;
+    padding-bottom: 30px;
+    border-left: 1px solid #015293;
+}
+
+.dys_nav_content li {
+    display: none;
+}
+
+.dys_nav_content li p {
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+    text-indent: 27px;
+}
+
+.dys_nav_content li span {
+    display: inherit;
+    text-align: right;
+}
+
+.dys_nav_content li a {
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+    font-size: 16px;
+    line-height: 30px;
+    color: #015293;
+
+}
+.sjkb_more {
+    position: absolute;
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+    font-size: 16px;
+    color: #015293;
+    left: 518px;
+    bottom: 28px;
+}
+
+
+
+.data_interpretation {
+    margin: 0 auto 56px;
+}
+.data_interpretation_title {
+    margin-bottom: 40px;
+}
+.data_il_title{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.data_ir_title{
+    border-bottom: 1px solid #015293;
+    line-height: 26px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+}
+.data_ir_title a{
+    display: inline-block;
+    margin-right: 60px;
+    padding-bottom: 17px;
+    color: #999;
+    text-decoration: none;
+} 
+.data_ir_title a.active {
+    color: #333;
+    border-bottom: 3px solid #015293;
+}
+.data_interpretation_left {
+    width: 500px;
+    float: left;
+}
+.data_il_con p{
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.data_interpretation_right{
+    float: right;
+    width: 610px;
+}
+.data_ir_con{
+    background-color: #f7f7f7;
+    height: 326px;
+	overflow: hidden;
+}
+.data_ir_con ul{
+    margin-left: 26px;
+    padding: 12px 0;
+    display: none;
+}
+.data_ir_con .active{
+    display: block;
+}
+.data_ir_con li{
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    padding-left: 12px;
+    background: url(small_square.png) 0 28px no-repeat;
+    overflow: hidden;
+}
+.data_ir_con li em{
+	font-style: normal;
+}
+
+.illustrated_economy_con {
+    overflow: hidden;
+}
+.illustrated_economy_con li{
+    float: left;
+    width: 250px;
+    margin-right: 72px;
+    /* *margin-right: 52px;
+    margin-right: 52px\0; */
+}
+.illustrated_economy_con li:nth-child(4) {
+    margin-right: 0
+}
+.illustrated_economy_con li img{
+    border: 1px solid #c8ccd7;
+}
+.illustrated_economy_con li.lastli{
+    margin: 0;
+}
+.illustrated_economy_con li p{
+    margin-top: 14px;
+}

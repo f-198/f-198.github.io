@@ -1,0 +1,449 @@
+
+@charset "utf-8";
+
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+.clearfix{*zoom:1}
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:""}.clearfix:after{clear:both}
+.top_baner {
+    width: 100%;
+    height: 160px;
+    background: url(dyjdjj_mobile_banner.jpg) center 0 no-repeat;
+    background-size: contain;
+}
+
+.top_baner h1 {
+    color: #015293;
+    font-weight: normal;
+    line-height: 140px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0 40px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+.new_economic_highlights {
+    margin: 0 auto 34px;
+}
+
+.new_economic_highlights_left{
+    float: left;
+    width: 100%;
+}
+.item_title {
+    font-size: 24px;
+    height: 44px;
+    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    margin-bottom: 50px;
+	font-weight: inherit;
+    margin-top:20px;
+}
+.data_flash{
+    overflow: hidden;
+}
+.data_flash_title{
+    margin-bottom: 44px;
+}
+
+.item_title a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    font-size:37px;
+    font-family: "govwf_fzzhunysk_ys_285840259","微软雅黑","宋体";
+}
+.data_flash_title a,.data_interpretation_title a,.illustrated_economy_title a {
+    width: 160px;
+}
+.data_flash_title .more{
+    font-size:28px;
+    text-align: right;
+    background:none;
+    float:right;
+    color:#015293;
+}
+.pchide_important {
+    display: block !important;
+}
+.illustrated_economy_title{
+    border-bottom: none;
+    margin-bottom: 40px;
+    font-size:36px !important;
+}
+.illustrated_economy_title .more{
+    float:right;
+    font-size:28px;
+    width:auto;
+    color:#015293;
+}
+
+.new_economic_highlights_right {
+    float: right;
+    width: 100%;
+}
+
+.economicHighlights_h2 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 42px;
+    font-family: "microsoft yahei";
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.economicHighlights_h2 a {
+    color: #3e3e3e;
+}
+
+.economicHighlights_p {
+    text-indent: 32px;
+    color: #666666;
+    font-size: 28px;
+    line-height: 45px;
+    font-family: "microsoft yahei";
+    margin-bottom: 16px;
+}
+
+.economicHighlights_p a {
+    color: #015293;
+}
+.economicHighlights_list {
+    padding-top: 8px;
+}
+.new_economic_highlights_right .economicHighlights_title {
+    margin-bottom: 30px;
+}
+.economicHighlights_list li {
+    font-size: 32px;
+    font-family: "microsoft yahei";
+    padding-left: 22px;
+    background: url(small_square.png) 0 20px no-repeat;
+    line-height: 48px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 22px;
+}
+
+.economicHighlights_list li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.data_query_download {
+    position: relative;
+    width: 100%;
+}
+
+.data_query_download .new_economic_highlights_right_border{
+	display: block;
+	border: 9px solid #f3faff;
+	width: 100%;
+	height: auto;
+}
+.data_query_download a img{
+    width:100%;
+    height:auto;
+	border: 1px solid #d1e9ff;
+}
+.data_query_download p {
+    font-size: 30px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.data_query_download p a {
+    color: #333;
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+}
+
+
+
+
+.data_flash_content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 70px;
+    background: #f7f7f7;
+    position: relative;
+    padding:28px;
+    box-sizing: border-box;
+}
+
+.dys_nav_father {
+    position: initial;
+    top: 54px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+}
+
+.dys_nav {
+    position: initial;
+    top: 0;
+    left: 0;
+}
+
+.dys_nav li {
+    vertical-align: middle;
+    height: auto;
+    line-height: 46px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 22px;
+}
+.dys_nav li>*{
+    
+}
+.dys_nav li.dys_active em{
+    font-weight: bold;
+}
+.dys_nav li em ,.dys_nav li a {
+    float:initial;
+    font-family: "microsoft yahei";
+    font-size: 32px;
+    line-height: 46px;
+    color: #333;
+    /* font-weight: bold; */
+    font-style: normal;
+}
+
+
+.dys_nav li.dys_active {
+    border-bottom: 0;
+}
+
+.dys_nav li.dys_active a,
+.dys_nav li.dys_active em {
+    color: #000;
+}
+
+.dys_top,.dys_bottom {
+    position: absolute;
+    left: 262px;
+    display: none;
+    width: 30px;
+    height: 16px;
+    background: url(arrows.png) 0 0 no-repeat;
+}
+.dys_top{
+    top: 18px;
+}
+.dys_bottom {
+    background-position:0 -34px; 
+    bottom: 38px;
+}
+
+.dys_top a,
+.dys_bottom a {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+}
+
+.dys_nav_content {
+    width: 408px;
+    height: 238px;
+    padding: 40px 42px;
+    background: #fff;
+    position: absolute;
+    top: 54px;
+    right: 50px;
+    padding-bottom: 30px;
+    border-left: 1px solid #015293;
+}
+
+.dys_nav_content li {
+    display: none;
+}
+
+.dys_nav_content li p {
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+    text-indent: 27px;
+}
+
+.dys_nav_content li span {
+    display: inherit;
+    text-align: right;
+}
+
+.dys_nav_content li a {
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+    font-size: 16px;
+    line-height: 30px;
+    color: #015293;
+
+}
+.sjkb_more {
+    position: absolute;
+    font-family: "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜";
+    font-size: 16px;
+    color: #015293;
+    left: 518px;
+    bottom: 28px;
+}
+
+
+
+.data_interpretation {
+    margin: 0 auto 56px;
+}
+.data_interpretation_title {
+    margin-bottom: 40px;
+}
+.data_il_title{
+    font-size: 32px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.data_ir_title{
+    border-bottom: 2px solid #015293;
+    line-height: 26px;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: normal;
+}
+.data_ir_title a{
+    display: inline-block;
+    margin-right: 30px;
+    padding-bottom: 17px;
+    color: #999;
+    text-decoration: none;
+} 
+.data_ir_title a.active {
+    color: #333;
+    border-bottom: 4px solid #015293;
+}
+.data_interpretation_left {
+    width: 100%;
+    float: left;
+    margin-bottom:30px;
+}
+.data_il_con p{
+    height: auto;
+    line-height: 46px;
+    font-size: 30px;
+    color: #333;
+    text-align: left;
+}
+.data_il_con img{
+    width:100%;
+    height:auto;
+}
+
+.data_interpretation_right{
+    float: initial;
+    width: 100%;
+}
+.data_ir_con{
+    background-color: #f7f7f7;
+    height: auto;
+	overflow: hidden;
+    padding:30px;
+    box-sizing: border-box;
+}
+.data_ir_con ul{
+    margin-left: 0;
+    padding: 0;
+    display: none;
+}
+.data_ir_con ul p{
+    font-size:28px;
+    float:right;
+}
+.data_ir_con ul p a{
+    color:#015293;
+}
+.data_ir_con .active{
+    display: block;
+}
+.data_ir_con li{
+    height: auto;
+    line-height: 50px;
+    font-size: 30px;
+    padding-left: 0;
+    background: none;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+.data_ir_con li em{
+	font-style: normal;
+}
+
+.illustrated_economy_con {
+    overflow: hidden;
+}
+.illustrated_economy_con li{
+    float: left;
+    width: 250px;
+    margin-right: 72px;
+    /* *margin-right: 52px;
+    margin-right: 52px\0; */
+}
+.illustrated_economy_con li img{
+    border: 1px solid #c8ccd7;
+}
+.illustrated_economy_con li.lastli{
+    margin: 0;
+}
+.illustrated_economy_con li p{
+    margin-top: 14px;
+}
+
+.banner{
+    width:100%;
+    height:520px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .swiper-slide{
+    text-align: center;
+}
+.banner img{
+    width:540px;
+    height:auto;
+    margin: 0 auto;
+}
+.banner span{
+    display:block;
+    font-size:32px;
+    width:540px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:10px auto;
+}
+.banner .arrow{
+    position: absolute;
+    top:150px;
+    width:60px;
+    height:100px;
+    background:#ff6600;
+    display:block;
+    z-index: 99;
+}
+.banner .arrow.arrow-left{
+    left:0;
+    background:url(tuji_arrow_l.png) center no-repeat;
+    background-size: 70% auto;
+}
+.banner .arrow.arrow-right{
+    right:0;
+    background:url(tuji_arrow_r.png) center no-repeat;
+    background-size:  70% auto;
+}
