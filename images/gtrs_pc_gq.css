@@ -1,0 +1,129 @@
+a{color: #000;}
+.container{
+    padding: 0 30px !important;
+}
+.gq_content{
+    /* overflow: hidden; */
+    padding: 60px 0 90px;
+}
+.leftPart{
+    float: left;
+    width: 790px;
+    padding-right: 0;
+    font-family: 微软雅黑;
+}
+.fl {
+    float: left;
+}
+.box1_txt {
+    width: 468px;
+    margin-left: 36px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #000;
+}
+.lmtit a {
+    font-size: 22px;
+    line-height: 28px;
+    cursor: default;
+    color: #000;
+}
+.box1_txt_con {
+    margin-top: 16px;
+    text-indent: 2em;
+}
+.box1_txt_title {
+    height: 28px;
+    line-height: 28px;
+}
+.leftPartBox2 {
+    width: 742px;
+    height: 246px;
+    margin-left: -10px;
+    padding: 40px 34px;
+    background: url(boxshow.png) top center no-repeat;
+    line-height: 34px;
+    font-size: 18px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.box2_td2 {
+    margin: 42px 0;
+    overflow: hidden;
+}
+.box3_left {
+    margin-right: 90px;
+}
+.box3_con {
+    width: 350px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.box3_con .lmtit {
+    border-bottom: 1px solid #b1b1b1;
+}
+.box3_con .lmtit a {
+    font-size: 22px;
+    line-height: 42px;
+}
+.box3_con li {
+    background: url(gq_dot_5px.jpg) 10px 20px no-repeat;
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 46px;
+}
+
+.box3_con li a * {
+    font-size: inherit!important;
+    font-family: inherit!important;
+    font-weight: inherit!important;
+    line-height: inherit!important;
+}
+
+.box3_con {
+    width: 350px;
+}
+.mb34 {
+    margin-bottom: 34px;
+}
+.box2_td2 ul, .box2_td3 ul {
+    overflow: hidden;
+}
+.box2_td2 ul li, .box2_td3 ul li {
+    float: left;
+    margin-right: 36px;
+}
+
+.box2_td2 ul li a *, .box2_td3 ul li a * {
+    font-size: inherit!important;
+    font-family: inherit!important;
+    font-weight: inherit!important;
+    line-height: inherit!important;
+}
+
+.rightPart {
+    float: right;
+    width: 300px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.rightPart>div {
+    margin-bottom: 36px;
+}
+.rightPart .lmtit a {
+    cursor: pointer;
+}
+.rightPart .lmImg {
+    margin-top: 15px;
+}
+.rightPart .lmdlown {
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    background: #f8f8f8;
+}
+.lmImg img{
+    display: block;
+}
