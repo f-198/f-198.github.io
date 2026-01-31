@@ -1,0 +1,14 @@
+@font-face {
+    font-family:"govwf_fz_6951469_1674228520";
+    src:url("govwf_fz_6951469_1674228520.woff") format("woff"), /* chrome, firefox */
+    url("govwf_fz_6951469_1674228520.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("govwf_fz_6951469_1674228520.svg#govwf_fz_6951469_1674228520") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:"govwf_fz_6951469_1674228520";
+    src: url("govwf_fz_6951469_1674228520.eot"); /* IE9 */
+    font-style: normal;
+    font-weight: normal;
+}
