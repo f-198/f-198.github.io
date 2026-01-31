@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+*{margin:0; padding:0; list-style:none; }
+body{ background:#fff; }
+img{ border:0;  }
+a{ text-decoration:none; color:#333;  }
+.picScroll-left{
+position:relative;
+height: 600px;;
+margin:0px auto;
+margin-bottom:30px;
+background:url('../images/lijie.jpg') no-repeat top center;
+}
+.tempWrap{
+width:1100px;
+margin:0px auto;
+	}
+
+.picList{
+	position:relative;
+}
+.picScroll-left .hd{ position:relative;}
+.picScroll-left .hd .prev{display:block;
+			 cursor:pointer; float:left;width:41px;height:84px; margin-top:120px;}
+.picScroll-left .hd .next{ display:block; float:right;width:41px;height:84px;margin-top:120px;}	 
+.picScroll-left .bd{ padding-top:250px;position:relative; z-index:0;width:1300px;margin:0px auto;}
+.picScroll-left .bd ul{ position:relative; }
+.picScroll-left .bd ul li{width:296px; height:300px;float:left;display:inline;  text-align:center;  position:relative; }
+.picScroll-left .bd ul li .pic{text-align:center; position:absolute; top:50px;width:296px;height:300px; background-color:black;color:#fff; z-index:9999;/* older safari/Chrome browsers */ 
+-webkit-opacity: 0.7; 
+
+-moz-opacity: 0.7; 
+
+
+opacity: .7; 
+
+filter:alpha(opacity=50); 
+
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; 
+
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+-moz-border-radius: 15px; /* Firefox */
+  -webkit-border-radius: 15px; /* Safari 和 Chrome */
+  border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+
+  -moz-box-shadow: 10px 10px 20px #000; /* Firefox */
+  -webkit-box-shadow: 10px 10px 20px #000; /* Safari 和 Chrome */
+  box-shadow: 10px 10px 20px #000; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+
+  behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
+}
+.picScroll-left .bd ul li .pic h2{ padding-top:20px;font-size:22px; color:#ffcb74; font-family:"微软雅黑"}
+.picScroll-left .bd ul li .pic p{padding:5px;font-size:18px; line-height:28px; font-family:"微软雅黑";}
+.picScroll-left .bd ul li .pic p.para01{color:#ffcb74;}
+.picScroll-left .bd ul li .pic p.para02{ margin-bottom:10px; padding:0px 20px 0px 20px;font-size:16px;text-align:left;}
+.picScroll-left .bd ul li .pic p.para02 a{color:#fff;}
+.picScroll-left .bd ul li .data{ display:block; position:absolute;top:150px; }
+.picScroll-left .bd ul li .title{ line-height:50px;}
+
