@@ -1,0 +1,1071 @@
+.whj_jqueryPaginationCss-1 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+.whj_jqueryPaginationCss-2 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+.whj_jqueryPaginationCss-3 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+.whj_jqueryPaginationCss-4 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+.whj_jqueryPaginationCss-1 div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px
+}
+
+.whj_jqueryPaginationCss-1 select {
+  height: 28px;
+  vertical-align: middle;
+  padding: 0;
+  outline: none
+}
+
+.whj_jqueryPaginationCss-1 input {
+  padding: 0;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 35px;
+  vertical-align: middle
+}
+
+.whj_jqueryPaginationCss-1 div,
+.whj_jqueryPaginationCss-1 input,
+.whj_jqueryPaginationCss-1 select {
+  /* margin: 2px; */
+}
+
+.whj_jqueryPaginationCss-2 div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px
+}
+
+.whj_jqueryPaginationCss-2 select {
+  height: 28px;
+  vertical-align: middle;
+  padding: 0;
+  outline: none
+}
+
+.whj_jqueryPaginationCss-2 input {
+  padding: 0;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 60px;
+  vertical-align: middle
+}
+
+.whj_jqueryPaginationCss-2 div,
+.whj_jqueryPaginationCss-2 input,
+.whj_jqueryPaginationCss-2 select {
+  margin: 2px
+}
+
+.whj_jqueryPaginationCss-3 div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px
+}
+
+.whj_jqueryPaginationCss-3 select {
+  height: 28px;
+  vertical-align: middle;
+  padding: 0;
+  outline: none
+}
+
+.whj_jqueryPaginationCss-3 input {
+  padding: 0;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 60px;
+  vertical-align: middle
+}
+
+.whj_jqueryPaginationCss-3 div,
+.whj_jqueryPaginationCss-3 input,
+.whj_jqueryPaginationCss-3 select {
+  margin: 2px
+}
+
+.whj_jqueryPaginationCss-4 div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px
+}
+
+.whj_jqueryPaginationCss-4 select {
+  height: 28px;
+  vertical-align: middle;
+  padding: 0;
+  outline: none
+}
+
+.whj_jqueryPaginationCss-4 input {
+  padding: 0;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 60px;
+  vertical-align: middle
+}
+
+.whj_jqueryPaginationCss-1 .whj_padding {
+  padding: 1px 9px
+}
+
+.whj_jqueryPaginationCss-1 .whj_bgc {
+  background-color: #fff;
+  color: #4d4d4d
+}
+
+.whj_jqueryPaginationCss-1 .whj_border {
+  border: 1px solid silver
+}
+
+.whj_jqueryPaginationCss-1 .whj_color {
+  color: #4d4d4d;
+  margin: 2px;
+}
+
+.whj_jqueryPaginationCss-1 .whj_checked {
+  color: #FFF;
+  background: #2D65B4
+}
+
+.whj_jqueryPaginationCss-1 .whj_hoverDisable {
+  opacity: .5;
+  filter: alpha(opacity=50)
+}
+
+.whj_jqueryPaginationCss-1 .whj_totalSizeSingle {
+  margin-left: -8px
+}
+
+.whj_jqueryPaginationCss-2 .whj_padding {
+  padding: 1px 9px
+}
+
+.whj_jqueryPaginationCss-2 .whj_bgc {
+  background-color: #5194ca;
+  color: #fff
+}
+
+.whj_jqueryPaginationCss-2 .whj_border {
+  border: 1px solid #5194ca
+}
+
+.whj_jqueryPaginationCss-2 .whj_color,
+.whj_jqueryPaginationCss-2 .whj_checked {
+  color: #5194ca
+}
+
+.whj_jqueryPaginationCss-2 .whj_checked {
+  background-color: #d4f1ff
+}
+
+.whj_jqueryPaginationCss-2 .whj_hoverDisable {
+  opacity: .7;
+  filter: alpha(opacity=70)
+}
+
+.whj_jqueryPaginationCss-2 .whj_totalSizeSingle {
+  margin-left: -8px
+}
+
+.whj_jqueryPaginationCss-3 .whj_padding {
+  padding: 1px 9px
+}
+
+.whj_jqueryPaginationCss-3 .whj_bgc {
+  background-color: #7a7b7b;
+  color: #fff
+}
+
+.whj_jqueryPaginationCss-3 .whj_border {
+  border: 1px solid #929292
+}
+
+.whj_jqueryPaginationCss-3 .whj_color {
+  color: #929292
+}
+
+.whj_jqueryPaginationCss-3 .whj_checked {
+  background-color: #e0dddd;
+  color: #7a7b7b
+}
+
+.whj_jqueryPaginationCss-3 .whj_hoverDisable {
+  opacity: .5;
+  filter: alpha(opacity=50)
+}
+
+.whj_jqueryPaginationCss-3 .whj_totalSizeSingle {
+  margin-left: -8px
+}
+
+.whj_jqueryPaginationCss-4 .whj_padding {
+  padding: 1px 9px
+}
+
+.whj_jqueryPaginationCss-4 .whj_bgc {
+  background-color: #f5f5f5;
+  color: #907272
+}
+
+.whj_jqueryPaginationCss-4 .whj_border {
+  border: 1px solid #907272
+}
+
+.whj_jqueryPaginationCss-4 .whj_color {
+  color: #907272
+}
+
+.whj_jqueryPaginationCss-4 .whj_checked {
+  background-color: #afacac;
+  color: #fff
+}
+
+.whj_jqueryPaginationCss-4 .whj_hoverDisable {
+  opacity: .5;
+  filter: alpha(opacity=50)
+}
+
+.whj_jqueryPaginationCss-1 .whj_hover:hover {
+  color: #025194;
+  cursor: pointer
+}
+
+.whj_jqueryPaginationCss-2 .whj_hover:hover {
+  background-color: #d4f1ff;
+  color: #5194ca;
+  cursor: pointer
+}
+
+.whj_jqueryPaginationCss-3 .whj_hover:hover {
+  background-color: #e0dddd;
+  color: #7a7b7b;
+  cursor: pointer
+}
+
+.whj_jqueryPaginationCss-4 .whj_hover:hover {
+  background-color: #afacac;
+  color: #fff;
+  cursor: pointer
+}
+
+.whj_jqueryPaginationCss-5 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+.whj_jqueryPaginationCss-4 div,
+.whj_jqueryPaginationCss-4 input,
+.whj_jqueryPaginationCss-4 select {
+  margin: 2px
+}
+
+.whj_jqueryPaginationCss-5 div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px
+}
+
+.whj_jqueryPaginationCss-5 select {
+  height: 28px;
+  vertical-align: middle;
+  padding: 0;
+  outline: none
+}
+
+.whj_jqueryPaginationCss-5 input {
+  padding: 0;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 60px;
+  vertical-align: middle
+}
+
+.whj_jqueryPaginationCss-5 div,
+.whj_jqueryPaginationCss-5 input,
+.whj_jqueryPaginationCss-5 select {
+  margin: 2px
+}
+
+.whj_jqueryPaginationCss-4 .whj_totalSizeSingle {
+  margin-left: -8px
+}
+
+.whj_jqueryPaginationCss-5 .whj_padding {
+  padding: 1px 9px
+}
+
+.whj_jqueryPaginationCss-5 .whj_bgc {
+  background-color: #199eaf;
+  color: #fff
+}
+
+.whj_jqueryPaginationCss-5 .whj_border {
+  border: 1px solid #199eaf
+}
+
+.whj_jqueryPaginationCss-5 .whj_color,
+.whj_jqueryPaginationCss-5 .whj_checked {
+  color: #199eaf
+}
+
+.whj_jqueryPaginationCss-5 .whj_checked {
+  background-color: #d4f1ff
+}
+
+.whj_jqueryPaginationCss-5 .whj_hoverDisable {
+  opacity: .5;
+  filter: alpha(opacity=50)
+}
+
+.whj_jqueryPaginationCss-5 .whj_totalSizeSingle {
+  margin-left: -8px
+}
+
+.whj_jqueryPaginationCss-5 .whj_hover:hover {
+  background-color: #d4f1ff;
+  color: #199eaf;
+  cursor: pointer
+}
+
+
+
+/*11111111111111*/
+#ifr_top{
+	height: 148px;
+	_height:162px;
+}
+body{
+	/* background: #f2f2f2; */
+}
+	/*Release time sort*/
+	.dys_search_by_directory{
+		padding-bottom: 38px;
+		width: 720px;
+		margin: 0 auto;
+	}
+	.dys_search_by_directory li{
+		float: left;
+		margin-right: 10px;
+		display:inline;
+		width: 168px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		font-family: "microsoft yahei";
+		font-size: 16px;
+		color: #343434;
+		border: 1px solid #d1e1ef;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		background: #f6f9fd;
+		cursor: pointer;
+	}
+
+	.dys_search_by_directory li.dys_noMarginRight{
+		margin-right: 0;
+	}
+	.dys_release_time a{ text-align:center; display:block;}
+
+
+	.dys_descending,.dys_ascending{
+		position: absolute;
+		display: block;
+		width: 40px;
+		height: 48px;
+		background-position: center center ;
+		background-repeat: no-repeat;
+		top: 0;
+	}
+	.dys_release_time{
+		position: relative;
+	}
+	.dys_release_time a{
+	}
+
+	/*å†…å®¹å¼€å§‹ */
+	.dys_policySearchResultsPage{
+		width: 1028px;
+		margin: 0 auto;
+	}
+	/*ç›®å½•å¯¼èˆª*/
+	.dys_policySearchResultsPage_left{
+		font-size: 14px;
+	}
+	.dys_directory_nav{
+		font-family: "microsoft yahei";
+		font-size: 18px;
+		color: #fff;
+		line-height: 40px;
+		text-align: center;
+		background: #0c67b0;
+		border-bottom: 1px solid #fff;
+	}
+
+	/*æŒ‰å…¬æ–‡ç§ç±»åˆ†ç±»*/
+	.dys_official_type{
+		font-weight: bold;
+		font-family: "microsoft yahei";
+		font-size: 16px;
+		color: #888;
+		background: #e2eaff;
+		cursor: pointer;
+	}
+	.dys_official_type:hover {
+		animation: dys_animation 0.5s ease-in-out;
+	}
+	@keyframes dys_animation {
+		0% {
+			top: 0 !important;
+		}
+		20% {
+			top: -8px !important;
+		}
+		40% {
+			top: 0 !important;
+		}
+		60% {
+			top: -6px !important;
+		}
+		80% {
+			top: -1px !important;
+		}
+		90% {
+			top: -3px !important;
+		}
+		100% {
+			top: 0 !important;
+		}
+	}
+
+	/*ä¸­å¤®æœ‰å…³æ–‡ä»¶*/
+	.dys_central_relevant_documents{
+		margin-bottom: 7px;
+	}
+	.dys_central_relevant_documents input{
+		width: 14px;
+		height: 14px;
+
+	}
+	.dys_central_relevant_documents span{
+		font-family: "microsoft yahei";
+		font-size: 14px;
+		color: #000;
+		line-height: 24px;
+	}
+	em{
+		font-style: normal;
+	}
+	/*ä¿®æ”¹å¤é€‰æ¡†èƒŒæ™¯*/
+	input[type="checkbox"]{width:14px;height:14px;display: inline-block;text-align: center;vertical-align: middle; line-height: 14px;position: relative;}
+	input[type="checkbox"]::before{content: "";position: absolute;top: 0;left: 0;background: #fff;width: 100%;height: 100%;border: 1px solid #707070}
+	input[type="checkbox"]:checked::before{content: "\2713";background-color: #fff;position: absolute;top: 0;left: 0;width:100%;border: 1px solid #707070;color:#707070;font-size: 14px;font-weight: bold;}
+	/*å›½åŠ¡é™¢æ–‡ä»¶*/
+	.dys_state_council_documents_item{
+		margin-left: 5px;
+	}
+	.dys_state_council_documents_item li{
+		padding-left: 10px;
+		margin: 14px 0;
+		padding-left: 7px\9\0;
+	}
+	.dys_state_council_documents_item li a{
+		color: #545454;
+	}
+	/*æŒ‰ä¸»é¢˜åˆ†ç±»å†…å®¹*/
+	.dys_classified_by_subject{
+		position: relative;
+		zoom: 1;
+		margin-bottom: 15px;
+        display: none;
+	}
+    .dys_classified_by_subject.con1{display: block;}
+	.dys_open_year_agknffl{
+		margin-bottom: 22px;
+	}
+	.dys_open_year_agknffl{
+		font-size: 14px;
+	}
+	.dys_open_year_tsfl{
+		margin-bottom: 28px;
+	}
+	.dys_classified_by_subject_nav,.subject_level_1{
+		position: relative;
+		overflow: hidden;
+	}
+	.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item{
+		padding-left: 10px;
+		position: relative;
+		overflow: hidden;
+		zoom: 1;
+	}
+	.dys_classified_by_subject_nav .dys_central_relevant{
+		position: relative;
+		left: 13px;
+	}
+	.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item var,.subject_level_1  var{
+		float: left;
+		display: inline-block;
+		width: 16px;
+		height:16px;
+		background: url(trs_xxgk_jia2.png) 0 center no-repeat;
+		margin-top: 10px;
+		margin-right: 4px;
+	}
+	.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item .minus,.subject_level_1 .minus{
+		background: url(trs_xxgk_j2.png) 0 0 no-repeat;
+	}
+	.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item a{
+		float: left;
+		font-family: "microsoft yahei";
+		font-size: 14px;
+		color: #545454;
+		line-height: 24px;
+		width: 178px;
+	}
+	.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item a.item_clear_filter{
+		margin-bottom: 5px;
+	}
+	.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item:hover,.dys_classified_by_subject_nav .dys_classified_by_subject_nav_item a:hover,.dys_central_relevant_documents span:hover{
+		color: #004c88;
+		cursor: pointer;
+	}
+    .first-level-expand .dys_classified_by_subject_content{display: block;padding-left: 0;}
+    .category-desc ul{display: none;}
+    .children3 ul{display: block;}
+	.dys_classified_by_subject_content,.dys_classified_by_subject_content_children3{
+		float: left;
+		display: none;
+		/* padding-left: 25px; */
+		width: auto;
+	}
+	.dys_show{
+		display: block;
+	}
+	.dys_classified_by_subject_content li,.dys_classified_by_subject_content_children3 li{
+    	padding-left: 0px;
+    	overflow: hidden;
+    	zoom: 1;
+	}
+	.children3 li{
+		padding-left:5px;
+	}
+	.dys_look_more{
+		font-family: "microsoft yahei";
+		font-size: 14px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.dys_look_more a{
+		color: #1493fe;
+		padding-left: 19px;
+		background-position: 0 center;
+    	background-repeat: no-repeat;
+    	background-image: url(http://www.gov.cn/govweb/xhtml/2016gov/hudong/reviseTheInteraction/images/sanjiao.png);
+	}
+	/*ç‰¹è‰²æ ‡ç­¾å¯¼èˆª*/
+	.dys_featured_label_navigation{
+		font-family: "microsoft yahei";
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 24px;
+		text-indent: 18px;
+		color: #000;
+		background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/policySearchResultsPage/images/featured_label_navigation_bg.jpg) 0 center no-repeat;
+		padding-bottom: 15px;
+	}
+	.dys_featured_label_navigation_content{
+		padding-left: 6px;
+		height: 168px;
+		overflow: hidden;
+	}
+	.dys_featured_label_navigation_content li{
+		font-family: "microsoft yahei";
+		font-size: 14px;
+		line-height: 24px;
+		text-indent: 14px;
+		color: #000;
+		background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/policySearchResultsPage/images/state_council_documents_bg2.png) 0 7px no-repeat;
+	}
+	/*æŒ‰å…¬å¼€å¹´ä»½åˆ†ç±»*/
+	.dys_bottomline{
+		border-bottom: 1px dashed #015293;
+		margin-bottom: 22px;
+	}
+	.dys_open_year{
+		padding-left: 1px;
+		left: 14px;
+	}
+	.dys_open_year li{
+	}
+	.dys_openadd{
+		cursor: pointer;
+	}
+	.dys_year_titile{
+		margin-top: 20px;
+	}
+	/*ä¸­é—´*/
+	.policySearchResultsPage_middle{
+		width: 765px;
+		border-left: 1px solid #efefef;
+	}
+	.dys_noSearchResultsPage{
+		width: 600px;
+	}
+/*æœç´¢æ”¿ç­–æ— ç»“æžœé¡µ*/
+.policySearchnoResultsPage_middle{width:870px;}
+.jg_box{margin:0px auto; text-align:center;width:330px;}
+.jg_p{margin-left:45px; text-align:left;color:#7c7c7c; line-height:30px;}
+.jg_Para02{height:35px; line-height:35px; color:#7c7c7c; font-size:18px; font-weight:bold;}
+.ys02{ line-height:35px; float:left;}
+	.result_con{
+		overflow: hidden;
+		zoom: 1;
+		margin-top: 30px;
+	}
+	.middle_result_con{
+		display: none;
+	}
+	.middle_result_con li{
+		padding: 13px 3px 13px 3px;
+		font-family: "å®‹ä½“";
+		font-size: 14px;
+		line-height: 28px;
+		border-bottom: 1px solid #efefef;
+	}
+	.middle_result_con li a{
+		color: #000;
+	}
+	.middle_result_con li a span{
+		color: #888;
+	}
+	.middle_result_con.show{
+		display: block;
+	}
+	.rcdiv{
+		float: left;
+	}
+
+	.middle_result{
+        margin-bottom: 0.4rem;
+	}
+	.middle_result_title {
+		width: 768px;
+		overflow: hidden;
+		margin-bottom: 40px;
+		background: #f6f9ff;
+	}
+	.middle_result_title li{
+		float: left;
+		padding: 0 10px ;
+
+		line-height: 40px;
+	}
+	.middle_result_title .mresult_current{
+		background: #0c67b0;
+	}
+	.middle_result_title li a span{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.middle_result_title li a{
+		color: #545454;
+		font-family: "microsoft yahei";
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.middle_result_title .dys_jiedu{
+		margin-right: 0;
+	}
+	.middle_result_title .mresult_current a{
+		color: #fff;
+
+	}
+	/*åˆ†é¡µ*/
+	.pagination{
+		width: 616px;
+		text-align:center;
+		/*è§£å†³ie9ä»¥ä¸Šæ ·å¼é”™ä¹±é—®é¢˜*/
+		font-size: 12px;
+	}
+	.pagination a{
+		display: inline-block;
+		height: 20px;
+		line-height: 20px;
+		vertical-align: middle;
+		border: 1px solid #ababab;
+		color: #0066be;
+		font-family: "microsoft yahei";
+		font-size: 12px;
+		padding: 0 8px;
+		cursor:pointer;
+	}
+	.pagination a.on{
+		border: none;
+	}
+	.pagination .lastPage{
+		color: #0066be;
+	}
+	.pagination span{
+		font-size: 12px;
+	}
+
+	.toPage{
+		display: inline;
+		color: #606060;
+	}
+
+	.textNum{
+		width: 34px;
+		height: 18px;
+		border: 1px solid #ababab;
+		text-align: center;
+	}
+	/*å³ä¾§*/
+	.policySearchResultsPage_right{
+		width: 145px;
+		border-left: 1px solid #efefef;
+		padding-left: 20px;
+	}
+	/*æ—¥æœŸç­›é€‰*/
+	.dys_date_screening_title{
+		font-family: "microsoft yahei";
+		font-size: 16px;
+		line-height: 20px;
+		text-indent: 14px;
+		color: #000;
+		font-weight: bold;
+		border-left: 3px solid #015293;
+		margin-bottom: 15px;
+	}
+	.dys_date_screening_content{
+		margin-bottom: 19px;
+	}
+	.dys_date_screening_content li{
+		padding-left: 20px;
+		font-family: "microsoft yahei";
+		font-size: 14px;
+		line-height: 40px;
+		text-indent: 0;
+		color: #7c7c7c;
+	}
+	.dys_date_screening_content li:hover{
+		cursor: pointer;
+		color: #015293 ;
+	}
+	.dys_date_screening_content li.active{
+		background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/policySearchResultsPage/images/rightJiantou.png) 0 center no-repeat;
+	}
+	.sort-list li.fixed-date {
+		background: none;
+		padding: 6px 0;
+	}
+	.sort-list li.fixed-date p {
+		padding: 4px 0
+	}
+	.sort-list li.fixed-date p.btn {
+		text-align: center;
+	}
+	.fixed-date div {
+		height: 12px;
+		width: 200px;
+	}
+	.fixed-date span {
+		display: none;
+		color: #F00;
+	}
+	.fixed-date .date-input {
+		width: 100px
+	}
+	.time_btn{
+		margin-top: 20px;
+	}
+	.fixed-date{
+		display: none;
+	}
+	/*çƒ­é—¨æœç´¢*/
+	.dys_hot_search_content li{
+		background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/policySearchResultsPage/images/fangkuai.png) 5px center no-repeat;
+	}
+	.tips_box em {
+		font-style: normal;
+		color: #0067a4;
+	}
+/*é€‰ä¸­å¯¼èˆªæ”¹å˜èƒŒæ™¯é¢œè‰²*/
+.dys_search_by_directory li.changeBgColor{
+	background: #015293;
+}
+.dys_search_by_directory li.changeBgColor a{
+	color: #fff;
+}
+.dys_search_by_directory li.changeBgColor a:hover{
+	color: #fff;
+}
+/*é«˜äº®è¯æ˜¾ç¤ºçº¢è‰²*/
+.middle_result_con li em{
+	color: red;
+}
+/*å…¨éƒ¨ï¼Œä¸­å¤®æœ‰å…³æ–‡ä»¶*/
+.middle_result_con li.wenjian_active{
+	border-bottom: 4px solid #c0e5f8;
+	padding-bottom: 20px;
+}
+.dys_fenye{margin-bottom:10px;}
+
+
+/*å¤´éƒ¨*/
+.policyLibrary_header_father{
+	width: 100%;
+	background: #fff;
+}
+.policyLibrary_header{
+	width:1126px;
+	margin: 0 auto;
+	height: 74px;
+}
+.logo{
+	float:left;
+	margin-top: 18px;
+	margin-left: 50px;
+}
+.loginRegisterMobile{
+	float: right;
+	margin-top: 37px;
+
+}
+.loginRegisterMobile a{
+	float: left;
+	margin-right: 14px;
+}
+/* æŽ’åºï¼Œæœç´¢ä½ç½®ï¼Œæ—¥æœŸç­›é€‰ */
+.sortSearchLocationDateFilter{
+	border: 1px dashed #a4a4a4;
+	padding: 0 18px;
+	border-radius: 10px;
+	margin-bottom: 34px;
+}
+.sortSearchLocationDateFilter_list{
+
+}
+
+.sortSearchLocationDateFilter_list li{
+	padding: 18px 0;
+	border-bottom: 1px dashed #a4a4a4;
+	overflow: hidden;
+	zoom: 1;
+
+}
+.sortSearchLocationDateFilter_list li.noBorderBottom{
+	border-bottom: none;
+}
+.sortSearchLocationDateFilter_list li h5{
+	float: left;
+	font-family: "microsoft yahei";
+	font-size: 15px;
+	color: #545454;
+	margin-right: 19px;
+	display: inline;
+}
+.sortSearchLocationDateFilter_list li h5 span{
+	display: inline-block;
+	width: 30px;
+}
+.sortSearchLocationDateFilter_list li a{
+	float: left;
+	margin-right: 19px;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	color: #545454;
+	padding-bottom: 4px;
+}
+.sortSearchLocationDateFilter_list li a.sort_active{
+	border-bottom: 1px solid #1f98ff;
+}
+/* æœç´¢ç»“æžœå†…å®¹ */
+.dys_middle_result_content{
+	margin-bottom: 67px;
+}
+.dys_middle_result_content_item{
+	padding-bottom: 21px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #efefef;
+}
+
+.borderMarginBottomNone{
+	border-bottom: none;
+	margin-bottom: 0;
+}
+.dysMiddleResultConItemTitle{
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	color: #000;
+	line-height: 28px;
+	margin-bottom: 9px;
+    overflow: hidden;
+}
+.dysMiddleResultConItemMemo{
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	color: #9e9e9e;
+	line-height: 24px;
+	margin-bottom: 7px;
+}
+.dysMiddleResultConItemTitle em{
+	color: #ff0000;
+}
+.dysMiddleResultConItemMemo em{
+	color: #ff0000;
+}
+
+.dysMiddleResultConItemRelevant{
+
+}
+.dysMiddleResultConItemRelevant span{
+	float: left;
+	padding: 0 14px;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	color: #5f89c6;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	border: 1px solid #f2f2f2;
+	border-radius: 8px;
+	margin-right: 19px;
+}
+
+/* æœç´¢ */
+.chazhengce{
+	height: 168px;
+	background: url(../images/chazhengce.jpg) 0 0 no-repeat;
+}
+.chazhengce_content {
+	position: relative;
+	width: 1028px;
+	height: 168px;
+	margin: 0 auto;
+}
+.chazhengce_content form{
+	position: absolute;
+	right: 13px;
+	top: 59px;
+}
+.look_police{
+	position: absolute;
+	left: 13px;
+	top: 65px;
+}
+
+.changeBorderActive{
+	border-top: 4px solid #c0e5f8;
+    height: 12px;
+	margin: 10px 0;
+}
+
+.comment{
+	float: right;
+	margin-right: 36px;
+}
+
+/* é«˜çº§æœç´¢é¡µé¢css */
+.bumenwenjian .fawenjiguan{
+	width: 150px;
+}
+
+.bumenwenjian select{
+	margin-left: 10px;
+}
+.bumenwenjian select {
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+.bumenwenjian span{width:70px;}
+.bigInput input[type="text"]{
+	border: 2px solid #3f72c5;
+
+}
+li.btn_zc input{
+
+	background: #3f72c5;
+
+}
+.bigInput .bigBtn{
+	margin:0px 0 0 -2px;
+	background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/20181123zhengce/images/search_btn_new1015.png) left center no-repeat;
+}
+
+.search_box .tips_box{
+	left: 8px;
+	width: 640px;
+}
+/*#noResultDiv{display: none;}*/
+.tit_s01{
+	border-bottom: 2px solid #3f72c5;
+}
+.tit_s01 .tabg{
+	background: #3f72c5;
+}
+.line_01{ float:left; margin-right:30px;}

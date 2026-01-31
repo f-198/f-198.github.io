@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+/*结构*/
+body{font-family:"微软雅黑", "宋体";}
+.padd{padding-top: 44px;}
+.list01{
+	padding-top:18px;
+	}
+.list01 li {
+	background:url(http://www.gov.cn/govweb/xhtml/2016gov/images/public/arrow_03.jpg) no-repeat scroll 0 15px;
+	margin: 0 auto;
+	padding-left: 22px;
+	height: auto;
+	overflow:hidden;
+	line-height: 36px;
+	font-size: 14px;
+}
+.list01 li a {
+	color: #333333;
+	font-size:14px;
+}
+ul.list01 li a {
+float:left;
+display:inline;
+overflow:hidden;
+}
+ul.list01 li a:hover {
+color:#025194;
+}
+.pubListBox01 .list01 li .datetime {
+color: #999999;
+font-size: 12px;
+width: 80px;
+text-align: center;
+line-height:40px;
+display:inline;
+float: right;
+}
+
+
+.list01 li.line {
+border-bottom: 1px #dddddd solid;
+margin-bottom: 15px;
+padding:0 0 15px 22px;
+}
+
+
+.cwhybox2 ul li { width:687px; margin:0 auto; margin-top:20px;}
+
+
+
+/*组织机构*/
+ .topContainer {width: 100%;}
+.pubListBox01, .topContainer .youz, .topContainer .zuo6 { width:100%; margin:0 auto;box-sizing: border-box;padding: 0 30px;}
+ .topContainer .youz { font-size:16px; line-height:26px; margin-top:20px;}
+  .topContainer .youz div{ text-indent:2em;}
+  .topContainer .zuo6 { margin-top:30px;}
+  .topContainer .zuo6 tr td { line-height:26px; font-size:16px;font-family: "微软雅黑";}
+
+.pubListBox01 .noindent { width:400px;}
+.pubListBox01 .noindent li a { color:#000;}
+
+.gwyzzjgtext { width:100%; margin:0 auto;}
+
+.gwyzzjg .tit_s01 span.tabg { font-weight:normal;}
+.mt25 {
+    margin-top: 25px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.cl {
+    clear: both;
+}
+
+.lineh26 {
+    line-height: 26px;
+}
+.fz14 {
+    font-size: 14px;
+}
+
+.back_top {
+	display: none!important;
+}
+
+.pcShow {
+    display: table-cell;
+}
+.mobileShow {
+    display: none;
+}
+
+/* 中华人民共和国国务院 */
+.site-content {
+	width: 1028px;
+	margin: 0 auto;
+    font: normal 16px/32px "宋体";
+    color: #000;
+	padding: 0 36px;
+	min-height: 800px;
+	padding-bottom: 50px;
+	background: url(background_ZGgwy.png) center 20px #fff no-repeat;
+	user-select: text;
+	margin-top: -4px;
+}
+.BreadcrumbNav_ZGgwy {
+	font-size: 12px;
+}
+.BreadcrumbNav_ZGgwy a:nth-child(1) {
+	font-weight: normal;
+}
+.line_title {
+	width: 100%;
+    height: 94px!important;
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+}
+.column-box {
+    text-align: center;
+}
+.column-box .title {
+    line-height: 30px;
+    margin: 18px 0px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+.column-box .title span {
+    color: #a52a00;
+	display: inline-block;
+}
+.column-box .person-box {
+    display: inline-block;
+    width: 12%;
+    min-height: 163px;
+    text-align: center;
+    vertical-align: top;
+}
+.big .person-box {
+    width: 14%;
+    min-height: 180px;
+}
+.gwy .column-7 .person-box {
+    width: 10%;
+}
+.column-box .person-box .img {
+    display: block;
+    width: 92px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.big .person-box .img {
+    width: 120px;
+}
+.column-box .person-box .img img {
+    width: 92px;
+    height: 123px;
+    display: block;
+}
+.big .person-box .img img {
+    width: 120px;
+    height: 150px;
+}
+.column-box .person-box .name {
+    color: #00f;
+    line-height: 30px;
+	display: block;
+    width: 100%;
+    font-size: 16px;
+}
+#column9 .title, #column2 .title {
+    margin-top: 8px;
+}
+.gwy #column3 .title {
+    margin-top: 8px;
+}
+.column-box.multiline {
+    text-align: left;
+    /* margin-top: 55px; */
+}
+.gwy #column10 {
+    padding: 48px 116px 0px;
+}
+.column-6 p span {
+    display: inline-block;
+    text-indent: 2em;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    font-family: "宋体";
+    color: #000;
+    -webkit-text-size-adjust: none;
+    text-align: justify;
+}
+.more {
+    text-indent: 2em;
+}
+.more a {
+    font-size: 16px;
+    line-height: 36px;
+    font-family: "宋体";
+    -webkit-text-size-adjust: none;
+    color: #015293;
+}
+.dsline {
+    border-bottom: 1px dashed #bfbfbf;
+    margin-bottom: 44px;
+}
+
+.gwy #column11 {
+    padding: 0 116px;
+}
+.lsty {
+    overflow: hidden;
+}
+.gwy .lsty {
+    text-align: left;
+    line-height: 36px;
+}
+.lsty ul {
+    float: left;
+}
+.lsty ul {
+    padding: 0;
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+}
+.lsty li {
+    float: left;
+    list-style: disc;
+    color: #bfbfbf;
+    width: 130px;
+    margin: 0px 44px 0px 18px;
+}
+.lsty li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.lsty li a {
+    -webkit-text-size-adjust: none;
+    color: #4272a4;
+}
+.lsty .column18 {
+    float: right;
+    width: 254px;
+    margin-right: 50px;
+}
+.column18 a {
+    width: 254px;
+    height: 46px;
+    display: block;
+    line-height: 46px;
+    background: #c1d1d0;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    font-family: "FZZHUNYSK","微软雅黑","宋体";
+    margin: 0 auto 10px;
+}
+.column18 a:hover {
+    color: #fff;
+}
+.column18 .nomargin {
+    margin-bottom: 0;
+}
+/* 中华人民共和国国务院 */
+
+/* 第十三届全国人民代表大会常务委员会 */
+.line_title_rd13 {
+    width: 100%;
+    height: 48px !important;
+    padding: 50px 0;
+    text-align: center;
+}
+.rd13 .column-7 {
+    width: 840px;
+    margin: 0 auto;
+}
+.rd13 .column-box .person-box {
+    width: 13%;
+}
+.rd13 #column2 .title {
+    margin: 8px 0 10px;
+}
+.rd13 #column2 .person-box {
+    min-height: 30px;
+}
+.rd13 #column10, .rd13 #column9, .rd13 .ssrd {
+    padding: 0 116px;
+}
+.rd13 #column9 .title {
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+.column-box .bihua {
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+.text-person a {
+    display: inline-block;
+    margin-right: 0.4em;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "宋体";
+    color: #000;
+    -webkit-text-size-adjust: none;
+    width: auto;
+}
+.rd13 .text-person {
+    text-align: left;
+}
+.rd13 .ssrd {
+    padding: 0 116px;
+    margin: 14px 0 60px;
+    text-indent: 2em;
+}
+.rd13 .ssrd span {
+    color: rgb(165, 42, 0);
+    -webkit-text-size-adjust: none;
+}
+.rd13 .more {
+    text-indent: 2em;
+}
+/* 第十三届全国人民代表大会常务委员会 */
+
+/* 中国人民政治协商会议第十三届全国委员会 */
+.zhengxie .line_title {
+    height: 63px !important;
+    padding: 50px 0;
+}
+.zhengxie .column-7 {
+    width: 720px;
+    margin: 0 auto;
+}
+.zhengxie .column-box .person-box {
+    width: 15%;
+}
+.zhengxie .column-box .person-box .name.special {
+    width: 96px;
+    line-height: 24px;
+    margin: 3px auto 10px;
+}
+.zhengxie #column9 .title {
+    margin-bottom: 0px;
+}
+.zhengxie .column-box .text-person, .zhengxie .column-6 {
+    width: 796px;
+    margin: 0;
+    padding: 0 116px;
+    text-align: left;
+}
+.ssda {
+    line-height: 30px;
+    margin: 14px 0 60px;
+    text-align: center;
+}
+.ssda a {
+    float: none;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 微软雅黑;
+    color: rgb(165, 42, 0);
+    line-height: 30px;
+}
+/* 中国人民政治协商会议第十三届全国委员会 */

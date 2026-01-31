@@ -1,0 +1,218 @@
+.mobileContent {
+    width: 100%;
+}
+.mobileContent * {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+}
+.mobileContent .padd {padding: 20px 0 0;}
+.bottomBlock {
+	display: block!important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.bottomBlock .advice {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.bottomBlock .advice img, .bottomBlock .close img {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+.bottomBlock .close {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0;
+    padding-top: 10px;
+}
+
+.mobileContent td a {
+    color: #000;
+}
+.tit_s01 {
+	background: #fff;
+	height: auto!important;
+	font-weight: normal;
+	position: relative;
+}
+.bg01, .bg02 {
+    display: none!important;
+}
+
+.tit_s01 span.tabg {
+	width: 100%;
+	background: #fff;
+    padding: 20px 20px 0 40px;
+    line-height: 70px;
+    color: #015293;
+    font-size: 36px;
+    border-bottom: 2px solid #E8E8E8;
+    display: block;
+    height: auto!important;
+    float: none;
+}
+.title-inner {
+    height: auto!important;
+    position: static!important;
+}
+
+.topContainer {
+    padding: 10px 40px 40px 40px;
+    color: black;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.topContainer {width: 100%; font-size: 28px;}
+.pubListBox01, .topContainer .youz, .topContainer .zuo6 { width:100%; margin:0 auto;}
+.you1 { margin-bottom: 10px; }
+.topContainer .youz { font-size:28px; line-height:1.6; margin-top:20px;}
+.topContainer .youz div{ text-indent:2em;}
+.topContainer .zuo6 { margin-top:50px;}
+.topContainer .zuo6 tr td { line-height:1.6; font-size:28px;font-family: "微软雅黑";}
+.topContainer .zuo6 tr .mobileShow { width: 160px!important; }
+
+.pcShow {
+    display: none;
+}
+.mobileShow {
+    display: table-cell;
+}
+
+.mobileShow div {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    padding-right: 48px;
+    box-sizing: border-box;
+}
+.pcContentShow {
+    display: none;
+}
+
+.mobileContentShow {
+    display: block!important;
+    margin-bottom: 100px;
+}
+
+.mobileContentShow .gwyxbt1 {
+    margin: 0 40px;
+    line-height: 56px;
+    border-bottom: 2px solid #E8E8E8;
+    color: #015293;
+    font-size: 36px;
+}
+
+.mobileContentShow .gwyxbt {
+    margin: 0 40px;
+    line-height: 56px;
+    border-bottom: 2px solid #E8E8E8;
+    color: #015293;
+    font-size: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileContentShow  .gwyxbt .ck {
+    font-size: 24px;
+    color: #808080;
+    position: relative;
+    text-align: right;
+    width: 100px;
+    height: 60px;
+}
+
+.gwyxbt .ck i {
+    display: inline-block;
+    background: url(http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/jia24.png) no-repeat center center;
+    width: 24px;
+    height: 54px;
+    background-size: 88%;
+    float: right;
+}
+
+.gwyxbt .ck1 {
+    float: right;
+    color: #808080;
+    position: relative;
+    width: 100px;
+    height: 60px;
+    text-align: right;
+}
+
+.gwyxbt .ck1 i {
+    display: inline-block;
+    background: url(http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/jian24.png) no-repeat center center;
+    width: 24px;
+    height: 54px;
+    background-size: 88%;
+}
+
+.jgsq {
+    height: 84px;
+    background: #f0f0f0 url(http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/yspzk.png) no-repeat center center;
+    background-size: 15%;
+    margin: 0 40px;
+    display: none;
+}
+
+.zzjglist {
+    margin: 0 40px;
+    background: #F0F0F0;
+    padding: 26px 38px;
+    padding-bottom: 2px;
+}
+.zzjglist li {
+    min-height: 52px;
+    border-left: 2px dashed #B8B8B8;
+    line-height: 52px;
+    padding: 0 20px 0 8%;
+    background: url(http://ysp.www.gov.cn/013582404bd78ad3c016b8fffefe6a9a/gwzdian.png) no-repeat center center;
+    background-size: 6%;
+    background-position: 0 28px;
+    font-size: 28px;
+    line-height: 52px;
+    color: #666;
+}
+
+.zzjglist p {
+    background: white;
+    padding: 26px;
+    border: 2px solid #A8D6FE;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 28px;
+    line-height: 1.6;
+    color: #666;
+    font-weight: normal;
+}
+
+.mobileContentShow>div {
+    margin-bottom: 36px;
+}
+
+.mobileContentShow .gwyzzjgtext {
+    text-align: right;
+    margin-top: 20px;
+    padding: 0 20px!important;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.6;
+    color: #666;
+
+    width: 100%;
+}
