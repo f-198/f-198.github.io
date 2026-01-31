@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/*@media only screen and (max-width: 768px) {
+	.container{
+	width:90%;
+	padding:0 16px 0 16px;
+	}
+	.container .menu{width:100%;}
+	.cb_title{font-size:20px;padding:0px;margin:0px;}
+	.container .menu h3{width:30%;height:25px; line-height:25px; font-size:12px; padding-left:0px;}
+	.container .content{width:90%;padding:0px 24px 0px;}
+	.content p.tt{font-size:18px;}
+	.container .menu ul{ position:absolute; z-index:999;}
+	.container .menu h3 i{ top:5px;}
+	.container .menu h3 i.active{top:5px;}
+	.content p{font-size:12px; line-height:35px;}
+	.container .menu h3.active{width:30%;height:25px; line-height:25px; font-size:12px; padding-left:0px;}
+	.container .menu .selected{font-size:12px;}
+	.container .menu ul li a{ font-size:12px;}
+	.container .menu .selected{font-size:12px;}
+	.container .menu ul li a{font-size:12px;}
+	.container .content .menu1 .tab p a{font-size:12px;}
+	.BreadcrumbNav{padding-left:0px!important;}
+}*/
+
+@media only screen and (max-width: 768px) {
+	body{font-size:16px!important;}
+	.container{
+	width:95%;
+	padding:0px;
+    margin:0px auto;
+	margin-bottom:20px;
+	padding-bottom:0px!important;
+	}
+	.container .content{padding:0px 24px 0px; min-height:inherit!important;}
+	.container .menu{width:100%!important;}
+	.cb_title{font-size:20px;padding:0px;margin:0px;}
+	.container .menu h3{width:30%; text-align:center;height:30px; line-height:30px; font-size:12px; padding-left:0px;}
+	.container .menu h3.active{width:30%;height:30px; line-height:30px; font-size:12px;text-align: center; padding-left:0px;}
+	.container .content{width:90%;margin:0px auto;margin-bottom: 20px;}
+	.content p.tt{font-size:18px;}
+	.container .menu ul{ position:absolute; z-index:999;}
+	.container .menu h3 i{ top:5px;}
+	.container .menu h3 i.active{top:5px;}
+	.content p{font-size:12px; line-height:35px;}
+	
+	.container .menu .selected{font-size:12px;}
+	.container .menu ul li a{ font-size:12px;}
+	.container .menu .selected{font-size:12px;}
+	.container .menu ul li a{font-size:12px;}
+	.container .content .menu1 .tab p a{font-size:12px;}
+	.BreadcrumbNav{padding-left:0px!important;}
+	.rightFiximg{ display:none;}
+.three_blue_ban{display:block;width:100%;margin:0 auto; text-align:center; margin-top:15px; }
+.three_blue_ban img{display:block;width:95%; margin:0 auto; margin-bottom:10px; text-align:center;}
+.con_left .list li a{font-size:14px; line-height:30px; height:30px;}
+}

@@ -1,0 +1,150 @@
+a{color: #000;}
+.container{font-family: 微软雅黑;}
+.banner{
+    height: 136px;
+    background: url(trs_civilian.jpg) 0 0 no-repeat;
+    margin: 34px 0 40px;
+}
+.pcContainer{
+    width: 1028px;
+    background: #fff;
+    padding: 0 36px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+.banner h2{
+    font-size:35px;
+    color: #fff;
+    padding: 44px 0 0 72px;
+}
+.mobile_banner{
+    display: none;
+}
+.container .menu h3.active {
+    height: 46px;
+    line-height: 46px;
+    width: 190px;
+    border: none;
+    color: #015293;
+    font-size: 24px;
+    background: #f6f6f6;
+    padding: 0;
+}
+.container .menu h3 {
+    width: 190px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    height: 48px;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    line-height: 48px;
+}
+.container .menu {
+    width: 190px;
+    float: left;
+    margin-left: 0px;
+}
+.content p.tt {
+    cursor: default;
+    font-size: 26px;
+    line-height: 46px;
+    color: #005195;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e7f1;
+}
+.container .content .menu_tab{display: none;}
+.container .content .menu_tab .active{
+    display: block;
+}
+.container .menu ul {
+    display: none;
+    background: #f4f3f9;
+}
+.content p {
+    color: #015294;
+    font-size: 16px;
+    line-height: 45px;
+    word-break: break-all;
+    border-bottom: 1px solid #e7e7f1;
+}
+.container .content {
+    float: right;
+    width: 718px;
+    padding: 50px 60px 40px;
+    min-height: 916px;
+    background: #f6f6f6;
+}
+.rightFiximg{
+    position: fixed;
+    right: 0;
+    top: 204px;
+    width: 131px;
+    height: 236px;
+}
+.rightFiximg a {
+    display: block;
+    margin-bottom: 8px;
+}
+.three_blue_ban{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .pcContainer{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .banner{
+        display: none;
+    }
+    .mobile_banner{
+        display: block;
+    }
+    .mobile_banner img{
+        width: 100%;
+        vertical-align: top;
+        margin: 40px 0;
+    }
+    .container .menu h3.active{
+        width: 30%;
+        font-size: 32px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .container .menu h3{
+        width: 30%;
+        font-size: 24px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .container .content{
+        width: 100%;
+        padding: 0 !important;
+    }
+    .content p.tt{
+        font-size: 36px;
+        line-height: 92px;
+    }
+    .content p{
+        font-size: 24px;
+        line-height: 70px;
+    }
+    .content .menu_tab{
+        padding: 0 28px;
+    }
+    .three_blue_ban{
+        display: block;
+        margin-top: 30px;
+    }
+    .three_blue_ban img{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
