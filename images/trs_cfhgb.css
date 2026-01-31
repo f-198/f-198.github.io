@@ -1,0 +1,869 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background: #f2f2f2; */
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header {
+    border-bottom: none;
+}
+.Main_cfh {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner {
+    width: 100%;
+    height: 140px;
+    background-color: #d3e9fe;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner img {
+    width: 1220px;
+    margin: 0 auto;
+}
+.content {
+    width: 1220px;
+    height: auto;
+    /* overflow: hidden; */
+    margin: 0px auto;
+    /* padding: 0 20px; */
+    background: #fff;
+    font-family: "microsoft yahei";
+}
+
+.mid_area {
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    margin: 0px auto;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.cfh_hygq {
+    width: 1155px;
+    border: 1px solid #cfaa60;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    margin-left: 65px;
+    position: relative;
+    min-height: 331px;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.toutiao {
+    background: #f6f6f6;
+    border: solid 1px #CCCCCC;
+    text-align: center;
+    width: 1088px;
+}
+
+.toutiao h2 {
+    line-height: 78px;
+    font-size: 40px;
+    color: #004986;
+    font-weight: bold;
+}
+
+.toutiao h2 a {
+    color: #004986;
+}
+
+.huiying {
+    width: 705px;
+    margin-top: 38px;
+    padding-right: 60px;
+}
+.huiying_title h2 a {
+    font-size: 26px;
+    color: #005aa1;
+    font-weight: normal;
+    line-height: 40px;
+}
+.huiying_title h2 {
+    font-size: 26px;
+    color: #005aa1;
+    font-weight: normal;
+    line-height: 40px;
+}
+.addmore {
+}
+.jdzc {
+    padding: 40px 65px;
+    background: #fffaf2;
+}
+.jdzc_title {
+    border-bottom: 1px dashed #cfaa60;
+    margin-bottom: 35px;
+}
+.jdzc_title_text {
+    font-size: 26px;
+    color: #005aa1;
+    line-height: 40px;
+    font-family: 'fzzys_cfh202410101728546734108';
+}
+.xgtitle_text {
+    font-size: 24px;
+    color: #005aa1;
+    line-height: 40px;
+    border-bottom: 1px dashed #cfaa60;
+    font-family: 'fzzys_cfh202410101728546734108';
+}
+.jdzc_title_textmore {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.xctp {
+    background: url(trs_zc_xctp.png) no-repeat;
+}
+
+.gwycwhy {
+    background: url(trs_gwycwhy.png) no-repeat;
+    padding-top: 42px;
+}
+.wzsl_more a {
+    width: 113px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #cfaa60;
+    background: #fffaf2;
+    font-size: 18px;
+    color: #005aa1;
+}
+.tit_s01 {
+    background: none;
+    height: 42px;
+    border-bottom: 1px dashed #cfaa60;
+    width: 625px;
+}
+.title-inner {
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    left: 0;
+}
+.online_list {
+    font-size: 16px;
+    width: 641px;
+    padding-right: 20px;
+}
+.online_list p {
+    margin-bottom: 10px;
+    line-height: 34px;
+    text-indent: 0 !important;
+}
+.online_list p span {
+    font-size: 16px;
+    margin-top: 23px;
+    display: block;
+    font-weight: 600;
+    color: #337bb4 !important;
+}
+.online_list p strong {
+    font-size: 16px;
+    margin-top: 23px;
+    display: block;
+    font-weight: 600;
+    color: #337bb4 !important;
+}
+.tit_s01 .bg01 {
+    width: 20px;
+    background: url(trs_public_titbg_t1.jpg) no-repeat;
+}
+.tit_s01 .tabg {
+    width: auto;
+    background: url(trs_public_titbg_t3.jpg) repeat-x;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.tit_s01 .tabg, .tit_s01 .bg01, .tit_s01 .bg02 {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+}
+.tit_s01 span.bg02 {
+    width: 20px;
+    background: url(trs_public_titbg_t2.jpg) no-repeat right 0;
+}
+.right{
+    float: right;
+}
+.left {
+    float: left;
+    /* overflow: hidden; */
+}
+.wzsl_more {
+    margin-top: -6px;
+}
+.gwyzc{
+    font-size: 14px;
+}
+.arr_ran_p {
+    height: 26px;
+    line-height: 26px;
+    background: url(trs_online_sx_bg.jpg) no-repeat left 0;
+    padding-left: 12px;
+    float: left;
+    font-size: 14px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.arr_ran_p span {
+    background: url(trs_online_sx_bg.jpg) no-repeat right 0;
+    padding-right: 12px;
+    float: left;
+    line-height: 26px;
+}
+.arr_ran_select {
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+    color: #666666;
+    margin-right: 7px;
+    padding-left: 8px;
+}
+.arr_ran {
+    padding-top: 8px;
+    position: relative;
+    z-index: 2;
+    padding-right: 10px;
+}
+.mtbd {
+    /* background: url(trs_mtbd.png) no-repeat; */
+    padding-top: 32px;
+}
+
+.xgwj20190412 {
+    /* background: url(xgwj20190412.jpg) no-repeat; */
+}
+
+.addmore {
+    position: relative;
+    margin-top: 58px;
+}
+
+.huicont {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.huicont p {
+    line-height: 33px;
+    font-size: 18px;
+    color: #333;
+    text-indent: 2em;
+}
+
+.lanmu {
+    background: #407ac5;
+    line-height: 38px;
+    width: 116px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+}
+
+.more {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    line-height: 32px;
+    width: 80px;
+    color: #6d6d6d;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.mtbdmore {
+    line-height: 32px;
+    width: 80px;
+    color: #6d6d6d;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 6px;
+    font-family: "microsoft yahei";
+}
+
+.more a {
+    color: #000;
+}
+
+.content a:hover {
+    text-decoration:underline
+}
+
+.biaobg {
+    width: 100%;
+    clear: both;
+    height: 1px;
+}
+
+.shipin {
+    width: 405px;
+    height: 228px;
+    position: absolute;
+    left: -65px;
+    top: 50%;
+    margin-top: -114px;
+}
+
+.shicont {
+    text-align: center;
+}
+
+.shicont img {
+    width: 405px;
+    height: 228px;
+}
+
+.g40 {
+    clear: both;
+}
+
+.zhengce {
+    width: 234px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.zhengce img {
+    width: 234px;
+    height: 174px;
+}
+
+.zhengce p {
+    line-height: 30px;
+    font-size: 14px;
+    color: #2d2d2d;
+    text-indent: 2em;
+    margin-top: 20px;
+}
+
+.zhengce p a {
+    color: #2d2d2d;
+}
+.zhengconts a:hover {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+.zhengconts {
+    float: left;
+    width: 323px;
+    height: auto;
+    color: #333;
+    line-height: 30px;
+    margin-right: 60px;
+}
+.zhengconts:nth-of-type(4) {
+    margin-right: 0;
+}
+
+.zhengconts h3 {
+	height:68px;
+    font-size: 18px;
+    line-height: 34px;
+	overflow:hidden;
+}
+
+.zhengconts p {
+	height:136px;
+	overflow:hidden;
+    font-size: 17px;
+    line-height: 34px;
+    margin-top: 25px;
+
+}
+
+.xianchang {
+    float: left;
+    width: 242px;
+    margin: 18px 10px 0px 10px;
+}
+
+.xianchang img {
+    width: 242px;
+    height: 180px;
+}
+
+.xianchang p {
+    text-align: left;
+    line-height: 26px;
+    font-size: 16px;
+    color: #505050;
+}
+
+.xianchang p a {
+    color: #2d2d2d;
+}
+
+.you {
+    width: 398px;
+}
+
+.youbiao {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    height: 30px;
+}
+
+.youbiao img {
+    float: left;
+    width: 26px;
+    height: 30px;
+}
+
+.youbiao span {
+    font-size: 20px;
+    line-height: 30px;
+    color: #407ac5;
+    float: left;
+}
+
+.youbiao span a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #407ac5;
+    float: left;
+}
+
+.xiangguan {
+    clear: both;
+    margin-top: 15px;
+}
+
+.xiangguan ul {
+    margin: 0px;
+}
+
+.xiangguan ul li {
+    font-size: 18px;
+    background: url(http://www.gov.cn/govweb/xhtml/zhuanti/2018twoSessions/images/small_square.jpg) 0 14px no-repeat;
+    padding-left: 12px;
+    line-height: 36px;
+    color: #2d2d2d;
+}
+
+.xiangguan ul li a {
+    color: #000;
+}
+
+.g30 {
+    height: 30px;
+}
+
+.pinglun {
+    clear: both;
+    margin-top: 23px;
+}
+
+.pinglun ul {
+    margin: 0px;
+}
+
+.pinglun ul li {
+    font-size: 18px;
+    padding-left: 12px;
+    line-height: 36px;
+    background: url(cfhgb_point.jpg) 0 14px no-repeat;
+}
+
+.pinglun ul li a {
+    color: #000;
+}
+
+.lxcfh a {
+    display: block;
+    width: 315px;
+    height: 110px;
+    background: url(/govweb/xhtml/govweb/xhtml/2016gov/xinwen/cfh/images/lxcfh.png) no-repeat;
+}
+
+.wenzi {
+    width: 753px;
+    border: 1px solid #cfaa60;
+    box-sizing: border-box;
+    padding: 30px 20px 40px 62px;
+}
+
+.online_ckqb {
+    background-color: #f3f5f8;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+}
+
+.online_ckqb a {
+    color: #49a300;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+.lastcon {
+    margin: 56px 0px 70px 0;
+    overflow: hidden;
+}
+
+.online_list ul {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑", Microsoft Yahei;
+    font-size: 14px;
+}
+
+.online_list li {
+    list-style: none;
+    padding: 24px 26px 22px 26px;
+    color: #666666;
+    border-bottom: 1px solid #dcdcdc;
+    line-height: 24px;
+}
+
+.online_list li a {
+    color: #004986;
+    text-decoration: none;
+}
+
+.online_list li span {
+    color: #999999;
+    font-family: Arial;
+}
+
+/*国务院文件*/
+.gwywj20180613 {
+    /* background: url(gwywj.png) no-repeat; */
+}
+
+/*相关会议*/
+.xghy20191106 {
+    /* background: url(xghy20191106.png) no-repeat; */
+}
+
+.modifySpacing {
+    /* margin-bottom: 30px; */
+}
+
+.dsp_img {
+    max-width: 395px;
+    height: auto;
+}
+.mtbdPosition {
+    position: relative;
+}
+.mobileShow{
+    display: none !important;
+}
+.pcShow{
+    display: block !important;
+}
+.online_list ul li{
+    margin: 0px auto; padding: 24px 26px 22px; list-style: none; color: rgb(102, 102, 102); border-bottom: 1px solid rgb(220, 220, 220); line-height: 24px;
+}
+.online_list ul{
+    margin: 0px; padding: 0px; font-family: 微软雅黑,Microsoft Yahei; font-size: 14px; color: rgb(51, 51, 51); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;
+}
+
+/* 滚动条样式 */
+/* .online_list::-webkit-scrollbar {
+    width: 4px;
+    background-color: #f8f4eb;
+} */
+/* 设置滚动条滑块的高度 */
+/* .online_list::-webkit-scrollbar-thumb {
+    height: 52px;
+    background-color: #cfaa60;
+    border-radius: 2px;
+} */
+/* 兼容不同浏览器的写法 */
+/* .online_list::-moz-scrollbar-thumb {
+    height: 52px;
+    background-color: #cfaa60;
+    border-radius: 2px;
+}
+.online_list::-o-scrollbar-thumb {
+    height: 52px;
+    background-color: #cfaa60;
+    border-radius: 2px;
+}
+.online_list::-ms-scrollbar-thumb {
+    height: 52px;
+    background-color: #cfaa60;
+    border-radius: 2px;
+} */
+/* 滚动条样式 */
+
+/* 日历样式 */
+.calendar table tr th{ width:50px; height:43px; background:#dddddd; font-size:20px; font-family:"微软雅黑"; color:#22a0e7; font-weight:bold;}
+.calendar table tr td{ text-align:center; line-height:50px; height:50px; color:#4f4f4f; cursor:pointer;}
+.calendar table .rowNum-6 tr td{line-height:40px; height:40px;}
+.calendar table .rowNum-6 tr td .riqi{height:40px}
+.calendar table tbody tr td {color: #015293;border-collapse: collapse;}
+.bgHover{
+    color:#fff !important;
+    text-decoration:none !important;
+}
+.riqi {
+    position: relative;
+    z-index: 9999999;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+.riqi.hasdata{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 22px;
+    background-color: #cfaa60;
+    color: #fff;
+}
+.riqi .piaofu{ position:absolute; width:324px; bottom:40px;left:-98px; background:#0c85d2;  text-align:left; font-size:12px; line-height:18px; padding:10px;display:none; z-index:100;}
+/* .rowNum-6 .riqi .piaofu{bottom:53px} */
+.riqi.current .piaofu{ display:block;}
+.riqi.current1{background:#015293 url(https://www.gov.cn/images/trs_chz_gwylflkjz_hty_icon_redchw.png) no-repeat top right !important;color: #fff !important}
+.riqi .piaofu span{
+    display:block;
+    width:19px;
+    height:9px;
+    position:absolute;
+    bottom:-9px;
+    left:113px;
+    z-index:88;
+}
+.riqi .piaofu ul li{ padding:2px 0px 2px 8px;  z-index:100; text-align:center;}
+.riqi .piaofu ul li a{color:#fff; z-index:100; font-family:"宋体"; font-size:14px;}
+.riqi .piaofu ul li a:hover{ text-decoration:underline; z-index:100;}
+.calendar table tr td.current_day{ background:#cbcbcb}
+.calendar table tr td.unselected_month{visibility:hidden;color:#b5b5b5}
+.choice {
+    font-size:25px;
+    height:73px;
+    color:#000;
+    border-bottom: #dcdcdc solid 1px;
+}
+.choice p.month{padding-left:30px; }
+.choice .month_name{
+    width: 62px;
+    text-align: center;
+    font-size: 48px;
+    color: #015293;
+    position: absolute;
+    bottom: -15px;
+    right: 70px;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+.choice .month_yue{
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    color: #015293;
+    position: absolute;
+    bottom: -5px;
+    right: 47px;
+}
+.choice .button{ cursor:pointer; display:inline-block; padding:0 15px; width:9px; margin:0px;}
+.choice .month .prev{
+    padding-left:0px;
+    position: absolute;
+    bottom: 3px;
+    right: 132px;
+}
+.choice .month .next{
+    padding-left:0px;
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+}
+.choice .year .next{padding-right:0px;}
+.calendar .year_name{
+    font-family:"微软雅黑";
+    font-size:25px;
+    color: #015293;
+}
+.riqi .piaofu ul li {
+    text-align: left !important;
+    list-style: none;
+    font-family: "宋体";
+    font-size: 14px;
+    color: #fff;
+    padding-left: 14px;
+}
+.riqi .piaofu ul li .no_link {
+    color: #fff;
+    z-index: 100;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: normal;
+}
+.choice .button{
+    width: 22px;
+    height: 22px;
+    padding: 0 12px;
+}
+.calendar table tr th{
+    text-align: center;
+}
+.calendar{
+    padding: 0;
+}
+.riqi .piaofu {
+    width: 250px;
+    left: -232px;
+}
+.riqi .piaofu span {
+    left: 222px;
+}
+.choice p.month {
+    color: #015293;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.lflkrl .choice{
+    padding: 10px 10px 10px;
+}
+div.choice .year{
+    margin-top: 30px;
+}
+.choice .button{padding: 0 0;}
+.choice .button img {
+    width: 22px;
+    height: 22px;
+}
+.cfhMain {
+    max-width: 1920px;
+    height: 620px;
+    margin: 0 auto;
+    background: url(cfh_bg.jpg) no-repeat center;
+}
+.cfhMainTitle {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.titleLeft {
+    display: inline-block;
+    margin-top: 42px;
+    margin-right: 12px;
+    font-size: 24px;
+    color: #015293;
+}
+.titleRight {
+    font-size: 22px;
+    color: #333333;
+}
+.calendarbox {
+    width: 398px;
+    height: 398px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: #fff;
+}
+.calendar {
+    float: left;
+    width: 398px;
+    height: 398px;
+    background: url(https://www.gov.cn/images/cfhlr_bg.jpg) no-repeat center;
+    background-size: 393px 396px;
+}
+.dateSelector {
+    padding: 0px 30px 0px;
+}
+.cfhContent {
+    display: none;
+    float: right;
+    width: 770px;
+    height: 450px;
+    padding: 0 52px;
+    box-sizing: border-box;
+}
+.cfhTitle {
+    display: block;
+    height: 72px;
+    font-size: 26px;
+    line-height: 36px;
+    color: #015293;
+    margin-top: 43px;
+}
+.cfhMemo {
+    height: 231px;
+    font-size: 18px;
+    line-height: 36px;
+    text-indent: 2em;
+    margin-top: 15px;
+}
+.cfhwzsl {
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    border-radius: 23px;
+    background-color: #cfaa60;
+    color: #fff;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 35px;
+}
+.cfhwzsl:nth-child(4) {
+    margin-right: 0px;
+}
+.data_table {
+    width: 338px;
+    padding-top: 10px;
+}
+.choice {
+    position: relative;
+}
+div.choice .year {
+    margin-top: 30px;
+    width: 157px;
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+}
+.calendar .year_name {
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 25px;
+    color: #015293;
+    position: absolute;
+    left: 37px;
+    bottom: -5px;
+}
+.choice .yearNext {
+    position: absolute;
+    right: 0px;
+}
+.data_table tbody {
+    padding-top: 20px;
+}
+.data_table tbody tr {
+    height: 52px;
+}
+/* 日历样式 */

@@ -1,0 +1,14 @@
+@font-face {
+    font-family:"fzzys_cfh202410101728546734108";
+    src:url("fzzys_cfh202410101728546734108.woff") format("woff"), /* chrome, firefox */
+    url("fzzys_cfh202410101728546734108.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("fzzys_cfh202410101728546734108.svg#fzzys_cfh202410101728546734108") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:"fzzys_cfh202410101728546734108";
+    src: url("fzzys_cfh202410101728546734108.eot"); /* IE9 */
+    font-style: normal;
+    font-weight: normal;
+}
