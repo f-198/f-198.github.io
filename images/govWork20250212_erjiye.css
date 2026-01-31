@@ -1,0 +1,113 @@
+body{
+  font-family: "微软雅黑";
+    background: url(./govwork20250212_banner.png) center 0 no-repeat;
+  }
+  .govwork2024_logo {
+    position: absolute;
+    left: 342px;
+    top: 14px;
+  }
+  .mhide {
+    display: block;
+  }
+  
+  .pchide {
+    display: none;
+  }
+  .erjizyn_title  .mhide {
+    display: block;
+  }
+  
+  .erjizyn_title  .pchide {
+    display: none;
+  }
+  .erjizyn_pcbanner {
+      /* width: 1920px; */
+      margin: 0px auto;
+      position: relative;
+      height: 450px;
+      min-width: 1220px;
+    }
+ 
+  
+    .erjizyn_pcbanner .tzdz{
+      display: block;
+      width: 100%;
+      height: 386px;
+    }
+    .erjizyn_title img{
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+/* .erjizyn_title h5{
+  font-family: "方正准雅宋";
+  font-size: 36px;
+  color: #015293;
+  text-align: center;
+  margin: 68px 0 22px;
+}
+
+.erjizyn_title h5::before{
+  content: url('./erji_govwork2025_lmt.png');
+  display: inline-block;
+  width: 348px;
+  height: 36px;
+  margin-right: 20px;
+}
+.erjizyn_title h5::after{
+  content: url('./erji_govwork2025_r.png');
+  display: inline-block;
+  width: 348px;
+  height: 36px;
+  margin-left: 20px;
+} */
+.zynej_box h5{
+  width: 1220px;
+  margin: 88px auto 26px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #015293;
+  padding-left:30px;
+  border-left: 5px solid #d72323;
+  font-weight: normal;
+}
+.zynej_box h5 a{
+  font-size: 30px;
+  line-height: 36px;
+  color: #015293;
+}
+.zynej_box_bg{
+  width: 100%;
+  background-color: #fffafa;
+}
+.zynej_box2  .zynej_box_bg{
+  padding-bottom: 50px;
+}
+.zynej_box_list{
+  width: 1220px;
+  margin: 0 auto;
+  padding: 20px 30px 45px;
+  position: relative;
+}
+.zynej_box_list li{
+  padding-left: 20px;
+  margin-bottom: 14px;
+  background: url(./erji_govwork2025_dian.png) 0px 12px no-repeat;
+ 
+}
+
+.zynej_box_list li a{
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+  line-height: 26px;
+}
+.zynej_box_bg .zynej_lookmore{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+

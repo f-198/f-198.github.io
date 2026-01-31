@@ -1,0 +1,106 @@
+.mhide {
+  display: none;
+}
+
+.pchide {
+  display: block;
+}
+
+* {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  position: relative;
+  background: #fff;
+  font-family: "microsoft yahei";
+  font-weight: normal;
+  color: #333;
+  font-size: 32px;
+  background: none;
+}
+
+.govwork2024_logo {
+  position: absolute;
+  left: 9px;
+}
+.erjizyn_pcbanner .tzdz{
+  display: none;
+}
+.govwork2024_logo a {
+  width: 192px;
+  /* height: 52px; */
+  display: flex;
+  padding-top: 6px;
+  margin-left: 10px;
+  width: 102px;
+  /* height: 6px; */
+}
+.erjizyn_pcbanner img {
+  width: 100%;
+}
+.erjizyn_pcbanner{
+  width: 100%;
+  height: auto;
+  min-width:100%;
+}
+.erjizyn_title img {
+  width: 100%;
+  margin-top: 40px;
+}
+/* .erjizyn_title h5{
+  width: 96%;
+  margin: 0 auto;
+  font-size: 26px;
+}
+.erjizyn_title h5::before{
+  display: none;
+}
+.erjizyn_title h5::after{
+  display: none;
+} */
+.zynej_box h5 {
+  width: 90%;
+  margin: 36px auto 20px;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 3%;
+  font-weight: normal;
+}
+.zynej_box h5 a{
+  font-size: 18px;
+  line-height: 18px;
+}
+.zynej_box_list{
+   width: 92%;
+    padding: 8% 4%;
+}
+
+.zynej_box_list li {
+  padding-left: 14px;
+  margin-bottom: 14px;
+  background-position: 0px 12px;
+}
+.zynej_box_list li a{
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.zynej_box_bg .zynej_lookmore{
+  font-size: 14px;
+}
+.zynej_box2 .zynej_box_bg {
+  padding-bottom: 30px;
+}
+
+.erjizyn_title  .mhide {
+  display: none;
+}
+
+.erjizyn_title  .pchide {
+  display: block;
+}
