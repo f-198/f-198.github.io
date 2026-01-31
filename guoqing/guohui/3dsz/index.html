@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<meta charset="utf-8"/>
+<link href="favicon.ico" rel="icon"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="0" name="filetype">
+<meta content="1" name="publishedtype">
+<meta content="2" name="pagetype"/>
+<meta content="biaozhunguohui" name="catalog"/>
+<title>国徽3D数字模型</title>
+<style>.before-tip {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #333;
+}</style>
+<script src="js/block0.js"></script>
+<script src="js/block1.js"></script>
+<script src="js/block2.js"></script>
+<script src="js/block3.js"></script>
+<script src="js/block4.js"></script>
+<script src="js/modelInfo.js"></script>
+<script src="js/img.js"></script>
+<script src="js/texture.js"></script>
+<script src="js/hdr.js"></script>
+<script src="js/modelInfo.js"></script>
+<script src="js/img.js"></script>
+<script src="js/hdr.js"></script>
+<script src="js/comlink.min.js"></script>
+<script src="js/multiverse.js"></script>
+</meta></meta></head>
+<body>
+<div id="app"></div>
+<script>
+        function isWebGL2Supported() {
+            try {
+                var canvas = document.createElement('canvas');
+                var gl = canvas.getContext('webgl2');
+                if (!gl) {
+                    return false;
+                }
+                var hasUBO = gl.getParameter(gl.MAX_UNIFORM_BUFFER_BINDINGS) > 0;
+                var hasTF = gl.getParameter(gl.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS) > 0;
+            
+                if (!hasUBO || !hasTF) {
+                    return false;
+                }
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+        if (!isWebGL2Supported()) {
+            document.getElementById('app').innerHTML='<div class="before-tip" style="width:300px;margin-left:-150px;margin-top:-70px;">' +
+                '模型打开失败，可能存在如下原因：</br>' +
+                '<p>1.浏览器不支持</p>' +
+                '<p>2.显卡配置过低</p></br>' +
+                '建议更换浏览器，或尝试更新显卡</div>';
+            try {
+                window.stop();
+            } catch (e) {
+                throw new Error('终止加载');
+            }
+        }
+    </script>
+<script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+<script id="vite-legacy-polyfill" src="assets/polyfills-legacy-CYdvhAnR.js"></script>
+<script id="vite-legacy-entry" src="assets/index-legacy-CrQhG__O.js"></script>
+<div style="display:none"><script type="text/javascript">document.write(unescape("%3Cscript src='//stat.www.gov.cn/webdig.js?z=1' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script></div></body>
+</html>
