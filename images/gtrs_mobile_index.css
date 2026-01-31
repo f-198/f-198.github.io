@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+.mBox{
+    padding:28px;
+    box-sizing: border-box;
+}
+
+.index_toutiao{text-align: center; padding: 38px 28px 25px;}
+.index_toutiao h2{font-size: 36px; margin-bottom: 7px;font-weight: bold;font-family:'微软雅黑,宋体', sans-serif;line-height:58px;}
+.index_toutiao h2 a{color: #015293;}
+.index_toutiao .memo{color: #015293; margin-bottom: 10px; font-size: 34px;}
+.index_toutiao .memo a{color: #015293;}
+.index_toutiao .memo span{margin: 0 15px;}
+.index_toutiao .detail{text-align: right;}
+.index_toutiao .detail a{ color: #666;font-size:28px;}
+
+.news{
+    width:100%;
+    overflow: visible;position:relative;
+    margin-bottom: 20px;
+}
+.news .focus{
+    width:100%;
+    /* height: 540px; */height:550px;
+    float:initial;
+    position: relative;
+}
+/*焦点图*/
+.slider_carousel{position:relative;width:100%;/* height: 540px; */height: 550px;overflow:hidden;}
+.slider_carousel .item{width:100%;/* height:584px */height:594px}
+.slider_carousel .item img{width:100%;height: 420px;}
+.slider_carousel h4{position:absolute;left:0;top: 420px;/* padding: 0 20px; */padding:5px 20px;z-index:2;background: #d1e9ff;font-size:32px;font-weight: normal;/* color: #fff; */text-align: left;overflow: hidden;height: 120px;/* line-height: inherit; */    line-height: 56px;}
+.slider_carousel h4 a{display: inline-block;display: table-cell;white-space: normal;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;max-width: 100%;height: 120px;vertical-align: middle;}
+.slider_carousel h4 a span{vertical-align: middle;}
+
+.slidesjs-container{ overflow:visible !important}
+.slider_carousel .slidesjs-navigation{width:25px;height:41px; position:absolute;text-indent:-9999em;top:158px;z-index:100; background-repeat: no-repeat; transition: .3s all;}
+.slider_carousel .slidesjs-previous{background-image:url(index_btn01.png); left:0px}
+.slider_carousel .slidesjs-next{background-image:url(index_btn02.png); right:0px}
+
+.slider_carousel .slidesjs-pagination{overflow:hidden;zoom:1;position:absolute;right:20px;top: 385px;height:16px;z-index:10;overflow:hidden;}
+.slider_carousel .slidesjs-pagination-item{float:left; padding-left: 10px;}
+.slider_carousel .slidesjs-pagination-item a{float:left;display:block;width:16px;height:16px;text-indent:-9999em; background: #999999; border-radius: 50%; overflow: hidden; transition: .3s all;}
+.slider_carousel .slidesjs-pagination-item a.active{background: #2e5586; width: 36px; border-radius: 12px;}
+
+
+.news .tabs{
+    width:100%;
+}
+.news .tabs .nav{
+    height:60px;
+    border-bottom: 2px solid #dedede;
+    margin-bottom:60px;
+    overflow: visible;
+}
+.news .tabs h2{
+    font-size:32px;
+    margin-bottom:20px;
+    border-bottom:1px solid #dedede;
+    height:60px;
+}
+.news .tabs h2 a{
+    color:#000;
+}
+.news .tabs .nav span{
+    width:auto;
+    height:60px;
+    font-size:32px;
+    font-weight:bold;
+    margin-right:40px;
+    color:#757575;
+}
+.news .tabs .nav span.active{
+    color:#000;
+    border-bottom: 4px solid #015293;
+}
+.news .tabs .nav span.active::after{
+    width:100%;
+    height:6px;
+}
+.news2 .tabs .nav{
+    margin-bottom:30px;
+}
+.news2 .policyImg img{
+    width:100%;
+    margin-bottom:20px;
+}
+.more{
+    width:100%;
+    font-size:32px;
+    text-align: center;
+    display: block;
+}
+.more img{
+    width:32px;
+    height:32px;
+    position: relative;
+    top:5px;
+    left:5px;
+}
+
+ul.lists{
+    height:auto;
+    overflow: hidden;
+    padding:0;
+}
+ul.lists li{
+    height:auto;
+    padding-left: 0;
+    font-size:32px;
+    overflow: hidden;
+    vertical-align: top;
+    background: none;
+    line-height:44px;
+    border-bottom: 2px solid #dedede;
+    padding-bottom:36px;
+    margin-bottom: 36px;
+}
+ul.lists li a {
+    color: #000
+}
+ul.lists li a * {
+    font-size: inherit!important;
+    font-family: inherit!important;
+}
+ul.lists li + li{
+    margin-bottom:20px;
+}
+
+.banner{
+    padding:0 28px;
+    width:100%;
+    box-sizing: border-box;
+    height:200px;
+    position: relative;
+    overflow: hidden;
+}
+.banner h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+.banner h2 a{
+    color:#000;
+}
+.banner img{
+    width:100%;/* height:193px; */
+    /* height:auto; */
+}
+.banner .pagination{
+    width:100%;
+    height:40px;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    z-index: 99;
+    text-align: right;
+    padding-right:50px;
+}
+.banner .pagination span{
+    width:16px;
+    height:16px;
+    display:inline-block;
+    border-radius: 16px;
+    background:#d2d2d2;
+    margin-left:10px;
+    transition: .3s all;
+}
+.banner .pagination span.swiper-active-switch{
+    background:#2e5586;
+    width:32px;
+}
+.banner2 {
+    height:144px;
+    background: #d1e9ff;
+    text-align: center;
+    line-height: 70px;
+    padding:0;
+    width:694px;
+    margin:0 auto;
+    margin-bottom:40px;
+}
+.banner2 a{
+    color: #0e90d2;
+    font-size: 44px;
+    font-weight: bold;
+    line-height:144px;
+}
+.banner2 .pagination{
+    width:100%;
+    height:40px;
+    position: absolute;
+    right:-30px;
+    bottom:20px;
+    z-index: 99;
+    text-align: right;
+    padding-right:50px;
+}
+
+.libs{
+    width:694px;
+    height:200px;
+    background:url(gtrs_gwySearch.jpg);
+    margin:0 auto;
+    padding:16px;
+    box-sizing: border-box;
+    margin-bottom:48px;
+}
+.libs .box{
+    border:1px solid #fff;
+    height:174px;
+    padding:16px 48px;
+    box-sizing: border-box;
+}
+.libs .box h2 a{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size:44px;
+    color:#0e90d2;
+    margin-bottom:20px;
+}
+.libs .box .search{
+    position: relative;
+}
+.libs .box .search input{
+    width:100%;
+    height:64px;
+    line-height:64px;
+    border: 1px solid #97c3e7;
+    outline: none;
+    font-size:32px;
+    padding: 0 50px 0 20px;
+    box-sizing: border-box;
+}
+.libs .box .search a img{
+    width:44px;
+    height:44px;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.service .tabs .nav{
+    margin:0;
+}
+.service .item ul{
+    display: inline-block;
+    width: calc((100% - 56px)/5*4 + 56px);
+    vertical-align: bottom;
+}
+.service .item ul li{
+    display: inline-block;
+    width: calc((100% - 112px)/4);
+    margin-right: 28px;
+    line-height: 60px;
+    height: 60px;
+    margin-top: 32px;
+    padding: 0;
+    border-bottom: none;
+    float: left;
+    font-size:32px;
+}
+.service .item ul li a{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.service .item .more{
+    display: inline-block;
+    width: calc((100% - 112px)/5);
+    line-height: 60px;
+    height: 60px;
+    vertical-align: bottom;
+}
+.service .item .more a{
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #757575;
+}
+
+.service .item02 ul{
+    display: inline-block;
+    width: calc((100% - 42px)/5*4 + 42px);
+    vertical-align: bottom;
+}
+.service .item02 ul li{
+    display: inline-block;
+    width: calc((100% - 84px)/3);
+    margin-right: 28px;
+    line-height: 60px;
+    height: 60px;
+    margin-top: 32px;
+    padding: 0;
+    border-bottom: none;
+    float: left;
+    font-size:32px;
+}
+.service .item02 ul li a{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.service .item02 .more{
+    display: inline-block;
+    width: calc((100% - 84px)/5);
+    line-height: 60px;
+    height: 60px;
+    vertical-align: bottom;
+}
+.service .item02 .more a{
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #757575;
+}
+
+.state{
+    width:694px;
+    height:380px;
+    margin:0 auto;
+    margin-bottom:50px;
+    background:#d1e9ff;
+    padding:40px 0;
+    box-sizing: border-box;
+}
+.state h2 {
+    text-align: center;
+    margin-bottom:30px;
+}
+.state h2 img{
+    width:340px;
+    height:42px;
+}
+.state .box{
+    overflow: hidden;
+    text-align: center;
+}
+.state .box .item{
+    width:32.3%;
+    height:230px;
+    padding:12px 10px;
+    box-sizing: border-box;
+    display:inline-block;
+}
+.state .box .item>div{
+    width:100%;
+    height:100%;
+    background:#fff;
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    text-align: center;
+    padding:40px 6px;
+    box-sizing: border-box;
+}
+.state .box .item>div h2{
+    font-size:32px;
+    color:#000;
+    font-weight:normal;
+}
+.state .box .item>div a{
+    display: block;
+    background: #d9b264;
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0 0;
+    border-radius: 40px;
+    padding:12px 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.syFirstVideo1Outer{width: 100%;height: 420px;}
+.syFirstVideo1Outer_1{width:100%;height: 420px;}
+.syFirstVideo1Outer iframe{height:420px;}
+
+.syFirstVideo1Outer .doctitle{padding:5px 20px;z-index:2;background: #d1e9ff;font-size:32px;font-weight: normal;/* color: #fff; */text-align: left;overflow: hidden;height: 120px;/* line-height: inherit; */    line-height: 56px;display:block;}
+.syFirstVideo1Outer .doctitle a{display: inline-block;display: table-cell;white-space: normal;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;max-width: 100%;height: 120px;vertical-align: middle;}
+.syFirstVideo1Outer .doctitle a span{vertical-align: middle;}
+
+.syFirstVideo1Outer .close{width: 60px;height: 60px;display: none;}
+.syFirstVideo1OuterClose1{display: none;}
+.syFirstVideo1OuterClose1.on{display: block;}
+
+
+/*首页首屏幻灯视频播放 20230601 添加修改开始*/
+
+.slider_carousel .slidesjs-navigation{z-index:1;}
+.focusMediaScroll  .media-box video {width: 100%; height: 100%; position: relative; z-index: 1; }
+.focusMediaScroll .item .pic .btn {left: calc(50% - 30px); bottom: calc(50% - 30px); }
+.focusMediaScroll .item .pic .btn, .media-close{width:60px;height:60px; }
+
+.focusMediaScroll .media-box{width:100%;height:420px;z-index:102;background:#fff;}                       
+.media-box .player-container {height: 420px;width:100%;}
+
+.media-box .media-title {position: absolute; left: 0; top: 420px; /* padding: 0 20px; */ padding: 5px 20px; z-index: 2; background: #d1e9ff; font-size: 32px; font-weight: normal; /* color: #fff; */ text-align: left; overflow: hidden; height: 120px; /* line-height: inherit; */ line-height: 56px; }
+.media-box .media-title {display: table-cell; white-space: normal; text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden; max-width: 100%; height: 120px; vertical-align: middle; }
+
+/*首页首屏幻灯视频播放 20230601 添加修改结束*/
+
+
+/*特殊分辨率处理*/
+@media screen and (max-width:600px)
+{
+
+
+}
+
+@media screen and (max-width:400px)
+{
+
+
+}
+
+@media screen and (max-width:360px)
+{
+
+
+}
