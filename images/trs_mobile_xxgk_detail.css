@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+body,input,textarea,select,button {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga","kern"
+}
+body{word-wrap: break-word;font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #333;
+    font-size: 32px;background: #fff;}
+
+.sj_container{width:auto;margin:0 auto;overflow: hidden;padding-top: 10px;}
+
+/*面包屑*/
+.BreadcrumbNav{word-wrap: break-word; line-height:60px; height:auto; font-size:32px;font-family:inherit; color:#000;position: relative;width:auto;margin:0 20px;}
+.BreadcrumbNav a{ color:#000;}
+.BreadcrumbNav a:first-child{color: #000F52;}
+
+/* 单列标题栏 */
+.sj_container h2.singleTitle{width:100%;background:none;border-bottom:1px solid #9B9B9B;height:90px;}
+.sj_container h2.singleTitle div{font-size:36px;padding:0 20px;color:#333;display:block;height:90px;background:none;width:auto;font-weight:bold;line-height:90px;text-align: left;}
+.sj_container h2.singleTitle div i{display:none;}
+.sj_container h2.singleTitle.bg{width:100%;background:none;border-bottom:1px solid #9B9B9B;height:80px;}
+.sj_container h2.singleTitle.bg div{background:#024886;color:#fff;border-radius: 10px 10px 0 0;margin-left:20px;height:80px;line-height:80px;}
+
+.wrap {
+    padding: 0;font-size: inherit;line-height: inherit;  margin: 0 20px;
+}
+.abstract{
+  font-size: inherit;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    color: #000;
+    line-height: inherit;
+  padding: 8px;
+    margin-bottom: 20px;
+  }
+.abstract h2{
+  margin-top: 16px;
+    font-size: inherit;
+    line-height: inherit;
+}
+.abstract p{
+  margin-top: .5em;
+}
+table.noneBorder{border:none;}
+.pages_content{border:0;padding: 8px;margin-bottom: 36px;}
+
+/* .pages_content * {
+	font-size: 108.5% !important;
+	line-height: 1.6 !important;
+} */
+
+
+.pages_content table.marauto,.border-table table.marauto{width: 100%;}
+.pages_content .shixiaoWrapper{padding: 20px 0;color: #000;margin-bottom: 20px;font-size: 32px;display: none;}
+
+/* .ZCWJK_GWYWJ table.border-table .pages_content{zoom: 3;} */
+table.border-table .pages_content table{width: 100%!important;}
+table.border-table .pages_content img{max-width: 100%;}
+.b12 {
+	line-height: 22px;
+	color: #686868;
+}
+.b12c {
+	font-size: 16px;
+    /* zoom: 2; */
+}
+.b12c,.b12c *{
+  line-height: 1.6;
+    color: #000;
+    zoom:1.12;
+}
+.b12c p {
+	margin-bottom: 12px;
+    /* font-size: 16px!important; */
+}
+/* 信息公开_国务院文件细览 */
+.XXGK_GWYWJ .b12c, .XXGK_GWYWJ .b12c *{
+    zoom:1;
+}
+.bd1 td {
+	line-height: 20px;
+	padding-left: 5px;
+}
+.bd1 {
+	font-size: 12px;
+}
+
+
+.frame-top, .frame-pane, .frame-bot {
+	background: none;
+}
+.padd10 {
+	padding: 10px;
+}
+
+#div_div {
+  width: 132px;
+  margin:20px auto 0;
+  }
+  #qr_container {
+  color: #b5b5b5;
+  font-size: 12px;
+  line-height: 26px;
+  position: relative;
+  }
+
+.de_bannerS{position:relative; height:103px; padding:10px 20px;  border:1px #dddddd solid;width:842px; margin:38px auto;}
+.de_bannerS a{ position:absolute; width:71px; height:70px; top:28px; background:url(../images/public/ico1.jpg) no-repeat;}
+.de_bannerS a.bannerA1{ background-position:0px 0px;right:20px;}
+.de_bannerS a.bannerA2{ background-position:0px -72px;right:106px;}
+
+.rightBox h2{
+  font-size:16px;
+  line-height:35px;
+  color:#0063c6;
+}
+.rightBox ul{
+  margin-bottom:12px;
+}
+.rightBox li{
+  line-height:35px;
+  font-size:16px;
+  background: url(trs_arrow_03.jpg) no-repeat left 11px;
+  padding-left: 12px;
+  margin-bottom: 4px;
+}
+.tableContent{
+  width:auto;
+  border: none !important;
+}
+.tableTxt{
+  width:100%;
+  margin:0 auto;
+  border-right:none;
+  word-break: break-all;
+}
+.tableTxt p:last-child{
+  text-align: center;
+  width: 690px;
+}
+
+
+/* 分页 */
+.pageInfo{text-align: center;clear:both;margin:50px auto;display: none;}
+.pageInfo li{display:inline-block;font-size:26px;margin:0 4px;}
+.pageInfo li.txt{font-weight:bold;}
+.pageInfo li.btn a{display:block;padding:0;font-size:26px;border:0;}
+.pageInfopage li input{ width:30px; padding:0 20px; display:inline-block; margin:0;line-height:34px;top:-5px;position: relative;}
+
+/* 20230526暂时调整 */
+.mxxgkwrap_gwywj .pages_content * {
+    font-size: 32px !important;
+    line-height: 1.6;
+}
+
+/* 20231026调整国务院文件移动端显示相关链接 */
+.XXGK_GWYWJ .jiedu_list li {
+  margin-bottom: 20px;
+}
+.XXGK_GWYWJ .bt13 li a {
+  font-size: 32px;
+}
+.XXGK_GWYWJ .jiedu-blk {
+  padding-top: 50px;
+  display: block;
+}
+.XXGK_GWYWJ .jiedu_list li {
+  padding-left: 24px;
+  background-size: 12px;
+}

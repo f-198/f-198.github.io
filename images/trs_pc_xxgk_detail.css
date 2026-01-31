@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+ul{list-style: none;}
+.b{font-weight:bold;}
+.blue{color:#1b529c;}
+.md50{margin-bottom:50px;}
+input[type="text"],input[type="password"],textarea{outline-style:none;-webkit-appearance:none;}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  }
+.marauto{margin: 0 auto;}
+
+body{font-family:"宋体";color: #333;}
+.sj_container{width: 1056px;margin:0 auto;overflow: hidden;background:#fff;}
+.sj_container .sj_box{ width:auto; margin:0 auto;overflow: hidden;}
+
+
+
+/*面包屑*/
+.BreadcrumbNav{font-size: 14px;height: 55px;line-height: 55px;color: #707070;position: relative;margin:0 auto;}
+.BreadcrumbNav a{ color:#707070;}
+.BreadcrumbNav .specail-link{margin-right: -4px;}
+.pages_print {position: absolute;text-align: center;font-size: 14px;border-bottom: none;top: 0px;right: 0px;float: left;}
+.pages_print .index_switchsize {float: left;}
+.pages_print .index_switchsize span {
+    cursor: pointer;
+}
+.pages_print .index_switchsize span.on {
+    color: #015293;
+    font-weight: bold;
+}
+.pages_print .split {float: left;margin: 0 24px;}
+.pages_print .split2 {margin: 0 21px 0 15px;}
+.pages_print .printIco {
+    float: left;
+    background: url(print.png) no-repeat right center;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.collectionLocation{    float: left;
+    cursor: pointer;
+    margin-left: 10px;}
+.com_word {
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 5px;
+    font-family: 'SimSun';
+}
+.collectionLocation .icon1, .collectionLocation .icon2 {
+    width: 13px;
+    height: 55px;
+    float: left;
+    padding-left: 8px;
+}
+.collectionLocation .icon1 {
+    background: url(shoucang_bg230425.png) no-repeat 100% center;
+}
+.collectionLocation .icon2 {
+    background: url(message_bg230425.png) no-repeat 100% center;
+}
+.pages_print .share {
+    float: left;
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+.share-box a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.share-box a:hover {
+    opacity: .8;
+}
+.share-box a.gwds_tsina {background: url(weibo.png) no-repeat;background-position: 0 0;}
+.share-box a.gwds_tsina:hover {background: url(weibo_on.png) no-repeat;background-position: 0 0;}
+.share-box a.gwds_weixin {background: url(weixin.png) no-repeat;background-position: 0 0;}
+.share-box a.gwds_weixin:hover {background: url(weixin_on.png) no-repeat;background-position: 0 0;}
+.share-box a.gwds_qzone {background: url(qqzone.png) no-repeat;background-position: 0 0;}
+.share-box a.gwds_qzone:hover {background: url(qqzone_on.png) no-repeat;background-position: 0 0;}
+
+.wrap {
+	font-size: 18px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.border-table{border:1px solid #ddd;margin:0 auto;}
+.bd1 {  width: 950px;font-size: 16px;box-sizing: border-box;margin: 12px auto;}
+.bd1 td {
+    line-height: 32px;
+    padding-left: 0px;
+    text-align: justify;
+}
+.b12 {  line-height: 22px;  color: #686868;}
+.b12c { font-size: 16px;  line-height: 29px;width:950px;display: inline;}
+.b12c p {/* margin-bottom: 12px; */}
+
+.w90{width:90px;}
+.w340{width:378px;}
+
+/* 注释于20230518 */
+/* .bd1 td.lf15,.bd1 td.shixiaoo{padding-left:15px!important;} */
+.bd1 td.lf15{/* padding-left:15px!important; */}
+
+.pages_content {
+    line-height: 30px;
+    margin: 0;
+    padding: 40px 0 40px 0;
+    font-size: 16px;word-break: break-word;
+}
+#div_div {
+    width: 145px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+#qr_container{
+    line-height: 26px;
+    margin: 0 auto;
+    color: #434343;
+    font-size: 13px;
+}
+#pageBreak {
+    width: 96%;
+    margin: 0 auto 40px;
+    position: relative;
+    top: 21px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.jiedu-blk{    background: #f5f5f5;
+    padding: 30px 35px;margin-bottom: 50px;}
+.jiedu-blk .tit,.jiedu-blk .jiedu_list
+{    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 35px;
+}
+.jiedu-blk .tit{color: #0063c6;margin-bottom: 12px;}
+.jiedu_list li {
+    background: url(point-230425.jpg) no-repeat left 13px;
+    padding-left: 12px;
+    margin-bottom: 4px;
+}
+.bt13 li a {
+    color: #636363;
+    text-decoration: none;
+}
+
+/* 隐藏国务院文件相关稿件的“解读”二字 */
+.XXGK_GWYWJ .jiedu-blk .tit {
+    display: none;
+}
