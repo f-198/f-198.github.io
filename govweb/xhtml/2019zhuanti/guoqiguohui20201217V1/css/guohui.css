@@ -1,0 +1,83 @@
+@charset "utf-8";
+.guide-slider .guide .behind{
+    width: 750px;
+}
+.guide-slider .guide .display{width: 71px;}
+.guide-slider .guide{
+    width: 72px;
+}
+.guide-slider .guide .display .icon.icon1{
+    background-position: -10px -10px;
+}
+.guide-slider .guide .display .icon.icon2{
+    background-position: -77px -10px;
+}
+.guide-slider .guide .display .icon.icon3{
+    background-position: -10px -77px;
+}
+.guide-slider .guide.on{
+    width: 822px;
+}
+.guoqi-container{
+    background-color: #def6fe;
+}
+.function-list h6,.function-list p{
+    font-size: 16px;
+    width: 94%;
+}
+.function-list h6{
+    border-bottom: 1px dashed #c9c9c9;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+/* .function-list p{
+    line-height: 30px;
+} */
+.guoqi-container-img{
+    background: url(../images/guohui.jpg) no-repeat center;
+    width: 473px;
+    height: 358px;
+}
+.guoqi-container-text{
+    width: 532px;
+    height: 358px;
+}
+.guoqi-text{
+    height: 191px;
+}
+.guoqi-container-img .star{
+    width: 272px;
+    height: 289px;
+    left: 98px;
+    top: 30px;
+    z-index: 1;
+    border-radius: 50%;
+}
+.guoqi-container-img .tiananm{
+    display: block;
+    width: 196px;
+    height: 195px;
+    position: absolute;
+    left: 136px;
+    top: 67px;
+    z-index: 2;
+    border-radius: 50%;
+    width: 163px\9;
+    height:173px \9;
+    left: 154px\9;
+    top: 72px\9;
+}
+.guoqi-container-text span{
+    background-position-x:30px;
+}
+.guoqi-container-img .tiananm a span{
+    width: 60px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 68px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
