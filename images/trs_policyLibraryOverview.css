@@ -1,0 +1,620 @@
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix{zoom:1;}
+body{
+	background-image: none;
+}
+.BreadcrumbNav{
+	width: 1028px;
+    margin: 0 auto;
+    padding: 0;
+    background: none;
+    line-height: 44px;
+    height: 44px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #000;
+	margin-bottom: 20px;
+}
+.BreadcrumbNav .comment{
+	position: absolute;
+    top: 0;
+    right: 166px;
+    height: auto;
+    overflow: hidden;
+}
+.collectionLocation, .commentLocation{
+	float: left;
+    font-family: Microsoft YaHei;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.pcTable{
+	display: block;
+}
+.mobileTable{
+	display: none;
+}
+.pages_content {
+    line-height: 30px;
+    margin: 0;
+    font-size: 16px;
+}
+.pages_content p {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.print_correctError_close span a{
+	font-family: "宋体";
+}
+.com_img1 {
+    width: 13px;
+    height: 44px;
+    float: left;
+    background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/20181123zhengce/images/shoucang_bg.png) no-repeat 100% 15px;
+}
+.com_word {
+    height: 44px;
+    line-height: 44px;
+    color: #6f6f6f;
+    font-family: Microsoft YaHei;
+    float: left;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.com_img2 {
+    width: 11px;
+    height: 44px;
+    float: left;
+    background: url(http://www.gov.cn/govweb/xhtml/2016gov/zhengce/20181123zhengce/images/message_bg.png) no-repeat 100% 16px;
+}
+.BreadcrumbNav a{
+	text-decoration: none;
+}
+.mainShareDiv_24{
+	height: 32px;
+}
+#gwdshare {
+    z-index: 9999;
+    float: left;
+    text-align: left!important;
+    zoom: 1;
+}
+#gwdshare a{
+	width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    padding: 3px 2px 3px 2px;
+}
+#gwdShare_con_1 {
+    position: relative;
+    float: right;
+}
+.gwds_more{
+	display: inline-block;
+}
+.policyLibraryOverview{
+	position:relative;
+	width: 1220px;
+	margin: 0 auto;
+	background: #fff;
+	padding-bottom: 20px;
+}
+.share{position: absolute;right: 25px;top:15px}
+#div_div {
+	width: 145px;
+	margin: 0 auto;
+    text-align: center;
+}
+#div_div img{
+	width: 145px;
+	height: 145px;
+}
+#qr_container {
+	color: #434343 ;
+	font-size: 13px;
+	line-height: 26px;
+	position: relative;
+}
+.de_bannerS{ width:842px; margin:38px auto;}
+
+#pageBreak{width: 96% !important;margin: 0 auto;}
+#pageBreak a{padding:0px;}
+div.BreadcrumbNav{
+	margin-bottom: 20px;
+}
+/* 国务院部门文件 */
+/* 20240730国务院部门文件底部添加相关文档调整间距时修改padding-bottom: 80px;为padding-bottom: 50px;*/
+.policyLibraryOverview_gwy_bmwj {
+	width: 996px;
+	padding-bottom: 50px;
+}
+div.BreadcrumbNav_gwy_bmwj {
+	position: relative;
+	width: 950px;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #707070;
+}
+.pages_print_gwy_bmwj {
+	height: auto;
+	top: 0;
+	padding: 0;
+}
+.font_gwy_bmwj {
+	float: left;
+	padding: 0;
+}
+.com_word_gwy_bmwj {
+	height: 55px;
+    line-height: 55px;
+    color: #6f6f6f;
+    font-family: "宋体";
+    float: left;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.com_word_gwy_bmwj:hover {
+	color: #c50001;
+}
+.BreadcrumbNav_gwy_bmwj .icon1 {
+	width: 11px;
+    height: 55px;
+    float: left;
+    background: url(shoucang_bg.png) no-repeat 100% 20px;
+}
+.BreadcrumbNav_gwy_bmwj .icon2 {
+	width: 11px;
+    height: 55px;
+    float: left;
+    background: url(message_bg.png) no-repeat 100% 21px;
+}
+.share_gwy_bmwj {
+	right: 0;
+	top: 6px;
+}
+.collectionLocation_gwy_bmwj {
+	margin-left: 10px;
+}
+.printIco_gwy_bmwj {
+	color: #898989;
+}
+/* 国务院部门文件 */
+
+.policyLibraryOverview_content{
+	/* width: 1028px; */
+	margin: 0 auto;
+}
+
+.policyLibraryOverview_header{
+	margin-bottom: 21px;
+	border: 1px dashed #a4a4a4;
+	padding: 0 18px;
+	border-radius: 10px;
+}
+
+
+.policyLibraryOverview_header table{
+	/*即每个td都紧挨着，且和table之间没空隙*/
+	border-collapse:collapse;
+	border: none;
+	width: 100%;
+}
+.policyLibraryOverview_header table tr{
+	border: none;
+}
+.policyLibraryOverview_header table th{
+	border: none;
+}
+.policyLibraryOverview_header table td{
+	font-family: "宋体";
+	font-size: 14px;
+	color: #545454;
+	border: none;
+	border-bottom: 1px dashed #a4a4a4;
+	padding: 12px 0;
+	line-height: 24px;
+}
+.policyLibraryOverview_header table td span{
+	width: 28px;
+	display: inline-block;
+}
+.policyLibraryOverview_header table tr.lastTr td{
+	border: none;
+}
+/*大中小字体*/
+.bigMiddleSmallFont{
+	font-family: "宋体";
+	color: #666;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.bigMiddleSmallFont span{
+	cursor: pointer;
+}
+.bigMiddleSmallFont .bigger{
+	font-size: 16px;
+}
+.bigMiddleSmallFont .medium{
+	font-size: 14px;
+}
+.bigMiddleSmallFont .smaller{
+	font-size: 13px;
+}
+/*内容开始*/
+/* 20240730国务院部门文件底部添加相关文档调整间距时修改padding:0 23px 70px 36px;为padding: 0 23px 65px 36px;*/
+.pages_content {
+	padding: 0 23px 65px 36px;
+	margin-top: -5px;
+	/* text-align: justify; 会导致文字空格变大*/
+}
+.pages_content p {
+    /* margin-bottom: 15px; */
+    margin-top: 0;
+}
+.pages_content var{
+	font-style: normal;
+	display: block;
+	text-align: right;
+}
+.pages_content span.loan{
+	padding-top: 50px;
+}
+/*20191029增加*/
+.pages_content a{color:#0000FF;}
+.pages_content a:hover{text-decoration:underline;}
+/*20191029增加*/
+/*点赞功能*/
+.like_print_correctError_close{
+	padding-bottom: 14px;
+	border-bottom: 1px solid #ededed;
+	/* width: 672px; */
+	margin: 0 auto 37px;
+}
+.like{
+	float: left;
+}
+.like span{
+	font-family: "宋体";
+	font-size: 16px;
+	color: #8b0000;
+	
+}
+.print_correctError_close{
+	float: right;
+}
+.print_correctError_close span a{
+	color: #333;
+}
+/*评论*/
+.policyLibraryOverview_comment{
+	width: 654px;
+	margin: 0 auto 38px;
+}
+.policyLibraryOverview_comment_header{
+	margin-bottom: 22px;
+}
+.policyLibraryOverview_comment_header span{
+	float: left;
+	padding-left: 11px;
+	border-left: 3px solid #00558f;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	color: #00558f;
+	line-height: 18px;
+}
+.policyLibraryOverview_comment_header .login{
+	float: right;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	line-height: 26px;
+}
+.policyLibraryOverview_comment_header .login a{
+	float: left;
+	color: #00558f;
+}
+.policyLibraryOverview_comment_header .login var {
+	font-style: normal;
+	float: left;
+	color: #00558f;
+	margin: 0 4px;
+}
+.policyLibraryOverview_comment_content{
+	margin-bottom: 26px;
+	
+}
+.policyLibraryOverview_comment_content textarea{
+	padding: 16px 0 0 16px;
+	width: 638px;
+	height: 137px;
+	background: #f4f4f4;
+	border: none;
+	/*禁止拉伸*/
+	resize: none;
+	/*去掉ie下的右边滚动条*/
+	overflow:hidden;
+}
+#info{
+	text-align: right;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	color: #9e9e9e;
+	margin-top: 8px;
+}
+#info b{
+	color: #00558f;
+}
+
+.policyLibraryOverview_comment_footer{
+	text-align: center;
+}
+/*返回顶部*/
+.back_top a:hover{
+	text-decoration: none;
+}
+
+
+/*解读评论内容开始*/
+.ploInterpretationComments{
+	
+}
+.ploInterpretationComments_left{
+	float: left;
+	width: 744px;
+	border-right: 1px solid #ddd;
+}
+.ploInterpretationComments_right{
+	float: right;
+	width: 260px;
+	margin-top: -8px;
+}
+/*解读评论内容开始*/
+.interpretation_title{
+	/*padding-left: 8px;
+    border-left: 4px solid #00558f;*/
+    font-family: "宋体";
+    font-size: 16px;
+    line-height: 35px;
+}
+.interpretation_title a{
+	color: #0063c6;
+	text-decoration: none;
+}
+.interpretation_content{
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 35px;
+}
+.interpretation_content a{
+	color: #7c7c7c;
+	padding-left: 15px;
+	background: url(../images/jiedu.png) 0 6px no-repeat;
+}
+.pages_content_title{
+	font-size: 12pt;
+	text-align: center;
+}
+.pages_content_title_bm{
+	font-family: 宋体; font-weight: bold; font-size: 18pt;
+}
+.pages_content_title_yz{
+	font-family: 宋体; font-size: 12pt;
+}
+.pages_content_title_tz{
+	font-weight: bold; font-size: 18pt;
+}
+.pages_content_title_sg{
+	font-size: 12pt; font-family: 楷体, 楷体_GB2312;
+}
+.pages_content_title_sf{
+	font-family: 宋体; font-size: 12pt;
+}
+.pages_content_title_fl{
+	text-indent: 2em; font-family: 宋体; font-size: 12pt;
+}
+.pages_content_bm{
+	text-indent: 2em; font-family: 宋体; font-size: 12pt; text-align: right;
+}
+.pages_content_fl{
+	font-family: 宋体; font-size: 12pt; text-align: center;
+}
+.pages_content_ct{
+	text-indent: 2em; font-family: 宋体; font-size: 12pt;
+}
+/*去掉ie6下微博微信多显示一张图片的问题*/
+.de_bannerS a{
+	background: none;
+}
+.pchide{
+	display: none;
+}
+/* 20240730国务院部门文件底部添加相关文档时添加*/
+.policyLibraryOverview_gwy_bmwj .jiedu-blk {
+    background: #f5f5f5;
+    padding: 30px 35px;
+}
+.policyLibraryOverview_gwy_bmwj .jiedu-blk .tit, .jiedu-blk .jiedu_list {
+    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 35px;
+}
+.policyLibraryOverview_gwy_bmwj .jiedu_list li {
+    background: url(point-230425.jpg) no-repeat left 13px;
+    padding-left: 12px;
+    margin-bottom: 4px;
+}
+.policyLibraryOverview_gwy_bmwj .bt13 li a {
+    color: #636363;
+    text-decoration: none;
+}
+/* 20240730国务院部门文件底部添加相关文档时添加*/
+/*footer*/
+#ifr_top{
+	height: 148px;
+	_height: 162px;
+}
+@media only screen and (max-width: 768px) {
+	/* body{
+		font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif !important;
+	} */
+	.policyLibraryOverview{
+		width: 100%;
+		/* margin: 0 20px; */
+	}
+	.BreadcrumbNav {
+		width: 100%;
+		font-size: 30px!important;
+		color: #000;
+		line-height: 60px;
+		font-family: none;
+		margin-bottom: 0;
+		min-height: 120px;
+	}
+	.BreadcrumbNav a:nth-child(1){
+		font-weight: normal !important;
+	}
+	.share{
+		display: none;
+	}
+	.comment {
+		position: inherit !important;
+		text-align: right;
+		margin-bottom: 0;
+		display: inline-block;
+		line-height: 60px !important;
+		float: right;
+	}
+	.collectionLocation{
+		display: inline-block;
+		padding: 0 20px;
+		font-size: 28px;
+		color: #6f6f6f;
+		margin-bottom: 0;
+	}
+	.com_word{
+		font-size: 28px;
+		width: 70px;
+		height: 60px;
+		line-height: 60px;
+		vertical-align: middle;
+	}
+	.com_img1{
+		position: relative;
+		top: 3px;
+		width: 26px;
+		height: 60px;
+		background-size: 26px;
+	}
+	.com_img2{
+		position: relative;
+		top: 1px;
+		width: 22px;
+		height: 60px;
+		background-size: 22px;
+	}
+	.commentLocation{
+		padding: 0 20px;
+	}
+	.policyLibraryOverview_content{
+		margin: 0 20px;
+	}
+	.policyLibraryOverview_header{
+		border: none;
+		margin-bottom: 40px !important;
+		padding: 20px 4px 4px 4px !important;
+	}
+	.policyLibraryOverview_header table {
+		display: none;
+	}
+	.pcTable{
+		display: none;
+	}
+	.mobileTable{
+		display: block;
+		margin: 0;
+		padding: 20px 0;
+		border-top: 2px solid #eee;
+		border-bottom: 2px solid #eee;
+	}
+	.mobileTable li{
+		color: #000;
+		font-size: 32px;
+	}
+	.mobileTable li span:nth-child(1){
+		font-weight: bold;
+	}
+	.mobileTable li span{
+		font-size: 32px;
+		color: #000;
+		display: block;
+		line-height: 50px;
+		margin-top: 10px;
+		font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+	}
+	.bigMiddleSmallFont {
+		display: none;
+	}
+	#div_div, .de_bannerS, .like_print_correctError_close, .back_top {
+		display: none !important;
+	}
+	.pages_content{
+		width: 710px;
+		margin: 0 auto;
+		padding: 0;
+		line-height: 1.6;
+	}
+	.pages_content_title{
+		font-size: 24pt;
+		text-align: center;
+		width: 720px;
+		position: relative;
+		left: -10px;
+	}
+	.pages_content_title_bm{
+		font-family: 宋体; font-weight: bold; font-size: 34pt;
+		text-align: justify;
+	}
+	.pages_content_title_yz{
+		font-family: 宋体; font-size: 24pt;
+	}
+	.pages_content_title_tz{
+		font-weight: bold; font-size: 34pt;
+	}
+	.pages_content_title_sg{
+		font-size: 24pt; font-family: 楷体, 楷体_GB2312;
+	}
+	.pages_content_title_sf{
+		font-family: 宋体; font-size: 23pt;
+	}
+	.pages_content_title_fl{
+		text-indent: 2em; font-family: 宋体; font-size: 23pt;
+	}
+	.pages_content_bm{
+		text-indent: 2em; font-family: 宋体; font-size: 24pt; text-align: right;
+	}
+	.pages_content_fl{
+		font-family: 宋体; font-size: 24pt; text-align: center;
+	}
+	.pages_content_ct{
+		text-indent: 2em; font-family: 宋体; font-size: 23pt;
+	}
+	.pchide{
+		display: block;
+	}
+	
+	.policyLibraryOverview_gwy_bmwj .pages_contentm p span,.policyLibraryOverview_gwy_bmwj .pages_contentm p {
+		font-size: 32px !important;
+		color: #000;
+	}
+	.policyLibraryOverview_gwy_bmwj .pages_contentm p span strong,.policyLibraryOverview_gwy_bmwj .pages_contentm p span strong span {
+		font-size: 36px !important;
+	}
+	.policyLibraryOverview_gwy_bmwj .pages_contentm p a {
+		font-size: 32px !important;
+	}
+}
