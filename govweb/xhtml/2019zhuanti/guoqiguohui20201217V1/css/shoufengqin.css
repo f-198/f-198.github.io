@@ -1,0 +1,182 @@
+
+a {
+    text-decoration: none;
+}
+
+.guide-slider {
+    width: 1040px;
+    background: #fff;
+    height: 360px;
+}
+
+.guide-slider .guide {
+    width: 60px;
+    height: 360px;
+    float: left;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.guide-slider .guide .display {
+    border-right: 1px solid #d5d5d5;
+    width: 59px;
+    height: 360px;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+    cursor: pointer;
+}
+
+.guide-slider .guide .display .icon {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    margin-top: 42px;
+    background-image: url("../images/icon1.png");
+}
+
+.guide-slider .guide .display .icon.icon1 {
+    background-position: -144px -10px;
+}
+
+.guide-slider .guide .display .icon.icon2 {
+    background-position: -144px -77px;
+}
+
+.guide-slider .guide .display .icon.icon3 {
+    background-position: -10px -144px;
+}
+
+.guide-slider .guide .display .icon.icon4 {
+    background-position: -77px -144px;
+}
+
+.guide-slider .guide .display .icon.icon5 {
+    background-position: -144px -144px;
+}
+.guide-slider .guide .display .icon.icon6 {
+    background: url(../images/candle.png) no-repeat center;
+}
+
+.guide-slider .guide .display .introduction {
+    width: 32px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.guide-slider .guide .display::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 15px;
+    top: 100%;
+    margin-top: 0;
+    right: -30px;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s;
+}
+
+.guide-slider .guide .behind {
+    width: 678px;
+    height: 360px;
+    display: inline-block;
+    background: #f9f9f9;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.guide-slider .guide .behind .function-list-wrap {
+  
+   padding: 28px 0;
+   width: 90%;
+   margin: 0 auto;
+}
+.guide-slider .guide .behind .function-list-wrap .function-list{
+    overflow-y: scroll;
+    height: 304px;
+}
+.guide-slider .guide .behind .function-list-wrap li{
+    font-size: 16px;
+    padding: 20px 0;
+    border-bottom: 1px dashed #c9c9c9;
+    width: 94%;
+}
+
+
+.guide-slider .guide.on {
+    width: 738px;
+}
+
+.guide-slider .guide.on .display {
+    border-right-color: transparent;
+    
+}
+.guide-slider li.guideBgcolor01 .display{
+    background-color: #2d78c7;
+}
+.guide-slider  li.guideBgcolor02 .display{
+    background-color: #1f7edb;
+}
+.guide-slider  li.guideBgcolor03 .display{
+    background-color: #3097fc;
+}
+.guide-slider  li.guideBgcolor04 .display{
+    background-color: #30b2fc;
+}
+.guide-slider  li.guideBgcolor05 .display{
+    background-color: #07c5f4;
+}
+.guide-slider  li.guideBgcolor06 .display{
+    background-color: #4fc3e4;
+}
+.guide-slider li.guideBgcolor01 .display::after{
+    border-color: transparent transparent transparent #2d78c7;
+}
+.guide-slider li.guideBgcolor02 .display::after{
+    border-color: transparent transparent transparent #1f7edb;
+}
+.guide-slider li.guideBgcolor03 .display::after{
+    border-color: transparent transparent transparent #3097fc;
+}
+.guide-slider li.guideBgcolor04 .display::after{
+    border-color: transparent transparent transparent #30b2fc;
+}
+.guide-slider li.guideBgcolor05 .display::after{
+    border-color: transparent transparent transparent #07c5f4;
+}
+.guide-slider li.guideBgcolor06 .display::after{
+    border-color: transparent transparent transparent #4fc3e4;
+}
+.guide-slider .guide.on .display::after {
+    top: 50%;
+    margin-top: -5px;
+}
+.guide-slider .guide .behind .function-list-wrap .function-list::-webkit-scrollbar {
+    width: 10px;
+   }
+   .guide-slider .guide .behind .function-list-wrap .function-list::-webkit-scrollbar-track {
+    background-color:#e5e5e5;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius:2em;
+   }
+   .guide-slider .guide .behind .function-list-wrap .function-list::-webkit-scrollbar-thumb {
+    background-color:#ccd5db;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius:2em;
+   }

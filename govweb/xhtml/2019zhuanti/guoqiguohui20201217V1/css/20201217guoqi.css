@@ -1,0 +1,261 @@
+@charset "utf-8";
+body{
+    /* max-width: 1920px; */
+    background: url(../images/banner.jpg) #f3f3f3 center 148px no-repeat;
+    font: normal 16px/24px  "微软雅黑";
+}
+.pc_show{display: block;}
+.mobile_show{display: none;}
+.banner{
+    width: 1100px;
+    margin: 0 auto;
+    color: #000;
+}
+.BreadcrumbNav{
+    font-size: 12px;
+    font-family: "宋体";
+    margin: 13px 0 0; 
+}
+.m_title{
+    font-size: 36px;
+   
+    color: #005292;
+    margin: 56px 0 66px;
+    text-align: center;
+    font-family: "微软雅黑";
+
+}
+.content{
+    position: relative;
+    width: 1040px;
+    padding: 0 30px 60px;
+    margin: 0 auto;
+    /* background: linear-gradient(transparent 200px, #fff 380px, #fff); */
+    /* *background:#fff; */
+}
+.con_bg{
+    position: absolute;
+    top: 348px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+}
+/* 杰华 */
+.guoqi-container{
+    background-color: #a2e5fb;
+    padding: 16px;
+}
+.guoqi-container-img{
+    width: 446px;
+    height: 298px;
+    background: url(../images/guoqi.jpg) no-repeat center;
+    position: relative;
+}
+.shadow{
+    box-shadow: 0 0 10px #f00;
+    -webkit-box-shadow: 0 0 10px #f00;
+    -moz-box-shadow: 0 0 10px #f00;
+}
+.guoqi-container-img .star{
+    display: block;
+    width: 178px;
+    height: 138px;
+    position: absolute;
+    left: 23px;
+    top: 15px;
+}
+.guoqi-container-text{
+    background-color: #e8f8fe;
+    width: 562px;
+    height: 298px;
+}
+.guoqi-text{
+    border-bottom: 1px dashed #a0a0a0;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 39px;
+    height: 128px;
+    *height: 170px;
+
+}
+.guoqi-text p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+.guoqi-text-guohui p{
+    margin-top: 10px;
+}
+.guoqi-container-text span{
+    color: #a92526;
+    background: url(../images/tip.png) no-repeat 40px center;
+    width: 74%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 34px;
+    font-size: 16px;
+}
+.onload-container{
+    background-color: #0371d4;
+    padding: 18px 18px 16px 18px;
+    margin-top: 22px;
+}
+.onload-container-right{
+  /*   border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #5aa4dc;
+    color: #fff;
+    width: 473px;
+    padding: 16px 36px; */
+    margin-top: 2px;
+}
+.onload-container-right p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+.onload-container-right span{
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+.onload-container-left{
+    width: 446px;
+}
+.onload-container-left .titleh2{
+    color: #fff;
+}
+.onload-container-left .titleh2{
+    border-left: 4px solid #fff;
+    margin: 0;
+    margin-top: 4px;
+}
+.titleh2{
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 16px;
+    border-left: 4px solid #005292;
+    margin:42px 0 26px;
+}
+/* .titleh2 i{
+    display:block;
+    width: 4px;
+    height: 22px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 6px;
+} */
+/* .titleh2blue i{
+    background-color: #005292;
+} */
+.onload-btn{
+    display: block;
+    margin-top: 32px;
+    text-align: center;
+}
+.onload-btn img{cursor: pointer;}
+.guohui-onload-btn{
+    margin-top: 46px;
+}
+.onload-btn li{
+    /* background: url(../images/onload.png) no-repeat left center; */
+    /* width: 120px; */
+    width: 196px;
+    height: 80px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 80px;
+    /* padding-left: 76px; */
+}
+.onload-img{
+    margin-right: 17px;
+    vertical-align: middle;
+    width: 59px;
+    height: 57px;
+    cursor: pointer;
+}
+.onload-btn li.line {position: relative;
+    margin-left: 16px;}
+.onload-btn li.line i{
+    display:block;
+    background: url(../images/suxian.png) no-repeat right center;
+    width: 5px;
+    height: 80px;
+    position: absolute;
+    right: -8px;
+    top: 0;
+}
+.guide-slider p .colorblue{color: #005292;font-size: 14px;}
+.guide-slider .guide .behind .function-list-wrap p,.guide-slider .guide .behind .function-list-wrap p span,.guide-slider .guide .behind .function-list-wrap p font{
+    font-family: 'micrsoft yehei'!important;
+}
+.guide-slider .guide .behind .function-list-wrap p{
+    text-indent: 2em;
+}
+/* 杰华 */
+
+.con_part3{
+    margin-top: 38px;
+}
+
+.con_part3 ul{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.con_part3 li{ 
+    float: left;
+    width: 200px;
+    height: 146px;
+    background: url(../images/part3_li_bg.jpg) top center no-repeat;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.con_part3 li img{
+    display:block;
+    margin:28px auto 18px; 
+}
+.con_part3 .long_txt img{
+    margin-bottom: 8px;
+}
+.con_part3 .look_more img{
+    margin:56px auto 30px;    
+}
+.con_part3 li a,.con_part3 li{
+    font-size: 18px;
+    color:#257cca;
+}
+.con_part3 .noMargin{
+    margin: 0;
+}
+
+
+/* 轮播样式 */
+.picScroll-left{ overflow:hidden; position:relative;width: 1036px; margin: 0 auto;  }
+.picScroll-left .hd{ position: absolute;top: 60px;left: 0; z-index: 10;width: 1036px; display: none;}
+.picScroll-left .hd .prev,.picScroll-left .hd .next{ display:block;  width:30px; height:30px; float:right; cursor:pointer; background: url('../images/icon1.png') -211px -10px;} 
+.picScroll-left .hd .next{ background-position:-211px -60px;float: left;  }
+.picScroll-left .hd .prevStop{ background-position:-60px 0; }
+.picScroll-left .hd .nextStop{ background-position:-60px -50px; } 
+.picScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+.picScroll-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("../images/icoCircle.gif") 0 -9px no-repeat; }
+.picScroll-left .hd ul li.on{ background-position:0 0; }
+.picScroll-left .bd{ padding:0px 30px;max-height: 204px;*height:206px;*max-height: 206px;overflow: hidden;   }
+.picScroll-left .bd ul{ overflow:hidden; zoom:1; }
+.picScroll-left .bd ul li{ margin:0 12px; float:left; _display:inline; overflow:hidden; text-align:left;width:220px;  }
+.picScroll-left .bd ul li .pic{ text-align:center; }
+.picScroll-left .bd ul li .pic img{ width:220px; height:150px; display:block;  }
+.picScroll-left .bd ul li .pic a:hover img{ border-color:#999;  }
+.picScroll-left .bd ul li .title{ line-height:24px; margin-top: 8px;  }
+.m-guoqi-text p.laiyuan,.guoqi-text-guohui p.laiyuan,.guoqi-text p.laiyuan{
+    text-align: right;
+    color: #7d7d7d;
+    font-size: 16px;
+}
+.guoqi-text-guohui p.laiyuan,.guoqi-text p.laiyuan{
+    margin-top: 10px;
+}
