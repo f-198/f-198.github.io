@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="telephone=no" name="format-detection"/>
+<title>国情_中国政府网</title>
+<meta content="页面生成时间 2026-01-24 16:07:40" name="others">
+<meta content="" name="keywords"/>
+<meta content="" name="description"/>
+<meta content="国情" name="lanmu"/>
+<meta content="https://www.gov.cn/guoqing/" name="filepath"/>
+<meta content="13285" name="catalog"/>
+<meta content="0" name="filetype"/>
+<meta content="1" name="publishedtype"/>
+<meta content="2" name="pagetype"/>
+<script src="../images/forSomePageCustomizationJS.js"></script>
+<script>
+  //改互动栏目title
+  forPageTitleO.forPageTitleFn(
+    "13285",
+    "@国务院 我来说_中国政府网"
+  );
+</script>
+<link href="../images/trs_favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="../images/trs_public.css" rel="stylesheet" type="text/css">
+<link href="../images/gtrs_pc_gq.css" rel="stylesheet" type="text/css"/>
+<link href="../images/trs_mobile_pub.css" media="screen and (max-width:767px) and (orientation:portrait)" rel="stylesheet" type="text/css"/>
+<link href="../images/gtrs_mobile_gq.css" media="screen and (max-width:767px) and (orientation:portrait)" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../images/trs_respond.min.js"></script>
+  <![endif]-->
+<script src="../images/trs_jquery.min.js"></script>
+<script src="../images/trs_h5.js"></script>
+<script src="../images/trs_resize.js"></script>
+</link></meta></head>
+<body>
+<!--header-->
+<link href="../images/trs_FZYouHK_512B.css" rel="stylesheet" type="text/css"/>
+<link href="../images/trs_FZZHUNYSK.css" rel="stylesheet" type="text/css"/>
+<style>
+  /* 20231023添加无障碍代码 */
+  .header_toolbar li {
+    font-size: 16px;
+  }
+
+  .header_toolbar li.split {
+    margin: 0 9px;
+  }
+</style>
+<div class="header">
+<div class="container mhide">
+<div class="padding pos_r">
+<div class="header_logo"><a aria-label="中国政府网" href="https://www.gov.cn/" target="_blank"><img alt="" src="../images/gtrs_logo_lt.png"/><img alt="" class="wordlogo" src="../images/gtrs_logo_rt.png"/></a></div>
+<div class="header_search">
+<form>
+<input name="t" type="hidden" value="govall"/>
+<input autocomplete="off" class="header_search_txt" name="headSearchword" onkeydown="listenerKeyUpEventFn()" type="text" value=""/>
+<button class="header_search_btn" onclick="goSearch(this)" type="button" value=" "></button>
+</form>
+</div>
+<ul class="header_toolbar">
+<li><a href="https://www.gov.cn/" target="_blank">首页</a></li>
+<li class="split">|</li>
+<li><a href="../../" target="_blank">简</a></li>
+<li class="split">|</li>
+<li><a href="http://big5.www.gov.cn/gate/big5/www.gov.cn/" target="_blank">繁</a></li>
+<li class="split">|</li>
+<li><a href="http://english.www.gov.cn/" target="_blank">EN</a></li>
+<li class="split">|</li>
+<li class="nologin"><a href="javascript:void(0);" id="userlogin">登录</a></li>
+<li class="yeslogin hide">
+<a href="javascript:void(0);" id="showname"></a>
+<ul>
+<li class="usercenter"><a href="javascript:void(0);" id="usercenter">个人中心</a></li>
+<li><a href="javascript:void(0);" id="logout">退出</a></li>
+</ul>
+</li>
+<li class="split">|</li>
+<li><a href="https://mail.www.gov.cn/nsmail/index.html" target="_blank">邮箱</a></li>
+<li class="split">|</li>
+<li><a clickhide="false" href="javascript:;" onclick="aria.start()">无障碍</a></li>
+</ul>
+</div>
+</div>
+<div class="container pchide">
+<a class="logo" href="https://www.gov.cn/" target="_blank"><img src="../images/newlogo19ysp_lt.png"/><img class="wordlogo" src="../images/newlogo19ysp_rt.png"/></a>
+<a class="lang" href="https://english.www.gov.cn/">EN</a>
+<a class="search" href="javascript:;" id="searchBtn">
+<img alt="" class="s1" src="../images/gtrs_newsearch.png"/>
+<img alt="" class="s2" src="../images/gtrs_newshouqi.png"/>
+</a>
+<div class="searchBox">
+<div class="search">
+<form style="font-size:32px;">
+<input class="text search_mi" name="headSearchword" onkeydown="listenerKeyUpEventFn()" placeholder="请输入关键字……" type="text"/>
+<input class="image search_fr" onclick="goSearch(this)" type="button" value=""/>
+</form>
+<script>
+          function goSearch(event) {
+            var e = window.event || event;
+            if(e.preventDefault){
+              e.preventDefault();
+            }else{
+              e.returnValue=false;
+            }
+            var s = '', m = document.querySelector('.header .pchide [name=headSearchword]');
+            s = m.offsetHeight > 0 ? m.value : document.querySelector('.header .mhide [name=headSearchword]').value;
+            // 市场主体 dataTypeId=14
+            if (s == '市场主体') {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=14&searchWord=' + s;
+            } else {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=107&searchWord=' + encodeURIComponent(s);
+            }
+            window.open(url, '_blank');
+          }
+          function listenerKeyUpEventFn(){
+            if(event.keyCode==13){
+              goSearch();
+            };
+          }
+        </script>
+</div>
+</div>
+</div>
+</div>
+<div class="siteurl hide">https://www.gov.cn/</div>
+<script src="../images/jquery.pagination.js"></script>
+<script src="https://user.www.gov.cn/static/js/yh-idm5.0.0.js"></script>
+<script src="https://user.www.gov.cn/static/js/md5.js"></script>
+<script src="../images/pub.js" type="text/javascript"></script>
+<script>
+			//繁体和简体相互转换
+			var currUrl = window.location.href;
+			
+			var flag = currUrl.indexOf("big5.www.gov.cn/gate/big5/");
+			
+			var jtzw = 'ht'+'tps://www.gov.cn';
+			
+			//繁体
+			if (flag > 0) { 
+				
+				$('.header_logo a').attr('href',jtzw);
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			}//简体
+			else { 
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			};
+		</script>
+<!--  <a href="javascript:void(0)" onclick="aria.start()" style="position: absolute;top: 0px;" class='mhide'>网站无障碍开关</a> -->
+</body></html>
+<!--end header-->
+<div class="container">
+<div class="gq_content clearfix">
+<div class="leftPart">
+<!--左侧第一部分内容-->
+<div class="leftPartBox1">
+<div class="box1_img fl mhide">
+<a href="../xhtml/2016gov/images/guoqing/bigmap.jpg" target="_blank">
+<img height="349" src="../images/bigmap.jpg" width="286"/>
+</a>
+</div>
+<div class="box1_txt fl">
+<div class="box1_txt_title lmtit">
+<a class="font_FZZHUNYSK" href="javascript:void();">中国概况</a>
+</div>
+<div class="box1_txt_con">
+            中国位于亚洲东部，太平洋西岸。陆地总面积约960万平方千米，海域总面积约473万平方千米。中国陆地边界长度约2.2万千米，大陆海岸线长度约1.8万千米。海域分布着大小岛屿7600个，面积最大的是台湾岛，面积35759平方千米。目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。北京是中国的首都。
+          </div>
+</div>
+<div class="box1_img pchide fl">
+<a href="../xhtml/2016gov/images/guoqing/bigmap.jpg" target="_blank">
+<img src="../images/bigmap.jpg"/>
+</a>
+</div>
+<div class="clear"></div>
+</div>
+<!--左侧第二部分内容-->
+<div class="leftPartBox2 mt60">
+<ul>
+<li class="box2_td1">
+<a href="2022-10/23/content_5720988.htm" target="_blank">
+                中国共产党第二十届中央领导机构
+              </a>
+</li>
+<li class="box2_td2">
+<ul>
+<li>
+<a href="2023-03/12/content_5746231.htm" target="_blank">
+                    全国人民代表大会常务委员会
+                  </a>
+</li>
+<li>
+<a href="2023-03/10/content_5745803.htm" target="_blank">
+                    中华人民共和国主席
+                  </a>
+</li>
+<li>
+<a href="../gwyzzjg" target="_blank">
+                    国务院
+                  </a>
+</li>
+<li>
+<a href="2018-03/17/content_5274966.htm" target="_blank">
+                    中央军事委员会
+                  </a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="2023-03/11/content_5746070.htm" target="_blank">
+                    国家监察委员会
+                  </a>
+</li>
+<li>
+<a href="2023-03/11/content_5747845.htm" target="_blank">
+                    最高人民法院
+                  </a>
+</li>
+<li>
+<a href="2023-03/11/content_5747848.htm" target="_blank">
+                    最高人民检察院
+                  </a>
+</li>
+</ul>
+</li>
+<li class="box2_td3">
+<ul>
+<li>
+<a href="2023-03/11/content_5746028.htm" target="_blank">
+                    中国人民政治协商会议全国委员会
+                  </a>
+</li>
+<li>
+<a href="2023-03/10/content_5745769.htm" target="_blank">
+                    民主党派
+                  </a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="leftPartBox3 mhide mt60">
+<div class="box3_left fl">
+<div class="box3_con mb20">
+<div class="lmtit">
+<a class="font_FZZHUNYSK">经济</a>
+</div>
+<ul>
+<li>
+<a href="../lianbo/bumen/202502/content_7008605.htm" target="_blank">
+                    国民经济和社会发展
+                  </a>
+</li>
+<li>
+<a href="../lianbo/202601/content_7055181.htm" target="_blank">
+                    居民收入和消费支出
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2021-09/28/content_5639778.htm" target="_blank">
+                    中国的全面小康
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2023-01/19/content_5737923.htm" target="_blank">
+                    新时代的中国绿色发展
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2020-12/21/content_5571916.htm" target="_blank">
+                    新时代的中国能源发展
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2019-10/14/content_5439410.htm" target="_blank">
+                    中国的粮食安全
+                  </a>
+</li>
+<li>
+<a href="https://yncx.mnr.gov.cn/yn/#/home" target="_blank">
+                    永久基本农田信息查询
+                  </a>
+</li>
+</ul>
+</div>
+<div class="box3_con">
+<div class="lmtit">
+<a class="font_FZZHUNYSK">社会</a>
+</div>
+<ul>
+<li>
+<a href="../zhengce/2021-06/24/content_5620505.htm" target="_blank">
+                    中国共产党尊重和保障人权的伟大实践
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2022-04/21/content_5686435.htm" target="_blank">
+                    新时代的中国青年
+                  </a>
+</li>
+<li>
+<a href="../zhengce/202509/content_7041431.htm" target="_blank">
+                    新时代中国推进妇女全面发展的实践与成就
+                  </a>
+</li>
+<li>
+<a href="2021-05/13/content_5606149.htm" target="_blank">
+                    第七次全国人口普查公报
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2021-07/20/content_5626190.htm" target="_blank">
+                    生育政策
+                  </a>
+</li>
+<li>
+<a href="https://www.neac.gov.cn/seac/ztzl/zgmzjs/index.shtml" target="_blank">
+                    中华各民族
+                  </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="box3_right fl">
+<div class="box3_con mb34">
+<div class="lmtit">
+<a class="font_FZZHUNYSK">历史</a>
+</div>
+<ul class="lishi">
+<li>
+<a href="../xinwen/2021-06/28/content_5621160.htm" target="_blank">
+                    中国共产党一百年大事记<br/>（1921年7月－2021年6月）
+                  </a>
+</li>
+<li>
+<a href="../xinwen/2019-09/27/content_5434223.htm" target="_blank">
+                    中华人民共和国大事记<br/>（1949年10月－2019年9月）
+                  </a>
+</li>
+</ul>
+</div>
+<div class="box3_con mb34">
+<div class="lmtit">
+<a class="font_FZZHUNYSK">人文</a>
+</div>
+<ul>
+<li>
+<a href="../lianbo/bumen/202505/content_7044342.htm" target="_blank">
+                    文化和旅游发展统计公报
+                  </a>
+</li>
+<li>
+<a href="2012-04/11/content_2584143.htm" target="_blank">
+                    中国文物保护状况
+                  </a>
+</li>
+<li>
+<a href="http://www.ncha.gov.cn/col/col2266/index.html" target="_blank">
+                    中国世界文化遗产名录
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2018-04/03/content_5279419.htm" target="_blank">
+                    中国保障宗教信仰自由的政策和实践
+                  </a>
+</li>
+<li>
+<a href="../zhengce/2017-09/29/content_5228551.htm" target="_blank">
+                    中国健康事业的发展与人权进步
+                  </a>
+</li>
+</ul>
+</div>
+<div class="box3_con">
+<div class="lmtit"><a class="font_FZZHUNYSK">地理</a></div>
+<ul>
+<li>
+<a href="2005-09/13/content_2582621.htm" target="_blank">
+                    中国地势图
+                  </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="rightPart">
+<div class="rightPart_1 guoqi">
+<div class="lmtit">
+<a class="font_FZZHUNYSK" href="guoqi" target="_blank">国旗</a>
+</div>
+<div class="lmImg">
+<a href="guoqi" target="_blank">
+<img alt="中华人民共和国国旗" src="../images/321guoqi.jpg"/>
+</a>
+</div>
+<p class="lmdlown">
+<a href="guoqi" target="_blank">网络使用的国旗图案标准版本下载</a>
+</p>
+</div>
+<div class="rightPart_2 guoge">
+<div class="lmtit">
+<a class="font_FZZHUNYSK" href="guoge" target="_blank">国歌</a>
+</div>
+<div class="lmImg">
+<a href="guoge" target="_blank"><img alt="中华人民共和国国歌" src="../images/321guoge.jpg"/></a>
+</div>
+<p class="lmdlown" style="text-align: left;line-height: 30px;padding-top: 13px;padding-bottom: 13px;"><a href="guoge" target="_blank">国歌标准演奏曲谱、国歌官方录音版本下载</a>
+</p>
+</div>
+<div class="rightPart_3 guohui">
+<div class="lmtit">
+<a class="font_FZZHUNYSK" href="guohui" target="_blank">国徽</a>
+</div>
+<div class="lmImg">
+<a href="guohui" target="_blank"><img alt="中华人民共和国国徽" src="../images/321guohui.jpg"/></a>
+</div>
+<p class="lmdlown"><a href="guohui" target="_blank">网站使用的国徽图案标准版本下载</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!--footer-->
+<style type="text/css">
+  .footer{
+    padding-top: 0;
+  }
+  .footer_dzjg {
+      padding: 14px 22px 0 0;
+          width: 90px;
+  }
+  .footer_dzjg span{
+    display: block;
+  }
+  .footer_txt{
+    margin-top: 27px;
+  }
+  .footer_r {
+      margin-top: 25px;
+  }
+  .barrierFree20231007{
+    width: 80px;
+    height: 37px;
+  }
+  #_ideConac a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+</style>
+<div class="footer_wrap">
+<div class="container mhide">
+<div class="footer_links footer_links1">
+<ul class="clearfix">
+<li>链接：</li>
+<li><a href="http://www.npc.gov.cn/" target="_blank">全国人大</a></li>
+<li>|</li>
+<li><a href="http://www.cppcc.gov.cn/" target="_blank">全国政协</a></li>
+<li>|</li>
+<li><a href="http://www.ccdi.gov.cn/" target="_blank">国家监察委员会</a></li>
+<li>|</li>
+<li><a href="http://www.court.gov.cn/" target="_blank">最高人民法院</a></li>
+<li>|</li>
+<li><a href="http://www.spp.gov.cn/" target="_blank">最高人民检察院</a></li>
+</ul>
+</div>
+<div class="footer_links footer_links2">
+<ul class="clearfix">
+<li><a href="../home/2023-03/29/content_5748953.htm" target="_blank">国务院部门网站</a></li>
+<li>|</li>
+<li><a href="../home/2023-03/29/content_5748954.htm" target="_blank">地方政府网站</a></li>
+<li>|</li>
+<li><a href="../home/2023-03/29/content_5748955.htm" target="_blank">驻港澳机构网站</a></li>
+<li>|</li>
+<li><a href="../home/2023-03/29/content_5748956.htm" target="_blank">驻外机构</a></li>
+</ul>
+</div>
+<div class="footer over_hide">
+<div class="footer_l fl">
+<div class="footer_dzjg fl">
+<span id="_ideConac"><a href="https://bszs.conac.cn/sitename?method=show&amp;id=081D1D6883441A53E053012819AC0DAA" target="_blank"><img border="0" data-bd-imgshare-binded="1" hspace="0" id="imgConac" src="../images/red.png" vspace="0"/></a>
+</span>
+<!-- 无障碍 -->
+<span class="barrierFree20231007"><img src="../images/20230928shilaohuaicon.jpg"/></span>
+</div>
+<div class="footer_txt fl">
+<div class="footer_nav">
+<span><a href="../index.htm" target="_blank">中国政府网</a></span>
+<span class="split">|</span>
+<span><a href="../home/2016-05/11/content_5046257.htm" target="_blank">关于本网</a></span>
+<span class="split">|</span>
+<span><a href="../home/2014-02/23/content_5046258.htm" target="_blank">网站声明</a></span>
+<span class="split">|</span>
+<span><a href="../home/2014-02/23/content_5046259.htm" target="_blank">联系我们</a></span>
+<span class="split">|</span>
+<span><a href="../fuwu/jiucuopage.html" target="_blank">网站纠错</a></span>
+</div>
+<div class="footer_copyright">
+<p class="footer_bg_gray zbd">主办单位：国务院办公厅　运行维护单位：中国政府网运行中心 </p>
+<p class="footer_bg_gray bqs">版权所有：中国政府网　中文域名：<fjtignoreurl>中国政府网.政务</fjtignoreurl>
+</p>
+<p>网站标识码bm01000001　<a class="banquan" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备05070218号</a>　<img src="../images/2018guohui03.png" style="padding-top:2px;"/><a class="banquan" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202000001" target="_blank">京公网安备11010202000001号</a>
+</p>
+</div>
+</div>
+</div>
+<div class="footer_r fr">
+<div class="fl footer_ewm footer_ewm_gkhd">
+<a href="http://app.www.gov.cn/download/Chinese.html" target="_blank"><img alt="" src="../images/icon_1234.png"/><span>国务院客户端</span></a>
+</div>
+<div class="fl footer_ewm footer_ewm_xcx">
+<a href="../guowuyuan/gwykhdxcx/xiaochengxu.html" target="_blank"><img alt="" src="../images/icon_724.png"/><span>国务院客户端小程序</span></a>
+</div>
+<div class="fl footer_wxwb">
+<a href="../home/2014-02/18/content_5046260.htm" target="_blank"><img height="48" src="../images/icon_1434.png" width="48"/></a>
+<a href="../home/2014-02/18/content_5046260.htm" target="_blank"><img height="48" src="../images/icon_1534.png" width="48"/></a>
+<p><a href="../home/2014-02/18/content_5046260.htm" target="_blank">中国政府网微博、微信</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="container pchide">
+<div class="newfooter">
+<ul class="btnlist">
+<li><a class="am-footer-desktop" data-rel="desktop" href="." id="godesktop">电脑版</a></li>
+<li><a href="https://app.www.gov.cn/govdata/html/download.html?from=singlemessage">客户端</a></li>
+<li><a href="../guowuyuan/gwykhdxcx/xiaochengxu.html">小程序</a></li>
+<li><a href="https://weibo.com/zhengfu">微博</a></li>
+<li><a href="../home/2014-02/18/content_5046260.htm">微信</a></li>
+<li><a href="https://mail.www.gov.cn/nsmail/index.html">邮箱</a></li>
+</ul>
+<ul class="loginList">
+<li class="yeslogin hide">
+<img alt="" class="userImg" src="../images/userImg.png"/>
+<a href="javascript:;" id="showname1"></a>
+</li>
+<li class="yeslogin hide"><a href="javascript:;" id="logOutBtn1">退出</a></li>
+<li class="nologin"><a href="javascript:;" id="userreg1">注册</a></li>
+<li class="nologin"><a href="javascript:;" id="userlogin1">登录</a></li>
+<li class="nologin"><a href="../fuwu/jiucuopage.html" id="userlogin2">网站纠错</a></li>
+</ul>
+<div class="box">
+<a class="left" href="http://bszs.conac.cn/sitename?method=show&amp;id=081D1D6883441A53E053012819AC0DAA" target="_blank"><img border="0" data-bd-imgshare-binded="1" hspace="0" id="imgConac" src="../images/gtrs_red.png" vspace="0"/></a>
+<div class="right">
+<p>主办单位：国务院办公厅　运行维护单位：中国政府网运行中心</p>
+<p>版权所有：中国政府网　中文域名：<fjtignoreurl>中国政府网.政务</fjtignoreurl>
+</p>
+<p>网站标识码bm01000001</p>
+<p>京ICP备05070218号　京公网安备11010202000001号</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    trs_bottom.init();
+    initShow();
+  });
+
+  var trs_bottom = (function () {
+    function init() {
+      if (typeof (trs) != 'undefined') {
+        // trs.PcBackTop()
+        trs.SearchFn()
+      }
+    }
+
+    return {
+      init: init
+    }
+  })();
+
+  function initShow() {
+    var isShowPc = localStorage.getItem('isShowPc')
+    if (isShowPc && isShowPc === 'true') {
+      $("meta[name='viewport']").attr("content", "width=1280, target-densitydpi=device-dpi")
+      $('body').append('<div id="showMobi" class="showMobi"><img src="/images/trs_mobiIcon.png" />返回手机版</div>')
+    } else {
+      $("meta[name='viewport']").attr("content", "width=750, user-scalable=no, target-densitydpi=device-dpi")
+      $('#showMobi').remove()
+    }
+  }
+</script>
+<script async="" charset="utf-8" defer="" id="ariascripts" loaddata="false" src="//wza.www.gov.cn/dist/aria.js?appid=44fa773aaaee697bd3f5d0fbfc36bf83" type="text/javascript" wapforceoldfixed="false"></script><!--微信分享图功能-->
+<div class="share-title" style="display:none">国情_中国政府网</div>
+<div class="share-substr" style="display:none">https://www.gov.cn</div>
+<img class="share-img" height="300" src="../images/150.jpg" style="display:none" width="300"/>
+<script src="../images/jweixin-1.0.0.js"></script>
+<script src="../images/20191226wxShare.js"></script>
+<!--微信分享图功能-->
+<!--end footer-->
+<div style="display:none"><script type="text/javascript">document.write(unescape("%3Cscript src='//stat.www.gov.cn/webdig.js?z=1' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script></div>
