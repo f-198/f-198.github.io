@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="telephone=no" name="format-detection"/>
+<link href="../../../images/trs_favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="../../../images/trs_public.css" rel="stylesheet" type="text/css">
+<link href="../../../images/trs_pc_searchs.css" rel="stylesheet" type="text/css"/>
+<link href="../../../images/trs_mobile_pub.css" media="screen and (max-width:767px) and (orientation:portrait)" rel="stylesheet" type="text/css"/>
+<link href="../../../images/trs_mobile_searchs.css" media="screen and (max-width:767px) and (orientation:portrait)" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+  <script type="text/javascript" src="../../../images/trs_respond.min.js"></script>
+  <![endif]-->
+<script src="../../../images/trs_jquery.min.js"></script>
+<script src="../../../images/trs_h5.js"></script>
+<script src="../../../images/trs_searchs_resize.js"></script>
+<!-- <script src="../../../images/trs_resize.js" id="resizeJs" data-css="trs_mobile_sj.css"></script> -->
+<script src="../../../images/trs_search_WdatePicker.js" type="text/javascript"></script>
+<link href="../../../images/trs_search_WdatePicker.css" rel="stylesheet" type="text/css"/>
+<title>政策高级搜索</title>
+<title>政策文件高级搜索_中国政府网</title>
+<meta content="页面生成时间 2023-09-27 18:03:24" name="others">
+<meta content="" name="keywords"/>
+<meta content="" name="description"/>
+<meta content="政策文件高级搜索" name="lanmu"/>
+<meta content="https://www.gov.cn/search/zhengce/zcwjgjss/" name="filepath"/>
+<meta content="20909" name="catalog"/>
+<meta content="0" name="filetype"/>
+<meta content="1" name="publishedtype"/>
+<meta content="2" name="pagetype"/>
+<script src="../../../images/forSomePageCustomizationJS.js"></script>
+<script>
+  //改互动栏目title
+  forPageTitleO.forPageTitleFn(
+    "20909",
+    "@国务院 我来说_中国政府网"
+  );
+</script>
+</meta></link></head>
+<body>
+<!--header-->
+<link href="../../../images/trs_FZYouHK_512B.css" rel="stylesheet" type="text/css"/>
+<link href="../../../images/trs_FZZHUNYSK.css" rel="stylesheet" type="text/css"/>
+<style>
+  /* 20231023添加无障碍代码 */
+  .header_toolbar li {
+    font-size: 16px;
+  }
+
+  .header_toolbar li.split {
+    margin: 0 9px;
+  }
+</style>
+<div class="header">
+<div class="container mhide">
+<div class="padding pos_r">
+<div class="header_logo"><a aria-label="中国政府网" href="https://www.gov.cn/" target="_blank"><img alt="" src="../../../images/gtrs_logo_lt.png"/><img alt="" class="wordlogo" src="../../../images/gtrs_logo_rt.png"/></a></div>
+<div class="header_search">
+<form>
+<input name="t" type="hidden" value="govall"/>
+<input autocomplete="off" class="header_search_txt" name="headSearchword" onkeydown="listenerKeyUpEventFn()" type="text" value=""/>
+<button class="header_search_btn" onclick="goSearch(this)" type="button" value=" "></button>
+</form>
+</div>
+<ul class="header_toolbar">
+<li><a href="https://www.gov.cn/" target="_blank">首页</a></li>
+<li class="split">|</li>
+<li><a href="../.." target="_blank">简</a></li>
+<li class="split">|</li>
+<li><a href="http://big5.www.gov.cn/gate/big5/www.gov.cn/" target="_blank">繁</a></li>
+<li class="split">|</li>
+<li><a href="http://english.www.gov.cn/" target="_blank">EN</a></li>
+<li class="split">|</li>
+<li class="nologin"><a href="javascript:void(0);" id="userlogin">登录</a></li>
+<li class="yeslogin hide">
+<a href="javascript:void(0);" id="showname"></a>
+<ul>
+<li class="usercenter"><a href="javascript:void(0);" id="usercenter">个人中心</a></li>
+<li><a href="javascript:void(0);" id="logout">退出</a></li>
+</ul>
+</li>
+<li class="split">|</li>
+<li><a href="https://mail.www.gov.cn/nsmail/index.html" target="_blank">邮箱</a></li>
+<li class="split">|</li>
+<li><a clickhide="false" href="javascript:;" onclick="aria.start()">无障碍</a></li>
+</ul>
+</div>
+</div>
+<div class="container pchide">
+<a class="logo" href="https://www.gov.cn/" target="_blank"><img src="../../../images/newlogo19ysp_lt.png"/><img class="wordlogo" src="../../../images/newlogo19ysp_rt.png"/></a>
+<a class="lang" href="https://english.www.gov.cn/">EN</a>
+<a class="search" href="javascript:;" id="searchBtn">
+<img alt="" class="s1" src="../../../images/gtrs_newsearch.png"/>
+<img alt="" class="s2" src="../../../images/gtrs_newshouqi.png"/>
+</a>
+<div class="searchBox">
+<div class="search">
+<form style="font-size:32px;">
+<input class="text search_mi" name="headSearchword" onkeydown="listenerKeyUpEventFn()" placeholder="请输入关键字……" type="text"/>
+<input class="image search_fr" onclick="goSearch(this)" type="button" value=""/>
+</form>
+<script>
+          function goSearch(event) {
+            var e = window.event || event;
+            if(e.preventDefault){
+              e.preventDefault();
+            }else{
+              e.returnValue=false;
+            }
+            var s = '', m = document.querySelector('.header .pchide [name=headSearchword]');
+            s = m.offsetHeight > 0 ? m.value : document.querySelector('.header .mhide [name=headSearchword]').value;
+            // 市场主体 dataTypeId=14
+            if (s == '市场主体') {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=14&searchWord=' + s;
+            } else {
+              url = '//sousuo.www.gov.cn/sousuo/search.shtml?code=17da70961a7&dataTypeId=107&searchWord=' + encodeURIComponent(s);
+            }
+            window.open(url, '_blank');
+          }
+          function listenerKeyUpEventFn(){
+            if(event.keyCode==13){
+              goSearch();
+            };
+          }
+        </script>
+</div>
+</div>
+</div>
+</div>
+<div class="siteurl hide">https://www.gov.cn/</div>
+<script src="../../../images/jquery.pagination.js"></script>
+<script src="https://user.www.gov.cn/static/js/yh-idm5.0.0.js"></script>
+<script src="https://user.www.gov.cn/static/js/md5.js"></script>
+<script src="../../../images/pub.js" type="text/javascript"></script>
+<script>
+			//繁体和简体相互转换
+			var currUrl = window.location.href;
+			
+			var flag = currUrl.indexOf("big5.www.gov.cn/gate/big5/");
+			
+			var jtzw = 'ht'+'tps://www.gov.cn';
+			
+			//繁体
+			if (flag > 0) { 
+				
+				$('.header_logo a').attr('href',jtzw);
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			}//简体
+			else { 
+				
+				$('.header_toolbar li').eq(2).find('a').attr('href', jtzw);
+				
+			};
+		</script>
+<!--  <a href="javascript:void(0)" onclick="aria.start()" style="position: absolute;top: 0px;" class='mhide'>网站无障碍开关</a> -->
+</body></html>
+<!--end header-->
+<div class="content">
+<!--面包屑导航-->
+<div class="fwpd_dqwz_wrp">
+<!--评论收藏弹出框存放区域开始-->
+<div class="comment">
+<div class="mobile_saoma mhide">手机版</div>
+<div class="collectionLocation" data-id="" data-publishtime="" data-title="" data-url="" data-urlc="" id="yh_btn_favoriteadd">
+<div class="com_img1"></div>
+<div class="com_word">收藏</div>
+</div>
+<div class="commentLocation" data-id="" data-publishtime="" data-title="" data-url="" data-urlc="" id="yh_btn_comment">
+<div class="com_img2"></div>
+<div class="com_word">留言</div>
+</div>
+</div>
+<div class="movingQRcode fl" style="display: none;">
+<img alt="" src="images/P020230322532728249056.jpg"/>
+</div>
+<div class="bigTitle">文件搜索</div>
+</div>
+<!--评论收藏弹出框存放区域结束-->
+<div class="main">
+<div class="search_box zhengce">
+<form action="./" id="flpage" method="get" name="flpage" target="_self">
+<div class="bigInput">
+<input disabled="disabled" id="inpro" name="inpro" type="hidden"/>
+<input id="_sort" name="sort" type="hidden" value=""/>
+<input id="_sortType" name="sortType" type="hidden" value="1"/>
+<input id="_inpro" name="inpro" type="hidden" value=""/>
+<input autocomplete="off" class="blurinput changvalue" data-placeholder="请输入关键词" id="q" name="q" onkeyup="if(event.keyCode==13){ajax_sub();return false;};" type="text"/>
+<a class="bigBtn" href="." onclick="ajax_sub()" style="cursor: pointer;"></a>
+</div>
+<div class="tips_box" id="sug-box" style="display: none">
+</div>
+<ul class="formul">
+<li>
+<label>搜索词位置<i></i></label>
+<ul class="radioUl">
+<li><input checked="checked" class="searchfield_filter" name="searchfield" type="radio" value=""/><span>全文</span></li>
+<li><input class="searchfield_filter" name="searchfield" type="radio" value="title"/><span>标题</span></li>
+<li><span id="sf-error" style="display: none; color: red;">请选择搜索词位置！</span></li>
+</ul>
+</li>
+<li class="checkboxLi">
+<label id="puborg-error">发布机构<i></i></label>
+<ul class="checkUl">
+<input id="t" name="t" type="hidden" value=""/>
+<!--<li><input type="checkbox" id="t_all" value="zhengce" checked="checked" /><span>全部</span></li>-->
+<li><input checked="checked" class="tc" type="checkbox" value="zhongyangfile"/><span>中央有关文件</span><span>   </span><span id="tc-error" style="display: none; color: red;">请选择发布机构！</span></li>
+<li class="guowuyuan">
+<div>
+<input checked="checked" class="tc" type="checkbox" value="gongwen"/><span>国务院文件</span>
+</div>
+<div class="overflowDiv">
+<!-- 发文机关 -->
+<select class="fawenjiguan" id="puborg" name="puborg" onchange="changeWenzhong()">
+<option value="">全部</option>
+<option value="国务院">国务院</option>
+<option value="国务院办公厅">国务院办公厅</option>
+</select>
+<!-- 文种 -->
+<select class="wenzong" id="pcodeJiguan" name="pcodeJiguan">
+<option value="">全部</option>
+<option value="国令">国令</option>
+<option value="国发">国发</option>
+<option value="国函">国函</option>
+<option value="国发明电">国发明电</option>
+<option value="国办发">国办发</option>
+<option value="国办函">国办函</option>
+<option value="国办发明电">国办发明电</option>
+<option value="其他">其他</option>
+</select>
+<!-- 年份 -->
+<select class="nianfen" id="pcodeYear" name="pcodeYear">
+</select>
+<!-- 号 -->
+<div class="bgdiv">
+<input class="blurinput" id="pcodeNum" name="pcodeNum" placeholder="" type="text" value=""/>
+<span class="lhao">号</span>
+<span class="floatEle marginSpan" id="num_error" style="color: #F00; display:none">输入有误！</span>
+</div>
+<select class="gongwenzhonglei" id="filetype" name="filetype">
+<option value="">公文种类</option>
+<option value="决议">决议</option>
+<option value="决定">决定</option>
+<option value="命令（令）">命令（令）</option>
+<option value="公报">公报</option>
+<option value="公告">公告</option>
+<option value="通告">通告</option>
+<option value="意见">意见</option>
+<option value="通知">通知</option>
+<option value="通报">通报</option>
+<option value="报告">报告</option>
+<option value="请示">请示</option>
+<option value="批复">批复</option>
+<option value="议案">议案</option>
+<option value="函">函</option>
+<option value="纪要">纪要</option>
+</select>
+</div>
+</li>
+<!--<li><input type="checkbox" class="tc" value="otherfile" checked="checked" /><span>解读</span></li>-->
+</ul>
+</li>
+<li class="fbrq">
+<label>发布日期<i></i></label>
+<div class="rqdiv">
+<input id="timetype" name="timetype" type="hidden" value="timeqb"/>
+<input autocomplete="off" class="Wdate" id="mintime" name="mintime" onchange="checkpubtime()" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" placeholder="起始日期" type="text" value=""/>
+<input autocomplete="off" class="Wdate" id="maxtime" name="maxtime" onchange="checkpubtime()" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})" placeholder="结束日期" type="text" value=""/>
+<span class="floatEle marginSpan" id="date_error" style="color: #F00; display:none">输入有误！</span>
+</div>
+</li>
+<li class="pipei">
+<input id="sort" type="hidden" value="score"/>
+<label>排序方式<i></i></label>
+<input checked="" class="sort_filter" name="sort" type="radio" value="score"/>
+<label>按相关度</label>
+<input class="sort_filter" name="sort" type="radio" value="pubtime"/>
+<label>按时间</label>
+</li>
+<li class="btn_zc">
+<input class="zc_btn_js" id="btn_submit" onclick="ajax_sub()" type="button" value="搜 索"/>
+<input class="zc_btn_zcxx" onclick="self.location.href = 'https://www.gov.cn/search/zhengce/zcwjgjss/'" style="background-position: 0px 0px;" type="button" value="重 置"/>
+</li>
+</ul>
+</form>
+</div>
+</div>
+<!-- 搜索结果显示 -->
+<div class="sreltBox">
+<div class="srelt" id="search_result">
+<div class="yj_main" id="resultbox">
+</div>
+<!--分页-->
+<div class="pagination">
+</div>
+<div class="policySearchnoResultsPage_middle" id="noResultDiv">
+<div class="jg_box">
+<p class="jg_Para02">
+<span class="ys02">
+<img height="35" src="../../../images/trs_search_jingtanhao.png" width="35"/>
+</span>抱歉，没有找到相关结果。建议：
+          </p>
+<p class="jg_p">1. 请您检查输入是否错误</p>
+<p class="jg_p">2. 请您尝试简化输入词</p>
+<p class="jg_p">3. 请您尝试用相似词或常见词</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--收藏留言隐藏部分开始 -->
+<div>
+<div class="yh_hide" id="yh_loginreg" style="display:none">
+<span id="yh_btn_login">登录</span>
+<span id="yh_btn_reg">注册</span>
+</div>
+</div>
+<div id="yh_logindialog" style="display:none">
+<div class="yh_close"><span>×</span></div>
+<iframe data-src="" frameborder="0" id="yh_login" scrolling="no"></iframe>
+</div>
+<div id="yh_favoritedialog" style="display:none">
+<div class="yh_close"><span>×</span></div>
+<iframe data-src="" frameborder="0" id="yh_favorite" name="yh_favorite" scrolling="no"></iframe>
+</div>
+<div id="yh_commentdialog" style="display:none">
+<div class="yh_close"><span>×</span></div>
+<iframe data-src="" frameborder="0" id="yh_comment" name="yh_comment" scrolling="no"></iframe>
+</div>
+<script src="../../../images/trs_loginRegisterCollection.js" type="text/javascript"></script>
+<!--收藏留言隐藏部分结束 -->
+<!--footer-->
+<style type="text/css">
+  .footer{
+    padding-top: 0;
+  }
+  .footer_dzjg {
+      padding: 14px 22px 0 0;
+          width: 90px;
+  }
+  .footer_dzjg span{
+    display: block;
+  }
+  .footer_txt{
+    margin-top: 27px;
+  }
+  .footer_r {
+      margin-top: 25px;
+  }
+  .barrierFree20231007{
+    width: 80px;
+    height: 37px;
+  }
+  #_ideConac a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+</style>
+<div class="footer_wrap">
+<div class="container mhide">
+<div class="footer_links footer_links1">
+<ul class="clearfix">
+<li>链接：</li>
+<li><a href="http://www.npc.gov.cn/" target="_blank">全国人大</a></li>
+<li>|</li>
+<li><a href="http://www.cppcc.gov.cn/" target="_blank">全国政协</a></li>
+<li>|</li>
+<li><a href="http://www.ccdi.gov.cn/" target="_blank">国家监察委员会</a></li>
+<li>|</li>
+<li><a href="http://www.court.gov.cn/" target="_blank">最高人民法院</a></li>
+<li>|</li>
+<li><a href="http://www.spp.gov.cn/" target="_blank">最高人民检察院</a></li>
+</ul>
+</div>
+<div class="footer_links footer_links2">
+<ul class="clearfix">
+<li><a href="../../../home/2023-03/29/content_5748953.htm" target="_blank">国务院部门网站</a></li>
+<li>|</li>
+<li><a href="../../../home/2023-03/29/content_5748954.htm" target="_blank">地方政府网站</a></li>
+<li>|</li>
+<li><a href="../../../home/2023-03/29/content_5748955.htm" target="_blank">驻港澳机构网站</a></li>
+<li>|</li>
+<li><a href="../../../home/2023-03/29/content_5748956.htm" target="_blank">驻外机构</a></li>
+</ul>
+</div>
+<div class="footer over_hide">
+<div class="footer_l fl">
+<div class="footer_dzjg fl">
+<span id="_ideConac"><a href="https://bszs.conac.cn/sitename?method=show&amp;id=081D1D6883441A53E053012819AC0DAA" target="_blank"><img border="0" data-bd-imgshare-binded="1" hspace="0" id="imgConac" src="../../../images/red.png" vspace="0"/></a>
+</span>
+<!-- 无障碍 -->
+<span class="barrierFree20231007"><img src="../../../images/20230928shilaohuaicon.jpg"/></span>
+</div>
+<div class="footer_txt fl">
+<div class="footer_nav">
+<span><a href="../../../index.htm" target="_blank">中国政府网</a></span>
+<span class="split">|</span>
+<span><a href="../../../home/2016-05/11/content_5046257.htm" target="_blank">关于本网</a></span>
+<span class="split">|</span>
+<span><a href="../../../home/2014-02/23/content_5046258.htm" target="_blank">网站声明</a></span>
+<span class="split">|</span>
+<span><a href="../../../home/2014-02/23/content_5046259.htm" target="_blank">联系我们</a></span>
+<span class="split">|</span>
+<span><a href="../../../fuwu/jiucuopage.html" target="_blank">网站纠错</a></span>
+</div>
+<div class="footer_copyright">
+<p class="footer_bg_gray zbd">主办单位：国务院办公厅　运行维护单位：中国政府网运行中心 </p>
+<p class="footer_bg_gray bqs">版权所有：中国政府网　中文域名：<fjtignoreurl>中国政府网.政务</fjtignoreurl>
+</p>
+<p>网站标识码bm01000001　<a class="banquan" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">京ICP备05070218号</a>　<img src="../../../images/2018guohui03.png" style="padding-top:2px;"/><a class="banquan" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202000001" target="_blank">京公网安备11010202000001号</a>
+</p>
+</div>
+</div>
+</div>
+<div class="footer_r fr">
+<div class="fl footer_ewm footer_ewm_gkhd">
+<a href="http://app.www.gov.cn/download/Chinese.html" target="_blank"><img alt="" src="../../../images/icon_1234.png"/><span>国务院客户端</span></a>
+</div>
+<div class="fl footer_ewm footer_ewm_xcx">
+<a href="../../../guowuyuan/gwykhdxcx/xiaochengxu.html" target="_blank"><img alt="" src="../../../images/icon_724.png"/><span>国务院客户端小程序</span></a>
+</div>
+<div class="fl footer_wxwb">
+<a href="../../../home/2014-02/18/content_5046260.htm" target="_blank"><img height="48" src="../../../images/icon_1434.png" width="48"/></a>
+<a href="../../../home/2014-02/18/content_5046260.htm" target="_blank"><img height="48" src="../../../images/icon_1534.png" width="48"/></a>
+<p><a href="../../../home/2014-02/18/content_5046260.htm" target="_blank">中国政府网微博、微信</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="container pchide">
+<div class="newfooter">
+<ul class="btnlist">
+<li><a class="am-footer-desktop" data-rel="desktop" href="." id="godesktop">电脑版</a></li>
+<li><a href="https://app.www.gov.cn/govdata/html/download.html?from=singlemessage">客户端</a></li>
+<li><a href="../../../guowuyuan/gwykhdxcx/xiaochengxu.html">小程序</a></li>
+<li><a href="https://weibo.com/zhengfu">微博</a></li>
+<li><a href="../../../home/2014-02/18/content_5046260.htm">微信</a></li>
+<li><a href="https://mail.www.gov.cn/nsmail/index.html">邮箱</a></li>
+</ul>
+<ul class="loginList">
+<li class="yeslogin hide">
+<img alt="" class="userImg" src="../../../images/userImg.png"/>
+<a href="javascript:;" id="showname1"></a>
+</li>
+<li class="yeslogin hide"><a href="javascript:;" id="logOutBtn1">退出</a></li>
+<li class="nologin"><a href="javascript:;" id="userreg1">注册</a></li>
+<li class="nologin"><a href="javascript:;" id="userlogin1">登录</a></li>
+<li class="nologin"><a href="../../../fuwu/jiucuopage.html" id="userlogin2">网站纠错</a></li>
+</ul>
+<div class="box">
+<a class="left" href="http://bszs.conac.cn/sitename?method=show&amp;id=081D1D6883441A53E053012819AC0DAA" target="_blank"><img border="0" data-bd-imgshare-binded="1" hspace="0" id="imgConac" src="../../../images/gtrs_red.png" vspace="0"/></a>
+<div class="right">
+<p>主办单位：国务院办公厅　运行维护单位：中国政府网运行中心</p>
+<p>版权所有：中国政府网　中文域名：<fjtignoreurl>中国政府网.政务</fjtignoreurl>
+</p>
+<p>网站标识码bm01000001</p>
+<p>京ICP备05070218号　京公网安备11010202000001号</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+    trs_bottom.init();
+    initShow();
+  });
+
+  var trs_bottom = (function () {
+    function init() {
+      if (typeof (trs) != 'undefined') {
+        // trs.PcBackTop()
+        trs.SearchFn()
+      }
+    }
+
+    return {
+      init: init
+    }
+  })();
+
+  function initShow() {
+    var isShowPc = localStorage.getItem('isShowPc')
+    if (isShowPc && isShowPc === 'true') {
+      $("meta[name='viewport']").attr("content", "width=1280, target-densitydpi=device-dpi")
+      $('body').append('<div id="showMobi" class="showMobi"><img src="/images/trs_mobiIcon.png" />返回手机版</div>')
+    } else {
+      $("meta[name='viewport']").attr("content", "width=750, user-scalable=no, target-densitydpi=device-dpi")
+      $('#showMobi').remove()
+    }
+  }
+</script>
+<script async="" charset="utf-8" defer="" id="ariascripts" loaddata="false" src="//wza.www.gov.cn/dist/aria.js?appid=44fa773aaaee697bd3f5d0fbfc36bf83" type="text/javascript" wapforceoldfixed="false"></script><!--微信分享图功能-->
+<div class="share-title" style="display:none">政策文件高级搜索_中国政府网</div>
+<div class="share-substr" style="display:none">https://www.gov.cn</div>
+<img class="share-img" height="300" src="../../../images/150.jpg" style="display:none" width="300"/>
+<script src="../../../images/jweixin-1.0.0.js"></script>
+<script src="../../../images/20191226wxShare.js"></script>
+<!--微信分享图功能-->
+<!--end footer-->
+<script src="../../../images/trs_jsencrypt.js" type="text/javascript"></script>
+<script src="../../../images/search-pub.js" type="text/javascript"></script>
+<script>
+  // 网关访问地址
+  var DOMAIN_ADDRESS = "https://sousuoht.www.gov.cn";
+  // 注册到网关的调用方应用所属的公钥,用于加密需要加密的参数
+  var publicKey =
+    "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSMhMJQ+XLI7oW0k9Bwufur4Ag40tcsrzT7WZf6Ao0O/hyY1gZtCSYFxkxIZUXjW46j27XSW8IDX1rTJoHaMxHCWsOpTi2W5stybGYZytsY5on8gd8AIaS1d52h9eaS2TFydtJJtE50xHmT0WmoyoinWCuVCOkdCLhh9b9jSdeSQIDAQAB";
+  // 注册到网关的调用方应用的key,作为唯一标识符
+  var athenaAppKey = "a46884b2013e4d189f2a8e2d49a23525";
+  // 注册到网关的调用方应用的名字
+  var athenaAppName = "国网搜索";
+  var rsaAppKey = encodeURIComponent(toEncrypt(publicKey, athenaAppKey));
+  var rsaAppName = encodeURIComponent(athenaAppName);
+
+  var t_map = {
+    "zhengce": ["zhongyangfile", "gongwen", "otherfile"],
+    "zhengce_zy_gw": ["zhongyangfile","gongwen"],
+    "zhengce_zy_or": ["zhongyangfile","otherfile"],
+    "zhengce_gw_or": ["gongwen","otherfile"],
+    "zhengce_zy": ["zhongyangfile"],
+    "zhengce_gw": ["gongwen"],
+    "zhengce_or": ["otherfile"]
+  };
+  var catname_map = {"gongwen": "国务院文件", "zhongyangfile":"中央有关文件", "otherfile":"解读"};
+  var catkey_map = {"gongwen": "zhengce_gw", "zhongyangfile":"zhengce_zy", "otherfile": "zhengce_or"}
+
+  // 年份
+  var nowYear = new Date().getFullYear(), yearStr = '<option value="">年份</option>';
+  for(var i = nowYear;i >=1960;i--) {
+    yearStr += '<option value="' + i + '">' + i + '</option>';
+  }
+  $('#pcodeYear').html(yearStr);
+
+  $(".sort_filter").change(function () {
+    $("#sort").val($(this).val());
+  });
+
+  //=====================检查发布日期==================
+  function checkpubtime(){
+    //校验日期
+    var startTime = $("#mintime").val();
+    var endTime = $("#maxtime").val();
+    if(startTime.length > 0 && endTime.length == 0){
+      var now = new Date();
+      $dp.$('maxtime').value = now.getFullYear() + "-" + (now.getMonth()+1) + "-" + now.getDate();
+    }
+
+    if (startTime.length > 0 && endTime.length > 0){
+      $("#timetype").val("timezd");
+    }else{
+      $("#timetype").val("timeqb");
+    }
+    if (startTime.length > 0 && endTime.length > 0 && $.trim(startTime) > $.trim(endTime)) {
+      showDateError('E_START_END_INVALID');
+      return false;
+    } else {
+      hideDateError();
+      return true;
+    }
+  }
+  function hideDateError(){
+    var date_error = $("#date_error");
+    date_error.hide();
+  }
+  function showDateError(code){
+    var date_error = $("#date_error");
+    var info = format(code);
+    date_error.text(info);
+    date_error.show();
+  }
+  function format(code) {      //code码format成文字
+    var msg = '';
+    switch(code) {
+      case 'E_NOT_NUMBER':
+        msg = '仅支持数字';
+        break;
+      case 'E_FORMAT_ERROR_DATE':
+        msg = '日期格式错误';
+        break;
+      case 'E_INVALID_DATE':
+        msg = '日期格式错误';
+        break;
+      case 'E_START_END_INVALID':
+        msg = '开始日期不能晚于结束时间';
+        break;
+      default:
+        msg = '请检查';
+        break;
+    }
+    return msg;
+  }
+
+  function checkType(){
+    var t_map = {
+      "zhengce": ["zhongyangfile", "gongwen", "otherfile"],
+      "zhengce_zy_gw": ["zhongyangfile","gongwen"],
+      "zhengce_zy_or": ["zhongyangfile","otherfile"],
+      "zhengce_gw_or": ["gongwen","otherfile"],
+      "zhengce_zy": ["zhongyangfile"],
+      "zhengce_gw": ["gongwen"],
+      "zhengce_or": ["otherfile"]
+    };
+
+    var t_array = new Array();
+    $('input[class="tc"]:checked').each(function(){
+      t_array.push($(this).val());
+    });
+
+    if(t_array.length == 0){
+      return null;
+    }
+
+    var ret_t = "zhengce_zy_gw";
+    $.each(t_map, function(key, values) {
+      var flag = true;
+      if (values.length != t_array.length){
+        flag = false;
+        return true;	//continue
+      }
+      $.each(values, function(index, item){
+        if ($.inArray(item, t_array) == -1){
+          flag = false;
+          return false;	//break
+        }
+      })
+      if (flag){
+        ret_t = key;
+        return false;
+      }
+    });
+    return ret_t;
+  }
+
+  //格式化日期
+  function formatPubtime(timestamp){
+    var now = new Date(timestamp);
+    var year=now.getFullYear();
+    var month=now.getMonth()+1;
+    var date=now.getDate();
+    var hour=now.getHours();
+    var minute=now.getMinutes();
+    var second=now.getSeconds();
+    month<10?(month='0'+month):'';
+    date<10?(date='0'+date):'';
+    return   year + "-" + month + "-" + date;
+  }
+
+  function dealTitle(title){
+    if (title != undefined && title != null && title !=""){
+      title = title.replace(/\(/g, "（");
+      title = title.replace(/\)/g, "）");
+    }
+    return title;
+  }
+
+  function changeWenzhong() {
+    var org = $("#puborg").val();
+    var gwy = ["国令", "国发", "国函", "国发明电"];
+    var bgt = ["国办发", "国办函", "国办发明电"];
+    var html = '';
+
+    if(org == "国务院"){
+      html+='<option value="国令:国发:国函:国发明电"><a>文种</a></option>';
+      html += wenzhongOption(gwy);
+    }else if(org == "国务院办公厅"){
+      html+='<option value="国办发:国办函:国办发明电"><a>文种</a></option>';
+      html += wenzhongOption(bgt);
+    }else{
+      html += '<option value="">全部</option>';
+      html += wenzhongOption(gwy);
+      html += wenzhongOption(bgt);
+    }
+    $("#pcodeJiguan").html(html);
+  }
+
+  function wenzhongOption(data){
+    var html = '';
+    $.each(data, function (key, value) {
+      html += '<option value="' + value +'"><a>' + value +'</a></option>'
+    });
+    return html;
+  }
+
+  //=========分页=================
+  //点击页码翻页
+  $(".pagination").on('click', 'a', function(){
+    var p = $(this).attr("page");
+    turnPage(p);
+  })
+  //用户输入页码后做翻页
+  $('.pagination').on('click', 'input[class="newsPageBtn"]', function(){
+    var p = $("#pnum").val() - 1;
+    turnPage(p);
+  })
+  function turnPage(p){
+    var t = checkType();
+    //获取当前标签的显示状态
+    var tag = "";
+    getRecordQueryLogAjaxFn.operationType = 'turn';
+    getRecordQueryLogAjaxFn.pageNo=p;
+    ajax_sub(t, tag, p);
+  }
+  //获取分页的起始和结束页码
+  function getBeginPage(curPage, totalPage){
+    var pageNumber = "10";
+    var begin = curPage < 5 ? 0 : curPage - 5;
+    var end = getEndPage(curPage, totalPage);
+    if (end - begin != pageNumber) {
+      if (curPage > 5) {
+        begin = curPage - 5;
+      } else {
+        begin = 0;
+      }
+    }
+    return begin;
+  }
+  function getEndPage(curPage, totalPage) {
+    var pageNumber = "10";
+    var end = curPage + 5 > totalPage ? totalPage : (curPage < 5 ? pageNumber : curPage + 5);
+    end = end > totalPage ? totalPage : end;
+    return end;
+  }
+
+
+  // 请求
+  function ajax_sub(t, tag, p){
+    var path = DOMAIN_ADDRESS + '/athena/forward/2A40CF891850CF7ED2F0FA6369ECBB88';
+
+    if (t == null || t == "" || t == undefined){
+      t = checkType();
+      if(t == null){
+        $("#resultbox").empty();
+        $('.pagination').empty();
+        //$("#tc-error").css("display", "block");
+        return;
+      }
+    }
+    //搜索参数
+    var q = $("#q").val() == null ? "" : encodeURIComponent($("#q").val());
+    if (p == null || p == undefined){
+      p = "";
+    }
+    //搜索词位置
+    var searchfield = $('input:radio[name="searchfield"]:checked').val();
+    var sort = $("#sort").val();
+    //国务院文件搜索
+    var puborg=$('select#puborg').find('option:selected').val() == null? "": $('select#puborg').find('option:selected').val();
+    var pcodeJiguan=$('select#pcodeJiguan').find('option:selected').val() == null? "": $('select#pcodeJiguan').find('option:selected').val();
+    var pcodeYear=$('select#pcodeYear').find('option:selected').val() == null? "": $('select#pcodeYear').find('option:selected').val();
+    var pcodeNum=$('input#pcodeNum').val() == null? "": $('input#pcodeNum').val();
+    var filetype=$('select#filetype').find('option:selected').val() == null? "": $('select#filetype').find('option:selected').val();
+    //发布时间
+    var mintime=$("#mintime").val() == null ? "": $("#mintime").val();
+    var maxtime = $("#maxtime").val() == null ? "" : formatPubtime($("#maxtime").val());
+    //如果起始时间为null，结束时间也要清空
+    if(mintime===''){
+      $("#maxtime").val(null);
+      maxtime=''
+    }
+    //如果起始时间不为null，结束时间为null
+    if(
+      mintime!=null&&maxtime===''
+    ){
+      maxtime = formatPubtime(new Date());
+      $("#maxtime").val(maxtime);
+    }
+
+    if(mintime != null && maxtime != null){
+      var timeType = 'timezd';
+    }
+    var url = path + "?t="+t+"&q="+q+"&timetype="+timeType+"&mintime="+mintime+"&maxtime="+maxtime+
+      "&searchfield="+searchfield+"&pcodeJiguan="+pcodeJiguan+
+      "&puborg="+puborg+"&pcodeYear="+pcodeYear+"&pcodeNum="+pcodeNum+
+      "&filetype="+filetype  + "&p=" + p +"&n=5" + "&sort=" + sort;
+
+    $.ajax({
+      url: url,
+      type: "GET",
+      headers: {
+        athenaAppKey: rsaAppKey,
+        athenaAppName: rsaAppName
+      },
+      success: function (data) {
+        data = data.result.data;
+        var searchVO = data&&data.searchVO;
+        if(searchVO != null && searchVO.totalCount > 0){
+          var paramsVO = data.paramsVO;
+          if (!paramsVO) return;
+          var t = paramsVO.t, t_values = t_map[t];
+
+          var totalCount = searchVO.totalCount;
+          var totalPage = searchVO.totalpage;
+          var pageSize = searchVO.pageSize;
+          var currentPage = paramsVO.p || 0;
+          var catMap = searchVO.catMap;
+          var listVO = searchVO.listVO;
+
+          $("#noResultDiv").css("display", "none");
+
+          //内容
+          //Object.getOwnPropertyNames(catMap).length > 0
+          if (catMap != null && (catMap["gongwen"] != null || catMap["zhongyangfile"] != null || catMap["otherfile"] != null)){
+
+            //====重新计算totalCount and totalPage=====
+            var totalCount_reComputed = 0;
+            $.each(catMap, function(i, searchVO_item){
+              if(totalCount_reComputed < searchVO_item.totalCount){
+                totalCount_reComputed = searchVO_item.totalCount;
+              }
+            });
+            totalPage = totalCount_reComputed % pageSize > 0 ? (parseInt(totalCount_reComputed / pageSize) + 1) : parseInt(totalCount_reComputed / pageSize);
+            //=======================================
+            $("#resultbox").empty();
+            var orderedCats = ["zhongyangfile", 'gongwen', 'otherfile'];
+            var contentString = "";
+            $.each(orderedCats, function(i, cat){
+              var searchVO_item = catMap[cat];
+              if(searchVO_item == "undefined" || searchVO_item == null){
+                return true;        //continue
+              }
+              var listVO = searchVO_item.listVO;
+              if (searchVO_item != null && searchVO_item.totalCount > 0  && listVO.length > 0){
+                var catName = searchVO_item.catName;
+                var divTitle = '<div class="colum_01 "> <div class="pannel-title tit_s01"> <a class="tabg" href="javascript:void(0);">'
+                  + catname_map[catName] + '(' + searchVO_item.totalCount + ')'
+                  + '</a></div><div class="pubListBox01"><ul class="list01 noindent">';
+                contentString += divTitle;
+                $.each(listVO, function(j, vo){
+                  var pubtime = "";
+                  if (vo.pubtime != null && vo.pubtime != "" && vo.pubtime != undefined){
+                    pubtime = vo.pubtime;
+                    pubtime = formatPubtime(pubtime);
+                  }
+                  contentString += '<li><a href="'+ vo.url +'" target="_blank">' + dealTitle(vo.title) + '</a><span class="datetime">'+pubtime+'</span></li>';
+                });
+                contentString +='</ul><div class="clear">&nbsp;</div></div></div>';
+              }
+            });
+            $('#resultbox').append(contentString).show();
+          }else if(listVO != null){
+            $("#resultbox").empty();
+            var t_value = t_values[0];
+            var t_catname = catname_map[t_value];
+            var contentString = "";
+            var divTitle = '<div class="colum_01 "> <div class="pannel-title tit_s01"> <a class="tabg" href="/xinwen/lianbo/difang.htm" target="_blank">'
+              + t_catname + '(' + totalCount + ')'
+              + '</a></div><div class="pubListBox01"><ul class="list01 noindent">';
+            contentString += divTitle;
+            $.each(listVO, function(j, vo){
+              var pubtime = "";
+              if (vo.pubtime != null && vo.pubtime != "" && vo.pubtime != undefined){
+                pubtime = vo.pubtime;
+                pubtime = formatPubtime(pubtime);
+              }
+              contentString += '<li><a href="'+ vo.url +'" target="_blank">' + dealTitle(vo.title) + '</a><span class="datetime">'+pubtime+'</span></li>';
+            });
+            contentString +='</ul><div class="clear">&nbsp;</div></div></div>';
+            $('#resultbox').append(contentString).show();
+          }
+
+          //分页
+          $('.pagination').empty();
+          if(totalCount > 0 && totalPage > 0){
+            var retString = "";
+            retString += '<p class="dys_fenye">';
+            if(currentPage > 0){
+              retString += '<a target="_self" page="0">首页</a>&nbsp;';
+              retString += '<a target="_self" page="'+(currentPage-1)+'">&lt;上一页</a>&nbsp;';
+            }
+            for(i=getBeginPage(currentPage,totalPage); i <= getEndPage(currentPage,totalPage)-1; i++){
+              if (i == currentPage && totalPage >= 1){
+                retString += '<a page="' + i + '" class="on">'+(i+1)+'</a>';
+              }else{
+                retString += '<a target="_self" page="' + i + '">'+(i + 1)+'</a>&nbsp;';
+              }
+            }
+            if(currentPage < (totalPage - 1)){
+              retString += '<a id="next" target="_self" page="'+(currentPage+1)+'">下一页&gt;</a>&nbsp;';
+              retString += '<a class="lastPage" page="'+(totalPage - 1)+'">尾页</a>&nbsp;';
+            }
+            retString +='</p>';
+            retString +='<span>共'+totalPage+'页</span>';
+            retString +='<span>&nbsp;到第</span>&nbsp;<input class="textNum" id="pnum" name="p" type="text" size="1" autocomplete="off" value="'+(currentPage+1)+'" /><span> 页 </span>';
+            retString +='<input type="button" class="newsPageBtn" value="确定" />';
+            $(".pagination").html(retString).show();
+          }
+
+
+            //记录查询日志的接口，开始
+            getRecordQueryLogAjaxFn.hasResult=(totalCount===0)?0:1;//是否有搜索结果,0否，1是
+            getRecordQueryLogAjaxFn.resultAmount=totalCount;//搜索结果数量
+
+            getRecordQueryLogAjaxFn.pageNo=currentPage;//当前页
+
+            getRecordQueryLogAjaxFn();
+            //记录查询日志的接口，结束
+
+        }else {
+          $("#resultbox").empty();
+          $('.pagination').empty();
+          $("#noResultDiv").css("display", "block");
+        }
+      }
+    });
+
+  }
+
+  function getRecordQueryLogAjaxFn(){
+    getRecordQueryLogAjaxFn.operationType === undefined?getRecordQueryLogAjaxFn.operationType='search':getRecordQueryLogAjaxFn.operationType
+    
+    var params = {
+      code: '17e9592052c',//政策搜索页面 租户唯一标识
+      searchWord: $.trim($('#q').val()),
+      operationType:getRecordQueryLogAjaxFn.operationType,
+      operationTime:Date.now(),
+      sign:'trs300229'+'20909'+ Date.now(),//一次搜索行为的标识
+      isNews:1,//是否为新闻的展示样式
+    };
+    if(
+      getRecordQueryLogAjaxFn.operationType==='search'
+    ){
+      params.hasResult = getRecordQueryLogAjaxFn.hasResult //是否有搜索结果,0否，1是
+      params.resultAmount = getRecordQueryLogAjaxFn.resultAmount//搜索结果数量
+      params.dataTypeId= 111//当前搜索所在分类的id
+    }
+    if(
+      getRecordQueryLogAjaxFn.operationType==='click'
+    ){
+      params.pageNo=getRecordQueryLogAjaxFn.pageNo
+      params.pageSize=$(".pubListBox01 .list01 li").length
+      params.documentRank=getRecordQueryLogAjaxFn.documentRank//文档页内排行，即点击的文档所在页内第几条
+
+    }
+    if(
+      getRecordQueryLogAjaxFn.operationType==='turn'
+    ){
+      let pageIndex = parseInt($(".dys_fenye .on").attr("page"))+1
+      params.pageNo=pageIndex
+    }
+
+    var formData = new FormData();
+    for(var o in params){
+      formData.append(o,params[o])
+    }
+
+    $.ajax({
+      url: DOMAIN_ADDRESS + '/athena/forward/4842893EA040BC059723C0C00D8EDB2F',
+      type: 'POST',
+      data: formData,
+      contentType:false,
+      processData:false,
+      headers: {
+        athenaAppKey: rsaAppKey,
+        athenaAppName: rsaAppName,
+      },
+      success: function (data) {
+        if (data.resultCode.code != 200) {
+          return false;
+        }
+        data = data.result;
+        if (data.data) {
+
+        }
+      },
+      error:function(errorP){
+        console.log('errorP',errorP);
+      },
+    });
+  }
+  //监听检索列表文章点击
+  $(document).on('click','#resultbox li',function(event){
+    var index = $(this).index()+1
+      getRecordQueryLogAjaxFn.documentRank = index;
+      getRecordQueryLogAjaxFn.operationType='click';
+      getRecordQueryLogAjaxFn();
+  });
+
+
+  /*手机二维码*/
+  $('.mobile_saoma').click(function (event) {
+    event.stopPropagation();
+    $('.movingQRcode').toggle();
+  });
+  $(document).click(function () {
+    $('.movingQRcode').hide();
+  })
+</script>
+<div style="display:none"><script type="text/javascript">document.write(unescape("%3Cscript src='//stat.www.gov.cn/webdig.js?z=1' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script></div>
