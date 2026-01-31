@@ -1,0 +1,149 @@
+.Main_cfh {
+    width: 750px;
+}
+.banner {
+    height: auto;
+    background: none;
+}
+.banner img {
+    width: 100%;
+}
+.content {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.cfh_hygq {
+    position: unset;
+    margin-left: 0;
+    width: 100%;
+    border: none;
+}
+.shipin {
+    float: unset;
+    width: auto;
+    position: unset;
+    margin-top: 36px;
+    height: auto;
+}
+.shicont img {
+    width: 600px;
+    height: auto;
+}
+.huiying {
+    float: unset;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: unset;
+}
+.huiying_title h2 a {
+    font-size: 32px;
+}
+.huiying_title h2 {
+    font-size: 32px;
+}
+.huicont p {
+    font-size: 30px;
+    line-height: 40px;
+}
+.jdzc {
+    padding: 40px 25px;
+}
+.jdzc_title {
+    border-bottom: 2px dashed #cfaa60;
+    height: 50px;
+}
+.jdzc_title_text {
+    font-size: 32px;
+}
+.jdzc_title_textmore {
+    font-size: 28px;
+}
+.zhengconts {
+    float: unset;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 2px dashed #cfaa60;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.zhengconts h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: normal;
+}
+.zhengconts p {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.wenzi {
+    float: unset;
+    width: 100%;
+    padding: 30px 40px;
+    margin-top: 80px;
+}
+.online_t_left {
+    float: unset;
+}
+.tit_s01 {
+    height: 50px;
+    border-bottom: 2px dashed #cfaa60;
+}
+.wzsl_more a {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+}
+.online_list {
+    font-size: 30px;
+    margin-top: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+.online_list p {
+    margin-bottom: 10px;
+    line-height: 44px;
+}
+.online_list p span {
+    font-size: 32px;
+    margin-top: 30px;
+    display: block;
+}
+.online_list p strong {
+    font-size: 32px;
+    margin-top: 30px;
+    display: block;
+}
+.you {
+    float: unset;
+    width: 100%;
+}
+.xgtitle_text {
+    font-size: 32px;
+    line-height: 60px;
+    border-bottom: 2px dashed #cfaa60;
+}
+.pinglun {
+    margin-top: 30px;
+}
+.pinglun ul li {
+    font-size: 30px;
+    padding-left: 22px;
+    line-height: 40px;
+    background: url(cfhgb_point.jpg) 0 15px no-repeat;
+    background-size: 10px;
+    margin-bottom: 20px;
+}
+.dsp_img {
+    width: 600px;
+    height: auto;
+    max-width: unset;
+}
+.mtbdmore {
+    line-height: 50px;
+    width: 100px;
+    font-size: 26px;
+    margin-top: 9px;
+}
