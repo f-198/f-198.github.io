@@ -1,0 +1,39 @@
+.mbx {
+  float: left;
+}
+.topBar {
+  float: right;margin-right: 130px;
+}
+.topBar li{float: left;}
+.topBar li:nth-child(1) {
+    margin-right: 20px;
+}
+.icon1 {
+  background: url(trs_zc_star.png) center no-repeat;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.icon2 {
+  background: url(trs_zc_message.png) center no-repeat;
+  margin-right: 4px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
+.BreadcrumbNav ul li .color_font {
+  color: #6f6f6f;
+  font-family: Microsoft YaHei;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: normal !important;
+}
+.BreadcrumbNav ul li .color_font:hover {
+  color: #c50001;
+}
+
+.BreadcrumbNav {
+  width: 1040px;
+  margin: 0 auto 15px;
+}

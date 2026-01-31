@@ -1,0 +1,18 @@
+.topBar li:nth-child(1) {
+    margin-right: 40px;
+}
+.icon1 {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    background-size: 100% 100%;
+}
+.icon2 {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    background-size: 100% 100%;
+}
+.BreadcrumbNav ul li .color_font {
+    font-size: 30px;
+}
