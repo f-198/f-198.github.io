@@ -1,0 +1,167 @@
+/*åº†ç¥æ´»åŠ¨*/
+	.qzhd {
+		width: 1100px;
+		margin: 0 auto;
+	}
+	.qzhd .pc-slide {
+		position: relative;
+		width: 1100px;
+		margin: 0 auto;
+	}
+	.qzhd .view {
+		margin: 0 auto;
+		width: 950px;
+		height: 550px;
+	}
+	.qzhd .view .swiper-container {
+		width: 950px;
+		height: 550px;
+	}
+	.qzhd .view .swiper-container .swiper-slide{
+		position: relative;
+	}
+	
+	.qzhd .view .swiper-container .swiper-slide-bottom-text{
+		position: absolute;
+		bottom:0;
+		left: 0;
+		width: 850px;
+		font-family: "microsoft yahei";
+		color: #fff;
+		font-size: 18px;
+		line-height: 50px;
+		height: 50px;
+		background: url(20datupian_biaoti_bg.png) 0 0 repeat-x;
+		text-indent: 30px;
+		padding-right: 100px;
+		overflow: hidden;
+	}
+	.qzhd .view .swiper-container .swiper-slide-bottom-pagenum{
+		position: absolute;
+		bottom:4px;
+		right: 27px;
+		z-index: 100;
+	}
+	.qzhd .view .swiper-container .swiper-slide-bottom-pagenum em{
+		font-family: "å®‹ä½“";
+		color: #fff45c;
+		font-size: 50px;
+		font-style: normal;
+	}
+	.qzhd .view .swiper-container .swiper-slide-bottom-pagenum strong{
+		font-family: "å®‹ä½“";
+		color: #fff;
+		font-size: 36px;
+	}
+	.qzhd .view .swiper-container .swiper-slide-bottom-pagenum var{
+		font-family: "å®‹ä½“";
+		color: #fff;
+		font-size: 36px;
+		font-style: normal;
+		line-height: 36px;
+	}
+	.qzhd .view .arrow-left {
+		background: url(20da_tupian_arrowLeft.png) no-repeat 0 0;
+		position: absolute;
+		left: 0;
+		top: 36%;
+		margin-top: -25px;
+		width: 51px;
+		height: 81px;
+		z-index: 10;
+	}
+	.qzhd .view .arrow-left:hover{
+		background: url(20da_tupian_arrowLeft_hover.png) no-repeat 0 0;
+	}
+	.qzhd .view .arrow-right {
+		background: url(20da_tupian_arrowRight.png) no-repeat 0 0;
+		position: absolute;
+		right: 0;
+		top: 36%;
+		margin-top: -25px;
+		width: 51px;
+		height: 81px;
+		z-index: 10;
+	}
+	.qzhd .view .arrow-right:hover{
+		background: url(20da_tupian_arrowRight_hover.png) no-repeat 0 0;
+	}
+	.qzhd .view .swiper-container .swiper-slide img{
+		width: 950px;
+		height: 550px;
+	}
+	.qzhd .preview {
+		margin: 0 auto;
+		width: 950px;
+		position: relative;
+		top: -10px;
+		z-index: 100;
+	}
+	
+	.qzhd .preview .swiper-container {
+		margin: 0 auto;
+		width: 950px;
+		height: 122px;
+		padding-top: 12px;
+	}
+	
+	.qzhd .preview .swiper-slide {
+		position: relative;
+		/*æ­¤å¤„ä¸€å®šè¦ä½¿ç”¨widthä¸èƒ½æ·»åŠ marginå¦åˆ™æœ‰é—®é¢˜*/
+		width: 190px;
+		display: inline;
+	}
+	
+	.qzhd .preview .swiper-slide.active-nav span{
+		position: absolute;
+		top: -12px;
+		left: 46%;
+		display: block;
+		width: 24px;
+		height: 12px;
+		background: url(http://www.gov.cn/govweb/xhtml/2019zhuanti/nationalDay/resources/topjiantou.png) 0 0 no-repeat;
+		z-index: 101;
+	}
+	.qzhd .preview .swiper-slide img{
+		width: 158px;
+		height: 92px;
+		border: 15px solid #dcdcdc;
+	}
+	
+	
+	.qzhd .preview .arrow-left {
+		background: url(http://www.gov.cn/govweb/xhtml/2019zhuanti/nationalDay/resources/feel3.png) no-repeat left top;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		margin-top: -9px;
+		width: 9px;
+		height: 18px;
+		z-index: 10;
+	}
+	
+	.qzhd .preview .arrow-right {
+		background: url(http://www.gov.cn/govweb/xhtml/2019zhuanti/nationalDay/resources/feel4.png) no-repeat left bottom;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		margin-top: -9px;
+		width: 9px;
+		height: 18px;
+		z-index: 10;
+	}
+	
+	
+	.qzhd .preview .active-nav img {
+		border-color:#e51820;
+		
+	}
+	.qzhdtitle{
+		margin-bottom: 48px;
+	}
+	.swiper-slide-bottom-text a {
+		color: #fff;
+	}
+	.swiper-slide-bottom-text a:hover {
+			color: #fff;
+		}
