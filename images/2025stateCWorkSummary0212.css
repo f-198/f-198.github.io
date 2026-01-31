@@ -1,0 +1,551 @@
+/* 头部 */
+body{
+    width: 100%;
+	background: url(govwork20250212_banner.jpg) center 0 no-repeat;
+}
+.govwork2025_logo{
+	height: 190px;
+	width: 1220px;
+	margin: 0 auto;
+}
+.govwork2025_logo a{
+	display: block;
+	width: 158px;
+	height: 40px;
+	margin: 14px 0 0 4px;
+}
+
+.zyn_dy {
+    width: 1100px;
+    height: 120px;
+    margin: 0px auto;
+    padding: 220px 60px 70px 60px;
+}
+
+.zyn_dy p {
+    line-height: 40px;
+    text-indent: 2em;
+    color: #282828;
+    font-size: 20px;
+    font-family: "楷体";
+}
+
+.zyn_dy p a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #5e5a5a;
+    font-family: "微软雅黑";
+}
+.look_more {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    color: #015293;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.title_2025zyn .look_more {
+    bottom: 31px;
+}
+/* 政府工作报告这样回顾2024年工作 */
+.govwork2024_box_title {
+    width: 1220px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+/* 这一年政策组合拳 */
+.zczhq2024gifImg {
+    display: none;
+}
+.govwork2025_combinationpolicies_title{
+	width: 1220px;
+	margin: 56px auto 34px;
+}
+.govwork2025_combinationpolicies_title h5{
+	margin-bottom: 54px;
+	/* height: 81px; */
+}
+.govwork2025_combinationpolicies_title.govwork2025_zynzczhq {
+    margin-top: -26px;
+}
+
+.govwork2025_ylzzlzc_title{
+    margin:6px auto 20px;
+}
+.govwork2025_combinationpolicies_content{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	width: 1220px;
+	margin-bottom: 70px;
+    background: url(govwork20250212_zczhq_bg.jpg) center bottom no-repeat;
+}
+.govwork2025_combinationpolicies_content .line1,.govwork2025_combinationpolicies_content .line2{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 1220px;
+}
+
+.govwork2025_combinationpolicies_content a{
+	display: inline-block;
+	height: 240px;
+	margin-bottom: 30px;
+}
+.govwork2025_combinationpolicies_content .line2{
+    width: 1160px;
+    margin: 0 auto;
+}
+.govwork2025_combinationpolicies_content .line2 a{
+	height: 160px;
+}
+/* 这一年会议速览 */
+.govwork2025_hysl_title h5,
+.title_2025zyn,
+.govwork2025_combinationpolicies_title h5 {
+    position: relative;
+}
+.govwork2025_hysl_title {
+	padding: 50px 0 10px;
+}
+.govwork2025_conferenceOverview{
+	height: 600px;
+	background: url(govwork20250212_hysl_bg.jpg) center bottom no-repeat;
+}
+/* 政策组合拳结束 */
+/* 会议速览开始 */
+.dys_prime_minister_conference{
+	position: relative;
+	border-top: 1px solid #d62222;
+}
+.dys_seconds_executive_standing_title {
+    margin: 20px auto 0;
+    width: 1100px;
+}
+.dys_prime_minister_conference_content{
+	width: 1220px;
+	height: 256px;
+	padding: 22px 0;
+	margin:18px auto 37px;
+	box-shadow: 0 0 10px #f5e1dc;  
+	text-align: center;
+	background: #fff;
+}
+.dys_prime_minister_conference_content {
+    background: url(govwork20250212_hysl_conbg.jpg) 0 0 no-repeat;
+    margin: 17px auto 37px;
+    box-shadow: none;
+    border-top: 1px solid #d72323;
+    box-shadow: 0px 5px 7px 0px #fbe7e4;
+}
+
+.dys_press_conference_list{
+	text-align: center;
+}
+.dys_press_conference_list li{
+	font-family: "microsoft yahei";
+	font-size: 22px;
+	line-height: 42px;
+	display: none;
+}
+.dys_press_conference_list li.dys_show{
+	display: block;
+}
+
+.dys_press_conference_list li a {
+    color: #015293;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+}
+
+/* 
+.dys_press_conference_list li .dys_answer{
+	position: absolute;
+	width: 393px;
+	height: 88px;
+	overflow: hidden;
+	left: 25px;
+	top: 158px;
+	font-size: 22px;
+	line-height: 30px;
+	padding-top: 41px;
+	padding-right: 50px;
+	padding-bottom: 38px;
+	padding-left: 88px;
+	background: url(answer.png) 0 0 no-repeat;
+}
+.dys_press_conference_list li .dys_answer p{
+	overflow: hidden;
+	height: 88px;
+}
+.dys_press_conference_list li .dys_answer a{
+	color: #fff8d5;
+} */
+/* 详细 -查看更多 */
+.dys_press_conference_list li p {
+    text-align: right;
+    margin-top: -30px;
+    margin-right: 30px;
+}
+
+.dys_press_conference_list li p a {
+    text-align: left;
+    width: 150px;
+    height: 35px;
+    color: #333;
+    display: inline-block;
+    line-height: 35px;
+    font-size: 14px;
+    background: url(2024zyn_ckgd_bg.png) 0 0 no-repeat;
+    text-indent: 35px;
+}
+
+/*这一年会议速览左右滚动*/
+.dys_prime_minister_conference_scroll_father{
+	position: relative;
+	width: 1340px;
+	height: 100px;
+	margin: 0 auto;
+}
+.dys_prime_minister_conference_scroll {
+    position: relative;
+    width: 1222px;
+    height: 118px;
+    overflow: hidden;
+    margin: -48px auto 0;
+}
+.dys_bigImgScroll_list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 94px;
+}
+.dys_bigImgScroll_list li {
+    float: left;
+    width: 94px;
+    height: 94px;
+    text-align: center;
+    line-height: 94px;
+    /* margin-right: 11px; */
+    display: inline;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+   background-image: url(govwork20250212_hysl_scl_bg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #015293;
+    position: relative;
+}
+.dys_bigImgScroll_list li.thisActive{
+    background-image: url(govwork20250212_hysl_scl_actbg.png);
+     color: #d72323;
+     display: block;
+ }
+.dys_bigImgScroll_list li span {
+    display: none;
+    width: 42px;
+    height: 22px;
+    background-image: url(govwork20250212_hysl_scroll_sj.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    margin-left: -20px;
+}
+
+
+.dys_bigImgScroll_list li.thisActive span{
+	display: block;
+}
+.dys_btnPrev{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -22px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+.dys_btnNext{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -22px;
+	width: 40px;
+	height: 40px;
+	display: block;
+}
+
+/* 共用部分 开始 */
+.govwork2025_hysl_title h5,
+.title_2025zyn,
+.govwork2025_combinationpolicies_title h5 {
+    position: relative;
+}
+.title_2025zyn{
+    position: relative;
+    width: 1220px;
+    margin: 70px auto 30px;
+}
+
+.zccfh_2025zyn,.sjjd_2025zyn{
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.clear{content: "";display: table;clear: both;}
+/* 共用部分 结束 */
+/* 政策吹风会 样式开始 */
+.zccfh_2025zyn .conbox_left {
+    position: relative;
+    float: left;
+    width: 560px;
+    height: 340px;
+    box-shadow: 0px 0px 14px 0px #f9ada5;
+}
+.zccfh_2025zyn  .show_box{
+    width: 592px;
+    height: 200px;
+    margin: 54px 26px 66px 16px;
+    overflow: hidden;
+    position: relative;
+}
+.zccfh_2025zyn .conbox_left .conbox_left_nav{
+    position: absolute;
+    top: 0;
+    width: 582px;
+}
+.zccfh_2025zyn .conbox_left li{
+    position: relative;
+    height: 36px;
+    font-size: 18px;
+    line-height: 36px;
+    padding-left: 42px;
+    background: url(2024zyn_dian.png) 24px center no-repeat;
+}
+.zccfh_2025zyn .conbox_left li.dys_active{
+    height: 50px;
+    line-height: 50px;
+    background: url(2024zyn_dian.png)  24px center no-repeat #faebcb;
+
+}
+.zccfh_2025zyn .conbox_left li.dys_active::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left:10px  solid #faebcb;
+   
+
+}
+.zccfh_2025zyn .conbox_left li a{
+    color: #333;
+}
+.zccfh_2025zyn .conbox_left li.dys_active a{
+    font-weight: bold;
+    color:#c39946;
+}
+.conbox_2025zyn .conbox_btn{
+    z-index: 10;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -40px;
+    background: url(2024zyn_arrows.png) 0 0 no-repeat;
+}
+.conbox_2025zyn .button-prev{
+    top: 16px;
+}
+.conbox_2025zyn .button-next{
+    background-position-y: -40px;
+    bottom: 16px;
+}
+
+.zccfh_2025zyn .conbox_right{
+    position: relative;
+    float: left;
+    width: 562px;
+    height: 224px;
+    margin-top: 20px;
+    padding: 26px 34px 30px 60px;
+    border: 1px solid #dcdcdc;
+    border-left: none;
+    background: #faebcb;
+}
+
+/* .zccfh_2025zyn  .conbox_lookmore{
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #333;
+    background: url(2024zyn_ckgd_bg.png) no-repeat;
+    right: 26px;
+    bottom: 24px;
+}
+.zccfh_2025zyn .conbox_left .conbox_lookmore span{
+   margin-left:40px; 
+    margin-left: 0;
+} */
+
+.zccfh_2025zyn .conbox_right li{
+    text-indent: 2em;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.zccfh_2025zyn .conbox_right li{
+    display: none;
+}
+
+.sjjd_2025zyn ul{
+    overflow: hidden;
+}
+.sjjd_2025zyn li{
+    position: relative;
+    float: left;
+    width:218px ;
+    height: 134px;
+    border: 1px solid #c39b4b;
+    margin: 0 30px 30px 0;
+    background: #fffcfc;
+}
+.sjjd_2025zyn li a{
+	display: flex; /* 设置容器为flex布局 */
+    justify-content: center; /* 水平居中对齐内容 */
+    align-items: center; /* 垂直居中对齐内容 */
+	width:178px ;
+    height: 134px;
+    padding: 0 20px;
+	font-size: 22px;
+    line-height: 28px;
+    color: #015293;
+}
+.sjjd_2025zyn li:hover{
+	border: 1px solid #cfaa60;
+}
+.sjjd_2025zyn li:nth-child(5n){
+    margin-right: 0;
+}
+
+.sjjd_2025zyn li.active{
+    border: 1px solid #ff5a64;
+}
+.sjjd_2025zyn li span{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d72323;
+
+}
+ /* .sjjd_2025zyn {
+    width: 1225px;
+} */
+.sjjd_2025zyn li a {
+    text-align: center;
+}
+
+.sjjd_2025zyn li.active span{
+    display: block;
+}
+
+/* 相关专栏 */
+.govwork2025_xgzl{
+	width: 100%;
+    background: url(govwork20250212_xgzl_bg.jpg) center bottom no-repeat;
+}
+.govwork2025_xgzl .govwork2025_xgzl_con{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* 左边列表 */
+.govwork2025_wjyl_content{
+	width: 1220px;
+	margin: 0 auto 75px;
+}
+.govwork2025_wjyl_content_left{
+	width: 732px;
+	height: 200px;
+	overflow: hidden;
+}
+.govwork2025_wjyl_content_left a{
+	display: block;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	color: #333;
+	line-height: 40px;
+	background: url(2024zyn_dian.png) 15px 18px no-repeat;
+	padding-left: 34px;
+}
+.govwork2025_wjyl_content_left h5 {
+    margin-bottom: 18px;
+}
+
+.govwork2025_wjyl_content_left h5 a {
+    color: #015293;
+    font-family: "microsoft yahei";
+    font-size: 24px;
+    line-height: 24px;
+    background: none;
+    padding-left: 0;
+    font-weight: normal;
+}
+
+.govwork2025_wjyl_content_left span {
+    display: block;
+    text-align: right;
+}
+
+.govwork2025_wjyl_content_left span a {
+    color: #333;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.govwork2025_wjyl_content_left {
+    width: 798px;
+    height: 236px;
+}
+.govwork2025_wjyl_content_right{
+	width: 372px;
+	margin-top: 28px;
+}
+.govwork2025_wjyl_content_right a{
+	display: block;
+	height: 60px;
+	margin-bottom: 26px;
+}
+
+/* 导语换成图片后样式 */
+/* .zyn_dy {
+    width: 1200px;
+    height: 154px;
+    padding: 183px 0 70px;
+}
+.govwork2025_combinationpolicies_title.govwork2025_zynzczhq {
+    margin-top: -4px;
+} */
+/* 导语换成图片后样式 */
