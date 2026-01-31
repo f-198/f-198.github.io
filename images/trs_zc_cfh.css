@@ -1,0 +1,479 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background: #f2f2f2; */
+}
+
+.dys_banner {
+    height: 381px;
+    background: url(trs_bg_zc.jpg) no-repeat top center;
+}
+.dys_banner a{
+    position:absolute;width: 253px;height: 81px;left: 38%;top: 30px;margin-left:-290px;border:0px solid #000;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1060px;
+    height: auto;
+    overflow: hidden;
+    margin: 0px auto;
+    padding: 0 20px;
+    background: #fff;
+    font-family: "microsoft yahei";
+}
+
+.mid_area {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.toutiao {
+    background: #f6f6f6;
+    border: solid 1px #CCCCCC;
+    text-align: center;
+    width: 1088px;
+}
+
+.toutiao h2 {
+    line-height: 78px;
+    font-size: 40px;
+    color: #004986;
+    font-weight: bold;
+}
+
+.toutiao h2 a {
+    color: #004986;
+}
+
+.huiying {
+    width: 654px;
+    margin-top: 26px;
+    padding-top: 60px;
+    background: url(trs_zc_hygq.png) no-repeat;
+}
+.addmore {
+    padding-top: 70px;
+}
+.jdzc {
+    background: url(trs_zc_jdzc.png) no-repeat;
+}
+
+.xctp {
+    background: url(trs_zc_xctp.png) no-repeat;
+}
+
+.gwycwhy {
+    background: url(trs_gwycwhy.png) no-repeat;
+    padding-top: 42px;
+}
+.tit_s01 {
+    position: relative;
+    font-size: 18px;
+    background: url(trs_public_titbg_t4.jpg) repeat-x;
+    height: 44px;
+    font-weight: normal;
+}
+.title-inner {
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    left: 0;
+}
+.tit_s01 .bg01 {
+    width: 20px;
+    background: url(trs_public_titbg_t1.jpg) no-repeat;
+}
+.tit_s01 .tabg {
+    width: auto;
+    background: url(trs_public_titbg_t3.jpg) repeat-x;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.tit_s01 .tabg, .tit_s01 .bg01, .tit_s01 .bg02 {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+}
+.tit_s01 span.bg02 {
+    width: 20px;
+    background: url(trs_public_titbg_t2.jpg) no-repeat right 0;
+}
+.right{
+    float: right;
+}
+.left {
+    float: left;
+    overflow: hidden;
+}
+.gwyzc{
+    font-size: 14px;
+}
+.arr_ran_p {
+    height: 26px;
+    line-height: 26px;
+    background: url(trs_online_sx_bg.jpg) no-repeat left 0;
+    padding-left: 12px;
+    float: left;
+    font-size: 14px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.arr_ran_p span {
+    background: url(trs_online_sx_bg.jpg) no-repeat right 0;
+    padding-right: 12px;
+    float: left;
+    line-height: 26px;
+}
+.arr_ran_select {
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+    color: #666666;
+    margin-right: 7px;
+    padding-left: 8px;
+}
+.arr_ran {
+    padding-top: 8px;
+    position: relative;
+    z-index: 2;
+    padding-right: 10px;
+}
+.mtbd {
+    background: url(trs_mtbd.png) no-repeat;
+    padding-top: 40px;
+}
+
+.xgwj20190412 {
+    background: url(xgwj20190412.jpg) no-repeat;
+}
+
+.addmore {
+    position: relative;
+    margin-top: 40px;
+}
+
+.huicont {
+    height: 200px;
+    overflow: hidden;
+}
+
+.huicont p {
+    line-height: 40px;
+    font-size: 24px;
+    color: #333;
+    text-indent: 2em;
+}
+
+.lanmu {
+    background: #407ac5;
+    line-height: 38px;
+    width: 116px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+}
+
+.more {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    line-height: 32px;
+    width: 80px;
+    color: #6d6d6d;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.more a {
+    color: #000;
+}
+
+.content a:hover {
+    text-decoration:underline
+}
+
+.biaobg {
+    width: 100%;
+    clear: both;
+    height: 1px;
+}
+
+.shipin {
+    width: 392px;
+    margin-top: 26px;
+}
+
+.shicont {
+    text-align: center;
+}
+
+.shicont img {
+    width: 368px;
+    height: 273px;
+}
+
+.g40 {
+    clear: both;
+}
+
+.zhengce {
+    width: 234px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.zhengce img {
+    width: 234px;
+    height: 174px;
+}
+
+.zhengce p {
+    line-height: 30px;
+    font-size: 14px;
+    color: #2d2d2d;
+    text-indent: 2em;
+    margin-top: 20px;
+}
+
+.zhengce p a {
+    color: #2d2d2d;
+}
+.zhengcont a:hover {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+.zhengcont {
+    float: left;
+    width: 33%;
+    height: auto;
+    color: #333;
+    line-height: 30px;
+}
+
+.zhengcont h3 {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.zhengcont p {
+    font-size: 16px;
+    text-indent: 2em;
+    padding-left: 40px;
+    padding-right: 30px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.xianchang {
+    float: left;
+    width: 242px;
+    margin: 18px 10px 0px 10px;
+}
+
+.xianchang img {
+    width: 242px;
+    height: 180px;
+}
+
+.xianchang p {
+    text-align: left;
+    line-height: 26px;
+    font-size: 16px;
+    color: #505050;
+}
+
+.xianchang p a {
+    color: #2d2d2d;
+}
+
+.you {
+    width: 315px;
+}
+
+.youbiao {
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    height: 30px;
+}
+
+.youbiao img {
+    float: left;
+    width: 26px;
+    height: 30px;
+}
+
+.youbiao span {
+    font-size: 20px;
+    line-height: 30px;
+    color: #407ac5;
+    float: left;
+}
+
+.youbiao span a {
+    font-size: 20px;
+    line-height: 30px;
+    color: #407ac5;
+    float: left;
+}
+
+.xiangguan {
+    clear: both;
+    margin-top: 15px;
+}
+
+.xiangguan ul {
+    margin: 0px;
+}
+
+.xiangguan ul li {
+    font-size: 18px;
+    background: url(http://www.gov.cn/govweb/xhtml/zhuanti/2018twoSessions/images/small_square.jpg) 0 14px no-repeat;
+    padding-left: 12px;
+    line-height: 36px;
+    color: #2d2d2d;
+}
+
+.xiangguan ul li a {
+    color: #000;
+}
+
+.g30 {
+    height: 30px;
+}
+
+.pinglun {
+    clear: both;
+    margin-top: 15px;
+}
+
+.pinglun ul {
+    margin: 0px;
+}
+
+.pinglun ul li {
+    font-size: 18px;
+    padding-left: 12px;
+    line-height: 36px;
+    background: url(http://www.gov.cn/govweb/xhtml/zhuanti/2018twoSessions/images/small_square.jpg) 0 14px no-repeat;
+}
+
+.pinglun ul li a {
+    color: #000;
+}
+
+.lxcfh a {
+    display: block;
+    width: 315px;
+    height: 110px;
+    background: url(/govweb/xhtml/govweb/xhtml/2016gov/xinwen/cfh/images/lxcfh.png) no-repeat;
+}
+
+.wenzi {
+    width: 734px;
+}
+
+.online_ckqb {
+    background-color: #f3f5f8;
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+}
+
+.online_ckqb a {
+    color: #49a300;
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+.lastcon {
+    margin: 30px 0px;
+    overflow: hidden;
+}
+
+.online_list ul {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑", Microsoft Yahei;
+    font-size: 14px;
+}
+
+.online_list li {
+    list-style: none;
+    padding: 24px 26px 22px 26px;
+    color: #666666;
+    border-bottom: 1px solid #dcdcdc;
+    line-height: 24px;
+}
+
+.online_list li a {
+    color: #004986;
+    text-decoration: none;
+}
+
+.online_list li span {
+    color: #999999;
+    font-family: Arial;
+}
+
+/*国务院文件*/
+.gwywj20180613 {
+    background: url(gwywj.png) no-repeat;
+}
+
+/*相关会议*/
+.xghy20191106 {
+    background: url(xghy20191106.png) no-repeat;
+}
+
+.modifySpacing {
+    margin-bottom: 30px;
+}
+
+.mtbdPosition {
+    position: relative;
+}
+.mobileShow{
+    display: none !important;
+}
+.pcShow{
+    display: block !important;
+}
+.online_list ul li{
+    margin: 0px auto; padding: 24px 26px 22px; list-style: none; color: rgb(102, 102, 102); border-bottom: 1px solid rgb(220, 220, 220); line-height: 24px;
+}
+.online_list ul{
+    margin: 0px; padding: 0px; font-family: 微软雅黑,Microsoft Yahei; font-size: 14px; color: rgb(51, 51, 51); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;
+}
