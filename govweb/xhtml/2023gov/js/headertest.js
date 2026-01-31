@@ -1,0 +1,25 @@
+document.writeln("<link rel=\"stylesheet\" href=\"https://www.gov.cn/govweb/xhtml/2023gov/css/mobileCommon.css\">");
+document.writeln("<script src=\"https://www.gov.cn/govweb/xhtml/2023gov/js/jquery.min.js\"></script>");
+document.writeln("<div class=\"newHeaderWrapper2023\">");
+document.writeln("  <div class=\"newHeader\">");
+document.writeln("    <a class=\"tp0\" href=\"/\">");
+document.writeln("      <img src=\"https://www.gov.cn/govweb/xhtml/2023gov/images/public/newlogo19ysp.png\" />");
+document.writeln("    </a>");
+document.writeln("    <a class=\"newtp2\" href=\"http://english.gov.cn/\">EN</a>");
+document.writeln("    <a class=\"newtp1\" href=\"javascript:;\">");
+document.writeln("      <img class=\"img1\" src=\"https://www.gov.cn/govweb/xhtml/2023gov/images/public/newsearch.png\" />");
+document.writeln("      <img class=\"img2\" src=\"https://www.gov.cn/govweb/xhtml/2023gov/images/public/newshouqi.png\" />");
+document.writeln("    </a>");
+document.writeln("  </div>");
+document.writeln("  <div class=\"newSearch\">");
+document.writeln("    <div class=\"search\">");
+document.writeln("      <form method=\"get\" action=\"http://sousuo.gov.cn/s.htm\" id=\"topsearchForm\" target=\"_blank\">");
+document.writeln("        <input type=\"hidden\" name=\"t\" value=\"govall\" />");
+document.writeln("        <input class=\"text search_mi\" name=\"q\" type=\"text\" placeholder=\"请输入关键字……\" />");
+document.writeln("        <input class=\"image search_fr\" type=\"submit\" value=\"\" />");
+document.writeln("      </form>");
+document.writeln("    </div>");
+document.writeln("  </div>");
+document.writeln("</div>");
+
+//document.writeln("<script src=\"https://www.gov.cn/govweb/xhtml/2023gov/js/mobileCommon.js\"></script>");
