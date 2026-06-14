@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "www.kanwen.com.cn",
+      "snapshots": [
+        {
+          "timestamp": "20260614_124530",
+          "path": "archives/www.kanwen.com.cn/20260614_124530/index.html",
+          "pages": 1,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "pages.shuoweb.com",
       "snapshots": [
         {
