@@ -1,0 +1,61 @@
+/* ===============================
+   全局 a 链接 → 大气按钮 + 强扫光动效
+=============================== */
+a[href] {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+
+  /* 更大更舒服的按钮 */
+  background: var(--primary);
+  color: #fff !important;
+  border-radius: 16px;
+  padding: 12px 28px;
+  margin: 10px 6px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none !important;
+
+  /* 更丝滑的动画曲线 */
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: var(--shadow);
+
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* 悬浮：更强上浮 + 明显放大 + 更亮 */
+a[href]:hover {
+  transform: translateY(-6px) scale(1.08);
+  filter: brightness(1.15);
+  color: #fff !important;
+}
+
+/* 点击：明显下压 */
+a[href]:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* 强扫光效果 */
+a[href]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.35),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+a[href]:hover::after {
+  left: 100%;
+}
