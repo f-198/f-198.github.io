@@ -1,0 +1,15 @@
+{
+  "brand": "Samsung",
+  "model": "Galaxy Tab S7 FE",
+  "os": "Android",
+  "os_versions": [
+    "14",
+    "13"
+  ],
+  "cpu": "Snapdragon 750G",
+  "gpu_vendor": "Qualcomm",
+  "gpu_renderer": "Adreno 619",
+  "ram": "6GB",
+  "resolution": "2560x1600",
+  "dpi": 270
+}

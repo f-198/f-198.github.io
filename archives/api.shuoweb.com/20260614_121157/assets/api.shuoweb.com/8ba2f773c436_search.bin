@@ -1,0 +1,17 @@
+{
+  "brand": "Apple",
+  "model": "iPad Air (4th Gen)",
+  "os": "iOS",
+  "os_versions": [
+    "14",
+    "15",
+    "16",
+    "17"
+  ],
+  "cpu": "Apple A14 Bionic",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (4-core)",
+  "ram": "4GB",
+  "resolution": "2360x1640",
+  "dpi": 264
+}
