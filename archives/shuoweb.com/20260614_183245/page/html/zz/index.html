@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>政治倾向测试 | SHUOWEB<../../../title/index.html>
+  <script src="../../../assets/shuoweb.com/489e05ccf8cd_common.js"></script>
+  <style>
+    ../../../*/index.html 单选框：高亮常驻，绝对醒目 */
+    .radio-dot {
+      width: 20px !important;
+      height: 20px !important;
+      min-width: 20px !important;
+      border: 2px solid var(--text-sub) !important;
+      border-radius: 50% !important;
+      background: var(--card-bg) !important;
+      position: relative !important;
+      flex-shrink: 0 !important;
+      transition: all 0.2s ease !important;
+    }
+    ../../../*/index.html 选中状态：三层高亮 */
+    .radio-dot.checked {
+      border-color: var(--primary) !important;
+      box-shadow: 0 0 0 3px var(--primary-light) !important;
+    }
+    .radio-dot.checked::after {
+      content: '' !important;
+      position: absolute !important;
+      top: 3px !important;
+      left: 3px !important;
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 50% !important;
+      background: var(--primary) !important;
+    }
+    ../../../*/index.html 选项容器 */
+    .option-item {
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      padding: 8px 10px !important;
+      border-radius: 8px !important;
+      cursor: pointer !important;
+      width: 100% !important;
+    }
+    .option-item:hover {
+      background: var(--primary-light) !important;
+    }
+    .option-item:hover .option-text {
+      color: var(--primary) !important;
+    }
+    .option-text {
+      color: var(--text-sub) !important;
+      text-align: left !important;
+      font-size: 15px !important;
+      margin: 0 !important;
+      line-height: 1.5 !important;
+    }
+    .question-title {
+      font-size: 16px !important;
+      color: var(--text-main) !important;
+      margin: 0 0 12px !important;
+      text-align: left !important;
+      line-height: 1.6 !important;
+      font-weight: 600 !important;
+    }
+    ../../../*/index.html 提交按钮 */
+    #submit {
+      position: relative !important;
+      z-index: 99 !important;
+      display: block !important;
+      width: 100% !important;
+      max-width: 400px !important;
+      margin: 0 auto !important;
+      padding: 14px 0 !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      background: var(--primary, #007BFF) !important;
+      color: #fff !important;
+      border: none !important;
+      border-radius: 12px !important;
+      cursor: pointer !important;
+      pointer-events: auto !important;
+    }
+    ../../../*/index.html 状态提示 */
+    #loading {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-sub);
+    }
+  <../../../style/index.html>
+</head>
+<body>
+  <div id="content" style="max-width:800px;padding:20px 15px 80px;margin:0 auto;">
+    <div class="section" style="background:var(--card-bg);padding:30px 20px;border-radius:var(--radius);box-shadow:var(--shadow);">
+      <h1 style="margin:0 0 30px;font-size:28px;">政治倾向测试<../../../h1/index.html>
+      <p>仅供娱乐，请勿当真<../../../p/index.html>
+
+      <div id="loading">正在加载题目...<../../../div/index.html>
+
+      <div id="quiz" style="display:none;flex-direction:column;gap:25px;margin-bottom:30px;"><../../../div/index.html>
+
+      <button id="submit" style="display:none;" onclick="submitTest();return false;">
+        完成测试 · 查看结果
+      <../../../button/index.html>
+
+      <div id="result" style="margin-top:30px;padding-top:30px;border-top:1px solid rgba(255,255,255,0.3);"><../../../div/index.html>
+    <../../../div/index.html>
+  <../../../div/index.html>
+
+<script>
+  window.selectMap = {}; 
+  window.testData = null;
+
+  function renderQuiz() {
+    const quizEl = document.getElementById('quiz');
+    const loadingEl = document.getElementById('loading');
+    const submitBtn = document.getElementById('submit');
+
+    if (!window.testData || !window.testData.questions) {
+      loadingEl.innerText = '题目加载失败，请检查 data.js 数据';
+      return;
+    }
+
+    loadingEl.style.display = 'none';
+    quizEl.style.display = 'flex';
+    submitBtn.style.display = 'block';
+    quizEl.innerHTML = '';
+
+    window.testData.questions.forEach(question => {
+      const qBox = document.createElement('div');
+      qBox.className = `question-${question.id}`;
+      qBox.style.padding = '15px';
+      qBox.style.background = 'rgba(128,128,128,0.05)';
+      qBox.style.borderRadius = '12px';
+
+      const title = document.createElement('p');
+      title.className = 'question-title';
+      title.innerText = `${question.id}. ${question.text}`;
+      qBox.appendChild(title);
+
+      const optBox = document.createElement('div');
+      optBox.style.display = 'flex';
+      optBox.style.flexDirection = 'column';
+      optBox.style.gap = '6px';
+
+      question.options.forEach((option, optIndex) => {
+        const optItem = document.createElement('div');
+        optItem.className = 'option-item';
+
+        const radioDot = document.createElement('div');
+        radioDot.className = 'radio-dot';
+
+        if (window.selectMap[question.id] === optIndex) {
+          radioDot.classList.add('checked');
+        }
+
+        const optText = document.createElement('p');
+        optText.className = 'option-text';
+        optText.innerText = option.text;
+
+        index.html 修复后的点击逻辑
+        optItem.onclick = function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const qid = question.id;
+          const oid = optIndex;
+
+          if (window.selectMap[qid] === oid) {
+            delete window.selectMap[qid];
+            radioDot.classList.remove('checked');
+          } else {
+            window.selectMap[qid] = oid;
+            const allDots = optBox.querySelectorAll('.radio-dot');
+            allDots.forEach(dot => dot.classList.remove('checked'));
+            radioDot.classList.add('checked');
+          }
+        };
+
+        optItem.appendChild(radioDot);
+        optItem.appendChild(optText);
+        optBox.appendChild(optItem);
+      });
+
+      qBox.appendChild(optBox);
+      quizEl.appendChild(qBox);
+    });
+  }
+
+  window.submitTest = function() {
+    const submitBtn = document.getElementById('submit');
+    const resultEl = document.getElementById('result');
+    submitBtn.disabled = true;
+    submitBtn.innerText = '正在计算...';
+
+    try {
+      if (!window.testData) {
+        alert('数据异常，请刷新页面重试');
+        return;
+      }
+
+      const allQuestions = window.testData.questions;
+      let unAnswered = [];
+
+      allQuestions.forEach(q => {
+        if (window.selectMap[q.id] === undefined) {
+          unAnswered.push(q.id);
+        }
+      });
+
+      if (unAnswered.length > 0) {
+        alert(`你还有 ${unAnswered.length} 道题未完成（第 ${unAnswered.join('、')} 题），请完成后再提交`);
+        submitBtn.disabled = false;
+        submitBtn.innerText = '完成测试 · 查看结果';
+        return;
+      }
+
+      let finalScore = { economic:0, social:0, authority:0, global:0 };
+      allQuestions.forEach(q => {
+        const selectedOpt = q.options[window.selectMap[q.id]];
+        finalScore.economic += selectedOpt.score.economic || 0;
+        finalScore.social += selectedOpt.score.social || 0;
+        finalScore.authority += selectedOpt.score.authority || 0;
+        finalScore.global += selectedOpt.score.global || 0;
+      });
+
+      index.html 修复：原代码写成了 getResult()，但 data.js 里的方法名为 match()
+      const matchResult = window.testData.match(finalScore);
+
+      resultEl.innerHTML = `
+        <h3 style="font-size:20px;margin:0 0 20px;">■ 你的政治倾向得分<../../../h3/index.html>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-bottom:30px;">
+          <p style="padding:10px;background:var(--primary-light, #e6f2ff);border-radius:8px;margin:0;">经济轴：<b style="color:var(--primary, #007BFF);">${finalScore.economic}<../../../b/index.html><../../../p/index.html>
+          <p style="padding:10px;background:var(--primary-light, #e6f2ff);border-radius:8px;margin:0;">社会轴：<b style="color:var(--primary, #007BFF);">${finalScore.social}<../../../b/index.html><../../../p/index.html>
+          <p style="padding:10px;background:var(--primary-light, #e6f2ff);border-radius:8px;margin:0;">权威自由轴：<b style="color:var(--primary, #007BFF);">${finalScore.authority}<../../../b/index.html><../../../p/index.html>
+          <p style="padding:10px;background:var(--primary-light, #e6f2ff);border-radius:8px;margin:0;">国际观轴：<b style="color:var(--primary, #007BFF);">${finalScore.global}<../../../b/index.html><../../../p/index.html>
+        <../../../div/index.html>
+        <h3 style="font-size:20px;margin:0 0 15px;">✦ 你最像：<span style="color:var(--primary, #007BFF);">${matchResult.name}<../../../span/index.html><../../../h3/index.html>
+        <p style="font-size:16px;padding:15px;background:var(--primary-light, #e6f2ff);border-radius:8px;margin:0;text-align:center !important;">${matchResult.desc}<../../../p/index.html>
+      `;
+
+      resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    } catch (err) {
+      console.error('提交出错：', err);
+      alert(`出错了：${err.message}`);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerText = '完成测试 · 查看结果';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const dataScript = document.createElement('script');
+    index.html 适配本地部署：只需确保 data.js 和 HTML 在同一个文件夹即可
+    dataScript.src = 'data.js' 
+    dataScript.crossOrigin = 'anonymous';
+
+    dataScript.onload = () => {
+      index.html 修复：const 定义的变量不会挂载到 window，需直接引用 PoliticalTest
+      if (typeof PoliticalTest !== 'undefined') {
+        window.testData = PoliticalTest;
+        renderQuiz();
+      } else {
+        document.getElementById('loading').innerText = '数据解析失败，请检查 data.js 格式';
+      }
+    };
+
+    dataScript.onerror = () => {
+      document.getElementById('loading').innerText = 'data.js 加载失败，请确认文件是否放在同目录下';
+    };
+
+    document.head.appendChild(dataScript);
+
+    index.html 删除了原本导致点击失效的“全局事件防护”代码
+  });
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"08d443319f70460bb5f2156d758821f4","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

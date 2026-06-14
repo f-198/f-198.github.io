@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Token 计算器 | SHUOWEB<../../title/index.html>
+<script src="../../assets/shuoweb.com/489e05ccf8cd_common.js"></script>
+</head>
+<body>
+
+<div style="max-width:700px;margin:50px auto;padding:0 20px;">
+  <h2>Token 数量 & 价格计算<../../h2/index.html>
+
+  <div style="margin:20px 0">
+    <label>输入/粘贴文本：</label>
+    <input
+      type="text"
+      id="textInput"
+      class="input"
+      style="width:100%;padding:12px 14px;border-radius:8px"
+      placeholder="粘贴内容后自动计算 Token">
+  <../../div/index.html>
+
+  <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
+    <div>
+      <label>Token 总数：</label>
+      <input type="number" id="tokenTotal" class="input" readonly style="width:100%">
+    <../../div/index.html>
+    <div>
+      <label>Token 单价（元）：</label>
+      <input type="number" id="unitPrice" class="input" value="0.0001" step="0.0000001" style="width:100%">
+    <../../div/index.html>
+    <div>
+      <label>预估总价（元）：</label>
+      <input type="number" id="totalCost" class="input" readonly style="width:100%">
+    <../../div/index.html>
+  <../../div/index.html>
+<../../div/index.html>
+
+<script>
+const textInput = document.getElementById('textInput')
+const tokenTotal = document.getElementById('tokenTotal')
+const unitPrice = document.getElementById('unitPrice')
+const totalCost = document.getElementById('totalCost')
+
+token.html 通用简易 Token 计算规则
+function calcToken(text) {
+  if (!text) return 0
+  const cn = (text.match(/[\u4e00-\u9fa5]../../g)/index.html || []).length
+  const en = text.length - cn
+  return Math.ceil(cn + en * 0.25)
+}
+
+function compute() {
+  const t = calcToken(textInput.value)
+  tokenTotal.value = t
+  const p = parseFloat(unitPrice.value) || 0
+  totalCost.value = (t * p).toFixed(6)
+}
+
+textInput.addEventListener('input', compute)
+unitPrice.addEventListener('input', compute)
+compute()
+</script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"08d443319f70460bb5f2156d758821f4","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

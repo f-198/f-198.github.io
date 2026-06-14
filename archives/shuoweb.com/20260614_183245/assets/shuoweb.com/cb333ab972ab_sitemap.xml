@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 学习项目 -->
+  <url>
+    <loc>../../english/index.html<../../loc/index.html>
+    <changefreq>weekly<../../changefreq/index.html>
+    <priority>0.8<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/study/biology_b2_3.html<../../loc/index.html>
+    <changefreq>weekly<../../changefreq/index.html>
+    <priority>0.8<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/study/chemistry_x2_2.html<../../loc/index.html>
+    <changefreq>weekly<../../changefreq/index.html>
+    <priority>0.8<../../priority/index.html>
+  <../../url/index.html>
+
+  <!-- 趣味小筑 -->
+  <url>
+    <loc>../../page/html/today_history/index.html<../../loc/index.html>
+    <changefreq>daily<../../changefreq/index.html>
+    <priority>0.7<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/day_yan.html<../../loc/index.html>
+    <changefreq>daily<../../changefreq/index.html>
+    <priority>0.7<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/people.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.6<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../api/phone/index.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.5<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/study/index.html<../../loc/index.html>
+    <changefreq>weekly<../../changefreq/index.html>
+    <priority>0.8<../../priority/index.html>
+  <../../url/index.html>
+
+  <!-- 实用工具 -->
+  <url>
+    <loc>https://api.shuoweb.com/<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.7<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/ip/index.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.6<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/base64.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.6<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/json.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.6<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/token.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.6<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/qr.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.6<../../priority/index.html>
+  <../../url/index.html>
+
+  <!-- 其他 -->
+  <url>
+    <loc>../../page/html/zz/index.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.5<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/html/mbti/index.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.5<../../priority/index.html>
+  <../../url/index.html>
+  <url>
+    <loc>../../page/me/index.html<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.7<../../priority/index.html>
+  <../../url/index.html>
+
+  <!-- 友情链接 -->
+  <url>
+    <loc>https://shuoweb.42web.io/<../../loc/index.html>
+    <changefreq>monthly<../../changefreq/index.html>
+    <priority>0.4<../../priority/index.html>
+  <../../url/index.html>
+
+<../../urlset/index.html>
