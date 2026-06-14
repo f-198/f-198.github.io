@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "pages.shuoweb.com",
+      "snapshots": [
+        {
+          "timestamp": "20260614_123757",
+          "path": "archives/pages.shuoweb.com/20260614_123757/index.html",
+          "pages": 1774,
+          "resources": 23
+        }
+      ]
+    },
+    {
       "domain": "zhixue.com",
       "snapshots": [
         {
