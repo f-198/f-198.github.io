@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "zhixue.com",
+      "snapshots": [
+        {
+          "timestamp": "20260614_123819",
+          "path": "archives/zhixue.com/20260614_123819/index.html",
+          "pages": 2,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "ovo.shuoweb.com",
       "snapshots": [
         {
