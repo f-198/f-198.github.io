@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MBTI 标准性格测试 | SHUOWEB</title>
+</head>
+<body>
+<div id="content">
+<div class="hero">
+<h1>MBTI 标准性格测试</h1>
+<p>本测试为完整版MBTI性格测试，共70题，请根据你的真实情况选择，答案无对错之分</p>
+</div>
+<div class="section" id="questionsContainer"></div>
+<div>
+<button class="btn btn-scale" id="submitBtn">提交并查看结果</button>
+</div>
+<div class="card section" id="resultBox" style="display: none;">
+<h2>你的性格类型是：<span id="mbtiType"></span></h2>
+<h3 id="typeName"></h3>
+<p id="typeDesc"></p>
+<div style="margin-top: 20px;">
+<button class="btn btn-shine" id="resetBtn">重新测试</button>
+</div>
+</div>
+</div>
+<script src="../../../assets/shuoweb.com/489e05ccf8cd_common.js"></script>
+<script>
+index.html ====================== 完整版MBTI题库 JSON格式 ======================
+const mbtiQuestions = [
+    index.html E../../../I/index.html 外向/内向维度
+    { id: 1, text: "当你有新计划时，你更倾向于立刻告诉朋友，而不是自己先琢磨清楚", dimension: "E" },
+    { id: 2, text: "比起热闹的聚会，你更享受和少数几个亲密朋友的独处时光", dimension: "I" },
+    { id: 3, text: "社交活动结束后，你通常会感到精力充沛，而不是疲惫", dimension: "E" },
+    { id: 4, text: "你需要独处的时间来恢复精力，长时间社交会让你感到消耗", dimension: "I" },
+    { id: 5, text: "你很容易就能和陌生人打开话匣子，主动开启话题", dimension: "E" },
+    { id: 6, text: "在陌生的人群中，你通常会保持安静，等待别人先和你搭话", dimension: "I" },
+    { id: 7, text: "你的朋友圈很广，认识很多不同类型的人", dimension: "E" },
+    { id: 8, text: "你的朋友不多，但都是关系非常深厚的知己", dimension: "I" },
+    { id: 9, text: "遇到问题时，你第一反应是找朋友倾诉求助", dimension: "E" },
+    { id: 10, text: "遇到问题时，你更习惯自己先想办法解决，再告诉别人", dimension: "I" },
+    { id: 11, text: "你喜欢成为人群中的焦点，享受被关注的感觉", dimension: "E" },
+    { id: 12, text: "你不喜欢成为人群中的焦点，更愿意待在角落", dimension: "I" },
+    { id: 13, text: "空闲时间你更愿意约朋友出门，而不是自己待在家里", dimension: "E" },
+    { id: 14, text: "空闲时间你更愿意自己待在家里，而不是出门社交", dimension: "I" },
+    { id: 15, text: "你能快速适应新的社交环境，认识新朋友", dimension: "E" },
+    { id: 16, text: "你适应新的社交环境需要一定的时间，不会太快融入", dimension: "I" },
+    { id: 17, text: "你喜欢把自己的想法和感受直接表达出来", dimension: "E" },
+    { id: 18, text: "你习惯先在心里想清楚，再选择性地表达自己的想法", dimension: "I" },
+
+    index.html S../../../N/index.html 感觉/直觉维度
+    { id: 19, text: "你更关注当下正在发生的事情，而不是未来的可能性", dimension: "S" },
+    { id: 20, text: "你更关注未来的可能性，而不是当下的细节", dimension: "N" },
+    { id: 21, text: "你更相信自己亲眼所见、亲身经历的事实", dimension: "S" },
+    { id: 22, text: "你更相信自己的直觉和灵感", dimension: "N" },
+    { id: 23, text: "你喜欢具体的、可操作的事情，而不是抽象的理论", dimension: "S" },
+    { id: 24, text: "你喜欢抽象的、有想象力的事情，而不是繁琐的细节", dimension: "N" },
+    { id: 25, text: "你描述事情的时候，会如实描述具体的细节", dimension: "S" },
+    { id: 26, text: "你描述事情的时候，会更习惯用比喻、联想的方式", dimension: "N" },
+    { id: 27, text: "你更看重一件事的实用性，而不是它的潜在意义", dimension: "S" },
+    { id: 28, text: "你更看重一件事的潜在意义，而不是它的实用性", dimension: "N" },
+    { id: 29, text: "你学习新东西的时候，更关注具体的操作步骤", dimension: "S" },
+    { id: 30, text: "你学习新东西的时候，更关注整体的概念和原理", dimension: "N" },
+    { id: 31, text: "你不喜欢天马行空的想法，更愿意脚踏实地做事", dimension: "S" },
+    { id: 32, text: "你喜欢天马行空的想法，经常会有很多新奇的脑洞", dimension: "N" },
+    { id: 33, text: "你对细节的感知力很强，很容易注意到周围环境的变化", dimension: "S" },
+    { id: 34, text: "你对整体的趋势很敏感，很容易发现事情背后的规律", dimension: "N" },
+    { id: 35, text: "你更习惯活在当下，享受眼前的生活", dimension: "S" },
+    { id: 36, text: "你更习惯畅想未来，对未来有很多的规划和想象", dimension: "N" },
+
+    index.html T../../../F/index.html 思考/情感维度
+    { id: 37, text: "做决定的时候，你更看重逻辑和事实，而不是人情和感受", dimension: "T" },
+    { id: 38, text: "做决定的时候，你更看重人情和感受，而不是逻辑和事实", dimension: "F" },
+    { id: 39, text: "你认为公平和正确比和谐更重要", dimension: "T" },
+    { id: 40, text: "你认为和谐比公平和正确更重要", dimension: "F" },
+    { id: 41, text: "被别人批评的时候，你更在意批评的内容是否合理", dimension: "T" },
+    { id: 42, text: "被别人批评的时候，你更在意对方的态度是否伤人", dimension: "F" },
+    { id: 43, text: "你习惯直话直说，不喜欢拐弯抹角", dimension: "T" },
+    { id: 44, text: "你习惯委婉表达，担心自己的话会伤害到别人", dimension: "F" },
+    { id: 45, text: "你很理性，不容易被情绪影响判断", dimension: "T" },
+    { id: 46, text: "你很感性，很容易被情绪影响判断", dimension: "F" },
+    { id: 47, text: "你擅长解决问题，而不是安抚别人的情绪", dimension: "T" },
+    { id: 48, text: "你擅长安抚别人的情绪，而不是只讲大道理", dimension: "F" },
+    { id: 49, text: "你认为规则和原则是不能轻易打破的", dimension: "T" },
+    { id: 50, text: "你认为规则和原则可以根据情况灵活调整", dimension: "F" },
+    { id: 51, text: "争论的时候，你会坚持自己的道理，不会轻易妥协", dimension: "T" },
+    { id: 52, text: "争论的时候，你会为了避免冲突而选择妥协", dimension: "F" },
+    { id: 53, text: "你更看重事情的结果，而不是过程中的感受", dimension: "T" },
+    { id: 54, text: "你更看重过程中的感受，而不是事情的结果", dimension: "F" },
+
+    index.html J../../../P/index.html 判断/感知维度
+    { id: 55, text: "你喜欢提前做好计划，按部就班地完成事情", dimension: "J" },
+    { id: 56, text: "你喜欢灵活随性，走到哪算哪，不喜欢被计划束缚", dimension: "P" },
+    { id: 57, text: "你喜欢把事情提前完成，不喜欢拖到最后一刻", dimension: "J" },
+    { id: 58, text: "你习惯拖到最后一刻，在截止日期前冲刺完成", dimension: "P" },
+    { id: 59, text: "你的生活很有规律，作息和日程都很固定", dimension: "J" },
+    { id: 60, text: "你的生活很随性，作息和日程都不固定", dimension: "P" },
+    { id: 61, text: "你喜欢把事情确定下来，不喜欢临时变动", dimension: "J" },
+    { id: 62, text: "你能轻松适应临时变动，喜欢保留更多选择", dimension: "P" },
+    { id: 63, text: "你的桌面和物品都摆放得整整齐齐，井然有序", dimension: "J" },
+    { id: 64, text: "你的桌面和物品都摆放得比较随意，乱中有序", dimension: "P" },
+    { id: 65, text: "你做决定的时候很果断，不会犹豫太久", dimension: "J" },
+    { id: 66, text: "你做决定的时候很犹豫，喜欢反复对比选择", dimension: "P" },
+    { id: 67, text: "你讨厌意外和突发情况，希望一切都在计划内", dimension: "J" },
+    { id: 68, text: "你喜欢意外和突发情况，享受随机应变的感觉", dimension: "P" },
+    { id: 69, text: "你习惯先制定详细的计划，再开始做事情", dimension: "J" },
+    { id: 70, text: "你习惯边做边调整计划，想到就开始做", dimension: "P" }
+];
+
+index.html ====================== 16种MBTI类型完整描述 ======================
+const typeInfo = {
+    "ISTJ": {
+        name: "物流师型",
+        desc: "你是稳重可靠、严谨务实的物流师。你重视秩序、规则和责任，做事一丝不苟，有极强的责任心和执行力。你擅长处理细节，能高效地完成计划内的任务，是团队里最值得信赖的人。你不喜欢冒险和变动，更愿意在熟悉的领域里深耕，用自己的经验和能力把事情做到最好。"
+    },
+    "ISFJ": {
+        name: "守卫者型",
+        desc: "你是温柔细心、默默付出的守卫者。你有极强的共情能力和责任感，擅长观察别人的需求，总是默默为身边的人付出，是团队里的粘合剂。你重视和谐和稳定，不喜欢冲突，愿意为了维护关系而妥协。你对自己在意的人非常忠诚，会用自己的方式守护他们，是最温暖可靠的朋友和伙伴。"
+    },
+    "INFJ": {
+        name: "提倡者型",
+        desc: "你是理想主义、洞察力极强的提倡者。你对人性有深刻的理解，能轻易看穿事情的本质和别人的内心想法。你有自己坚定的价值观和理想，追求生命的深层意义，不愿意随波逐流。你擅长深度思考和长远规划，能用自己的理念影响和引导别人，是天生的精神领袖。"
+    },
+    "INTJ": {
+        name: "建筑师型",
+        desc: "你是战略思维、独立果断的建筑师。你有极强的逻辑思维和规划能力，擅长制定长远的战略计划，并且能精准地执行到位。你对自己有极高的要求，喜欢独立思考，不喜欢被束缚，对不合理的规则会直接挑战。你能一眼看穿事情的漏洞和不足，总能找到最优的解决方案，是天生的战略家。"
+    },
+    "ISTP": {
+        name: "鉴赏家型",
+        desc: "你是冷静理性、动手能力极强的鉴赏家。你擅长观察和解决实际问题，对机械、工具、技术类的东西有天生的敏感度。你喜欢灵活随性的生活，不喜欢被规则束缚，擅长随机应变，总能在紧急情况下找到解决办法。你话不多，但做事非常靠谱，是低调的实力派。"
+    },
+    "ISFP": {
+        name: "探险家型",
+        desc: "你是温和自由、热爱生活的探险家。你有极强的艺术感知力，擅长发现生活中的美好，喜欢用自己的方式表达内心的感受。你重视当下的体验，不喜欢被束缚，追求自由随性的生活。你性格温和，不喜欢冲突，对身边的人非常包容，是温柔又有个性的生活家。"
+    },
+    "INFP": {
+        name: "调停者型",
+        desc: "你是内心纯粹、理想浪漫的调停者。你有丰富的内心世界，对真善美有极致的追求，厌恶虚伪和冲突。你有极强的共情能力，能深刻理解别人的痛苦和感受，愿意为了帮助别人而付出。你忠于自己的价值观，不愿意随波逐流，是温柔又坚定的理想主义者。"
+    },
+    "INTP": {
+        name: "逻辑学家型",
+        desc: "你是思考深刻、热爱真理的逻辑学家。你对抽象的理论和逻辑有天生的热爱，擅长深度思考，总能发现事情背后的规律和本质。你有极强的好奇心，喜欢挑战权威，对不合理的事情会刨根问底。你不喜欢繁琐的规则和社交，更愿意沉浸在自己的思考世界里，是天生的哲学家和科学家。"
+    },
+    "ESTP": {
+        name: "企业家型",
+        desc: "你是精力充沛、擅长应变的企业家。你热爱生活，喜欢冒险和挑战，擅长抓住眼前的机会。你有极强的社交能力和应变能力，能轻松应对各种突发情况，在人群中总是最耀眼的存在。你不喜欢空谈理论，更愿意用实际行动解决问题，是天生的实干家和冒险家。"
+    },
+    "ESFP": {
+        name: "表演者型",
+        desc: "你是热情外向、热爱生活的表演者。你天生就有吸引别人的魅力，擅长活跃气氛，总能给身边的人带来快乐。你重视当下的体验，喜欢新鲜有趣的事情，享受被关注的感觉。你性格开朗，不记仇，对生活充满热情，是天生的开心果和社交达人。"
+    },
+    "ENFP": {
+        name: "竞选者型",
+        desc: "你是创意满满、热情温暖的竞选者。你有丰富的想象力和创造力，总能想出新奇有趣的点子，对未来充满希望和热情。你有极强的共情能力和社交能力，擅长激励和鼓舞别人，能轻易和不同类型的人成为朋友。你热爱自由，不喜欢被束缚，对生活充满好奇，是天生的乐观主义者。"
+    },
+    "ENTP": {
+        name: "辩论家型",
+        desc: "你是思维敏捷、喜欢挑战的辩论家。你有极强的逻辑思维和反应能力，擅长发现别人的逻辑漏洞，喜欢和别人辩论，享受思维碰撞的乐趣。你有极强的好奇心和创造力，总能想出新奇的点子，不喜欢循规蹈矩，喜欢挑战权威和规则。你是天生的创新者和挑战者，总能带来不一样的视角。"
+    },
+    "ESTJ": {
+        name: "总经理型",
+        desc: "你是务实高效、擅长管理的总经理。你有极强的组织能力和执行力，擅长制定规则和计划，并且能带领团队高效完成任务。你重视秩序和效率，不喜欢混乱和低效，对自己和别人都有很高的要求。你做事果断，有责任心，是天生的领导者和管理者。"
+    },
+    "ESFJ": {
+        name: "执政官型",
+        desc: "你是热心体贴、擅长社交的执政官。你有极强的共情能力和社交能力，擅长照顾别人的感受，总能把身边的人照顾得无微不至。你重视和谐和关系，喜欢组织聚会和活动，是团队里的核心人物。你性格开朗，热心肠，愿意为了别人付出，是最受欢迎的朋友和伙伴。"
+    },
+    "ENFJ": {
+        name: "主人公型",
+        desc: "你是富有魅力、善于引导的主人公。你有极强的共情能力和领导力，能轻易理解别人的需求和潜力，擅长引导和鼓舞别人，帮助他们变得更好。你有坚定的价值观和理想，愿意为了更好的世界而努力，是天生的领导者和精神导师。"
+    },
+    "ENTJ": {
+        name: "指挥官型",
+        desc: "你是天生领袖、目标明确的指挥官。你有极强的战略思维和领导力，擅长制定长远的目标和计划，并且能带领团队高效完成。你做事果断，强势自信，不喜欢低效和混乱，对不合理的事情会直接指出。你有极强的抗压能力，能在复杂的情况下做出正确的决策，是天生的领袖。"
+    }
+};
+
+index.html ====================== 全局变量 ======================
+const answers = {};
+const questionsContainer = document.getElementById('questionsContainer');
+const submitBtn = document.getElementById('submitBtn');
+const resultBox = document.getElementById('resultBox');
+const resetBtn = document.getElementById('resetBtn');
+
+index.html ====================== 渲染题目 ======================
+function renderQuestions() {
+    mbtiQuestions.forEach(question => {
+        const questionCard = document.createElement('div');
+        questionCard.className = 'card';
+        questionCard.style.marginBottom = '20px';
+
+        const questionText = document.createElement('p');
+        questionText.textContent = `${question.id}. ${question.text}`;
+        questionCard.appendChild(questionText);
+
+        const btnGroup = document.createElement('div');
+
+        const agreeBtn = document.createElement('button');
+        agreeBtn.textContent = '符合';
+        agreeBtn.className = 'btn';
+        agreeBtn.dataset.qid = question.id;
+        agreeBtn.dataset.value = 'agree';
+
+        const disagreeBtn = document.createElement('button');
+        disagreeBtn.textContent = '不符合';
+        disagreeBtn.className = 'btn';
+        disagreeBtn.dataset.qid = question.id;
+        disagreeBtn.dataset.value = 'disagree';
+
+        agreeBtn.addEventListener('click', () => handleAnswer(question.id, 'agree', agreeBtn, disagreeBtn));
+        disagreeBtn.addEventListener('click', () => handleAnswer(question.id, 'disagree', disagreeBtn, agreeBtn));
+
+        btnGroup.appendChild(agreeBtn);
+        btnGroup.appendChild(disagreeBtn);
+        questionCard.appendChild(btnGroup);
+
+        questionsContainer.appendChild(questionCard);
+    });
+}
+
+index.html ====================== 处理答案选择 ======================
+function handleAnswer(qid, value, selectedBtn, otherBtn) {
+    answers[qid] = value;
+    selectedBtn.classList.add('btn-border');
+    otherBtn.classList.remove('btn-border');
+}
+
+index.html ====================== 计算MBTI结果 ======================
+function calculateResult() {
+    if (Object.keys(answers).length < mbtiQuestions.length) {
+        alert('请完成所有题目后再提交哦');
+        return;
+    }
+
+    let E = 0, I = 0, S = 0, N = 0, T = 0, F = 0, J = 0, P = 0;
+
+    mbtiQuestions.forEach(question => {
+        const userAnswer = answers[question.id];
+        if (userAnswer === 'agree') {
+            switch (question.dimension) {
+                case 'E': E++; break;
+                case 'I': I++; break;
+                case 'S': S++; break;
+                case 'N': N++; break;
+                case 'T': T++; break;
+                case 'F': F++; break;
+                case 'J': J++; break;
+                case 'P': P++; break;
+            }
+        }
+    });
+
+    const ei = E >= I ? 'E' : 'I';
+    const sn = S >= N ? 'S' : 'N';
+    const tf = T >= F ? 'T' : 'F';
+    const jp = J >= P ? 'J' : 'P';
+    const type = ei + sn + tf + jp;
+
+    const info = typeInfo[type];
+    document.getElementById('mbtiType').textContent = type;
+    document.getElementById('typeName').textContent = info.name;
+    document.getElementById('typeDesc').textContent = info.desc;
+    resultBox.style.display = 'block';
+
+    resultBox.scrollIntoView({ behavior: 'smooth' });
+}
+
+index.html ====================== 重置测试 ======================
+function resetTest() {
+    Object.keys(answers).forEach(key => delete answers[key]);
+    questionsContainer.innerHTML = '';
+    resultBox.style.display = 'none';
+    renderQuestions();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+index.html ====================== 绑定事件 ======================
+submitBtn.addEventListener('click', calculateResult);
+resetBtn.addEventListener('click', resetTest);
+
+index.html ====================== 页面加载完成渲染 ======================
+document.addEventListener('DOMContentLoaded', renderQuestions);
+</script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"08d443319f70460bb5f2156d758821f4","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"></script>
+</body>
+</html>
