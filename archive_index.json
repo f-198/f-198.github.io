@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "ovo.shuoweb.com",
+      "snapshots": [
+        {
+          "timestamp": "20260614_123251",
+          "path": "archives/ovo.shuoweb.com/20260614_123251/index.html",
+          "pages": 483,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "api.shuoweb.com",
       "snapshots": [
         {
