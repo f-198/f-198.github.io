@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><title></title>
+<!-- <title th:text="${#themes.code('digipower.pageTitle')}"></title> --><!-- <link rel="stylesheet" th:href="@{${#themes.code('digipower.css.file')}}"/> --><link href="//static.zhixue.com/zhixue.ico" rel="shortcut icon" type="image/x-icon"/><link href="./css/login.css" media="screen" rel="stylesheet"/><script>
+        //是否开启手机号登录
+        var enablePhone = false;
+    </script>
+</head>
+<body>
+<div class="nb-sys-login" id="nbSysLogin">
+<div class="header" id="nbHeader">
+<div class="header-content">
+<img class="header-logo" src="//static.zhixue.com/zhixue.png"/><span class="header-right">为智学保驾护航</span>
+</div>
+</div>
+<div class="container">
+<div class="title" id="nbTitle"></div>
+<div class="form">
+<div style="display: none;">
+<form method="post">
+<input accesskey="n" autocomplete="off" id="ipt-from-username" name="username" placeholder="域账号" size="25" tabindex="1" type="text" value=""/><input accesskey="p" autocomplete="off" id="ipt-from-password" name="password" placeholder="密码" size="25" tabindex="2" type="password" value=""/><input accesskey="screen.welcome.label.imgcode.accesskey" autocomplete="off" id="ipt-from-imgcode" name="imgcode" placeholder="图形验证码" size="4" tabindex="3" type="text" value=""/><section>
+<input name="execution" type="hidden" value="f6f00b75-4c30-44fa-88d2-734088bd7d05_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuT2YwQm5kODFzM1lJaFZaMXJ6cTE1cDFYY2VpNDN3UWNtKzFpTjEydEE1RnhDL3AwaTQ4c080VnJFMzRlLzI0bUdWYzZLTzgyNnJRM0hsc1prRzgrN3JBRDhEZjlPbHhndGMzK1h3Vm4zQVltN0hMcTBDZzZqZlMwS3RqL3ZsNnJNWlhYbGszallFTkZMVHRPZDdDQVdnVk1xS0gwaVIyaVdnakY0VHF4YmFpaU1VMjlPSUN4dUptSi9nZlZ3ekxDZmNxUVl0VUdYK0daR2hzY1hqTkM5YVVlV0NueGRiNlIyeWhKVVVQc0NwMWp0MGtXblpXcVZJWGI4T2wxaXFhM0tPRnIxdWVhalhhOHJXVVRkODNYYURoK256MnprRldYNXZKS0lyaFJrSEpRQ3NsUnh5RDB3ZDlaRi96UGdjUWFkYk5EYnN0SWQzc1hoSUFVelhuZkRrdkJrdGFaZEpIVFBrMWx0czJzMWhQeVhIWDlDT2M4VkNQeFV4REVHWU1nS0N4ZksvWGJ0MUhkQWtPM2IxeVNZdjVsT293cW8rNjMyNDJZM2kxV2l2d0pXT05WTFpUVGFvcEFkSmZXQjRma1Vja1FDNFZ0Q0RpWnVzU3FGbzk1RlpxM0JQa0RSbkxlR3JzK1k5bkhhd2NXV2NnQTUza20xbjFVZnF6eEtrOVhtbCtwcHdJVFJGRVpBV3UxVVcxa3hlR2FxWkZadktoazcrZkczL0tKMTdJTXg2R1pxWjhTMWxNTzBXZ3k3VjBqZGFPdXVjUmo2RUNZK1UwY0Q2YnFlWXpocEJ5bTVEVHVJMUJNNGFXMlgvRmtoSmFtYVB5bFJnMTczZ25DTzdLdmFlUFhzRmR1YWFDTlZFMmJLR09XUnl3ZTFlUWFVTkhBcmN6cnR0aHNRYzVySWtKczFlMC91TlZEdnRNVFlnbjV3NFpzTitRdFdacU5JM1Nlb3pzM0RHUlFOSzliZWo2cGs4MUlMclVzQzVNdTNUa2hpTlVBakwzTjhrVTV3RVdMZU43MjlrUGFhdHB3QnNJckg4cHlkTWpGUHFoSVlUT2tKZ0xxUU83RFQrUGJ5dzRscUJxUzRnZXNSTGlpVThvcDRFM2YxY25Ma3hwWnFXQ0lXUkpzMGs0Z1QxcE5LVmI1SVVMWUM0TmRRV1BvdjBzR20rQm9SUENSa09uUGRwdWFSazA1VW03S2g5Z0dhWjJuMTJwVkxHYjRvZ3JCZmJja1JnM2NMMWpWUHN0cWpqem43UE8xVFZiTm9wWTlFSG8xdEdYdVEza1UrZHpndE9Wa3Y2Y0hiaElpMFRUWjFsTmdDYjUvTDB0K3dBTERDS29wMXBsTGVkSFRqcCtzZWRBUkdONW45dWdaRHJHVVdDb2N1MlpHalpWcTMyd3FqL1ZLM1VQUWVmajBPQjdTSGtaQllnMFBxc1lyZ2U0YlpLZHl6ZW42QlhxbVVIZCswZmFhYit3a0g5QXZueEZ0UGUzaG91TmVjak1FR0ZnTURFZUVJUzFVQlRmeXlZL0pFdzlBaWR0VzRvaWpPdlJSaldrMG4vSzRUMXF2WFY5enV4M2JlRVV6STUwU0wxN0VEZXA4ajdhYWtFdkNTcmNpN3l1QnU0YXhBMDZGdUZlS2tkU0xoby9BdC9lU3F4elVpK3ZpS2tJcXowS2dGcllsL0FKTHNmVkNuVDhHNkdmRXdydlBrYkpOQW5pOHV5UEM1L3BVQ1VORXpjU0YxbDlWcFl1Uk9QT1p6dFJHdk1JSjNSc3JTRFhXNHFlbGtOSFVVeEMyVkFjb1U3N2p4N0NQNllxWUtNdDB4KzRiQjZRYXR1YXdxOE1yTlJiNE8wTnMzNE1TZVN4bHovRXBEOHRQSXRPSnMyWDRnOHhScit6L2J1SmJ6MHRBQjlPQUcya1dlRkpybG1RQWNrVXU4czdyZ0NHKzZJaFpYd1JwUURQeEpDckZVMUpKK2FrTUxlcEl2N2hjazVJbzBHZTZ3eWtLM2ZacVFRQUxaRGc5NmozbUplYmJjRjVxSzdpY1hYdmU2dUZKbmt3OENBT1JNSk9iQVRDSFdaVEtZTTNXbjEvZmJkYmRuZ08wVlppOHZlTEZuZWw0akNFY3ZsZW9Pa2ZraEJ6K2I5cXBZRyt2MlJNYVkzd2k4WWIwZktvd0g5aFlpbjI3Q0dnM0h0aEc5WHRBcDBNanJYU3VOcHVnbDFYU1ZHaUc4YlFiNVdqemI1dWI4cmtXelZIMjNxbmo2Q1ZHV3dzTkJHMVc2dHlnQTFlc3JhTnF5R0xCNGhFM2pieXF2bVY2cmNJaUpmemJXZ0JwQ3IvQVFURDBKTUJVY3B6YVRKampUTmRieTFxQ294Z2FwZW5OTUd2NDB1azhBQUNRRThjeVRyWUtNSU1tM2NEby9ZUzc5YU9PT0FvWnZaYmdXQVdBV095VHNFRytiYUY2b25KbGNNdHRLbEs1ck9EQldzM1hzb1lxZUJrbE9ZVFVKSFNOdmdzVUdyc1RLeXRqMEZsNEVJdWhxOU91a3BFVEk0QldhZkQ2N0FYcVZ1MlF4ZjhFbjU3NTlBcVdRVTJrLzZZd1JOa3I5c1pGanUwSFpYa3BXOXM4eFMxKzBoM2Nza1pqdkxrczN2cnlaWVE4QXhPdXYxdXZTMzBLd251WlFIcE50ek9vcXlqRnNCdDNSSnhoalMzQXEzdUtDeEVFb3hSaldnb1M0dE5tMDFXODhYUGFmRUVURlVMQ0NSNE4wR3FZM2pXUWFaRWx6WG9yeWRqdkpkMkx1UGNrQWN3SmhPVUlBWGUwV0dFclIreFhpcE5SRS9RdE43U2ljYVRCcExoTG44WGh4Ykt5SlpSWVF0WlFHRDlFaGVISXU2cUJXTDZGd3NPd1ZkbFd0dVNrTksyb3MvUEh0MXNxQk9NQlhub21oMnVkUWxCWmlZMm05eG5QRmsyNmlpVlZoTDNwazBNWDRtNVI3WkpITzBCUUQxeFJSZzd1Sll4WjZ2SC9qZzE3MVczRWZlcE1BanJ2K1loUjBKU3JCK3U1VTRDS1A0ZGZKOGcrYXROVDhKUGtPWlR6WGROWFNFOE9JVEVLclhCZW9GUStwRzZ1c2xUOVJ5UTN5UjlNRG8xMFlCRDIvdjAxZGFIR2dNU2U3ckd0bEp4ZFJvb1lOVHpYS2t4L3FaS3cxQ3J3eSt4WC9GcGNtL3VBMlMxRkxEeXZoUkRPUWErbURYeTdGd0dObjdFSzg1MzFUL3kyS0RqY1hYUmVHRWg5blB2MlltYlFDenBORzFid3A0b3REYjdHNFFhcGczUXhKUmI5Yno0UWwrc0laS2pZU2N3ZENNQVBadUZOVUZNSmRGd3krY0hBTmkvS2xmb3VLQ2c3Zi9Ec0hOWDBwMjluNlNZN0IwNkZWL2R2T1Q2MmRkOHIxT244dS93bVRHWGJ1MUpaNUtUYlJHclNqeHNkQ1p5M3hPWVNURU8vKy91anVObStTcURUMHo4N3J5Q2M4dERSRm51eUVpZW9MOWx6QklyU1hDYnNYeHJWYUNuUWdXUDVSMFFNTmFpcllERjJPZ1JuZCtXQ2dPb2lqekVnUE8xWUxkMGV3MjZLSTdjMFdxRHZKUmRnaHJlNjVkTjhUVWdvY1R0UlpncExVczJqY0F5WkZ3YzkrVVJHSHBhTmJGTWtKWWVZdVA1NVdHcHRjMkgzZlYvOEZyckxzSk91OGc4NkRIbmd5V1Q3c2tuanc2WDZSdUFYeFhPNE9kWjkyQXFubytOd2p3YjRCaVlZb21UOVhkcDRwVzB0cy84Q3hLbmxuaEE4QmRZTDZwTHhmeDh0ZzVvdW9kVVo5QWFaU29taTdibDUrVVgzOU9ocExSS1JPRmYvOXFzZ21vam01S3VreVVwVWQ0dElKdTh5eTM3cUdJTHZLOWQyakRzNFB1SkJWOVBWOEdMekRGUnB6VzBReTdJeXFIU1VlV1p4ZVNHSG4wNDY4eGgxMTNxSUY5THMySS9PSXZyVUxodytGSHQ3cFAvZW5jUjZpNFEzMG5OYnZtYnk2dWZGOXFiaEVkMUFidzNaT0JqMGxJOC8rZ2lBWTRXTlZPQ1hhYVYrSm9rVFNSdWd6c0FHeDBoWUE5blVvMkZyZ3VZaVIrZUxheXRmSVR2ZktTNG1DTFhRRW9ZOC8wbFc4YnV3b1NGNmY5MnUxb3ZEdTZKcytBWElkZlZnUXVSOEpySDM0bE1peUJPSGlLOElKTktnR01SNEhLRm02TytoMlozdndUTU5VekJsOERqOFR5RDVLdVNNM2tWU2JQeGRGeE9odTJtRVdlVU9OOTlIbjBpZTJ4bmNaRjlFaXpSMjRoNmZteUs5WWJoMzc2NGVxNlh5OFNua3JXTWxMS2FtMG1MRXc4MTQ5am1HVjFUcnJxZz0uNVc5TDk5M1V0WE9Pc21LZVpUTDZRazlWYjNWZmxRMU5tZzE4RlZ3b2dTN01xcVZoeVU0Q0NtX3p0M2FGRVk3bGtBTVVaRmJNc0hlaXNLN1RqVzFkcVE="/><input name="_eventId" type="hidden" value="submit"/><input name="geolocation" type="hidden"/><input accesskey="l" id="btn-submit" name="submit" tabindex="6" type="submit" value="登录"/></section>
+</form>
+</div>
+<p class="error-tip" id="error-tip"></p>
+<div class="domain-account" id="domain-account">
+<div class="" id="list-providers">
+<div>
+<div>
+<ul style="list-style: none;padding: 0;margin: 0;">
+<li>
+<a autoredirect="false" class="btn-cas" href="clientredirect/index_4064d611.html" style="display: block;line-height: 44px;color: #fff;text-align: center;background-color: #05c1ae;background-color: var(--color-main);border-radius: 5px;cursor: pointer;margin-top: 100px;text-decoration: none;" title="iflytek">
+<!--iflytek-->
+                                            讯飞域账号登录
+                                        </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/jquery.js?v=1.0.1043"></script>
+<script src="./js/jquery.cookie.js?v=1.0.1043"></script>
+<script src="./js/login.js?v=1.0.1043"></script>
+</body>
+</html>
