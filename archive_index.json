@@ -4,6 +4,12 @@
       "domain": "ovo.shuoweb.com",
       "snapshots": [
         {
+          "timestamp": "20260614_123618",
+          "path": "archives/ovo.shuoweb.com/20260614_123618/index.html",
+          "pages": 779,
+          "resources": 0
+        },
+        {
           "timestamp": "20260614_123251",
           "path": "archives/ovo.shuoweb.com/20260614_123251/index.html",
           "pages": 483,
