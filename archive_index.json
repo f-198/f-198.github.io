@@ -15,6 +15,12 @@
       "domain": "shuoweb.com",
       "snapshots": [
         {
+          "timestamp": "20260615_161321",
+          "path": "archives/shuoweb.com/20260615_161254/shuoweb.com/index.html",
+          "pages": 19,
+          "resources": 18
+        },
+        {
           "timestamp": "20260615_160100",
           "path": "archives/shuoweb.com/20260615_160045/shuoweb.com/index.html",
           "pages": 19,
