@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "www.xml.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_174228",
+          "path": "archives/www.xml.com/www.xml.com/index.html",
+          "pages": 1657,
+          "resources": 47
+        }
+      ]
+    },
+    {
       "domain": "ssl",
       "snapshots": [
         {
