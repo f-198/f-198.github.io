@@ -1,0 +1,103 @@
+{
+  "archives": [
+    {
+      "domain": "github.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/github.com/",
+          "pages": 113,
+          "resources": 4
+        }
+      ]
+    },
+    {
+      "domain": "shuoweb.42web.io",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/shuoweb.42web.io/",
+          "pages": 4,
+          "resources": 1
+        }
+      ]
+    },
+    {
+      "domain": "pages.shuoweb.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/pages.shuoweb.com/",
+          "pages": 1,
+          "resources": 1
+        }
+      ]
+    },
+    {
+      "domain": "www.w3.org",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/www.w3.org/",
+          "pages": 25,
+          "resources": 41
+        }
+      ]
+    },
+    {
+      "domain": "api.shuoweb.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/api.shuoweb.com/",
+          "pages": 1,
+          "resources": 3
+        }
+      ]
+    },
+    {
+      "domain": "www.sitemaps.org",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/www.sitemaps.org/",
+          "pages": 10,
+          "resources": 6
+        }
+      ]
+    },
+    {
+      "domain": "ipapi.co",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/ipapi.co/",
+          "pages": 13,
+          "resources": 36
+        }
+      ]
+    },
+    {
+      "domain": "events.vercount.one",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/events.vercount.one/",
+          "pages": 2,
+          "resources": 0
+        }
+      ]
+    },
+    {
+      "domain": "ovo.shuoweb.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_132037",
+          "path": "archives/ovo.shuoweb.com/",
+          "pages": 1,
+          "resources": 0
+        }
+      ]
+    }
+  ]
+}
