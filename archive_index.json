@@ -131,6 +131,12 @@
       "domain": "shuoweb.42web.io",
       "snapshots": [
         {
+          "timestamp": "20260615_223714",
+          "path": "archives/shuoweb.42web.io/20260615_223704/shuoweb.42web.io/index.html",
+          "pages": 4,
+          "resources": 1
+        },
+        {
           "timestamp": "20260615_162723",
           "path": "archives/shuoweb.42web.io/20260615_162709/shuoweb.42web.io/index.html",
           "pages": 4,
