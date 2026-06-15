@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "www.robotstxt.org",
+      "snapshots": [
+        {
+          "timestamp": "20260615_164513",
+          "path": "archives/www.robotstxt.org/20260615_163201/www.robotstxt.org/index.html",
+          "pages": 388,
+          "resources": 12
+        }
+      ]
+    },
+    {
       "domain": "www",
       "snapshots": [
         {
