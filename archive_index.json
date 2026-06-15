@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "www.sitemaps.org",
+      "snapshots": [
+        {
+          "timestamp": "20260615_162704",
+          "path": "archives/www.sitemaps.org/20260615_162648/www.sitemaps.org/index.html",
+          "pages": 10,
+          "resources": 6
+        }
+      ]
+    },
+    {
       "domain": "api.anthropic.com",
       "snapshots": [
         {
