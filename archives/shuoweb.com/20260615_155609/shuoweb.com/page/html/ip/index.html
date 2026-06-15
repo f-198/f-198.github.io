@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IP地址检测</title>
+<script defer="" src="../../../../assets/shuoweb.com/489e05ccf8cd_common.js"></script>
+<link href="../../../../assets/shuoweb.com/1fdedf911582_href.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<h1>您的IP地址信息</h1>
+<div class="card"></div>
+</div>
+<script>
+async function getIP(){
+let e=document.querySelector(".card");
+try{
+let t=await fetch("https://ipapi.co/json/",{headers:{"Accept-Language":"zh-CN"}}),
+a=await t.json();
+e.innerHTML=`<div><strong>IP地址：</strong>${a.ip}</div><div><strong>地理位置：</strong>${a.country_name} · ${a.region} · ${a.city}</div><div><strong>运营商：</strong>${a.org||"未知"}</div><div><strong>时区：</strong>${a.timezone}</div><div><strong>经纬度：</strong>${a.latitude}, ${a.longitude}</div><div><strong>货币：</strong>${a.currency} (${a.currency_name})</div>`
+}catch(t){e.innerHTML="<p>获取IP信息失败，请刷新重试</p>"}}
+window.onload=getIP;
+</script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"08d443319f70460bb5f2156d758821f4","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"></script>
+</body>
+</html>
