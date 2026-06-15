@@ -98,6 +98,12 @@
       "domain": "github.com",
       "snapshots": [
         {
+          "timestamp": "20260615_224904",
+          "path": "archives/github.com/github.com/index.html",
+          "pages": 219,
+          "resources": 2042
+        },
+        {
           "timestamp": "20260615_223253",
           "path": "archives/github.com/20260615_215614/github.com/index.html",
           "pages": 1008,
