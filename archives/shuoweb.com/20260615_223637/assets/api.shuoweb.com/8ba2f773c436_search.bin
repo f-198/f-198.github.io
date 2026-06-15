@@ -1,0 +1,22 @@
+{
+  "brand": "Apple",
+  "model": "iPhone XS",
+  "os": "iOS",
+  "os_versions": [
+    "14_0",
+    "14_1",
+    "14_2",
+    "14_3",
+    "14_4",
+    "14_5",
+    "14_6",
+    "14_7",
+    "14_8"
+  ],
+  "cpu": "Apple A12 Bionic",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (A12)",
+  "ram": "4GB",
+  "resolution": "1125x2436",
+  "dpi": 458
+}
