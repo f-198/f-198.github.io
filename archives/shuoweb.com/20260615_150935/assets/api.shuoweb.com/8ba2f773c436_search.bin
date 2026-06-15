@@ -1,0 +1,17 @@
+{
+  "brand": "Apple",
+  "model": "iPad Pro (11-inch, 3rd Gen)",
+  "os": "iOS",
+  "os_versions": [
+    "14",
+    "15",
+    "16",
+    "17"
+  ],
+  "cpu": "Apple M1",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (8-core)",
+  "ram": "8GB",
+  "resolution": "2388x1668",
+  "dpi": 264
+}
