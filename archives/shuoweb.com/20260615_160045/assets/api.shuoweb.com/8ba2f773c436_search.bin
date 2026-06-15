@@ -1,0 +1,21 @@
+{
+  "brand": "Apple",
+  "model": "iPhone 8",
+  "os": "iOS",
+  "os_versions": [
+    "13_0",
+    "13_1",
+    "13_2",
+    "13_3",
+    "13_4",
+    "13_5",
+    "13_6",
+    "13_7"
+  ],
+  "cpu": "Apple A11 Bionic",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (A11)",
+  "ram": "2GB",
+  "resolution": "750x1334",
+  "dpi": 326
+}
