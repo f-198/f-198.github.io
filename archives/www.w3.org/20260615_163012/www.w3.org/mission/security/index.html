@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="no-js" dir="ltr" lang="en">
+<head>
+<title>Web Security | Our mission | W3C</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="../../index.html" rel="home"/>
+<link href="../../../assets/www.w3.org/fe5c254f18b2_favicon-32.png" rel="icon" type="image/png"/>
+<link href="../../../assets/www.w3.org/e4f2f8a36879_favicon-180.png" rel="apple-touch-icon" type="image/png"/>
+<link href="../../../assets/www.w3.org/97c3cd023cc3_core.css" media="screen" rel="stylesheet"/>
+<!--
+CSS Mustard Cut
+Print (Edge doesn't apply to print otherwise)
+Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
+FF 47+
+-->
+<link href="../../../assets/www.w3.org/fe1a4d3e6738_advanced.css" id="advanced-stylesheet" media="
+            only print,
+            only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+        " rel="stylesheet"/>
+<link href="../../../assets/www.w3.org/2d45bcc8e358_print.css" media="print" rel="stylesheet">
+<script src="../../../assets/www.w3.org/d5f22feb4573_fontfaceobserver.js"></script>
+<script>
+    var myFont = new FontFaceObserver('Noto Sans');
+
+    Promise.all([myFont.load()]).then(function () {
+        document.documentElement.className += " fonts-loaded";
+    });
+
+    (function () {
+        var linkEl = document.getElementById('advanced-stylesheet');
+        if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+            var script = document.createElement('script');
+            script.src = '../../../assets/www.w3.org/4e52415eb72d_main.js';
+            script.defer = true;
+            document.querySelector('head').appendChild(script);
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement);
+        }
+    })();
+</script>
+<meta content="This page gives a high-level introduction to web security." name="description">
+<meta content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png" name="thumbnail"/>
+<meta content="index.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="Web Security" property="og:title"/>
+<meta content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="This page gives a high-level introduction to web security." property="og:description"/>
+<meta content="W3C" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="w3c" name="twitter:site"/>
+<meta content="index.html" name="twitter:url"/>
+<meta content="Web Security" name="twitter:title"/>
+<meta content="This page gives a high-level introduction to web security." name="twitter:description"/>
+<meta content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png" name="twitter:image"/>
+</meta></link></head>
+<body class="default">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grid-wrap">
+<div class="wrap">
+<header class="global-header">
+<span aria-live="polite" role="status"></span>
+<nav aria-label="Language options" id="lang-nav">
+<div class="l-center">
+<div class="l-cluster">
+<ul class="clean-list" role="list">
+<li><a href="https://www.w3.org/ja/" hreflang="ja" lang="ja">日本語ホームページ<span class="visuallyhidden" lang="en">Japanese website</span></a></li>
+<li><a href="https://www.w3.org/zh-hans/" hreflang="zh-hans" lang="zh-hans">简体中文首页<span class="visuallyhidden" lang="en">Chinese website</span></a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav aria-label="Main" id="global-nav">
+<div class="global-nav__inner l-center">
+<a class="logo-link" href="../../index.html" hreflang="en">
+<span class="logo">
+<img alt="W3C" role="img" src="../../../assets/www.w3.org/a158ca0325bb_w3c.svg"/>
+</span>
+<span class="visuallyhidden">Visit the W3C homepage</span>
+</a>
+<button class="button button--ghost with-icon--after with-icon--larger" data-trigger="mobile-nav" style="display: none;" type="button"></button>
+<ul data-component="nav-double-intro">
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/standards/">Standards &amp; groups</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Standards &amp; groups</h2>
+<div class="nav__submenu__intro__text">
+<p>Understand the various specifications, their maturity levels on the web standards track, their adoption, and the groups that develop them.</p>
+<a href="https://www.w3.org/standards/">Explore web standards</a>
+</div>
+</div>
+<ul>
+<li><a href="../../standards/about/index.html">About W3C web standards</a></li>
+<li><a href="https://www.w3.org/TR/">W3C standards &amp; drafts</a></li>
+<li><a href="../../standards/types/index.html">Types of documents W3C publishes</a></li>
+<li><a href="https://www.w3.org/groups/">W3C groups</a></li>
+<li><a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a></li>
+<li><a href="../../standards/review/index.html">Reviews &amp; public feedback</a></li>
+<li><a href="../../get-involved/promote/index.html">Promote web standards</a></li>
+<li><a href="https://www.w3.org/liaisons/">Liaisons</a></li>
+<li><a href="../../groups/other/tag/index.html">Technical Architecture Group (TAG)</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/get-involved/">Get involved</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Get involved</h2>
+<div class="nav__submenu__intro__text">
+<p>W3C works at the nexus of core technology, industry needs, and societal needs.</p>
+<a href="https://www.w3.org/get-involved/">Find ways to get involved</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/ecosystems/">Browse our work by industry</a></li>
+<li><a href="https://www.w3.org/membership/">Become a Member</a></li>
+<li><a href="https://www.w3.org/Member/">Member home (restricted)</a></li>
+<li><a href="https://www.w3.org/support-us/">Support us</a></li>
+<li><a href="https://www.w3.org/email/">Mailing lists</a></li>
+<li><a href="https://www.w3.org/guide/">Participant guidebook</a></li>
+<li><a href="../../about/positive-work-environment/index.html">Positive work environment</a></li>
+<li><a href="https://www.w3.org/invited-experts/">Invited Experts</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/resources/">Resources</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Resources</h2>
+<div class="nav__submenu__intro__text">
+<p>Master web fundamentals, use our developer tools, or contribute code.</p>
+<a href="https://www.w3.org/resources/">Learn from W3C resources</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/developers/">Developers</a></li>
+<li><a href="../../developers/tools/index.html">Validators &amp; tools</a></li>
+<li><a href="../../WAI/fundamentals/index.html">Accessibility fundamentals</a></li>
+<li><a href="../../International/i18n-drafts/nav/about/index.html">Internationalization (i18n)</a></li>
+<li><a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a></li>
+<li><a href="../../policies/code-of-conduct/index.html">Code of conduct</a></li>
+<li><a href="https://www.w3.org/reports/">Reports</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/news-events/">News &amp; events</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">News &amp; events</h2>
+<div class="nav__submenu__intro__text">
+<p>Recent content across news, blogs, press releases, media; upcoming events.</p>
+<a href="https://www.w3.org/news-events/">Explore news &amp; events</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/news/">News</a></li>
+<li><a href="https://www.w3.org/blog/">Blog</a></li>
+<li class="break-after"><a href="https://www.w3.org/press-releases/">Press releases</a></li>
+<li><a href="../../about/press-media/index.html">Press &amp; media</a></li>
+<li><a href="https://www.w3.org/events/">Events</a></li>
+<li><a href="../../news-events/tpac/index.html">Annual W3C Conference (TPAC)</a></li>
+<li><a href="../../policies/code-of-conduct/index.html">Code of conduct</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/support-us/">Support us</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Support us</h2>
+<div class="nav__submenu__intro__text">
+<p>Make a huge difference to our operations as a public-interest non-profit, and help us to achieve our vision.</p>
+<a href=""></a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/support-us/">Ways you can support us</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/about/">About</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">About</h2>
+<div class="nav__submenu__intro__text">
+<p>Understand our values and principles, learn our history, look into our policies, meet our people.</p>
+<a href="https://www.w3.org/about/">Find out more about us</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/mission/">Our mission</a></li>
+<li><a href="https://www.w3.org/support-us/">Support us</a></li>
+<li><a href="../../about/leadership/index.html">Leadership</a></li>
+<li><a href="https://www.w3.org/staff/">Staff</a></li>
+<li class="break-after"><a href="https://www.w3.org/careers/">Careers</a></li>
+<li><a href="../../about/press-media/index.html">Media kit</a></li>
+<li><a href="../../about/diversity/index.html">Diversity</a></li>
+<li><a href="../../about/corporation/index.html">Corporation</a></li>
+<li><a href="https://www.w3.org/policies/">Policies &amp; legal information</a></li>
+<li><a href="https://www.w3.org/contact/">Contact us</a></li>
+<li><a href="https://www.w3.org/help/">Help</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item">
+<a class="nav-link icon-link" href="../../help/search/index.html" hreflang="en">
+<img alt="" aria-hidden="true" class="icon" height="24" src="../../../assets/www.w3.org/67310eeec1ee_search.svg" width="24"/><span class="hide-at-max-width">Search</span>
+</a>
+</li>
+<li class="top-nav-item">
+<a class="account-login icon-link with-icon--after" href="../../users/myprofile/index.html" hreflang="en" id="account-login-link">
+                    My account
+                    <span class="avatar avatar--small icon"><img alt="" aria-hidden="true" height="24" src="../../../assets/www.w3.org/db2ddb3662a8_avatar.svg" width="24"/></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<nav aria-label="Breadcrumb" id="breadcrumb">
+<div class="l-center">
+<div class="l-cluster">
+<ol class="breadcrumbs clean-list" role="list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="/mission/">Our mission</a></li>
+<li><a aria-current="page" href="index.html">Web Security</a></li>
+</ol>
+</div>
+</div>
+</nav>
+<main id="main">
+<div class="content">
+<article>
+<h1>Web Security</h1>
+<nav aria-label="Translations" class="l-box l-box--no-border translations">
+<div class="l-sidebar">
+<div>
+<div class="sidebar">
+<span lang="en">Read this page in:</span>
+</div>
+<div class="not-sidebar">
+<div class="l-cluster">
+<ul class="clean-list translation-list">
+<li>
+<a dir="auto" href="../../zh-hans/mission/security/index.html" hreflang="zh-Hans" lang="zh-Hans">
+                        中文（简体）
+                    </a>
+</li>
+<li>
+<a dir="auto" href="../../ja/mission/security/index.html" hreflang="ja" lang="ja">
+                        日本語
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-labelledby="toc-label" class="toc">
+<h2 id="toc-label">Page contents</h2>
+<ul><li><a href="#how-w3c-approaches-security">How W3C approaches Security</a></li><li><a href="#developing-security-standards">Developing security standards</a></li><li><a href="#ping">Reviewing the security of web standards</a></li><li><a href="#guiding-web-developers-to-design-and-develop-in-a-secure-manner">Guiding Web Developers to design and develop in a secure manner</a></li><li><a href="#sponsoring">Sponsoring</a></li><li><a href="#h-shape-the-secure-web-as-a-w3c-member-">
+    Shape the Secure Web as a W3C Member
+</a></li></ul></nav>
+<div class="component component--text">
+<p>Privacy and security – integral to <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights">human rights</a> and <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights">civil liberties</a> – have long been important in the Web Consortium's agenda. For example, our work has been instrumental in improving Web security through the development of authentication technologies that can replace weak passwords and help mitigate threats from phishing and similar attacks.</p><p>However, users rightly fear the misuse of their personal data and being tracked online, including browser fingerprinting, the spread of disinformation, and other online harms. These are difficult and urgent challenges. We have begun discussions about how to help users find trustworthy content on the Web without increasing censorship.</p>
+</div>
+<figure class="component component--video">
+<div class="l-frame l-frame--16-9">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" height="113" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/_dq28QMKdeM?feature=oembed" title="Security at W3C" width="200"></iframe>
+</div>
+<figcaption>
+<p>Security at W3C, Simone Onofri, April 2024 (00:09:46). Privacy and security, fundamental to human rights and civil liberties, have always been key W3C agenda items. At the recent W3C member meeting in Hiroshima, Simone outlined a three-pillar approach to security: developing security standards, verifying those standards, and guiding developers to create a secure web.</p>
+</figcaption>
+</figure>
+<div class="component component--text">
+<div class="desc"><h2 id="how-w3c-approaches-security">How W3C approaches Security</h2><ol style="list-style-type:decimal;"><li>Develop security technology standards</li><li>Review the security of web standards</li><li>Guide Web Developers to design and develop in a secure manner</li></ol></div><h2 id="developing-security-standards">Developing security standards</h2><p>We have several groups that develop security standards.</p><h3>Threat modeling</h3><p>The <a href="../../groups/cg/tmcg/index.html">Threat Modeling Community Group</a> provides a venue for Security, Privacy, and Human Rights experts, along with technology domain experts, to create Threat Models, which are living documents that identify cross-areas threats and mitigations and provide information on residual risks.</p><h3>Web Application Security</h3><p>The <a href="../../groups/wg/webappsec/index.html">Web Application Security Working Group</a> develops security and policy mechanisms to improve the security of Web Applications, and enable secure cross-site communication.</p><h3>Web Authentication</h3><p>The <a href="../../groups/wg/webauthn/index.html">Web Authentication Working Group</a> defined a client-side API providing strong authentication functionality to Web Applications.</p><h3>Federated Identity</h3><p>The <a href="../../groups/wg/fedid/index.html">Federated Identity Working Group</a> supports authentication and authorization flows without compromising security and privacy principles.</p><h3>Web Payment Security</h3><p>The <a href="../../groups/ig/securepay/index.html">Web Payment Security Interest Group</a> enhances the security and interoperability of various Web payments technologies.</p><h2 id="ping">Reviewing the security of web standards</h2><p>Security reviews are done by a pool of volunteer reviewers coordinated by the Team. We welcome more people in that pool. Issues raised are tracked using <a href="https://w3c.github.io/horizontal-issue-tracker/?repo=w3c/security-review">the same tooling used by PING</a>.</p><p>We are creating a group to do horizontal security reviews with security researchers and cryptographers.</p><h3>Security Interest Group (SING)</h3><p>With a mission to improve Security on the Web by advising groups developing standards on how to avoid and mitigate security issues with their technologies, the group will also suggest changes to existing standards and technologies to improve security.</p><h2 id="guiding-web-developers-to-design-and-develop-in-a-secure-manner">Guiding Web Developers to design and develop in a secure manner</h2><p>We created a cross-organization group to guide web developers and ensure a holistic approach to security.</p><h3>Security Web Application Guidelines</h3><p>The <a href="../../groups/cg/swag/index.html">Security Web Application Guidelines (SWAG) Community Group</a> increases the overall security of web application development, thereby making the web a more secure platform for web users, through the edition of web creators security best practices and providing a platform for stakeholder collaboration (e.g., OpenSSF, OWASP, Open Web Docs, etc.)</p><p>The group is developing "<a href="https://github.com/w3c-cg/swag/blob/main/docs/security_guidelines.md">Guidelines for developing more secure web applications</a>".</p>
+</div>
+<div class="component component--text">
+<h2 id="sponsoring">Sponsoring</h2><p>Organizations can become a <a href="https://www.w3.org/sponsor/#w3c-principles-champion">Web for All Champion</a>; an option that is open to W3C Members as well as non-members.</p><p><a class="button" href="https://www.w3.org/sponsor/">Sponsor this work</a></p>
+</div>
+<div class="component component--text">
+<h2 id="h-shape-the-secure-web-as-a-w3c-member-">
+    Shape the Secure Web as a W3C Member
+</h2>
+<p>
+<a href="../../membership/list/index.html">W3C Members</a> play a significant role in <a href="https://www.w3.org/mission/">shaping the Web</a>.
+</p>
+<p>
+<a href="https://www.w3.org/contact/">Contact W3C</a> to learn more about the <a href="https://www.w3.org/membership/">benefits of W3C Membership</a> to play a significant role yourself!
+</p>
+</div>
+</article>
+<div class="related">
+<nav aria-labelledby="related-label" class="related__inner">
+<h2 class="txt-jupiter" id="related-label">In this section</h2>
+<ul class="clean-list" role="list">
+<li><a href="../accessibility/index.html">Accessibility</a></li>
+<li><a href="../internationalization/index.html">Internationalization</a></li>
+<li><a href="../privacy/index.html">Privacy</a></li>
+<li><a aria-current="page" href="index.html">Web Security</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</main>
+</div>
+<footer class="global-footer">
+<div class="l-center">
+<div class="global-footer__links">
+<div class="l-cluster">
+<ul class="clean-list" role="list">
+<li><a href="../../index.html" hreflang="en"><span dir="ltr" lang="en">Home</span></a></li>
+<li><a href="https://www.w3.org/contact/" hreflang="en"><span dir="ltr" lang="en">Contact</span></a></li>
+<li><a href="https://www.w3.org/help/" hreflang="en"><span dir="ltr" lang="en">Help</span></a></li>
+<li><a href="https://www.w3.org/support-us/" hreflang="en"><span dir="ltr" lang="en">Support us</span></a></li>
+<li><a href="https://www.w3.org/policies/" hreflang="en"><span dir="ltr" lang="en">Legal &amp; Policies</span></a></li>
+<li><a href="../../about/corporation/index.html" hreflang="en"><span dir="ltr" lang="en">Corporation</span></a></li>
+<li><a href="https://status.w3.org/" hreflang="en"><span dir="ltr" lang="en">System Status</span></a></li>
+</ul>
+</div>
+<ul class="clean-list" role="list">
+<li>
+<a class="with-icon--larger" href="https://w3c.social/@w3c" hreflang="en">
+<img alt="" aria-hidden="true" class="icon icon--larger" height="20" loading="lazy" src="../../../assets/www.w3.org/fd52b96cb9b8_mastodon.svg" width="20"/>
+<span class="visuallyhidden"><span dir="ltr" lang="en">W3C on Mastodon</span></span>
+</a>
+</li>
+<li>
+<a class="with-icon--larger" href="https://github.com/w3c/" hreflang="en">
+<img alt="" aria-hidden="true" class="icon icon--larger" height="20" loading="lazy" src="../../../assets/www.w3.org/1fa77d751548_github.svg" width="20"/>
+<span class="visuallyhidden"><span dir="ltr" lang="en">W3C on GitHub</span></span>
+</a>
+</li>
+</ul>
+</div>
+<p class="copyright"><span dir="ltr" lang="en">Copyright © 2026 <a href="../../index.html">World Wide Web Consortium</a>.<br/> <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a href="../../copyright/document-license/index.html" rel="license" title="W3C Document License">permissive license</a> rules apply.</span></p>
+</div>
+</footer>
+</div>
+<script src="../../../assets/www.w3.org/1e63948a0708_translations-sorting.js"></script>
+</body>
+</html>

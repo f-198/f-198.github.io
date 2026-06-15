@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<html class="no-js" dir="ltr" lang="en">
+<head>
+<title>Publishing | Business Ecosystems | W3C</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="../../index.html" rel="home"/>
+<link href="../../../assets/www.w3.org/fe5c254f18b2_favicon-32.png" rel="icon" type="image/png"/>
+<link href="../../../assets/www.w3.org/e4f2f8a36879_favicon-180.png" rel="apple-touch-icon" type="image/png"/>
+<link href="../../../assets/www.w3.org/97c3cd023cc3_core.css" media="screen" rel="stylesheet"/>
+<!--
+CSS Mustard Cut
+Print (Edge doesn't apply to print otherwise)
+Edge, Chrome 39+, Opera 26+, Safari 9+, iOS 9+, Android ~5+, Android UCBrowser ~11.8+
+FF 47+
+-->
+<link href="../../../assets/www.w3.org/fe1a4d3e6738_advanced.css" id="advanced-stylesheet" media="
+            only print,
+            only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none),
+            only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)
+        " rel="stylesheet"/>
+<link href="../../../assets/www.w3.org/2d45bcc8e358_print.css" media="print" rel="stylesheet">
+<script src="../../../assets/www.w3.org/d5f22feb4573_fontfaceobserver.js"></script>
+<script>
+    var myFont = new FontFaceObserver('Noto Sans');
+
+    Promise.all([myFont.load()]).then(function () {
+        document.documentElement.className += " fonts-loaded";
+    });
+
+    (function () {
+        var linkEl = document.getElementById('advanced-stylesheet');
+        if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+            var script = document.createElement('script');
+            script.src = '../../../assets/www.w3.org/4e52415eb72d_main.js';
+            script.defer = true;
+            document.querySelector('head').appendChild(script);
+            (function (H) {
+                H.className = H.className.replace(/\bno-js\b/, 'js')
+            })(document.documentElement);
+        }
+    })();
+</script>
+<meta content="The page introduces the concept of Publishing applied to the web, and what is done in that space at the Web Consortium." name="description">
+<meta content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png" name="thumbnail"/>
+<meta content="index.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="Publishing" property="og:title"/>
+<meta content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="The page introduces the concept of Publishing applied to the web, and what is done in that space at the Web Consortium." property="og:description"/>
+<meta content="W3C" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="w3c" name="twitter:site"/>
+<meta content="index.html" name="twitter:url"/>
+<meta content="Publishing" name="twitter:title"/>
+<meta content="The page introduces the concept of Publishing applied to the web, and what is done in that space at the Web Consortium." name="twitter:description"/>
+<meta content="https://www.w3.org/assets/website-2021/images/w3c-opengraph-image.png" name="twitter:image"/>
+<script>
+        var membersData = [{"name":"ACCESS CO., LTD.","logo":null},{"name":"Adobe","logo":null},{"name":"Amazon","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/6e54ac5dfead_108617.png"},{"name":"Apache Software Foundation","logo":null},{"name":"Apple Inc.","logo":null},{"name":"Benetech","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/48d2b7184e3f_66769.png"},{"name":"Book Industry Study Group","logo":null},{"name":"British Broadcasting Corporation","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/0baf9ff8413f_1120.png"},{"name":"Center for Democracy and Technology","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/de064246d91b_9848.png"},{"name":"DAISY Consortium","logo":null},{"name":"Data Transfer Initiative","logo":null},{"name":"eBOUND Canada","logo":null},{"name":"EDRLab","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/8406f55ef217_91879.png"},{"name":"Fondazione LIA","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/54a5f3cf9524_98318.png"},{"name":"Google LLC","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/5866d20d0104_35662.png"},{"name":"Information Accessibility Institute","logo":null},{"name":"Interledger Foundation","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/ccce8bd0e4ad_134143.png"},{"name":"Kadokawa Corporation","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/13855ec03130_104534.png"},{"name":"Kodansha, Publishers, Ltd.","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/81a59ba8bc1d_96831.png"},{"name":"Logius","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/dd640430321d_59545.png"},{"name":"Mastodon GmbH","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/9ceae6f0a530_153431.png"},{"name":"MEDIA DO Co., Ltd.","logo":null},{"name":"Mitsue-Links Co., Ltd.","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/59e189738b75_35668.png"},{"name":"Mozilla Foundation","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/25e2336df582_35507.png"},{"name":"NIC.br - Brazilian Network Information Center","logo":null},{"name":"Okta","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/a66dbf3c785c_131353.png"},{"name":"Rakuten Group, Inc.","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/4a492a88c5bb_47545.png"},{"name":"Social Web Foundation","logo":null},{"name":"Taiwan Digital Publishing Forum","logo":"https:\/\../../www.w3.org\/thumbnails\/250\/logos\/organizations\../../../assets/www.w3.org/f523a01165d3_110285.png"},{"name":"The News Corporation","logo":null},{"name":"The Washington Post","logo":null},{"name":"Voyager Japan, Inc.","logo":null}];
+    </script>
+<link href="feed/index.html" rel="alternate" title="W3C - Publishing Ecosystem" type="application/rss+xml"/>
+</meta></link></head>
+<body class="ecosystem">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grid-wrap">
+<div class="wrap">
+<header class="global-header">
+<span aria-live="polite" role="status"></span>
+<nav aria-label="Language options" id="lang-nav">
+<div class="l-center">
+<div class="l-cluster">
+<ul class="clean-list" role="list">
+<li><a href="https://www.w3.org/ja/" hreflang="ja" lang="ja">日本語ホームページ<span class="visuallyhidden" lang="en">Japanese website</span></a></li>
+<li><a href="https://www.w3.org/zh-hans/" hreflang="zh-hans" lang="zh-hans">简体中文首页<span class="visuallyhidden" lang="en">Chinese website</span></a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav aria-label="Main" id="global-nav">
+<div class="global-nav__inner l-center">
+<a class="logo-link" href="../../index.html" hreflang="en">
+<span class="logo">
+<img alt="W3C" role="img" src="../../../assets/www.w3.org/a158ca0325bb_w3c.svg"/>
+</span>
+<span class="visuallyhidden">Visit the W3C homepage</span>
+</a>
+<button class="button button--ghost with-icon--after with-icon--larger" data-trigger="mobile-nav" style="display: none;" type="button"></button>
+<ul data-component="nav-double-intro">
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/standards/">Standards &amp; groups</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Standards &amp; groups</h2>
+<div class="nav__submenu__intro__text">
+<p>Understand the various specifications, their maturity levels on the web standards track, their adoption, and the groups that develop them.</p>
+<a href="https://www.w3.org/standards/">Explore web standards</a>
+</div>
+</div>
+<ul>
+<li><a href="../../standards/about/index.html">About W3C web standards</a></li>
+<li><a href="https://www.w3.org/TR/">W3C standards &amp; drafts</a></li>
+<li><a href="../../standards/types/index.html">Types of documents W3C publishes</a></li>
+<li><a href="https://www.w3.org/groups/">W3C groups</a></li>
+<li><a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a></li>
+<li><a href="../../standards/review/index.html">Reviews &amp; public feedback</a></li>
+<li><a href="../../get-involved/promote/index.html">Promote web standards</a></li>
+<li><a href="https://www.w3.org/liaisons/">Liaisons</a></li>
+<li><a href="../../groups/other/tag/index.html">Technical Architecture Group (TAG)</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/get-involved/">Get involved</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Get involved</h2>
+<div class="nav__submenu__intro__text">
+<p>W3C works at the nexus of core technology, industry needs, and societal needs.</p>
+<a href="https://www.w3.org/get-involved/">Find ways to get involved</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/ecosystems/">Browse our work by industry</a></li>
+<li><a href="https://www.w3.org/membership/">Become a Member</a></li>
+<li><a href="https://www.w3.org/Member/">Member home (restricted)</a></li>
+<li><a href="https://www.w3.org/support-us/">Support us</a></li>
+<li><a href="https://www.w3.org/email/">Mailing lists</a></li>
+<li><a href="https://www.w3.org/guide/">Participant guidebook</a></li>
+<li><a href="../../about/positive-work-environment/index.html">Positive work environment</a></li>
+<li><a href="https://www.w3.org/invited-experts/">Invited Experts</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/resources/">Resources</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Resources</h2>
+<div class="nav__submenu__intro__text">
+<p>Master web fundamentals, use our developer tools, or contribute code.</p>
+<a href="https://www.w3.org/resources/">Learn from W3C resources</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/developers/">Developers</a></li>
+<li><a href="../../developers/tools/index.html">Validators &amp; tools</a></li>
+<li><a href="../../WAI/fundamentals/index.html">Accessibility fundamentals</a></li>
+<li><a href="../../International/i18n-drafts/nav/about/index.html">Internationalization (i18n)</a></li>
+<li><a href="https://www.w3.org/translations/">Translations of W3C standards &amp; drafts</a></li>
+<li><a href="../../policies/code-of-conduct/index.html">Code of conduct</a></li>
+<li><a href="https://www.w3.org/reports/">Reports</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/news-events/">News &amp; events</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">News &amp; events</h2>
+<div class="nav__submenu__intro__text">
+<p>Recent content across news, blogs, press releases, media; upcoming events.</p>
+<a href="https://www.w3.org/news-events/">Explore news &amp; events</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/news/">News</a></li>
+<li><a href="https://www.w3.org/blog/">Blog</a></li>
+<li class="break-after"><a href="https://www.w3.org/press-releases/">Press releases</a></li>
+<li><a href="../../about/press-media/index.html">Press &amp; media</a></li>
+<li><a href="https://www.w3.org/events/">Events</a></li>
+<li><a href="../../news-events/tpac/index.html">Annual W3C Conference (TPAC)</a></li>
+<li><a href="../../policies/code-of-conduct/index.html">Code of conduct</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/support-us/">Support us</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">Support us</h2>
+<div class="nav__submenu__intro__text">
+<p>Make a huge difference to our operations as a public-interest non-profit, and help us to achieve our vision.</p>
+<a href=""></a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/support-us/">Ways you can support us</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item has-children">
+<a class="nav-link" href="https://www.w3.org/about/">About</a>
+<div class="nav__submenu" data-nav="submenu" style="display: none;">
+<div class="l-center">
+<div class="nav__submenu__intro">
+<h2 class="nav__submenu__intro__heading">About</h2>
+<div class="nav__submenu__intro__text">
+<p>Understand our values and principles, learn our history, look into our policies, meet our people.</p>
+<a href="https://www.w3.org/about/">Find out more about us</a>
+</div>
+</div>
+<ul>
+<li><a href="https://www.w3.org/mission/">Our mission</a></li>
+<li><a href="https://www.w3.org/support-us/">Support us</a></li>
+<li><a href="../../about/leadership/index.html">Leadership</a></li>
+<li><a href="https://www.w3.org/staff/">Staff</a></li>
+<li class="break-after"><a href="https://www.w3.org/careers/">Careers</a></li>
+<li><a href="../../about/press-media/index.html">Media kit</a></li>
+<li><a href="../../about/diversity/index.html">Diversity</a></li>
+<li><a href="../../about/corporation/index.html">Corporation</a></li>
+<li><a href="https://www.w3.org/policies/">Policies &amp; legal information</a></li>
+<li><a href="https://www.w3.org/contact/">Contact us</a></li>
+<li><a href="https://www.w3.org/help/">Help</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="top-nav-item">
+<a class="nav-link icon-link" href="../../help/search/index.html" hreflang="en">
+<img alt="" aria-hidden="true" class="icon" height="24" src="../../../assets/www.w3.org/67310eeec1ee_search.svg" width="24"/><span class="hide-at-max-width">Search</span>
+</a>
+</li>
+<li class="top-nav-item">
+<a class="account-login icon-link with-icon--after" href="../../users/myprofile/index.html" hreflang="en" id="account-login-link">
+                    My account
+                    <span class="avatar avatar--small icon"><img alt="" aria-hidden="true" height="24" src="../../../assets/www.w3.org/db2ddb3662a8_avatar.svg" width="24"/></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<nav aria-label="Breadcrumb" id="breadcrumb">
+<div class="l-center">
+<div class="l-cluster">
+<ol class="breadcrumbs clean-list" role="list">
+<li><a href="../../index.html">Home</a></li>
+<li><a href="/ecosystems/">Business Ecosystems</a></li>
+<li><a aria-current="page" href="index.html">Publishing</a></li>
+</ol>
+</div>
+</div>
+</nav>
+<main id="main">
+<div class="u-full-width hero">
+<div class="l-center">
+<div class="l-sidebar">
+<div>
+<div class="not-sidebar">
+<h1>Publishing</h1>
+<nav aria-label="Translations" class="translations">
+<div class="l-sidebar">
+<div>
+<div class="sidebar">
+<span lang="en">Read this page in:</span>
+</div>
+<div class="not-sidebar">
+<div class="l-cluster">
+<ul class="clean-list translation-list">
+<li>
+<a dir="auto" href="../../zh-hans/ecosystems/publishing/index.html" hreflang="zh-Hans" lang="zh-Hans">
+                        中文（简体）
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<p class="lead">The web is the premier publishing platform.</p>
+</div>
+<div class="sidebar">
+<img alt="" src="../../../assets/www.w3.org/4fd15dec2d4d_publishing.svg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="component component--fifty-fifty">
+<div class="image">
+<img alt="" loading="lazy" sizes="(min-width: 48em) 50vw, 100vw" src="../../../assets/www.w3.org/52362bf6991a_spencer-DXobXpIa9_4-unsplash.jpg" srcset="https://www.w3.org/cms-uploads/_360xAUTO_crop_center-center_none/spencer-DXobXpIa9_4-unsplash.jpg 360w, https://www.w3.org/cms-uploads/_580xAUTO_crop_center-center_none/spencer-DXobXpIa9_4-unsplash.jpg 580w, https://www.w3.org/cms-uploads/_920xAUTO_crop_center-center_none/spencer-DXobXpIa9_4-unsplash.jpg 920w, https://www.w3.org/cms-uploads/_1520xAUTO_crop_center-center_none/spencer-DXobXpIa9_4-unsplash.jpg 1520w"/>
+</div>
+<div class="component--fifty-fifty__text">
+<h2 class="txt-earth">The web is the universal publishing platform</h2>
+<p>Publishing is increasingly impacted by the Web, and Publishing increasingly impacts the Web. Topic of particular focus include typography and layout, accessibility, usability, portability, distribution, archiving, offline access, print on demand, and reliable cross referencing. And the diverse publishing community represented in the groups consist of the traditional "trade" publishers, ebook reading system manufacturers, but also publishers of audiobooks, scholarly journals or educational materials, library scientists or browser developers.</p>
+<div class="l-box l-box--no-border l-box--no-padding">
+<a class="button button--alt" href="https://www.w3.org/contact/">Write to us to join W3C and start contributing to the work</a>
+</div>
+</div>
+</section>
+<figure class="component component--video">
+<div class="l-frame l-frame--16-9">
+<iframe src="https://www.youtube-nocookie.com/embed/Y9JNuofCGPA?feature=oembed"></iframe>
+</div>
+<figcaption>
+<p>“The year of testing dangerously: The EPUB 3.3 story - Tech Forum 2022”, April 2022 (Wendy Reid and Dave Cramer)</p>
+</figcaption>
+</figure>
+<div class="component component--text">
+<h2 id="publishing-groups">The Working Groups</h2><p>Working Groups are where formal W3C standards, called Recommendations, are developed and maintained. They have detailed charters spelling out the work they have agreed to do and the timeline for its completion. Participants, typically technical people, are from organizations that are <a href="/membership/">regular members of W3C</a> and that agree not to assert any patent claims on their contributions.</p><p>The <a href="../../groups/wg/epub/index.html">EPUB 3 Working Group</a> maintained the EPUB 3 family of specifications, and <a href="../../press-releases/2023/epub33-rec/index.html">brought EPUB 3.3 to W3C Recommendation</a> status. Important aspects of that work included restructuring and clarifying the specification and the development of a proper testing environment to improve reading system interoperability. Its charter explicitly required that EPUB 3.3 must be backwards-compatible with EPUB 3.2. As an important additional milestone, <a href="../../TR/epub-a11y-11/index.html">EPUB Accessibility 1.1</a> also reached Recommendation status. See the <a href="../../publishing/epub33/index.html">separate page on EPUB 3.3</a> for the list of all related publications, including the Recommendations as well as the various Working Group Notes that the Working Group published over the years.</p><p>The <a href="../../groups/wg/publishing/index.html">Audiobooks Working Group</a> was chartered to maintain the <a href="../../TR/audiobooks/index.html">Audiobooks</a> and <a href="../../TR/pub-manifest/index.html">Publication Manifest</a> Recommendations on which it is based, as well as fostering and advancing the standardization of audiobooks for the industry.</p><p>With the successful publication of the EPUB 3.3 Recommendation the EPUB 3 Working Group and the Audiobooks Working Group closed in June 2023. To replace them, the <a href="../../groups/wg/pm/index.html">Publishing Maintenance Working Group</a> has a mission to maintain all the Recommendations and Working Group Notes originally published by the EPUB 3 and the Audiobooks Working Groups. "Maintenance" means taking care of possible errata, maintaining the test suites of all the Recommendations, foster further adoption, and possibly develop the Working Group Notes further. No new features to the EPUB 3.3 Recommendation are planned at this time.</p><h2>The Community Groups</h2><p><a href="../../community/about/index.html">Community Groups</a> are where ideas are incubated in the W3C. They do not operate under the formal constraints of Working Groups. They are open to anybody, not requiring membership in the W3C or adhering to the patent policy required for Working Groups. Community Groups serve an essential role in trying out new ideas and demonstrating the need for a current or future Working Group to advance successful technologies with a proven need to Recommendation status.</p><p>The <a href="../../community/publishingcg/index.html">Publishing Community Group</a> is the incubation zone for the <a href="/publishing/">Publishing Activity</a>. It currently has task forces working on accessibility for fixed layout EPUBs and on developing comprehensive documentation for EPUB. New ideas about EPUB should be brought to the CG. Another Community Group is working on <a href="../../community/sync-media-pub/index.html">Synchronized Multimedia for Publications</a>.</p><h2>The Publishing Business Group</h2><p>The <a href="../../community/publishingbg/index.html">Publishing Business Group</a> is for people and organizations across the publishing spectrum to support the <a href="index.html">Publishing@w3C Activity</a> by informing the Working Groups and Community Groups about needs and priorities, and by raising funds for the development of important resources like <a href="../../publishing/epubcheck/index.html">EPUBCheck</a>. Its members are primarily from the business side of publishing-related organizations, rather than highly technical staff. Because membership in a Business Group does not include the ability to participate in Working Groups, the dues are less than those for a full membership in the W3C.</p><h2>Other Related Work of Interest</h2><p>In addition to the work of the <a href="index.html">Publishing@W3C Activity</a>, people working in the publishing industry are also often interested in the work of other areas in the W3C, such as <a href="../../Style/CSS/index.html">Cascading Style Sheets (CSS)</a>, the <a href="/WAI/">Web Accessibility Initiative</a>, among others. Participation in Interest and Working Groups is open to Members of W3C.</p>
+</div>
+<div class="u-full-width component component--group-list">
+<div class="l-center">
+<div class="component--group-list__intro">
+<h2 id="groups">Active groups</h2>
+<p>These groups work hand in hand to advance publishing on the web.</p>
+</div>
+<div class="component--collapsibles" data-anchor="no" data-component="collapsibles">
+<div>
+<h3 data-heading="collapsibles">Publishing Maintenance<span>Working group</span></h3>
+<div>
+                                        The mission of the Publishing Maintenance Working is to maintain the W3C Recommendations, as well as related Notes, in the area of Digital Publishing published by the Audiobooks and the EPUB Working Groups.
+                    <a href="../../groups/wg/pm/index.html">Visit the Publishing Maintenance Working Group</a>
+</div>
+</div>
+<div>
+<h3 data-heading="collapsibles">Social Web<span>Working group</span></h3>
+<div>
+                                        The mission of the Social Web Working Group is to maintain the W3C Recommendations, as well as related Notes, in the area of the Social Web and may also adopt tentative deliverables.
+                    <a href="../../groups/wg/social/index.html">Visit the Social Web Working Group</a>
+</div>
+</div>
+<div>
+<h3 data-heading="collapsibles">Publishing<span>Business group</span></h3>
+<div>
+<p>The Publishing Business Group fosters ongoing participation by members of the publishing industry and overall publishing ecosystem in the development of the Web for publishing, and serves as a conduit for feedback between the publishing ecosystem and W3C. See the <a href="../../2017/02/PublishingBGcharter/index.html">Publishing Business Group Charter</a> for details.</p>
+<p>The Business Group maintains a separate  <a href="https://w3c.github.io/publ-bg/">“Working” Web site</a>, which includes documents, like <a href="https://w3c.github.io/publ-bg/Meetings/">information on meetings</a>, <a href="https://w3c.github.io/publ-bg/Meetings/Minutes/">index for meeting minutes</a>, and other working documents. There is also a separate <a href="https://github.com/w3c/publ-bg/wiki">wiki</a> for BG members. Finally, if necessary or convenient, Google Documents can also be used; these are collected in a separate <a href="https://drive.google.com/open?id=1tQf56giFynYlWKm5DmrxTUbYUwpzQAmI">Google Drive folder</a>.</p>
+<p>(The Working Web site’s content is actually served from a dedicated <a href="https://github.com/w3c/publ-bg/">Github repository</a>.)</p>
+<a href="../../community/publishingbg/index.html">Visit the Publishing Business Group</a>
+</div>
+</div>
+<div>
+<h3 data-heading="collapsibles">Accessibility Discoverability Vocabulary for Schema.org<span>Community group</span></h3>
+<div>
+                                        The primary objective of this group is to maintain and develop the vocabularies for the accessibility discoverability properties in schema.org, that enable discovery of accessible content. This community group is a successor to the Accessibility Metadata Project that first proposed the properties, which were based on the Access for All metadata. The group may also propose additional properties in the future, if needed.
+                    <a href="../../community/a11y-discov-vocab/index.html">Visit the Accessibility Discoverability Vocabulary for Schema.org Community Group</a>
+</div>
+</div>
+<div>
+<h3 data-heading="collapsibles">Publishing<span>Community group</span></h3>
+<div>
+                                        Incubation zone for Publishing@W3C. Bring your experiments here.
+                    <a href="../../community/publishingcg/index.html">Visit the Publishing Community Group</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="component component--text">
+<h2 id="join">Why join?</h2><p>Since 1994, we have been leading the World Wide Web to its full potential by developing protocols and guidelines that ensure long-term growth of the web.</p><p>By joining these groups, you have the ability to discuss and drive the standards produced by W3C. The conversations occurring in the groups concern both current and future standards, constantly aiming to make the web a better place. You have the ability to take part in guiding the future of the web.</p><h3>Our values revolve around building the web for all</h3><p>The social value of the web is that it enables human communication, commerce, and opportunities to share knowledge. One of W3C's primary goals is to make these benefits available to all people, whatever their hardware, software, network infrastructure, native language, culture, geographical location, or physical or mental ability.</p>
+</div>
+<div class="component component--activity u-full-width">
+<div class="l-center">
+<div class="component component--columns component--columns--images">
+<h2 class="txt-earth" id="activities">Recent activities in the Publishing community</h2>
+<p>Find out more via recent stories, news, workshops, talks or events.</p>
+<ul class="clean-list" role="presentation">
+<li>
+<div class="card" data-component="card">
+<div class="card__text">
+<h3 class="card__heading">
+<a class="card__link" href="../../news/2026/first-public-working-draft-and-supporting-notes-epub-annotations-1-0/index.html">First Public Working Draft and supporting notes: EPUB Annotations 1.0</a>
+</h3>
+<p>
+                    The Publishing Maintenance Working Group published three documents around EPUB Annotations, which is a specification that will define how to create, manage, export, and import annotations in EPUB publications.
+                </p>
+<p class="txt-pluto">
+                    News
+                </p>
+</div>
+</div>
+</li>
+<li>
+<div class="card" data-component="card">
+<div class="card__text">
+<h3 class="card__heading">
+<a class="card__link" href="../../blog/2026/epub-and-html-survey-results-and-next-steps/index.html">EPUB and HTML - Survey results and next steps</a>
+</h3>
+<p>
+                    Mid-2025, the Publishing Maintenance Working Group (PMWG) ran a survey in the publishing community to ask: should we allow HTML in EPUB? The survey results and their discussions were invaluable in helping decide to not add HTML to EPUB 3.4, and to take a new approach on HTML and digital publications.
+                </p>
+<p class="txt-pluto">
+                    Blog
+                </p>
+</div>
+</div>
+</li>
+<li>
+<div class="card" data-component="card">
+<div class="card__text">
+<h3 class="card__heading">
+<a class="card__link" href="../../blog/2025/epub3-3-recommendations-published-work-begins-on-new-features/index.html">EPUB3.3 Recommendations published, work begins on new features</a>
+</h3>
+<p>
+                    The Publishing Maintenance Working Group (PMWG) has finalized the EPUB 3.3 specification, clarifying language and aligning it with related specifications. The group is now working on the next major revision, EPUB 3.4. This revision will include new features such as dark mode support and standardized footnote/endnote practices. Additionally, new task forces are exploring digital comics support and EPUB annotations.
+                </p>
+<p class="txt-pluto">
+                    Blog
+                </p>
+</div>
+</div>
+</li>
+<li>
+<div class="card" data-component="card">
+<div class="card__text">
+<h3 class="card__heading">
+<a class="card__link" href="../../news/2023/group-note-the-epub-accessibility-exemption-property/index.html">Group Note: The EPUB Accessibility exemption property</a>
+</h3>
+<p>
+                    The exemption property allows EPUB creators to indicate that an EPUB publication that does not meet accessibility conformance requirements has an exemption under the applicable jurisdiction's laws.
+                </p>
+<p class="txt-pluto">
+                    News
+                </p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="component component--slider u-full-width" data-component="slider">
+<div class="l-center">
+<h2 id="slider-title">What organizations think about us</h2>
+<section aria-labelledby="slider-title">
+<ul class="clean-list" role="presentation">
+<li dir="ltr" lang="fr">
+<figure class="slide">
+<blockquote class="slide__quote">
+<p>Hachette Livre salue le formidable travail du W3C pour porter EPUB, le standard ouvert de l’industrie de livre numérique, à son meilleur niveau.</p>
+</blockquote>
+<figcaption class="slide__cite l-sidebar">
+<div>
+<div class="not-sidebar">
+<p>Luc Audrain</p>
+<p>Head of Digitalization</p>
+</div>
+</div>
+</figcaption>
+</figure>
+</li>
+<li dir="ltr" lang="en">
+<figure class="slide">
+<blockquote class="slide__quote">
+<p>EPUB 3 is a de facto standard in Japanese eBook industry and we welcome the sustainable evolution of EPUB 3. APL looks forward to EPUB 3.2 as the first update of EPUB 3 by W3C.</p>
+</blockquote>
+<figcaption class="slide__cite l-sidebar">
+<div>
+<div class="not-sidebar">
+<p>Shinya Takami</p>
+<p>EPUB-WG leader</p>
+</div>
+</div>
+</figcaption>
+</figure>
+</li>
+<li dir="ltr" lang="en">
+<figure class="slide">
+<blockquote class="slide__quote">
+<p>The DAISY Consortium is delighted to pledge support for EPUB 3.2 in our full array of tools, training, and communications.</p>
+</blockquote>
+<figcaption class="slide__cite l-sidebar">
+<div>
+<div class="sidebar">
+<div class="slide__logo">
+<img alt="DAISY Consortium" loading="lazy" src="../../../assets/www.w3.org/9c40327075e8_daisy_high.jpg"/>
+</div>
+</div>
+<div class="not-sidebar">
+<p>Richard Orme</p>
+<p>CEO</p>
+</div>
+</div>
+</figcaption>
+</figure>
+</li>
+</ul>
+</section>
+</div>
+</div>
+<div class="component component--members u-full-width">
+<div class="l-center">
+<h2 class="visuallyhidden">W3C Members</h2>
+<p>32 member organizations are involved in the publishing ecosystem, including:</p>
+<div class="component--members__grid">
+<figure>
+<figcaption>Amazon</figcaption>
+</figure>
+<figure>
+<figcaption>Center for Democracy and Technology</figcaption>
+</figure>
+<figure>
+<figcaption>Fondazione LIA</figcaption>
+</figure>
+<figure>
+<figcaption>The Washington Post</figcaption>
+</figure>
+<figure>
+<figcaption>MEDIA DO Co., Ltd.</figcaption>
+</figure>
+<figure>
+<figcaption>DAISY Consortium</figcaption>
+</figure>
+</div>
+<a href="../../membership/list/index_daaa896b.html">View all members participating in the publishing ecosystem</a>
+<div class="l-cluster component--members__cta">
+<div>
+<p>Ways to get involved:</p>
+<a class="button button--alt" href="../../membership/join/index.html">Join</a>
+<a class="button button--alt" href="/support-us/">Support us</a>
+</div>
+</div>
+</div>
+</div>
+<div class="component component--evangelists">
+<div class="component--evangelists__text">
+<h2 class="txt-earth" id="contact">Need more information tailored to your organization?</h2>
+<p id="evangelist">Our Evangelists understand that every organization is different! Evangelists represent W3C in various locations and industries. They are responsible for identifying and recruiting new W3C Members, running local events, promoting W3C Training and fostering Sponsorship.</p>
+</div>
+<div class="component--evangelists__list">
+<h3 class="txt-saturn">Our Publishing  evangelists </h3>
+<ul class="clean-list" role="list">
+<li class="l-box l-box--no-border">
+<div class="l-sidebar">
+<div>
+<div class="sidebar">
+<div class="avatar">
+<img alt="" loading="lazy" src="../../avatars/45580e9fdbadfa84d5cc2e840dc6591e/index_1414d6f3.html"/>
+</div>
+</div>
+<div class="not-sidebar">
+<p class="txt-saturn bold">Bill Kasdorf</p>
+<p>W3C Evangelist - Publishing, Global</p>
+<p>Tel: <a href="tel:+1.734.904.6252">+1.734.904.6252</a></p>
+<p>Email: <a href="mailto:bill.kasdorf@w3.org">bill.kasdorf@w3.org</a></p>
+</div>
+</div>
+</div>
+</li>
+<li class="l-box l-box--no-border">
+<div class="l-sidebar">
+<div>
+<div class="sidebar">
+<div class="avatar">
+<img alt="" loading="lazy" src="../../avatars/1e2dfd669b4bc7aaf331299385f58683/index_1414d6f3.html"/>
+</div>
+</div>
+<div class="not-sidebar">
+<p class="txt-saturn bold">Daihei Shiohama</p>
+<p>W3C Evangelist - Publishing, Japan</p>
+<p>Tel: <a href="tel:+1.310.592.3207">+1.310.592.3207</a></p>
+<p>Email: <a href="mailto:daihei.shiohama@w3.org">daihei.shiohama@w3.org</a></p>
+</div>
+</div>
+</div>
+</li>
+<li class="l-box l-box--no-border">
+<div class="l-sidebar">
+<div>
+<div class="sidebar">
+<div class="avatar">
+<img alt="" loading="lazy" src="../../avatars/288ca3d7eb1f26b44ec5818154099d3f/index_1414d6f3.html"/>
+</div>
+</div>
+<div class="not-sidebar">
+<p class="txt-saturn bold">Bobby Tung</p>
+<p>W3C Evangelist , Taiwan</p>
+<p>Tel: <a href="tel:+886.975.068.558">+886.975.068.558</a></p>
+<p>Email: <a href="mailto:bobbytung@w3.org">bobbytung@w3.org</a></p>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<section class="rss">
+<h2 class="txt-jupiter">Related RSS feed</h2>
+<div class="with-icon--before with-icon--larger">
+<img alt="" aria-hidden="true" class="icon icon--larger" height="30" src="../../../assets/www.w3.org/afafd3d79e4f_rss.svg" width="30"/>
+<a href="feed/index.html">Subscribe to our Publishing feed</a>
+</div>
+</section>
+</main>
+</div>
+<footer class="global-footer">
+<div class="l-center">
+<div class="global-footer__links">
+<div class="l-cluster">
+<ul class="clean-list" role="list">
+<li><a href="../../index.html" hreflang="en"><span dir="ltr" lang="en">Home</span></a></li>
+<li><a href="https://www.w3.org/contact/" hreflang="en"><span dir="ltr" lang="en">Contact</span></a></li>
+<li><a href="https://www.w3.org/help/" hreflang="en"><span dir="ltr" lang="en">Help</span></a></li>
+<li><a href="https://www.w3.org/support-us/" hreflang="en"><span dir="ltr" lang="en">Support us</span></a></li>
+<li><a href="https://www.w3.org/policies/" hreflang="en"><span dir="ltr" lang="en">Legal &amp; Policies</span></a></li>
+<li><a href="../../about/corporation/index.html" hreflang="en"><span dir="ltr" lang="en">Corporation</span></a></li>
+<li><a href="https://status.w3.org/" hreflang="en"><span dir="ltr" lang="en">System Status</span></a></li>
+</ul>
+</div>
+<ul class="clean-list" role="list">
+<li>
+<a class="with-icon--larger" href="https://w3c.social/@w3c" hreflang="en">
+<img alt="" aria-hidden="true" class="icon icon--larger" height="20" loading="lazy" src="../../../assets/www.w3.org/fd52b96cb9b8_mastodon.svg" width="20">
+<span class="visuallyhidden"><span dir="ltr" lang="en">W3C on Mastodon</span></span>
+</img></a>
+</li>
+<li>
+<a class="with-icon--larger" href="https://github.com/w3c/" hreflang="en">
+<img alt="" aria-hidden="true" class="icon icon--larger" height="20" loading="lazy" src="../../../assets/www.w3.org/1fa77d751548_github.svg" width="20">
+<span class="visuallyhidden"><span dir="ltr" lang="en">W3C on GitHub</span></span>
+</img></a>
+</li>
+</ul>
+</div>
+<p class="copyright"><span dir="ltr" lang="en">Copyright © 2026 <a href="../../index.html">World Wide Web Consortium</a>.<br/> <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> and <a href="../../copyright/document-license/index.html" rel="license" title="W3C Document License">permissive license</a> rules apply.</span></p>
+</div>
+</footer>
+</div>
+<script>
+                        if (document.documentElement.classList.contains('js')) {
+
+                        let sliderScript = document.createElement('script');
+                        sliderScript.src = "../../../assets/www.w3.org/b154352ac7da_slider.js";
+                        document.querySelector('body').appendChild(sliderScript);
+
+                }
+
+                
+                    var membersScript = document.createElement('script');
+                    membersScript.src = "../../../assets/www.w3.org/51c762a5d914_members.js";
+                    document.querySelector('body').appendChild(membersScript);
+
+                    </script>
+</body>
+</html>
