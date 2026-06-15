@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "az416426.vo.msecnd.net",
+      "snapshots": [
+        {
+          "timestamp": "20260615_163125",
+          "path": "archives/az416426.vo.msecnd.net/20260615_163118/az416426.vo.msecnd.net/index.html",
+          "pages": 0,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "ga",
       "snapshots": [
         {
