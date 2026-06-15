@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "ssl",
+      "snapshots": [
+        {
+          "timestamp": "20260615_164521",
+          "path": "archives/ssl/20260615_164519/ssl/index.html",
+          "pages": 0,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "www.robotstxt.org",
       "snapshots": [
         {
