@@ -1,0 +1,15 @@
+{
+  "brand": "Apple",
+  "model": "iPhone 14 Pro",
+  "os": "iOS",
+  "os_versions": [
+    "17_0",
+    "16_7"
+  ],
+  "cpu": "Apple A16",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (A16)",
+  "ram": "6GB",
+  "resolution": "1179x2556",
+  "dpi": 460
+}
