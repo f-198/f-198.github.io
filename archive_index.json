@@ -79,6 +79,12 @@
       "domain": "pages.shuoweb.com",
       "snapshots": [
         {
+          "timestamp": "20260615_152845",
+          "path": "archives/pages.shuoweb.com/20260615_152843/index.html",
+          "pages": 1,
+          "resources": 1
+        },
+        {
           "timestamp": "20260615_132042",
           "path": "archives/pages.shuoweb.com/",
           "pages": 1,
