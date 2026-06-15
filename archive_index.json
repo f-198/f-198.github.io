@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "ipapi.co",
+      "snapshots": [
+        {
+          "timestamp": "20260615_162931",
+          "path": "archives/ipapi.co/20260615_162856/ipapi.co/index.html",
+          "pages": 14,
+          "resources": 48
+        }
+      ]
+    },
+    {
       "domain": "events.vercount.one",
       "snapshots": [
         {
