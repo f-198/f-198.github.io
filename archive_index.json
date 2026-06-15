@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "example.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_154035",
+          "path": "archives/example.com/20260615_154027/index.html",
+          "pages": 1,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "shuoweb.com",
       "snapshots": [
         {
