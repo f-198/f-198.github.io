@@ -1,0 +1,19 @@
+{
+  "brand": "Apple",
+  "model": "iPhone 7 Plus",
+  "os": "iOS",
+  "os_versions": [
+    "12_0",
+    "12_1",
+    "12_2",
+    "12_3",
+    "12_4",
+    "12_5"
+  ],
+  "cpu": "Apple A10 Fusion",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (A10)",
+  "ram": "3GB",
+  "resolution": "1080x1920",
+  "dpi": 401
+}
