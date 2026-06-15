@@ -1,0 +1,26 @@
+{
+  "archives": [
+    {
+      "domain": "github.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_130704",
+          "path": "archives/github.com/",
+          "pages": 121,
+          "resources": 4
+        }
+      ]
+    },
+    {
+      "domain": "www.w3.org",
+      "snapshots": [
+        {
+          "timestamp": "20260615_130704",
+          "path": "archives/www.w3.org/",
+          "pages": 0,
+          "resources": 0
+        }
+      ]
+    }
+  ]
+}
