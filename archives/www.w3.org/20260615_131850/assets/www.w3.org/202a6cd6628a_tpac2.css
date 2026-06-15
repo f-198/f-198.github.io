@@ -1,0 +1,1497 @@
+/* "TPAC 2020" style
+ *
+ * See the user manual https://www.w3.org/2019/09/TPAC-template/README.html
+ *
+ * Author: Bert Bos <bert@w3.org>
+ * Created: 2020-03-11
+ */
+
+@import "fonts../../../assets/www.w3.org/3b024242c9f2_iconmonstr-iconic-font.css";
+@import "fonts../../../assets/www.w3.org/eb26dadd78dd_fontawesome-basic.css";
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/260f16d8119a_Lato-HairlineItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/7024dcf0cc18_Lato-HairlineItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e60e1c35415b_Lato-Hairline.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/3a9a41944ec3_Lato-Hairline.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/5406d42c9a05_Lato-ThinItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/24c729b2da37_Lato-ThinItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/1859e8b6af6f_Lato-Thin.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/4446f0563dc0_Lato-Thin.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e0492d936d3a_Lato-LightItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/c3e8e8708a2a_Lato-LightItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/71af79eef825_Lato-Light.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/032f18395f1f_Lato-Light.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/cae245e02bab_Lato-Italic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/6f0aabab395f_Lato-Italic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/f99bb7c3bfc3_Lato-Regular.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/081a7907d2af_Lato-Regular.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e811dcb5db46_Lato-MediumItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/b39f27e9992e_Lato-MediumItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e85fe5ed6cff_Lato-Medium.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/8944127724c4_Lato-Medium.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/f9e147349e2f_Lato-SemiboldItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/01c532aaddd8_Lato-SemiboldItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/4bae101b5ef3_Lato-Semibold.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/0feab57d316d_Lato-Semibold.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/1c747c028554_Lato-BoldItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/9b36cc8a66a5_Lato-BoldItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/14994c144139_Lato-Bold.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/e084e53c9cea_Lato-Bold.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/1b30bfbf4b1e_Lato-HeavyItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/7d6e5ec3dd84_Lato-HeavyItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/b32f521d9e08_Lato-Heavy.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/f035681f8bb2_Lato-Heavy.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/93e1a12a35c6_Lato-BlackItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/85a97fef52ea_Lato-BlackItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e4e6da693bda_Lato-Black.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/6977550341bf_Lato-Black.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 100 /*250*/;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/9c6f5ecb5858_Montserrat-ThinItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/dbeef3e5ec0a_Montserrat-ThinItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 100 /*250*/;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/d5f3f36d98af_Montserrat-Thin.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/ea4e17a56445_Montserrat-Thin.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 200 /*275*/;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e79e6e4c4f85_Montserrat-ExtraLightItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/3ca6a734c3f8_Montserrat-ExtraLightItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 200 /*275*/;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/ab0e55ab9aff_Montserrat-ExtraLight.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/c5b26ac2821f_Montserrat-ExtraLight.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/864b9fb4655e_Montserrat-LightItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/cd7ca6c0de58_Montserrat-LightItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/aa42d21609fd_Montserrat-Light.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/17279498f875_Montserrat-Light.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/f69a23e1bc44_Montserrat-Italic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/78c9d1e6c403_Montserrat-Italic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/bd726104109d_Montserrat-Regular.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/6838678ca83b_Montserrat-Regular.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/3d947bb11ce0_Montserrat-MediumItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/b3472f9d6da0_Montserrat-MediumItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/315ce83b2093_Montserrat-Medium.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/95fa90370e60_Montserrat-Medium.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/bacae3b93a83_Montserrat-SemiBoldItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/ac936e6c93b6_Montserrat-SemiBoldItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/c341e4f991e9_Montserrat-SemiBold.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/1f9adb99cdbc_Montserrat-SemiBold.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/0d8e9cecce0e_Montserrat-BoldItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/909c8a8cac57_Montserrat-BoldItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/80258f662cfd_Montserrat-Bold.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/184fcf09c28c_Montserrat-Bold.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/e71afbf7944e_Montserrat-ExtraBoldItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/eabe69790308_Montserrat-ExtraBoldItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/6c8503b9cdb1_Montserrat-ExtraBold.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/709f0ebaa604_Montserrat-ExtraBold.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/9e351f1b205a_Montserrat-BlackItalic.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/a447b1a0c2f1_Montserrat-BlackItalic.woff) format("woff")}
+
+@font-face {
+  font-family: My Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/064dfcbf3d4a_Montserrat-Black.woff2) format("woff2"),
+    url(../../../assets/www.w3.org/31f475755236_Montserrat-Black.woff) format("woff")}
+
+@font-face {
+  font-family: My DejaVu Sans Subset;
+  font-display: swap;
+  src: url(../../../assets/www.w3.org/774daa50aec2_DejaVuSans-subset.woff2) format("woff2"),
+    url(fonts/DejaVuSans-subset.woff) format("woff")}
+
+/* Defaults for some new HTML5 elements for older browsers */
+header, nav, section, aside, main, footer, details {display: block}
+summary {display: list-item}
+header {font-weight: bold}
+
+/* Fonts */
+html {font: 1em../../../1.3 My Lato, Lato, Open Sans, Liberation Sans,
+    Helvetica Neue, Arial, Helvetica, My DejaVu Sans Subset, sans-serif;
+  font-size-adjust: 0.506 /* Lato *../../../index.html letter-spacing: 0.02em; hyphens: auto;
+  /* Help break long, unbreakable words (URLs, email addresses...) */
+  word-break: break-word; overflow-wrap: break-word}
+th {word-break: normal}
+b, strong {font-weight: bold}	/* Bolder than the default 'bolder' */
+table {font-size: 0.9em}
+h1, h2 {font-weight: 900; font-size: 2em; line-height: 1.1}
+header h1 {font-weight: 900; hyphens: manual; line-height: 1.2;
+  font-family: Montserrat, My Montserrat, Avenir Next, Lato, sans-serif;
+  font-size-adjust: 0.542 /* Montserrat */}
+@media (min-width: 27em) and (min-resolution: 1.5dppx) {
+  body {font-weight: 300; font-size-adjust: 0.497}
+}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  body {font-size: 1.2em}
+  header nav {font-size: calc((100vw - 15px)/46)} /* 15 px for a scrollbar */
+  h1, h2 {font-size: 2.8em}
+  header h1 {font-size: 3em}	/* For UAs that do not support vw */
+}
+@media (min-width: 63em) {
+  header h1 {font-size: 4.5em}	/* For UAs that do no support vw */
+  h1, h2, h3 {hyphens: manual}
+}
+@media (min-width: 80em) {
+  header nav {font-size: 1.5em}
+}
+header h1 {font-size: 7vw}
+
+/* Avoid overflowing images and videos */
+img {max-width: 100%; max-height: 100%; object-fit: contain}
+iframe, video, audio {max-width: 100%; border: none}
+
+/* Do not automatically hyphenate words in captions. */
+video {hyphens: manual}
+
+/* Figures by default not indented, but centered. */
+figure {margin-left: 0; margin-right: 0; text-align: center}
+
+/* Avoid increasing line height due to superscripts. */
+sup, sub {line-height: 0.3}
+
+/* Alternating colored bands, with content centered in the viewport. */
+body {margin: 0; /*scroll-snap-type: y;*/ overflow-x: hidden; overflow-y: auto;
+  padding: 0; background: #EEE; color: #222}
+header::after, section::after, footer::after {content: "Â "; display: block;
+  height: 0; clear: both}
+header, section, footer {position: relative; scroll-snap-align: start;
+  border: solid transparent}
+section, footer {border-width: 3.6rem 1rem}
+header {border-width: 1rem 1rem}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  section {max-width: 46em; margin: auto} /* Fallback if calc() not supported */
+}
+.wide {max-width: none}
+#sponsors {background: white}
+footer {background: #EEE}
+@media not print {
+  section:nth-of-type(2n+1) {background: hsl(0,0%,98%)}
+  section:nth-of-type(2n+2) {background: #103852; color: #fff}
+}
+section:nth-of-type(2n+1) h2 {color: #103852}
+@media print {section:nth-of-type(2n+2) h2 {color: #103852}}
+section:nth-of-type(n) section {background: none; color: inherit}
+/* Add a gray separator if the last section before the sponsors is white. */
+main section:nth-of-type(2n+1):last-child {margin-bottom: 0.3rem}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  section, footer {border-width: 7.2rem 2rem}
+  header {border-width: 1rem 2rem}
+}
+@media (min-width: 56em) {
+  section:not(.wide) {border-width: 7.2rem calc((100vw - 52rem)/2)}
+}
+
+/* An element with class=left or class=right is shown to the side of
+   the main content of a section. It is expected to contain one or
+   more figure elements, each containing an image, which will be
+   displayed one below the other. They are only shown if the margin is
+   wide enough. The images are cropped to a circle. And thus these
+   classes should only be used for decorative images, not for
+   important ones.
+
+   The :not(.side):not(.place) avoids affecting slides with classes
+   .side.left or .place.left (see
+   https://www.w3.org/2021/Talks/ac-slides/Templates/AC-2021-slides.css)
+*/
+.left:not(.side):not(.place), .right:not(.side):not(.place),
+.wide .left, .wide .right {display: none}
+@media (min-width: 74em) {
+  @supports (object-fit: cover) {
+    .left:not(.side):not(.place), .right:not(.side):not(.place) {
+      width: calc((100vw - 52rem)/2 - 6rem); max-width: 18rem;
+      margin: 0; position: absolute; display: block;
+      top: 50%; transform: translate(0, -50%)}
+    .left:not(.side):not(.place) {right: 52rem; margin-right: 4rem}
+    .right:not(.side):not(.place) {left: 52rem; margin-left: 4rem}
+    .left:not(.side):not(.place) figure, .right:not(.side):not(.place) figure {
+      position: relative;
+      margin-top: 0.5em; margin-bottom: 0.5em; padding: 100% 0 0}
+    .left:not(.side):not(.place) iframe, .right:not(.side):not(.place) iframe,
+    .left:not(.side):not(.place) img, .right:not(.side):not(.place) img {
+      margin: 0; /*mix-blend-mode: luminosity;
+      filter: invert(1) brightness(0.8) invert(1);*/
+      position: absolute; top: 0; left: 0; border: none;
+      width: 100%; height: 100%; object-fit: cover; border-radius: 50%}
+  }
+}
+
+/* Each section has a link to the next section, or to the top of the
+   page. The link is inside an element (usually <p>) with
+   class=skip.
+
+   Inside the banner (<header>), the link is nearly transparent unless
+   it has the focus, because that looks better. It remains visible for
+   a second after it lost the focus again.
+
+   The maximum width of a normal section is 52rem/20em minus a bit for
+   the scrollbar, hence we set the maximum width of the .skip to a
+   little less than 20em.
+
+   Skip-arrows have a color depending on the section background. Give
+   them a 1-pixel outline so they are visible in case they are on top
+   of an image.
+*/
+.skip {position: absolute; top: -3.6rem; right: 0; color: #c9242b; width: 100%;
+  z-index: 1;
+  max-width: 19.7em; text-align: right; font-size: 2em; margin: 0; height: 0}
+section:nth-of-type(2n+1) .skip {color: black;
+  text-shadow: -1px -1px 0 hsl(0,0%,98%), 1px 1px 0 hsl(0,0%,98%),
+    -1px 1px 0 hsl(0,0%,98%), 1px -1px 0 hsl(0,0%,98%)}
+section:nth-of-type(2n+2) .skip {color: white;
+  text-shadow: -1px -1px 0 #103852, 1px 1px 0 #103852,
+    -1px 1px 0 #103852, 1px -1px 0 #103852}
+footer .skip {color: black;
+  text-shadow: -1px -1px 0 #eee, 1px 1px 0 #eee,
+    -1px 1px 0 #eee, 1px -1px 0 #eee}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  .skip {top: -7.2rem}}
+header .skip {top: -1.2rem; z-index: 2}
+.skip a span {display: none} /* Suppress text meant for Lynx */
+.skip a {text-decoration: none}
+header .skip a {opacity: 0.1; transition: 1s 1s}
+header .skip a:hover, header .skip a:focus {opacity: 1; transition: 0.2s;
+  background: #ccc}
+@supports (transform: translate(50%, 0)) {
+  .skip {right: 50%; transform: translate(50%, 0)}
+}
+.skip {display: none}		/* No skip link on small screens */
+@media screen and (min-width: 33em) {.skip {display: block}}
+
+/* Elements with .small float right or left in even and odd numbered
+   sections, respectively. If the viewport is wide enough, text
+   doesn't wrap around them, but stays indented. If the element with
+   .small is a figure with an image, the images are cropped to a
+   circle. */
+section > .small, section > details > .small {font-style: italic;
+  margin-top: 1.2rem}
+section > .small > :first-child, section > details > .small > :first-child {
+  margin-top: 0}
+@media (min-width: 27em), print {
+  section > .small, details > .small {font-style: inherit; width: 45%}
+  @supports (object-fit: cover) {
+    section > figure.small, details > figure.small {
+      position: relative; padding: 45% 0 0} /* aspect ratio*/
+    section > figure.small img, details > figure.small img {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%; object-fit: cover}
+  }
+  section:nth-of-type(odd) > .small,
+  section:nth-of-type(odd) > details > .small {float: left;
+    clear: left; margin-right: 2rem}
+  section:nth-of-type(even) > .small,
+  section:nth-of-type(even) > details > .small {float: right;
+    clear: right; margin-left: 2rem}
+}
+@media screen and (min-width: 33em) {
+  section > .small, details > .small {width: 14rem}
+  @supports (object-fit: cover) {
+    section > figure.small, details > figure.small {
+      padding-top: 14rem}
+  }
+  section:nth-of-type(odd) > .small ~ :not(.small):not(.left):not(.right),
+  section:nth-of-type(odd) > details > .small ~ :not(.small):not(.left):not(.right) {
+    margin-left: 16rem}
+  section:nth-of-type(even) > .small ~ :not(.small):not(.left):not(.right),
+  section:nth-of-type(even) > details > .small ~ :not(.small):not(.left):not(.right) {
+    margin-right: 16rem}
+}
+section > figure.small img, details > figure.small img {
+  border-radius: 50%}
+
+/* No margins for normal elements at the top or bottom of a section. */
+table, ul, ol, p, address {margin-top: 1.2rem; margin-bottom: 0}
+ul ul, ul ol, ol ul, ol ol {margin-top: 0}
+@media screen {
+  section > :not(details):not(.left):not(.right):not(.skip):not(.small),
+  section > details > *:not(.left):not(.right):not(.skip):not(.small) {
+    margin-top: 0;
+    margin-bottom: 0}
+  section > *:not(aside):not(.left):not(.right):not(.skip):not(.small) ~
+    *:not(aside):not(br):not(.left):not(.right):not(.skip):not(.small),
+  section > details > *:not(aside):not(.left):not(.right):not(.skip):not(.small) ~
+    *:not(aside):not(br):not(.left):not(.right):not(.skip):not(.small) {
+    margin-top: 1.2rem}
+  section > .skip + * {margin-top: 0}
+}
+
+/* Section headings. If the whole section is a details element, use
+   larger open/close markers. */
+h1, h2 {padding: 0}
+summary > h1, summary > h2 {display: inline}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap-style: balance /* proposed property as of Oct 2024 */}
+
+section > .skip + details:last-child > summary,
+section > .decoration + details:last-child > summary {
+  padding: 0 2em; display: block}
+section > .skip + details:last-child > summary::-webkit-details-marker,
+section > .decoration + details:last-child > summary::-webkit-details-marker {
+  display: none} /* Safari, Chrome... */
+section > .skip + details:last-child > summary::before,
+section > .decoration + details:last-child > summary::before {
+  content: "â"; float: left; font-size: 2em; width: 0.9em;
+  content: "â" / "";		/* Alt text for a11y (in browsers since 2024) */
+  margin-left: -1.1em; text-align: left; color: hsl(0,0%,45%);
+  line-height: 0.9}
+section:nth-of-type(2n+2) > .skip + details:last-child > summary::before,
+section:nth-of-type(2n+2) > .decoration + details:last-child > summary::before {
+  color: hsl(0,0%,62%)}
+section > .skip + [open]:last-child > summary::before,
+section > .decoration + [open]:last-child > summary::before {content: "â";
+  content: "â" / ""}
+@media (min-width: 512px) { /* 512px in the script in schedule.html */
+  section > .skip + details:last-child > summary::before,
+  section > .decoration + details:last-child > summary::before {
+    content: "â¶\FE0E"; content: "â¶\FE0E" / ""; display: inline-block}
+  section > .skip + [open]:last-child > summary::before,
+  section > .decoration + [open]:last-child > summary::before {
+    content: "â¼"; content: "â¼" / ""}
+}
+@media (min-width: 59em) {
+  section > .skip + details:last-child > summary,
+  section > .decoration + details:last-child > summary {
+    padding-left: 0}
+}
+
+/* Suppress the labels of nav menus on visual browsers. */
+nav h2 {position: absolute; left: -9999px}
+
+/* Lists. */
+ul, ol {padding-left: 0; margin-left: 0}
+li {margin-left: 1.5em; padding-left: 0}
+li::marker {width: 1em; padding: 0; text-align: left} /* Only in Prince */
+dt {font-weight: bold}
+
+/* Local navigation. */
+section nav a {font-style: italic; color: #005A9C}
+section:nth-of-type(2n+2) nav a {color: inherit}
+section nav.small a {display: block; margin-left: 1em}
+section nav.small a::before {content: "âº"; display: inline-block; width: 1em;
+  content: "âº" / "";		/* Alt text for a11y (in browsers since 2024) */
+  font-style: normal}
+section nav.small a::before {margin: 0 0 0 -1em}
+
+/* Sponsor logos. Override the 'height: 1em' of individual images to
+   make them look the same size. Tall images (w < h) typically need a
+   height > 1em, wide images (w > h) a height < 1em, adjusted
+   optically. */
+#sponsors {text-align: center}
+#sponsors h3 {font-style: italic}
+.sponsors > * {display: inline-block; vertical-align: middle}
+.sponsors img {font-size: 2.5em; padding: 0.4em 0.8em; height: 1em; display: block}
+.sponsors big {font-size: 125%}	/* Each <big> increases the size */
+.sponsors > a {text-decoration: none}
+@media screen and (max-width: 37em) {
+  /* A single column of logos and no side margins. */
+  .sponsors > * {display: block; width: -moz-fit-content; width: fit-content;
+    margin: 0 auto}
+  .sponsors img {padding: 0.4em 0}
+}
+
+/* Testing: * /
+#sponsors h3 {display: none}
+#sponsors article,
+#sponsors .sponsors {display: inline; padding: 0; font-size: 1em}
+.sponsors img {padding: 0.5rem}
+.sponsors big {font-size: 100%}
+/**/
+
+/* Footer */
+footer {text-align: center; min-height: calc(100vh - 7.2rem)}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  footer {text-align: center; min-height: calc(100vh - 14.4rem)}
+}
+footer nav {columns: 15em; column-gap: 2em; text-align: left; margin: 2.4rem 0;
+  font-size: 75%; color: #555;
+  border-top: thin solid; border-bottom: thin solid; padding: 1.3em 0}
+footer div {page-break-inside: avoid; break-inside: avoid; margin-bottom: 1.9em}
+footer .skip + div > *:first-child {margin-top: 0}
+footer ul {padding-left: 1em; margin: 0}
+footer li {display: block; text-indent: -1em; padding: 0}
+footer h3 {font-weight: 600; font-size: 1em}
+footer h3, footer li {margin: 0 0 0.6em}
+address {font-size: 75%}
+
+/* Links */
+a {color: inherit; text-decoration: underline}
+a:hover, :visited {text-decoration: underline; text-decoration-style: dotted;
+  text-decoration-color: hsl(0,0%,75%)}
+section:nth-of-type(2n+2) :visited {text-decoration-color:  hsl(204,13%,65%)}
+header h1 a:hover, header h1 :visited:hover {text-decoration: underline;
+  text-decoration-style: dotted}
+:visited:hover {text-decoration: underline}
+header a, header :visited, nav a, nav :visited {text-decoration: none}
+abbr[title] {text-decoration: none; font-variant: normal;
+  letter-spacing: normal}
+:focus {animation: white-black-outline 5s; outline-color: currentColor}
+section:nth-of-type(2n+2) :focus {animation: blue-white-outline 5s}
+footer :focus {animation: gray-black-outline 5s}
+
+@keyframes white-black-outline {
+    0%, 60% {outline: none; border-radius: 1px;
+    box-shadow: 0 0 0 4px hsl(0,0%,98%), 0 0 0 7px black}
+}
+@keyframes blue-white-outline {
+  0%, 60% {outline: none; border-radius: 1px;
+    box-shadow: 0 0 0 4px #103852, 0 0 0 7px white}
+}
+@keyframes gray-black-outline {
+  0%, 60% {outline: none; border-radius: 1px;
+    box-shadow: 0 0 0 4px #EEE, 0 0 0 7px black}
+}
+@keyframes dark-blue-white-outline {
+  0%, 60% {outline: none; border-radius: 1px;
+    box-shadow: 0 0 0 4px hsl(204,69%,15%), 0 0 0 7px white}
+}
+@keyframes blueish-gray-black-outline {
+  0%, 60% {outline: none; border-radius: 1px;
+    box-shadow: 0 0 0 4px #d7dee4, 0 0 0 7px black}
+}
+
+/* Banner (<header>) on main page (big) and on other pages (small) */
+header {max-width: none; font-weight: inherit;
+  color: #c9242b; background: #d7dee4;
+  background: url(../../../assets/www.w3.org/96b9f68506db_outline.jpg) 50% 90% / auto 8.5em no-repeat #d7dee4;
+  padding-bottom: 3em }
+.main header {color: #103852; padding-bottom: 7.6em}
+header h1 {margin: 0.7em auto; text-align: center}
+header h1 a {display: block}
+h1 span {display: block; color: #103852; font-size: 60%;
+  margin-top: 0.1em; line-height: 1.2}
+.main h1 span {color: #c9242b}
+h1 span + span {float: right; background: #103852; color: white;
+  font-size: 40%; margin: -4em -7em -6.3em 0; text-transform: uppercase;
+  padding: 0.6em; border-radius: 50%; width: 4.8em; height: 4.7em;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1.1}
+.main h1 span + span {color: white}
+@media (min-width: 27em) {
+  header h1 {padding: 0 2em}
+}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  header {background-size: auto 12em; /*padding-bottom: 6em*/}
+  .main header {/*background-size: auto 12em;*/ padding-bottom: 11.5em}
+  h1 span + span {font-size: 25%; margin: -6.4em -8em 0em 0em}
+  header h1 {padding: 0 0.75em}
+}
+@media (min-width: 63em) {
+  header {background-size: auto 14em; /*padding-bottom: 9em*/}
+  .main header {background-size: auto 19em; padding-bottom: 19em}
+}
+header {background-size: auto 26vw; padding-bottom: 7vw}
+.main header {background-size: auto 35vw; padding-bottom: 35vw}
+
+/* Put the nav menu above the title (H1). */
+header {display: flex; flex-direction: column}
+header nav {order: -1}
+
+/* The navigation menu (NAV) in the HEADER looks like a menubar. The
+   NAV is expected to contain a mix of A and DETAILS elements. (It may
+   also contain an H2, e.g., "<h2>Navigation menu</h2>", which is not
+   displayed.) The DETAILS elements function as dropdown menus and
+   should contain a SUMMARY and a UL or MENU. The UL/MENU in turn
+   contains LIs with A elements. */
+header nav {
+  font-weight: 400; background: hsl(0,0%,98%); color: #222; line-height: 1.5;
+  margin: -1rem -1rem 0}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  header nav {margin: -1rem -2rem 0}}
+header nav [href=""] {color: #999} /* Current page greyed in menu */
+header nav li {margin: 0; padding: 0; list-style: none}
+header nav * {display: inline-block}	/* For IE*/
+header nav summary {display: none} /* For IE */
+header nav a {margin-left: 1em; white-space: nowrap} /* For IE */
+@supports (position: absolute) { /* Exclude IE, for it doesn't know DETAILS */
+  header nav > br {display: none}
+  header nav a {margin-left: 0; white-space: normal}
+  header nav > a, header nav summary {text-transform: lowercase}
+  header nav summary, header nav > a, header nav > label {display: inline-block;
+    padding: 0.6em 0.8em; vertical-align: middle}
+  header nav > [href=""] {/* Current page underlined at top level */
+    border-image: url(../../../assets/www.w3.org/f166bfb25e94_border-bottom.png) 1 1 1 1 / 0 0.8em 0.2em}
+  @media (min-width: 33em) {
+    header nav summary, header nav > a, header nav > label {
+      padding-top: 1.2em; padding-bottom: 1.2em}
+  }
+  header nav ul, header nav menu {position: absolute; z-index: 2;
+    background: hsl(0,0%,98%);
+    padding: 0.3em 0; margin: 0; box-shadow: 0 1px 2px #ddd}
+  header nav li {display: block}
+  header nav ul a, header nav menu a {display: block;
+    padding: 0 0.8em 0.5em 0.8em; text-indent: hanging 1em}
+}
+header nav [open] > summary::before, header nav summary::before {content: none}
+header nav [open] > summary::-webkit-details-marker,
+header nav summary::-webkit-details-marker {display: none} /* Safari */
+header nav summary::after {content: "Â â"; content: "\2009\e003";
+  content: "\2009\e003" / ""; font: 50%/1 iconmonstr-iconic-font}
+header nav :focus,
+header nav a:hover, header nav summary:hover, header nav label:hover {
+  background: #EEE; outline: none;
+  animation: none; text-decoration: none}
+
+/* W3C logo */
+header nav img, header nav svg {vertical-align: -0.25em; height: 1.2em;
+  width: auto; max-width: 3em; /* max-width limits the size for IE */}
+header [href="../../../index.html"] path:first-of-type,
+header [href="/"] path:first-of-type {fill: hsl(205,100%,31%)}
+header [href="../../../index.html"]:hover path:first-of-type,
+header [href="/"]:hover path:first-of-type {fill: hsl(205,100%,50%)}
+
+/* Schedule tables. Use class=narrow for narrow tables, wide for wide ones. */
+table {width: 100%; border-collapse: collapse; background: hsl(204,69%,15%);
+  color: #fff; border: hidden}
+table.narrow {width: auto}
+caption {position: absolute; left: -9999px}
+th {text-align: left}
+th:not(:empty), td:not(:empty) {vertical-align: baseline}
+th, td {padding: 0.4rem 0.8rem;
+  border-color: hsl(0,0%,98%); border-style: solid;
+  border-width: 0.4rem 1px; height: 1.31em}
+@media not print {
+  section:nth-of-type(2n+2) table {background: #eee; color: #103852}
+  section:nth-of-type(2n+2) td, section:nth-of-type(2n+2) th {
+    border-color: #103852}
+}
+@media print {tbody th, tbody td {border-color: white}}
+thead th {vertical-align: bottom}
+th:first-child, td:first-child {white-space: nowrap}
+tbody th, tbody td, tfoot th, tfoot td {}
+td > p, td > ul, td > ol {margin: 0.6em 0}
+th > p:first-child, td > p:first-child {margin-top: 0}
+th > p:last-child, td > p:last-child {margin-bottom: 0}
+@media screen and (max-width: 37em) {
+  tr th[abbr], tr td[abbr] {line-height: 0; font-size: 0; content: none}
+  th[abbr]::before, td[abbr]::before {content: attr(abbr); line-height: 1.3;
+    font-size: 0.9rem; white-space: pre-wrap}
+  .schedule th[abbr]::before, td[abbr]::before {font-size: 1rem}
+  th:first-child {white-space: normal}
+}
+
+/* A wide figure or a wide table extends into the border area. */
+@media (min-width: 56em) {
+  table.wide, figure.wide, div.wide {
+    width: calc(100vw - 4rem - 15px); /* Estimated scrollbar 15px */
+    margin-left: calc((100% - (100vw - 4rem - 15px))/2)}
+}
+
+/* Add a big curly brace on the left of cells that span multiple rows */
+td[rowspan] {vertical-align: middle;
+  padding-left: 33px;
+  background: /* top: */
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAAAAAB3F+p+AAAAVElEQVQIW2P4jw4Yjj5BF/E2il/+BkXkcq25keWMr0gi//+/TDYyctmKLPL/d6ORkdFUZJH/P0OAQhuRRf4fBoq4/kQW+QwUMbqKLPLfGShyEMIEAOuejsTNUKQDAAAAAElFTkSuQmCC)
+    0% 0% no-repeat, /* bottom: */
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAKCAMAAABlokWQAAAAXVBMVEXBw8S3ubq2ubnS1NQ1Oz3CxMT29/dbYGLq6+vi4+NLUFJHTE4/REZ7foB4fH2Ul5i8vr/Y2doyODouNDbw8PHo6OlGS01CR0n////7+/v5+fn19fVZXl+hpKWXmpuTqzftAAAATElEQVQIHQXBhQHCAAADsOLO2IoE/f9MkgDHtgECrm07AgGXtvcnEFjv284Bwevc9gcQbpv2MQOQxWnqcngDkEM/3y0AZLUDAAQAwB8FZA57F5d4wQAAAABJRU5ErkJggg==)
+    0% 100% no-repeat, /* middle: */
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAOCAMAAAD+MweGAAAAgVBMVEWusbHX2NkzOTvy8/O2uLhXXF7m5+fS09M/REZvc3X+/v709PReY2RSV1iGioukp6iWmZq4uru0trfY2drJy8s0OjzFx8f3+PguNDbl5uZOU1VNU1RJT1BESUs+Q0X////9/f1obG4yNzn5+flgZGaNkZKJjY5xdXaXmpuPkpONkJECQ6IxAAAAbElEQVQI11XORxLCQAwEQHIwGROaKLKB/z+Qg4FanzTVhxnVIiIiRqiV8XsK3CsyQTtLZX3APJVYLenlqcTiSOPRbWZ/icEU1P+SzXbYFp2fnMYY1pOeF27XpHlzQZ6uv9Gv/HzGsyJ7tMr4AYj2Gbqwp9RcAAAAAElFTkSuQmCC)
+    0% 50% no-repeat, /* vertical: */
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAABAgMAAABF1a3yAAAADFBMVEX///9EREQyMjLBwcEA/1gPAAAADklEQVQImWNgYFvDwAAAAiIAs/rtAKUAAAAASUVORK5CYII=)
+    0% 0% / 17px 100% no-repeat white}
+td[rowspan] + td[rowspan] {background: none; padding-left: 0.4em}
+
+/* Room assignments. (Override this each year based on how long the
+   room names are.) */
+.rooms {table-layout: fixed}
+.rooms tr > :nth-child(1) {width: 58%}
+.rooms tr > :nth-child(2) {width: 25%}
+.rooms tr > :nth-child(3) {width: 17%; text-align: right}
+@media screen and (max-width: 37em) {
+ .rooms thead {font-size: smaller}
+  /* Omit Estimated Attendance on narrow screens */
+  .rooms tr > :nth-child(3) {display: none}
+}
+
+/* Use class=columns to create a grid with two columns: the children
+   are alternating in the left and right columns:
+
+      1  2
+      3  4
+      5  ...
+
+   and are horizontally and vertically centered (if grid is
+   supported).
+*/
+.columns > * {box-sizing: border-box; width: 45%; width: calc(50% - 2rem);
+  float: left; margin: 0 2rem 2rem 0}
+.columns > *:nth-child(odd) {clear: both}
+.columns {overflow: hidden}
+.columns > * > :first-child {margin-top: 0}
+@supports (display: grid) {
+  .columns {overflow: visible; display: grid; grid: "a  b" / 1fr 1fr;
+    grid-gap: 2rem; gap: 2rem; align-items: stretch; justify-items: center}
+  .columns > * {width: 100%; margin: 0}
+  .columns img {max-height: none} /* 100% would compute to 0 in Blink */
+}
+.columns h2 {font-size: 150%; padding-top: 1.2rem}
+
+/* Floorplans in a section with id=map */
+#map, #map2 {text-align: center}
+#map figcaption, #map2 figcaption {font-weight: bold; font-size: 2em;
+  text-wrap-style: balance; /*color: #005A9C*/}
+#map figure, #map2 figure {display: inline-block; margin-left: 1em;
+  margin-right: 1em}
+
+/* Inline icons, such as for the Mastodon logo */
+.icon {height: 1em; width: auto; vertical-align: text-bottom; line-height: 0.6}
+svg.icon {width: 1em; fill: currentColor}
+
+/* Inherit default fill color for SVG from context instead of black. */
+svg {fill: currentColor}
+
+/* Elements that are only useful for print. */
+@media screen {
+  .print {display: none}
+}
+
+/* Sections or blocks with a decorative image on the side.
+
+   The block is indented to make more room for the image. The image is
+   made as high as the block. If it is too wide, it will be clipped by
+   the viewport. If the viewport is narrow, the section will not be
+   indented and no image will be shown at all.
+
+   The block must have a class "decorated". The image itself must be
+   given by an ASIDE element with class "decoration".
+*/
+
+/* To not display the decoration on small windows:
+.decoration {display: none}
+*/
+/* To display the decoration as a banner: */
+.decoration img {height: 8em}
+.decoration figure {margin: 0; height: 100%} /* In case IMG is inside FIGURE */
+section > .decoration {margin-left: -1rem; margin-right: -1rem}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  section > .decoration {margin-left: -2rem; margin-right: -2rem}
+}
+section > .decoration img {display: block; margin: -3.6rem 0 1.3rem}
+@media (min-width: 46em) and (min-height: 46em), (min-width: 56em) {
+  section > .decoration img {margin: -7.2rem 0 1.3rem}
+}
+@media print {
+  section > .decoration {margin-left: 0; margin-right: 0}
+  section > .decoration img {margin-top: 0}
+  .decoration + details, .decoration + h2 {page-break-before: avoid}
+  .decoration + h2, .decoration + details > summary > h2 {margin-top: 0}
+}
+/**/
+@supports (object-fit: cover) {
+  .decoration img {width: 100%; object-fit: cover}
+}
+@media (min-width: 56em) {
+  .decorated {position: relative}
+  .decorated:nth-of-type(2n+1) {padding-right: 16rem}
+  .decorated:nth-of-type(2n+2) {padding-left: 16rem}
+  .decorated > h2 {margin-top: 0; margin-bottom: 0}
+  .decoration {display: block; position: absolute; height: 100%;
+    top: 0; width: 16rem; width: calc((100vw - 52rem)/2 + 10rem);
+    overflow: hidden}
+  section > .decoration {margin: 0}
+  .decorated:nth-of-type(2n+1) .decoration {right: -2rem}
+  .decorated:nth-of-type(2n+2) .decoration {left: -2rem}
+  section > .decoration img {margin: 0}
+  @supports (right: calc(100% - 10rem)) {
+    .decorated:nth-of-type(2n+1) .decoration {right: auto;
+      left: calc(100% - 10rem)}
+    .decorated:nth-of-type(2n+2) .decoration {left: auto;
+      right: calc(100% - 10rem)}
+    /* If the block is a <section>, the image height includes the borders: */
+    section > .decoration {height: calc(100% + 14.4rem);
+      top: -7.2rem}
+    .decoration img {display: block; height: 100%; max-width: none}
+    /* If the decorated block is the first thing in a section after the
+       skip link, align the image with the top of the section: */
+    section > .skip + .decorated > .decoration {top: -7.2rem;
+      height: calc(100% + 7.2rem)}
+    section > .skip + details.decorated > .decoration {
+      height: calc(100% + 14.4rem)}
+  }
+}
+
+/* Radio buttons to determine which part of the schedule is shown. The
+   checkbox is there, but hidden under the label. If it has the focus,
+   the corresponding label gets an outline. And if it is checked, the
+   corresponding label changes color to white on blue. */
+.schedule table {font-size: 100%; font-weight: 400}
+.schedule input {position: absolute}
+.schedule label {display: block; font-weight: 700; border: 0.2em solid #103852;
+  color: #103852; text-align: center; padding: 0.3em 0.3em;
+  word-break: normal; overflow-wrap: normal;
+  background: hsl(0,0%,98%); margin: 0 0 0.5em; position: relative}
+section:nth-of-type(2n+2) .schedule label {background: #103852; color: white;
+  border-color: white}
+@media not print {
+  #show-sunday:not(:checked) ~ #sunday,
+  #show-monday:not(:checked) ~ #monday,
+  #show-tuesday:not(:checked) ~ #tuesday,
+  #show-wednesday:not(:checked) ~ #wednesday,
+  #show-thursday:not(:checked) ~ #thursday,
+  #show-friday:not(:checked) ~ #friday,
+  #show-tab1:not(:checked) ~ #tab1,
+  #show-tab2:not(:checked) ~ #tab2,
+  #show-tab3:not(:checked) ~ #tab3,
+  #show-tab4:not(:checked) ~ #tab4,
+  #show-tab5:not(:checked) ~ #tab5,
+  #show-tab6:not(:checked) ~ #tab6 {display: none}
+  .schedule label {background:
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAJElEQVQoz2NkwA3+I7EZsSlgYqAAjETNjGihOoScPZpI6KUZAB3NAxtenNgrAAAAAElFTkSuQmCC)
+    95% 50% / auto 1em no-repeat hsl(0,0%,98%)}
+  section:nth-of-type(2n+2) .schedule label {background-color: #103852}
+  /* Use the borders to mimic a triangle: */
+  #show-sunday:checked ~ [for=show-sunday]::after,
+  #show-monday:checked ~ [for=show-monday]::after,
+  #show-tuesday:checked ~ [for=show-tuesday]::after,
+  #show-wednesday:checked ~ [for=show-wednesday]::after,
+  #show-thursday:checked ~ [for=show-thursday]::after,
+  #show-friday:checked ~ [for=show-friday]::after,
+  #show-tab1:checked ~ [for=show-tab1]::after,
+  #show-tab2:checked ~ [for=show-tab2]::after,
+  #show-tab3:checked ~ [for=show-tab3]::after,
+  #show-tab4:checked ~ [for=show-tab4]::after,
+  #show-tab5:checked ~ [for=show-tab5]::after,
+  #show-tab6:checked ~ [for=show-tab6]::after {content: " ";
+    display: block; width: 0; height: 0; position: absolute;
+    bottom: -0.93em; /* -1em causes rounding errors in FF */
+    left: 5rem; left: 50%; margin-left: -0.8em;
+    border: 0.8em solid transparent; border-top-color: #103852;
+    border-bottom: none}
+  section:nth-of-type(2n+2) #show-sunday:checked ~ [for=show-sunday]::after,
+  section:nth-of-type(2n+2) #show-monday:checked ~ [for=show-monday]::after,
+  section:nth-of-type(2n+2) #show-tuesday:checked ~ [for=show-tuesday]::after,
+  section:nth-of-type(2n+2) #show-wednesday:checked ~ [for=show-wednesday]::after,
+  section:nth-of-type(2n+2) #show-thursday:checked ~ [for=show-thursday]::after,
+  section:nth-of-type(2n+2) #show-friday:checked ~ [for=show-friday]::after,
+  section:nth-of-type(2n+2) #show-tab1:checked ~ [for=show-tab1]::after,
+  section:nth-of-type(2n+2) #show-tab2:checked ~ [for=show-tab2]::after,
+  section:nth-of-type(2n+2) #show-tab3:checked ~ [for=show-tab3]::after,
+  section:nth-of-type(2n+2) #show-tab4:checked ~ [for=show-tab4]::after,
+  section:nth-of-type(2n+2) #show-tab5:checked ~ [for=show-tab5]::after,
+  section:nth-of-type(2n+2) #show-tab6:checked ~ [for=show-tab6]::after {
+    border-top-color: white}
+
+  /* Show the labels as tabs along the top of the .schedule container,
+     instead of in their natural position. */
+  @media (min-width: 56em) {
+    .schedule {position: relative; padding-top: 4em}
+    .schedule input,
+    .schedule label {position: absolute; top: 0; left: 0;
+      font-size: 100%; width: 6em; background-image: none}
+    .schedule input ~ input,
+    .schedule label ~ label {left: 7.5em}
+    .schedule input ~ input ~ input,
+    .schedule label ~ label ~ label {left: 15em}
+    .schedule input ~ input ~ input ~ input,
+    .schedule label ~ label ~ label ~ label {left: 22.5em}
+    .schedule input ~ input ~ input ~ input ~ input,
+    .schedule label ~ label ~ label ~ label ~ label {left: 30em}
+    .schedule label::after {content: none}
+  }
+  #show-friday:checked ~ [for=show-friday],
+  #show-thursday:checked ~ [for=show-thursday],
+  #show-wednesday:checked ~ [for=show-wednesday],
+  #show-tuesday:checked ~ [for=show-tuesday],
+  #show-monday:checked ~ [for=show-monday],
+  #show-sunday:checked ~ [for=show-sunday],
+  #show-tab1:checked ~ [for=show-tab1],
+  #show-tab2:checked ~ [for=show-tab2],
+  #show-tab3:checked ~ [for=show-tab3],
+  #show-tab4:checked ~ [for=show-tab4],
+  #show-tab5:checked ~ [for=show-tab5],
+  #show-tab6:checked ~ [for=show-tab6] {background: #103852; color: white}
+  section:nth-of-type(2n+2) #show-friday:checked ~ [for=show-friday],
+  section:nth-of-type(2n+2) #show-thursday:checked ~ [for=show-thursday],
+  section:nth-of-type(2n+2) #show-wednesday:checked ~ [for=show-wednesday],
+  section:nth-of-type(2n+2) #show-tuesday:checked ~ [for=show-tuesday],
+  section:nth-of-type(2n+2) #show-monday:checked ~ [for=show-monday],
+  section:nth-of-type(2n+2) #show-sunday:checked ~ [for=show-sunday],
+  section:nth-of-type(2n+2) #show-tab1:checked ~ [for=show-tab1],
+  section:nth-of-type(2n+2) #show-tab2:checked ~ [for=show-tab2],
+  section:nth-of-type(2n+2) #show-tab3:checked ~ [for=show-tab3],
+  section:nth-of-type(2n+2) #show-tab4:checked ~ [for=show-tab4],
+  section:nth-of-type(2n+2) #show-tab5:checked ~ [for=show-tab5],
+  section:nth-of-type(2n+2) #show-tab6:checked ~ [for=show-tab6] {
+    background: hsl(0,0%,98%); color: #103852}
+}
+
+/* Red address. */
+#schedule a em {font-style: normal; font-weight: 400; color: #ad2030}
+
+/* Contacts section. */
+#contacts {background: #d7dee4; color: black}
+#contacts .skip {color: black;
+  text-shadow: -1px -1px 0 #d7dee4, 1px 1px 0 #d7dee4,
+    -1px 1px 0 #d7dee4, 1px -1px 0 #d7dee4}
+#contacts h2 {color: black}
+#contacts dd {margin: 0 0 1.2em 0}
+@media (min-width: 27em) {
+  #contacts aside {box-sizing: border-box; margin-top: 2em; margin-bottom: 2em}
+  #contacts:nth-of-type(odd) aside {padding: 4em 1em 4em 0;
+    border-right: 0.3em solid}
+  #contacts:nth-of-type(even) aside {padding: 4em 0 4em 1em;
+    border-left: 0.3em solid}
+}
+
+/* Button- and badge-like links.
+
+   An element with class=buttons makes its children (typically A
+   elements) into rows of buttons of equal height and 1/2 or 1/3
+   (depending on window size) of the containing block width, with
+   colors reversed relative to the surrounding text, and with their
+   text centered horizontally and vertically. Example:
+
+   <p class=buttons>
+    <a href="...">More info</a>
+    <a href="...">Next</a>
+   </p>
+
+   An element with class=badges makes its children (typically A
+   elements, which in turn contain an image and text) into rows of
+   badges, each likewise 1/2 or 1/3 of the containing block width,
+   with a backgound slightly darker than the surrounding text, and
+   with their text horizontally centered. Images will be resized to
+   the width of the badge. Example:
+
+   <p class=badges>
+    <a ...><img ...> Kitchens</a>
+    <a ...><img ...> Hallways</a>
+   </p>
+
+   When used this way, and for best looks, the images should all have
+   the same aspect ratio.
+
+   Adding alt (class="alt badges") removes the darker background,
+   makes the images smaller and separates the badges with a short
+   vertical rule. It works best with square images.
+
+   Badges with long text can use class "long": Text will be smaller
+   and links remain underlined.
+*/
+.buttons, .badges {overflow: hidden; hyphens: manual; text-wrap-style: balance}
+.buttons > *, .badges > * {box-sizing: border-box; float: left; width: 40%;
+  border: none; padding: 0.6rem; list-style: none;
+  width: calc(49.9% - 2rem); margin: 0 2rem 2rem 0; text-align: center}
+.buttons > *:nth-child(2n+1), .badges > *:nth-child(2n+1) {clear: both}
+.badges:not(.long) a, .buttons:not(.long) a {text-decoration: none}
+.badges button:hover, .buttons button:hover,
+.badges label:hover, .buttons label:hover,
+.badges a:hover, .buttons a:hover {filter: brightness(120%);
+  outline: medium solid}
+.buttons p, .badges p {margin: 0}
+.buttons p + p, .badges p + p {margin: 0.6rem 0 0 0}
+@media (min-width: 33em) {
+  .buttons > *, .badges > * {width: 26%; width: calc(33.3% - 2rem)}
+  .buttons > *:nth-child(2n+1), .badges > *:nth-child(2n+1) {clear: none}
+  .buttons > *:nth-child(3n+1), .badges > *:nth-child(3n+1) {clear: both}
+}
+@supports (display: grid) {
+  .buttons, .badges {overflow: visible; display: grid;
+    grid: "a b" / 1fr 1fr; grid-gap: 2rem; gap: 2rem;
+    align-items: stretch; justify-items: stretch}
+  .buttons > *, .badges > * {width: auto; margin: 0; float: none}
+  .buttons img, .badges img {max-height: none} /* 100% computes to 0 in Blink */
+  @media (min-width: 33em) {
+    .buttons, .badges {grid: "a b c" / 1fr 1fr 1fr}
+  }
+  @media (min-width: 56em) {	/* Only two columns next to a margin image */
+    .decorated .buttons, .decorated .badges {grid: "a b" / 1fr 1fr}
+  }
+}
+/* The differences between buttons and badges are in colors and font size: */
+.badges > * {background: #eee; min-height: 2.5em;
+  font-weight: 400; padding-bottom: 1.2rem}
+.badges:not(.long) > * {font-size: 5vw; text-decoration: none}
+.badges > * > *:first-child {margin-top: 0}
+@media (min-width: 33em) {.badges:not(.long) > * {font-size: 140%}}
+.badges > * > img:first-of-type, .badges > * > iframe:first-of-type {
+  width: 100%; max-width: none; display: block}
+@supports (width: calc(100% + 1.2rem)) {
+  .badges > * > img:first-of-type, .badges > * > iframe:first-of-type {
+    width: calc(100% + 1.2rem);
+    margin: -0.6rem -0.6rem 1.2rem -0.6rem}
+}
+.buttons > * {background: #103852; color: white; font-weight: 700;
+  min-height: 2.5em;
+  display: flex; align-items: center; justify-content: center}
+.buttons > :focus {outline-color: black}
+@media not print {
+  section:nth-of-type(2n+2) .badges > * {background: hsl(204,69%,15%)}
+  section:nth-of-type(2n+2) .buttons > * {background: hsl(0,0%,98%);
+    color: #103852}
+  section:nth-of-type(2n+2) .buttons > :focus {outline-color: white}
+}
+/* Adding class alt to badges removes the background, makes the
+   image and the text smaller
+   and adds vertical rules between the badges: */
+.badges.alt {}
+section:nth-of-type(2n+2) .badges.alt > *, .badges.alt > * {background: none;
+  position: relative; font-size: 100%}
+.badges.alt > * > img:first-of-type, .badges.alt > * > iframe:first-of-type {
+  width: 40%; margin-left: auto; margin-right: auto; margin: 1.2rem auto}
+.badges.alt > *::before {position: absolute;
+  left: -1rem; left: calc(-1rem - 0.05rem);
+  width: 0.1rem; background: #222;
+  top: 2.8rem; height: 3.8rem /* Assuming a square image */}
+section:nth-of-type(2n+2) .badges.alt > *::before {background: white}
+.badges.alt > *:nth-child(2n+2)::before {content: ""}
+@media (min-width: 33em) {
+  .badges.alt > *:nth-child(2n+2)::before {content: none}
+  .badges.alt > *:nth-child(3n+2)::before,
+  .badges.alt > *:nth-child(3n+3)::before {content: ""}
+}
+/* Class narrow makes up to four columns instead of three.
+   TODO: Rules when grid is not supported. */
+@supports (display: grid) {
+  @media (min-width: 33em) {
+    .buttons.narrow, .badges.narrow {grid: "a b c d" / 1fr 1fr 1fr 1fr}
+    .badges.alt.narrow > *:nth-child(3n+2)::before,
+    .badges.alt.narrow > *:nth-child(3n+3)::before {content: none}
+    .badges.alt.narrow > *:nth-child(4n+2)::before,
+    .badges.alt.narrow > *:nth-child(4n+3)::before,
+    .badges.alt.narrow > *:nth-child(4n+4)::before {content: ""}
+  }
+  @media (min-width: 56em) {	/* Only three columns next to a margin image */
+    .decorated .buttons.narrow, .decorated .badges.narrow {
+      grid: "a b c" / 1fr 1fr 1fr}
+    .badges.alt > *:nth-child(2n+2)::before {content: none}
+    .badges.alt > *:nth-child(3n+2)::before,
+    .badges.alt > *:nth-child(3n+3)::before {content: ""}
+  }
+}
+/* Fade the vertical rules next to alt badges that have a focus outline. */
+.badges.alt > :hover::before, .badges.alt > :focus::before,
+.badges.alt > :hover + ::before, .badges.alt > :focus + ::before {
+  opacity: 0.3; /* content: none */}
+/* A SPAN inside a child of .badges will be blue instead of almost
+   black, or gray instead of white. */
+.badges > * span {color: #103852}
+@media not print {
+  section:nth-of-type(2n+2) .badges > * span {color: #CCC}
+}
+
+/* Add span2 or span3 to a badge to make it span two or three
+   columns. Add span1or2 to a badge that should be one column, but
+   grow to two columns on small windows (i.e., span the whole
+   width). Add span2or1 for the opposite: a badge that should be two
+   columns, but shrink to one column on small windows. */
+.span2, .span3, .span4, .span1or2 {width: 100%; width: calc(100% - 2rem)}
+@media (min-width: 33em) {
+  .span2, .span2or1 {width: 63%; width: calc(2*(99% - 4rem)/3 + 1rem)}
+  .span3, .span4 {width: 100%; width: calc(100% - 4rem)}
+  .span1or2 {width: 26%; width: calc(33.3% - 2rem)}
+  /* TODO: widths inside .badges.narrow when grid is not supported. */
+}
+@supports (display: grid) {
+  .span2, .span3, .span4, .span1or2 {width: auto; grid-column-end: span 2}
+  .span2or1 {width: auto}
+  @media (min-width: 33em) {
+    .span3, .span4 {grid-column-end: span 3}
+    .narrow .span4 {grid-column-end: span 4}
+    .span1or2 {grid-column-end: span 1}
+    .span2or1 {grid-column-end: span 2}
+  }
+}
+
+/* A "card" has a full-height image on the left third, and in the
+   right column a heading, a text and two links, one bottom left, one
+   bottom right:
+
+   +----------+----------------------+
+   |\        /| HEADER LINE ONE      |
+   | |      | | Second header line   |
+   |  \    /  |                      |
+   |   |  |   | Some text here. Some |
+   |    \/    | text here. Some text |
+   |    /\    | here.                |
+   |   |  |   |                      |
+   |  /    \  |                      |
+   | |      | |                      |
+   |/        \| @ link1      @ link2 |
+   +----------+----------------------+
+
+ */
+.cards > * {background: #EEE}
+@media not print {
+  section:nth-of-type(2n+2) .cards > * {
+    background: hsl(204,69%,15%); color: white}
+}
+.cards > * {margin: 1.2rem 0 0 0;
+  height: 26em; max-width: 55.2rem; /* = 1.2 * 46 = max-width of a section */
+  font-size: 1rem; padding: 0 0 0 33.3333%; overflow: auto}
+.cards > * > * {margin: 0; padding: 0}
+.cards > * > * > *:first-child {margin-top: 0}
+.cards > * > * > *:last-child {margin-bottom: 0}
+.cards > * > *:nth-child(1) {float: left; width: 45%; height: 100%;
+  margin-left: -50%; object-fit: cover}
+.cards > * > *:nth-child(2) {display: block; margin: 1.8em 2em 0 0;
+  font-weight: bold; font-size: 120%}
+.cards > * > *:nth-child(2):first-line {font-size: 125%}
+.cards > * > *:nth-child(3) {margin: 1.8em 2em 0 0}
+.cards > * > *:nth-child(4) {float: left; width: calc(50% - 1.5em);
+  margin: 1.8em 0}
+.cards > * > *:nth-child(5) {float: right; width: calc(50% - 1.5em);
+  margin: 1.8em 2em 1.8em 0; text-align: right}
+
+@supports (display: grid) {
+  .cards > * {padding: 0; display: grid;
+    grid: "a    .    .    .    .    ." 1em
+	  "a    .    b    b    b    ." auto
+	  "a    .    .    .    .    ." 1em
+	  "a    .    c    c    c    ." minmax(0, 1fr)
+	  "a    .    .    .    .    ." 1em
+	  "a    .    d    .    e    ." auto
+	  "a    .    .    .    .    ." 1em
+	  / 5fr 1em  4fr  1em  4fr  1em}
+  .cards > * > *:nth-child(1) {float: none; margin: 0; grid-area: a;
+    width: 100%}
+  .cards > * > *:nth-child(2) {margin: 0; grid-area: b}
+  .cards > * > *:nth-child(3) {margin: 0; grid-area: c; overflow: auto}
+  .cards > * > *:nth-child(4) {float: none; width: auto; margin: 0;
+    grid-area: d; align-self: end; overflow-wrap: anywhere}
+  .cards > * > *:nth-child(5) {float: none; width: auto; margin: 0;
+    grid-area: e; align-self: end; overflow-wrap: anywhere}
+  @media (min-width: 46em) {
+    .cards > * {padding: 0; display: grid;
+      grid: "a    .    .    .    .    ." 1.8em
+	    "a    .    b    b    b    ." auto
+	    "a    .    .    .    .    ." 1.2em
+	    "a    .    c    c    c    ." minmax(0, 1fr)
+	    "a    .    .    .    .    ." 1.2em
+	    "a    .    d    .    e    ." auto
+	    "a    .    .    .    .    ." 1.8em
+	    / 5fr 2em  4fr  1em  4fr  2em}
+    .cards > * > *:nth-child(4) {overflow-wrap: inherit}
+    .cards > * > *:nth-child(5) {overflow-wrap: inherit}
+  }
+}
+
+/* When cards and columns are combined, display as many cards on a
+   line as will fit. Each card is 100% or 55em wide (whichever is
+   smaller, so this is most useful with class wide (class="wide
+   columns cards"), otherwise there is only room for one card
+   anyway. */
+.columns.cards {display: flex; flex-wrap: wrap; justify-content: center}
+.columns.cards > * {margin-top: 0} /* .columns adds a 'gap' instead */
+
+/* Smaller triangle on DETAILS inside a card. */
+.cards summary::before {font-size: 1em}
+
+/* If the card is an A element, show a hover effect like for .buttons */
+.cards > a[href]:hover {filter: brightness(120%); outline: medium solid}
+
+/* Video link. A block with a background and a triangle on the left.
+   Looks best when the link contains 2 or 3 lines. If there are
+   multiple videolinks in a row, best is if they all have the same
+   number of lines. */
+a.videolink {display: block; margin: 1.2rem 0 0 0;
+  background: #eee 3em 50% / 4em auto no-repeat
+    url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCA0IDQiIGhlaWdodD0iNCIgd2lkdGg9IjQiPjxjaXJjbGUgZmlsbD0iIzAwMDAwMDY2IiBjeD0iMiIgY3k9IjIiIHI9IjEuNyIvPjxwYXRoIGZpbGw9IiNmZmZmZmY2NiIgZD0iTSAxLjMgMSBsIDIgMSAtMiAxIHoiLz48L3N2Zz4K);
+  padding: 1.2em 1.2em 1.2em 10em; text-decoration: none;
+  position: relative}
+a[href].videolink:hover {filter: brightness(120%); outline: medium solid}
+@media not print {
+  section:nth-of-type(2n+2) a.videolink {background-color: hsl(204,69%,15%)}
+}
+/**/
+
+/* Focus outlines on various backgrounds. */
+table :focus {animation: gray-black-outline 5s}
+/*header nav :focus,
+header nav :focus ~ label,*/
+#show-sunday:focus ~ [for=show-sunday],
+#show-monday:focus ~ [for=show-monday],
+#show-tuesday:focus ~ [for=show-tuesday],
+#show-wednesday:focus ~ [for=show-wednesday],
+#show-thursday:focus ~ [for=show-thursday],
+#show-friday:focus ~ [for=show-friday],
+#show-tab1:focus ~ [for=show-tab1],
+#show-tab2:focus ~ [for=show-tab2],
+#show-tab3:focus ~ [for=show-tab3],
+#show-tab4:focus ~ [for=show-tab4],
+#show-tab5:focus ~ [for=show-tab5],
+#show-tab6:focus ~ [for=show-tab6] {animation: white-black-outline 5s}
+section:nth-of-type(2n+2) table :focus {animation: dark-blue-white-outline 5s}
+header :focus,
+#contacts :focus {animation: blueish-gray-black-outline 5s}
+
+/* A gray line is used in the accomodation section. */
+hr {height: 0.3rem; background: #d7dee4; background-clip: content-box;
+  margin-top: 2rem; border: none}
+
+/* Floating figures that aren't at the start of a section need extra space. */
+*:not(.skip) + figure.small {margin-top: 1.2rem}
+
+/* Miscellaneous icons. Add something like class="picto im-info" to an
+   element to prefix the element with the im-info icon from the
+   iconmonstr-iconic font. (Class picto is defined in
+   "fonts/iconmonstr-iconic-font.css".) */
+.faicon::before {font-size-adjust: none; /*line-height: 0.6;*/
+  line-height: 1; /*font-style: normal;*/ margin-right: 0.33em;
+  vertical-align: middle; text-indent: 0;
+  text-rendering: auto; /*-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale*/}
+.faicon::before {font-family: "Font Awesome 6 Free"}
+li.picto, li.faicon {list-style: none; margin-left: 2em}
+li.picto::before, li.faicon::before {display: inline-block;
+  margin: 0 0 0 -2em; width: 2em}
+
+/* Bigger H3 */
+h3 {font-size: 150%; padding-top: 1.2rem}
+
+/* Paragraph space above DTs */
+dt {margin-top: 1.2rem}
+
+/* Enclose a word that should not be automatically hyphenated in <span
+   class=nobreak> and manually insert &shy; if needed. */
+.nobreak {hyphens: manual}
+
+/* A paragraph with class=help containing one or more links that are
+   displayed in the form of blue buttons reminiscent of the button on
+   https://www.w3.org/Member/ */
+.help a {display: inline-block; color: white; background-color: #005a9c;
+  font-weight: bold; font-size: 1.56em; min-width: 4.6em; border-radius: 0.14em;
+  padding: 0.3em; text-decoration: none}
+.help img {vertical-align: middle; width: 1.4em; margin-right: 0.3em}
+
+/* World map with 13:30 UTC in various time zones. */
+#world-map {columns: 9em; margin-top: 2.4rem}
+#world-map p {break-inside: avoid}
+@media (min-width: 56em) {
+  #world-map {columns: auto; position: relative;
+    text-align: center; font-size: 1.5vw; line-height: 1.1}
+  #world-map img {width: 100%}
+  #world-map p {margin: 0; position: absolute}
+}
+@media (min-width: 80em) {
+  #world-map {font-size: 1em}
+}
+
+/* Classes "light" and "dark" are for images or other elements that
+   only work on a dark, resp. light background. They are suppressed in
+   sections with the wrong background. Example use:
+
+   <img class=dark src="foo-black.png" alt="..."><img class=light
+   src="foo-white.png" alt="...">
+*/
+@media not print {
+  header .light, footer .light, #sponsors .light,
+  section:nth-child(2n+1) .light {display: none}
+  section:nth-child(2n+2) .dark {display: none}
+
+  section:nth-child(2n+1) table .light {display: revert}
+  section:nth-child(2n+1) table .dark {display: none}
+  section:nth-child(2n+2) table .dark {display: revert}
+  section:nth-child(2n+2) table .light {display: none}
+}
+@media print {
+  .light {display: none}
+}
+
+/* Force images to a certain aspect ratio. Useful in class=badges or
+   class=columns. */
+.ratio1x1 {aspect-ratio: 1/1; width: 100%; object-fit: cover}
+.ratio3x2 {aspect-ratio: 3/2; width: 100%; object-fit: cover}
+.ratio4x3 {aspect-ratio: 4/3; width: 100%; object-fit: cover}
+.ratio16x9 {aspect-ratio: 16/9; width: 100%; object-fit: cover}
+.ratio16x10 {aspect-ratio: 16/10; width: 100%; object-fit: cover}
+
+/* Class edit is for notes destined at the authors & editors of a
+   page, which are meant to be removed before the page is published.
+*/
+.edit {border: dashed; color: #900; padding: 0 0.5em}
+
+/* NoScript (at least 11.4.16) adds a big z-index to all ancestors of
+   an AUDIO element while that AUDIO element is blocked. This is
+   apparently to make sure NoScript's warning is always visible. On
+   our pages, any AUDIO elements are visible anyway and the big
+   z-index interferes with our popup menus. So undo its effect here.
+   */
+html.__ns__pop2top, html .__ns__pop2top {z-index: auto !important;
+   z-index: revert !important}
+/**/
+
+
+/* Print style. */
+
+@page {
+  margin: 0.9cm;
+  font: 400 10pt../../../1.3 Lato, My Lato, Open Sans, Liberation Sans, Helvetica Neue,
+    Arial, Helvetica, My DejaVu Sans Subset, sans-serif;
+  font-size-adjust: 0.506;
+}
+@page :right {
+  @bottom-right {content: counter(page)}
+}
+@page :left {
+  @bottom-left {content: counter(page)}
+}
+
+@media print {
+
+  /* Elements not useful in print */
+  .noprint, nav, header nav, .skip, .schedule input {display: none}
+
+  /* Fonts */
+  html {font-size: 7.7pt}
+  body {line-height: 1.2; font-size: 1.3em}
+  h1, h2 {font-size: 2em}
+  summary {font-size: 1em}
+  header h1 {font-size: 2em}
+  .main header h1 {font-size: 3em}
+  h3 {font-size: 1em}
+  h4 {font-size: 1em}		/* The default in browsers */
+  thead {font-size: 0.9em}
+  a {text-decoration: none}
+  table b, table strong {font-weight: 500}
+  #map figcaption, #map2 figcaption {font-size: 1em; margin: 0 0 1em 0}
+
+  /* Colors */
+  body, section:nth-of-type(n), #sponsors {background: #fff; color: #000}
+
+  /* Layout */
+  body {padding: 0}
+  section, footer {border: none; margin: 1.2rem auto}
+  section > *, details > * {margin-top: 0; margin-bottom: 0.65rem}
+  h2, summary h2 {display: block; font-size: 1.5em; /*padding: 0.3em;
+    background: #000; color: #FFF*/}
+  section > .skip + details:last-child > summary,
+  section > .decoration + details:last-child > summary,
+  summary {list-style: none; break-after: avoid; padding: 0}
+  p, ul, ol, table {margin: 0.6rem 0}
+  label::before, label::after {content: none}
+  section > .skip + [open]:last-child > summary::before,
+  section > .decoration + [open]:last-child > summary::before,
+  summary::before, [open] > summary::before {content: none}
+  h1, h2, h3, h4, h5, h6, p {break-inside: avoid}
+
+  /* Smaller images and sidebars */
+  section > .small, details > .small {width: 35%; break-inside: avoid}
+
+  /* Contacts section */
+  #contacts {padding: 1em; box-sizing: border-box}
+
+  /* Footer */
+  footer {max-width: none; border-top: 0.5pt solid black; background: none}
+
+  /* Sponsor logos */
+  #sponsors {font-size: 90%; columns: 2; column-gap: 2em;
+    column-rule: solid 0.1pt}
+  #sponsors h2 {display: none}
+  #sponsors h3 {text-align: left; font: inherit; font-size: 80%}
+  .sponsors {font-size: 1.4em; page-break-inside: avoid}
+  .sponsors big {font-size: 120%}
+
+  /* Less space inside a table */
+  td > p, td > ul, td > ol {margin: 0}
+  tbody th, tbody td {border-width: 0.05em}
+  th, td {padding: 0.1rem 0.3rem 0.1rem 1.3rem}
+  th:first-child, td:first-child {padding-left: 0.3rem}
+
+  /* Cards may be wider than 55em, except when there are multiple
+     columns of cards */
+  .cards > * {max-width: none; height: auto; min-height: 26em}
+  .columns.cards > * {max-width: 55.2rem}
+  .cards > * > *:nth-child(1) {height: 26em} /* workaround for Prince 14.2 */
+}
