@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "asg.web.cmu.edu",
+      "snapshots": [
+        {
+          "timestamp": "20260615_163141",
+          "path": "archives/asg.web.cmu.edu/20260615_163129/asg.web.cmu.edu/index.html",
+          "pages": 0,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "az416426.vo.msecnd.net",
       "snapshots": [
         {
