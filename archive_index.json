@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "events.vercount.one",
+      "snapshots": [
+        {
+          "timestamp": "20260615_162852",
+          "path": "archives/events.vercount.one/20260615_162727/events.vercount.one/index.html",
+          "pages": 1,
+          "resources": 4
+        }
+      ]
+    },
+    {
       "domain": "shuoweb.42web.io",
       "snapshots": [
         {
