@@ -1,0 +1,16 @@
+{
+  "brand": "Apple",
+  "model": "iPhone 15 Pro",
+  "os": "iOS",
+  "os_versions": [
+    "17_0",
+    "17_1",
+    "17_2"
+  ],
+  "cpu": "Apple A17 Pro",
+  "gpu_vendor": "Apple",
+  "gpu_renderer": "Apple GPU (A17 Pro)",
+  "ram": "8GB",
+  "resolution": "1179x2556",
+  "dpi": 460
+}

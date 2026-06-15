@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>化学 · 分子的结构与性质</title>
+<meta content="高中化学选择性必修二第二章 · 分子的结构与性质 · 学习笔记" name="description"/>
+<!-- 引入 SHUOWEB 框架（样式 + 交互） -->
+<script src="../../assets/shuoweb.com/489e05ccf8cd_common.js">
+</script>
+<!-- ==================== 补充样式（不冲突框架） ==================== -->
+<style>
+        /* 内容容器整体约束 */
+        #app {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 5% 60px;
+        }
+
+        /* 加载 & 错误状态 */
+        .state-message {
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 16px;
+            color: var(--text-sub);
+            transition: var(--transition);
+        }
+        .state-message.error {
+            color: #e74c3c;
+        }
+        .state-spinner {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--primary-light);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 12px;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 知识点卡片网格 - 桌面2列 / 移动1列 */
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 18px;
+            margin: 12px 0 24px;
+        }
+        @media (max-width: 700px) {
+            .knowledge-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+        }
+
+        /* 通用内容卡片（继承框架变量） */
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: var(--radius);
+            padding: 20px 18px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: left !important;
+        }
+        .content-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+        .content-card h3 {
+            text-align: left !important;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        .content-card ul {
+            list-style: disc !important;
+            padding-left: 1.4rem !important;
+            text-align: left !important;
+            margin: 0;
+        }
+        .content-card li {
+            text-align: left !important;
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-sub);
+            margin: 4px 0;
+            transition: var(--transition);
+        }
+
+        /* 大区域标题 */
+        .section-heading {
+            text-align: left !important;
+            font-size: 20px;
+            font-weight: 800;
+            margin: 36px 0 16px;
+            padding-left: 12px;
+            border-left: 4px solid var(--primary);
+            color: var(--text-main);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-heading svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            color: var(--primary);
+            stroke: currentColor;
+            vertical-align: middle;
+        }
+        @media (max-width: 480px) {
+            .section-heading {
+                font-size: 17px;
+                margin: 24px 0 12px;
+                padding-left: 8px;
+                border-left-width: 3px;
+            }
+            .section-heading svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        /* 子区域标题 */
+        .sub-heading {
+            text-align: left !important;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 20px 0 10px;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        /* 概述文本 */
+        .overview-text {
+            text-align: left !important;
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-sub);
+            background: var(--primary-light);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin: 10px 0 20px;
+            transition: var(--transition);
+        }
+
+        /* 易错点卡片 - 警示风格 */
+        .mistake-card {
+            background: #fff5f5;
+            border: 1px solid #fecaca;
+            border-radius: var(--radius);
+            padding: 16px 18px;
+            margin: 8px 0;
+            transition: var(--transition);
+            text-align: left !important;
+            list-style: none !important;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .mistake-card svg {
+            flex-shrink: 0;
+            margin-top: 2px;
+            width: 18px;
+            height: 18px;
+            color: #e74c3c;
+            stroke: currentColor;
+        }
+        body.pink .mistake-card {
+            background: rgba(255, 45, 85, 0.06);
+            border-color: rgba(255, 45, 85, 0.25);
+        }
+        .mistake-card span {
+            color: #b91c1c;
+            line-height: 1.6;
+        }
+        body.pink .mistake-card span {
+            color: #c0392b;
+        }
+
+        /* 口诀卡片 - 柔光背景 */
+        .mnemonic-card {
+            background: #fefce8;
+            border: 1px solid #fde68a;
+            border-radius: var(--radius);
+            padding: 14px 18px;
+            margin: 6px 0;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #713f12;
+            transition: var(--transition);
+            text-align: left !important;
+        }
+        body.pink .mnemonic-card {
+            background: rgba(255, 45, 85, 0.04);
+            border-color: rgba(255, 45, 85, 0.2);
+            color: #8b4513;
+        }
+
+        /* 高频考点标签 */
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 12px 0 20px;
+        }
+        .exam-tag {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 7px 15px;
+            border-radius: 20px;
+            transition: var(--transition);
+            cursor: default;
+            white-space: nowrap;
+        }
+        .exam-tag:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        /* 目录导航条 */
+        .toc-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0 24px;
+        }
+        .toc-link {
+            font-size: 12px !important;
+            padding: 6px 14px !important;
+            border-radius: 16px !important;
+            background: var(--primary-light) !important;
+            color: var(--primary) !important;
+            text-decoration: none !important;
+            font-weight: 500 !important;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            border: none !important;
+            box-shadow: none !important;
+            display: inline-flex !important;
+            align-items: center;
+            gap: 5px;
+            margin: 0 !important;
+        }
+        .toc-link svg {
+            width: 15px;
+            height: 15px;
+            stroke: currentColor;
+            flex-shrink: 0;
+        }
+        .toc-link:hover {
+            background: var(--primary) !important;
+            color: #fff !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* 框架对a标签的全局按钮样式已被.toc-link覆盖 */
+
+/* 全局文本强制换行，防止长单词/长链接撑开容器 */
+body, p, li, span, div, h1, h2, h3, h4, h5, h6, a, code, pre, blockquote {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;   /* 现代浏览器推荐写法 */
+    hyphens: auto;            /* 英文自动连字符 */
+    max-width: 100%;
+}
+
+/* 对于代码块或长 URL 的额外保护 */
+code, pre, .overview-text code {
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+/* 确保高频考点标签内文字自动换行，不撑大容器 */
+.exam-tag {
+  white-space: normal !important;   /* 覆盖可能的 nowrap，允许换行 */
+  word-break: break-word;           /* 所有文字（含长英文/连续字符）强制断行 */
+  overflow-wrap: break-word;        /* 备用断行支持 */
+  max-width: 100%;                  /* 限制标签最大宽度不超过父容器 */
+  box-sizing: border-box;           /* 内边距包含在宽度内 */
+}
+    </style>
+</head>
+<body>
+<!-- ==================== 内容容器 ==================== -->
+<div id="app">
+<!-- 加载状态 -->
+<div class="state-message" id="loading-state">
+<div class="state-spinner"></div>
+<p>正在加载知识点数据…</p>
+</div>
+</div>
+<!-- ==================== 核心渲染脚本 ==================== -->
+<script>
+        (function() {
+            /* ================================================================
+               【配置区】—— 只需修改此处的 JSON 文件路径即可适配不同内容
+               ================================================================ */
+            const JSON_PATH = 'json/chemistry_x2_2.json'
+            // 例如：'./json/physics_xuan3_1.json' 或 '/data/biology.json'
+            /* ================================================================ */
+
+            const app = document.getElementById('app');
+            const loadingState = document.getElementById('loading-state');
+
+            /* ==================== SVG 图标库 ==================== */
+            const SVG = {
+                book: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>`,
+                idea: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M15.1 1.9A6.3 6.3 0 0 0 12 0a6.3 6.3 0 0 0-3.1 1.9A5.1 5.1 0 0 0 7 5.4c0 2.2 1 4.2 2.4 5.7l.5.6V15h4v-3.3l.5-.6C15 9.6 16 7.6 16 5.4c0-1.4-.4-2.7-.9-3.5z"></path></svg>`,
+                brain: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 0 0-4-4 3 3 0 0 0-3 3 5 5 0 0 0 2 4 5 5 0 0 0-2 4 3 3 0 0 0 3 3 4 4 0 0 0 4-4"></path><path d="M12 8a4 4 0 0 1 4-4 3 3 0 0 1 3 3 5 5 0 0 1-2 4 5 5 0 0 1 2 4 3 3 0 0 1-3 3 4 4 0 0 1-4-4"></path><path d="M12 8v8"></path></svg>`,
+                warning: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`,
+                target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>`,
+                forbidden: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>`,
+                alertCircle: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>`,
+            };
+
+            /**
+             * 显示错误状态
+             */
+            function showError(message) {
+                if (loadingState) {
+                    loadingState.innerHTML = `
+                        <div style="margin-bottom:16px;">${SVG.alertCircle}</div>
+                        <p class="error">${message}</p>
+                        <p style="font-size:13px;color:var(--text-sub);">
+                            请检查 JSON 文件路径是否正确：<br><code>${JSON_PATH}</code>
+                        </p>`;
+                    loadingState.classList.add('error');
+                }
+            }
+
+            /**
+             * 从 JSON 数据渲染完整页面
+             */
+            function render(data) {
+                if (loadingState) loadingState.remove();
+
+                document.title = `${data.chapter || '学习笔记'} · ${data.textbook || ''}`;
+
+                let html = '';
+                html += buildHero(data);
+                html += buildTOC(data);
+                html += buildCoreKnowledge(data);
+                html += buildProblemSolving(data);
+                html += buildMnemonics(data);
+                html += buildMistakes(data);
+                html += buildHighFrequency(data);
+
+                app.innerHTML = html;
+            }
+
+            function buildHero(data) {
+                return `
+                <div class="hero" style="padding:40px 10px 24px;text-align:center;">
+                    <p style="font-size:13px;color:var(--text-sub);margin:0 0 4px;letter-spacing:1px;text-transform:uppercase;">
+                        ${escapeHTML(data.textbook || '')}
+                    </p>
+                    <h1 style="font-size:clamp(24px,4vw,36px);margin:0 0 8px;font-weight:800;">
+                        ${escapeHTML(data.chapter || '知识点笔记')}
+                    </h1>
+                    <p class="overview-text" style="max-width:700px;margin:12px auto;text-align:left!important;">
+                        ${escapeHTML(data.overview || '')}
+                    </p>
+                </div>`;
+            }
+
+            function buildTOC(data) {
+                const sections = [];
+                if (data.coreKnowledgePoints) sections.push({ id: 'core-knowledge', icon: SVG.book, label: '核心知识点' });
+                if (data.problemSolvingSkills) sections.push({ id: 'problem-solving', icon: SVG.idea, label: '解题技巧' });
+                if (data.mustMemorizeFormulasAndMnemonics && data.mustMemorizeFormulasAndMnemonics
+                    .length) sections.push({ id: 'mnemonics', icon: SVG.brain, label: '必记口诀' });
+                if (data.commonMistakesAndAvoidance && data.commonMistakesAndAvoidance.length) sections.push({ id: 'mistakes',
+                    icon: SVG.warning, label: '常见错误' });
+                if (data.highFrequencyExamPoints && data.highFrequencyExamPoints.length) sections.push({ id: 'high-freq',
+                    icon: SVG.target, label: '高频考点' });
+
+                if (sections.length === 0) return '';
+
+                let tocHTML = '<div class="toc-bar">';
+                sections.forEach(s => {
+                    tocHTML +=
+                        `<a class="toc-link" href="#${s.id}" onclick="document.getElementById('${s.id}').scrollIntoView({behavior:'smooth'});return false;">${s.icon} ${escapeHTML(s.label)}</a>`;
+                });
+                tocHTML += '</div>';
+                return tocHTML;
+            }
+
+            function buildCoreKnowledge(data) {
+                if (!data.coreKnowledgePoints) return '';
+
+                const sections = data.coreKnowledgePoints;
+                const sectionKeys = Object.keys(sections).sort();
+
+                let html = '<div id="core-knowledge">';
+                html += `<h2 class="section-heading">${SVG.book} 核心知识点</h2>`;
+
+                sectionKeys.forEach(key => {
+                    const section = sections[key];
+                    if (!section || !section.title) return;
+                    html += `<h3 class="sub-heading" style="margin-top:24px;">${escapeHTML(section.title)}</h3>`;
+
+                    if (section.subsections && section.subsections.length > 0) {
+                        html += '<div class="knowledge-grid">';
+                        section.subsections.forEach(sub => {
+                            html += buildSubsectionCard(sub);
+                        });
+                        html += '</div>';
+                    }
+                });
+
+                html += '</div>';
+                return html;
+            }
+
+            function buildSubsectionCard(sub) {
+                if (!sub || !sub.title) return '';
+                let cardHTML = '<div class="content-card">';
+                cardHTML += `<h3>${escapeHTML(sub.title)}</h3>`;
+                if (sub.points && sub.points.length > 0) {
+                    cardHTML += '<ul>';
+                    sub.points.forEach(point => {
+                        cardHTML += `<li>${escapeHTML(point)}</li>`;
+                    });
+                    cardHTML += '</ul>';
+                }
+                cardHTML += '</div>';
+                return cardHTML;
+            }
+
+            function buildProblemSolving(data) {
+                if (!data.problemSolvingSkills) return '';
+
+                const sections = data.problemSolvingSkills;
+                const sectionKeys = Object.keys(sections).sort();
+
+                let html = '<div id="problem-solving">';
+                html += `<h2 class="section-heading">${SVG.idea} 解题技巧</h2>`;
+                html += '<div class="knowledge-grid">';
+
+                sectionKeys.forEach(key => {
+                    const section = sections[key];
+                    if (!section || !section.title) return;
+                    let cardHTML = '<div class="content-card">';
+                    cardHTML += `<h3>${escapeHTML(section.title)}</h3>`;
+                    const items = section.skills || section.points || [];
+                    if (items.length > 0) {
+                        cardHTML += '<ul>';
+                        items.forEach(item => {
+                            cardHTML += `<li>${escapeHTML(item)}</li>`;
+                        });
+                        cardHTML += '</ul>';
+                    }
+                    cardHTML += '</div>';
+                    html += cardHTML;
+                });
+
+                html += '</div></div>';
+                return html;
+            }
+
+            function buildMnemonics(data) {
+                const arr = data.mustMemorizeFormulasAndMnemonics;
+                if (!arr || arr.length === 0) return '';
+
+                let html = '<div id="mnemonics">';
+                html += `<h2 class="section-heading">${SVG.brain} 必记口诀</h2>`;
+                arr.forEach(item => {
+                    html += `<div class="mnemonic-card">${escapeHTML(item)}</div>`;
+                });
+                html += '</div>';
+                return html;
+            }
+
+            function buildMistakes(data) {
+                const arr = data.commonMistakesAndAvoidance;
+                if (!arr || arr.length === 0) return '';
+
+                let html = '<div id="mistakes">';
+                html += `<h2 class="section-heading">${SVG.warning} 常见错误 & 避坑指南</h2>`;
+                html += '<ul style="list-style:none!important;padding-left:0!important;margin:0;">';
+                arr.forEach(item => {
+                    html += `<li class="mistake-card">
+                        ${SVG.forbidden}
+                        <span>${escapeHTML(item)}</span>
+                    </li>`;
+                });
+                html += '</ul></div>';
+                return html;
+            }
+
+            function buildHighFrequency(data) {
+                const arr = data.highFrequencyExamPoints;
+                if (!arr || arr.length === 0) return '';
+
+                let html = '<div id="high-freq">';
+                html += `<h2 class="section-heading">${SVG.target} 高频考点</h2>`;
+                html += '<div class="tag-cloud">';
+                arr.forEach(item => {
+                    html += `<span class="exam-tag">${escapeHTML(item)}</span>`;
+                });
+                html += '</div></div>';
+                return html;
+            }
+
+            function escapeHTML(str) {
+                if (!str) return '';
+                const div = document.createElement('div');
+                div.textContent = str;
+                return div.innerHTML;
+            }
+
+            async function loadJSON(path) {
+                try {
+                    const response = await fetch(path);
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    const data = await response.json();
+                    if (!data || typeof data !== 'object') {
+                        throw new Error('JSON 数据格式不正确');
+                    }
+                    return data;
+                } catch (err) {
+                    console.error('JSON 加载失败:', err);
+                    throw err;
+                }
+            }
+
+            async function init() {
+                try {
+                    const data = await loadJSON(JSON_PATH);
+                    render(data);
+                } catch (err) {
+                    let message = '数据加载失败，请稍后重试。';
+                    if (err.message.includes('404')) {
+                        message = '找不到 JSON 文件 (404)，请检查路径是否正确。';
+                    } else if (err.message.includes('Failed to fetch') || err.message.includes(
+                            'NetworkError')) {
+                        message = '网络请求失败，请检查 JSON 文件路径或网络连接。';
+                    } else {
+                        message = `加载出错：${err.message}`;
+                    }
+                    showError(message);
+                }
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"08d443319f70460bb5f2156d758821f4","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"></script>
+</body>
+</html>
