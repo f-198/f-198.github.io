@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "ga",
+      "snapshots": [
+        {
+          "timestamp": "20260615_163112",
+          "path": "archives/ga/20260615_163101/ga/index.html",
+          "pages": 0,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "www.w3.org",
       "snapshots": [
         {
