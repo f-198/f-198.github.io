@@ -1,6 +1,17 @@
 {
   "archives": [
     {
+      "domain": "github.com",
+      "snapshots": [
+        {
+          "timestamp": "20260615_163007",
+          "path": "archives/github.com/20260615_162936/github.com/index.html",
+          "pages": 0,
+          "resources": 0
+        }
+      ]
+    },
+    {
       "domain": "ipapi.co",
       "snapshots": [
         {
