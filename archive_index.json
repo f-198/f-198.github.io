@@ -21,6 +21,12 @@
       "domain": "shuoweb.42web.io",
       "snapshots": [
         {
+          "timestamp": "20260615_133413",
+          "path": "archives/shuoweb.42web.io/",
+          "pages": 4,
+          "resources": 1
+        },
+        {
           "timestamp": "20260615_133409",
           "path": "archives/shuoweb.42web.io/",
           "pages": 4,
@@ -61,6 +67,12 @@
       "domain": "www.w3.org",
       "snapshots": [
         {
+          "timestamp": "20260615_133413",
+          "path": "archives/www.w3.org/",
+          "pages": 0,
+          "resources": 0
+        },
+        {
           "timestamp": "20260615_133409",
           "path": "archives/www.w3.org/",
           "pages": 0,
@@ -100,6 +112,12 @@
     {
       "domain": "www.sitemaps.org",
       "snapshots": [
+        {
+          "timestamp": "20260615_133413",
+          "path": "archives/www.sitemaps.org/",
+          "pages": 10,
+          "resources": 6
+        },
         {
           "timestamp": "20260615_133409",
           "path": "archives/www.sitemaps.org/",
